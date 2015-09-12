@@ -1,0 +1,440 @@
+[
+  {
+    "id": 1,
+    "name": "Countess Julia's Cameo",
+    "affix": "Prevent all Arcane damage taken and heal yourself for 25% of the amount prevented.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Dovu Energy Trap",
+    "affix": "Increases duration of Stun effects by 25%.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Golden Gorget of Leoric",
+    "affix": "After earning a massacre bonus, 6 Skeletons are summoned to fight by your side for 10 seconds",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Kymbo's Gold",
+    "affix": "Picking up gold heals you for an amount equal to the gold that was picked up.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Mara's Kaleidoscope",
+    "affix": "Prevent all Poison damage taken and heal yourself for 15% of the amount prevented.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Moonlight Ward",
+    "affix": "Hitting an enemy within 15 yards has a chance to ward you with shards of Arcane energy that explode when enemies get close, dealing 320% weapon damage as Arcane to enemies within 15 yards.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Overwhelming Desire",
+    "affix": "Chance on hit to charm the enemy. While charmed, the enemy takes 35% more damage",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Rakoff's Glass of Life",
+    "affix": "Enemies you kill have a 4% additional chance to drop a health globe.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Talisman of Aranoch",
+    "affix": "Prevent all Cold damage taken and heal yourself for 15% of the amount prevented.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 10,
+    "name": "The Ess of Johan",
+    "affix": "Chance on hit to pull in enemies toward your target and Slow them by 80%.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 11,
+    "name": "The Star of Azkaranth",
+    "affix": "Prevent all Fire damage taken and heal yourself for 15% of the amount prevented.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Xephirian Amulet",
+    "affix": "Prevent all Lightning damage taken and heal yourself for 15% of the amount prevented.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Arcstone",
+    "affix": "Lightning pulses periodically between all wearers of this item, dealing 1500% weapon damage.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Avarice Band",
+    "affix": "Each time you pick up gold, increase your Gold and Health Pickup radius by 1 yard for 10 seconds, stacking up to 30 times",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Band of Hollow Whispers",
+    "affix": "This ring occasionally haunts nearby enemies.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Band of the Rue Chambers",
+    "affix": "Your Spirit Generators generate 50% more Spirit.",
+    "classes": [
+      1
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Broken Promises",
+    "affix": "After 5 consecutive non-critical hits, your chance to critically hit is increased to 100% for 3seconds.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Bul'Kathos's Wedding Band",
+    "affix": "You drain life from enemies around you.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Convention of Elements",
+    "affix": "Gain 200% increased damage to a single element for 4 seconds. This effect rotates through the elements available to your class in the following order: Arcane, Cold, Fire, Holy, Lightning, Physical, Poison.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Eternal Union",
+    "affix": "Increases the duration of Phalanx avatars by 200%.",
+    "classes": [
+      3
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Halo of Arlyse",
+    "affix": "Your Ice Armor now reduces damage from melee attacks by 60% and automatically casts Frost Nova whenever you take 10% of your Life in damage.",
+    "classes": [
+      5
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Hellfire Ring",
+    "affix": "Chance on hit to engulf the ground in lava, dealing 200% weapon damage per second for 6 seconds.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Krede's Flame",
+    "affix": "Taking Fire damage restores your primary resource.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Nagelring",
+    "affix": "Summons a Fallen Lunatic to your side every 10 seconds.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Obsidian Ring of the Zodiac",
+    "affix": "Reduce the remaining cooldown of one of your skills by 1 seconds when you hit with a resource-spending attack.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Oculus Ring",
+    "affix": "Chance to create an area of focused power on killing a monster. Damage is increased by 40% while standing in the area.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Pandemonium Loop",
+    "affix": "Enemies slain while Feared die in a bloody explosion for 800% weapon damage and cause other nearby enemies to flee in Fear",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Puzzle Ring",
+    "affix": "Summon a treasure goblin who picks up normal-quality items for you. After picking up 12 items, he drops a rare item with a chance for a legendary.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Rechel's Ring of Larceny",
+    "affix": "Gain 60% increased movement speed for 4 seconds after Fearing an enemy.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Ring of Royal Grandeur",
+    "affix": "Reduces the number of items needed for set bonuses by 1 (to a minimum of 2).",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Rogar's Huge Stone",
+    "affix": "Increase your Life per Second by up to 100% based on your missing Life.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Skull Grasp",
+    "affix": "Increase the damage of Whirlwind by 400% weapon damage.",
+    "classes": [
+      6
+    ]
+  },
+  {
+    "id": 33,
+    "name": "The Short Man's Finger",
+    "affix": "Gargantuan instead summons three smaller gargantuans each more powerful than before.",
+    "classes": [
+      4
+    ]
+  },
+  {
+    "id": 34,
+    "name": "The Tall Man's Finger",
+    "affix": "Zombie Dogs instead summons a single gargantuan dog with more damage and health than all other dogs combined.",
+    "classes": [
+      4
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Unity",
+    "affix": "All damage taken is split between wearers of this item.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Wyrdward",
+    "affix": "Lightning damage has a 35% chance to Stun for 1.5 seconds.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+]

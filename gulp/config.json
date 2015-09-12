@@ -1,0 +1,37 @@
+{
+  "buildTarget": "./dist",
+  "app": {
+    "js": [
+      "app/app.js",
+      "app/**/*.js"
+    ],
+    "html": [
+      "app/**/*.html"
+    ],
+    "json": [
+      "items/*.json"
+    ],
+    "less": [
+      "app/**/*.less"
+    ]
+  },
+  "thirdParty": {
+    "js": [
+      "bower_components/jquery/dist/jquery.js",
+      "bower_components/underscore/underscore.js",
+      "bower_components/bootstrap/dist/js/bootstrap.js",
+      "bower_components/angular/angular.js",
+      "bower_components/angular-route/angular-route.js"
+    ],
+    "css": [
+      "bower_components/bootswatch/cerulean/bootstrap.css",
+      "bower_components/fontawesome/css/font-awesome.css"
+    ],
+    "fonts": [
+      "bower_components/fontawesome/fonts/fontawesome-webfont.woff2",
+      "bower_components/fontawesome/fonts/fontawesome-webfont.woff",
+      "bower_components/fontawesome/fonts/fontawesome-webfont.ttf"
+    ]
+  },
+  "port": 8047
+}

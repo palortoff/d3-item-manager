@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="d3-item-manager">
+<head>
+    <title>Diablo 3 item manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--suppress HtmlUnknownTarget -->
+    <link rel="stylesheet" href="css/thirdParty.css">
+
+    <!--suppress HtmlUnknownTarget -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<nav-bar class="navbar navbar-default navbar-fixed-top"></nav-bar>
+<disclaimer></disclaimer>
+<div ng-controller="MainController as main">
+    <div class="well well-sm">
+        <label for="search">Search item</label>
+        <input type="text" id="search" ng-model="main.itemFilter.filter">
+    </div>
+    <ul class="nav nav-tabs">
+        <li
+            ng-repeat="section in main.sections"
+            role="presentation"
+            ng-class="{active: main.section() === section}"
+            ng-click="main.setSection(section)">
+            <a href="javascript:void(0);"> {{section | capitalize}}</a>
+        </li>
+    </ul>
+    <ng-view></ng-view>
+</div>
+
+<!--suppress HtmlUnknownTarget -->
+<script src="js/thirdParty.js"></script>
+
+<!--suppress HtmlUnknownTarget -->
+<script src="js/app.js"></script>
+
+</body>
+</html>

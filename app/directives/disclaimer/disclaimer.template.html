@@ -1,0 +1,9 @@
+<div ng-show="vm.showDisclaimer()">
+<div class="well">
+    <h3>Please read:</h3>
+    <p>All data processed on this site is saved in your browser's local storage. No data is ever sent to a server.</p>
+    <p>For any problems with the site please file an issue under <a href="{{vm.d3Config.githubUrl}}/issues">{{vm.d3Config.githubUrl}}/issues</a>.</p>
+    <p>This site was inspired by Raylehnhoff's <a href="http://raylehnhoff.github.io/Have-I-Cubed-This-Yet/">Have I Cubed This Yet</a></p>
+    <button class="btn btn-primary" ng-click="vm.dismiss()">OK</button>
+</div>
+</div>
