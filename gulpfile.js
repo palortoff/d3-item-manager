@@ -11,13 +11,7 @@ gulp.task('app:json', require('./gulp/appJson.task'));
 
 gulp.task('app', ['app:html', 'app:js', 'app:less', 'app:json']);
 
-gulp.task('thirdparty:css', require('./gulp/thirdpartyCss.task'));
-gulp.task('thirdparty:fonts', require('./gulp/thirdpartyFonts.task'));
-gulp.task('thirdparty:js', require('./gulp/thirdpartyJs.task'));
-
-gulp.task('thirdparty', ['thirdparty:css', 'thirdparty:fonts', 'thirdparty:js']);
-
-gulp.task('default', ['clean', 'app', 'thirdparty']);
+gulp.task('default', ['clean', 'app']);
 
 gulp.task('serve', ['default'], require('./gulp/serve.task'));
 gulp.task('chrome', ['serve'], require('./gulp/chrome.task'));
