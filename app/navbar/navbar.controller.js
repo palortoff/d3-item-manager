@@ -6,6 +6,8 @@
     function NavBarController(classes, gameModes, seasons) {
         var vm = this;
 
+        vm.gmm = gameModes;
+
         vm.gameModes = gameModes.all;
         vm.gameMode = gameModes.current;
         vm.setGameMode = gameModes.set;
@@ -22,8 +24,8 @@
         vm.showDisclaimer = function(){
             localStorage.setItem('disclaimerRead', 0);
         };
-        vm.showDisclaimer = function(){
-            localStorage.setItem('showOptions', 1);
+        vm.showOptions = function(){
+            localStorage.setItem('showOptions', "true");
         };
     }
 })();
