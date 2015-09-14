@@ -21,7 +21,9 @@
 
         vm.showDisclaimer = function(){
             localStorage.setItem('disclaimerRead', 0);
-        }
+        };
+        vm.showDisclaimer = function(){
+            localStorage.setItem('showOptions', 1);
+        };
     }
-
 })();
