@@ -1,10 +1,5 @@
 (function() {
     'use strict';
-    // TODO: item.isSeasonal with show/hide switch
-
-    // TODO: merge seasonal into main
-
-    // TODO: readme.md
     angular.module('d3-item-manager').controller('EditorController', EditorController);
 
     function EditorController($q, loadItems, sections, isItemVisible, classes) {
