@@ -1,0 +1,1087 @@
+[
+  {
+    "id": 1001,
+    "name": "Ancient Parthan Defenders",
+    "affix": "Each stunned enemy within 25 yards reduces your damage taken by 12%.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1002,
+    "name": "Gungdo Gear",
+    "affix": "Exploding Palm's on-death explosion applies Exploding Palm.",
+    "classes": [
+      1
+    ]
+  },
+  {
+    "id": 1003,
+    "name": "Andariel's Visage",
+    "affix": "Attacks release a Poison Nova that deals 450% weapon damage as Poison to enemies within 10 yards.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1004,
+    "name": "Broken Crown",
+    "affix": "Whenever a gem drops, a gem of the type socketed into this item also drops.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1005,
+    "name": "Deathseer's Cowl",
+    "affix": "20% chance on being hit by an Undead enemy to charm it for 2 seconds.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1006,
+    "name": "Leorics Crown",
+    "affix": "Increase the effect of any gem socketed into this item by 100%.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1007,
+    "name": "Pride's Fall",
+    "affix": "Your resource costs are reduced by 30% after not taking damage for 5 seconds",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1008,
+    "name": "Skull of Resonance",
+    "affix": "Threatening Shout has a chance to Charm enemies and cause them to join your side.",
+    "classes": [
+      6
+    ]
+  },
+  {
+    "id": 1009,
+    "name": "Eye of Peshkov",
+    "affix": "Reduce the cooldown of Breath of Heaven by 50%.",
+    "classes": [
+      1
+    ]
+  },
+  {
+    "id": 1016,
+    "name": "Gyana Na Kashu",
+    "affix": "Lashing Tail Kick releases a piercing fireball that deals 700% weapon damage as Fire to enemies within 10 yards on impact.",
+    "classes": [
+      1
+    ]
+  },
+  {
+    "id": 1011,
+    "name": "Kekegi's Unbreakable Spirit",
+    "affix": "Damaging enemies has a chance to grant you an effect that removes the Spirit cost of your abilities for 4 seconds.",
+    "classes": [
+      1
+    ]
+  },
+  {
+    "id": 1012,
+    "name": "Madstone",
+    "affix": "Your Seven-Sided Strike applies Exploding Palm.",
+    "classes": [
+      1
+    ]
+  },
+  {
+    "id": 1013,
+    "name": "The Laws of Seph",
+    "affix": "Using Blinding Flash restores 165 Spirit.",
+    "classes": [
+      "1"
+    ]
+  },
+  {
+    "id": 1014,
+    "name": "The Mind's Eye",
+    "affix": "Inner Sanctuary increases Spirit Regeneration per second by 15.",
+    "classes": [
+      1
+    ]
+  },
+  {
+    "id": 1015,
+    "name": "Tzo Krin's Gaze",
+    "affix": "Wave of Light is now cast at your enemy.",
+    "classes": [
+      1
+    ]
+  },
+  {
+    "id": 1016,
+    "name": "Carnevil",
+    "affix": "Your Fetishes shoot a Poison Dart every time you do.",
+    "classes": [
+      4
+    ]
+  },
+  {
+    "id": 1017,
+    "name": "Mask of Jeram",
+    "affix": "Pets deal 75-100% more damage.",
+    "classes": [
+      4
+    ]
+  },
+  {
+    "id": 1018,
+    "name": "Quetzalcoatl",
+    "affix": "Locust Swarm and Haunt now deal their damage in half of the normal duration.",
+    "classes": [
+      4
+    ]
+  },
+  {
+    "id": 1019,
+    "name": "The Grin Reaper",
+    "affix": "Chance to summon horrific Mimics when attacking.",
+    "classes": [
+      4
+    ]
+  },
+  {
+    "id": 1026,
+    "name": "Tiklandian Visage",
+    "affix": "Horrify causes you to Fear and Root enemies around you for 6-8 seconds.",
+    "classes": [
+      4
+    ]
+  },
+  {
+    "id": 1021,
+    "name": "Visage of Giyua",
+    "affix": "Summon a Fetish Army after you kill 2 Elites.",
+    "classes": []
+  },
+  {
+    "id": 1022,
+    "name": "Archmage's Vicalyke",
+    "affix": "Your Mirror Images have a chance to multiply when killed by enemies.",
+    "classes": [
+      5
+    ]
+  },
+  {
+    "id": 1023,
+    "name": "Crown of the Primus",
+    "affix": "Slow Time gains the effect of every rune.",
+    "classes": [
+      5
+    ]
+  },
+  {
+    "id": 1024,
+    "name": "Dark Mage's Shade",
+    "affix": "Automatically cast Diamond Skin when you fall below 35% Life. This effect may occur once every 15 seconds.",
+    "classes": [
+      5
+    ]
+  },
+  {
+    "id": 1025,
+    "name": "Storm Crow",
+    "affix": "40% chance to cast a fiery ball when attacking.",
+    "classes": [
+      5
+    ]
+  },
+  {
+    "id": 1026,
+    "name": "The Magistrate",
+    "affix": "Frost Hydra now periodically casts Frost Nova.",
+    "classes": [
+      5
+    ]
+  },
+  {
+    "id": 1027,
+    "name": "The Swami",
+    "affix": "The bonuses from Archon stacks now last for 15-20 seconds after Archon expires.",
+    "classes": [
+      5
+    ]
+  },
+  {
+    "id": 1028,
+    "name": "Velvet Camaral",
+    "affix": "Double the number of enemies your Electrocute jumps to.",
+    "classes": [
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1029,
+    "name": "Death Watch Mantle",
+    "affix": "35% chance to explode in a fan of knives for 750-950% weapon damage when hit.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1036,
+    "name": "Fury of the Ancients",
+    "affix": "Call of the Ancients gains the effect of the Ancients' Fury rune.",
+    "classes": [
+      6
+    ]
+  },
+  {
+    "id": 1031,
+    "name": "Homing Pads",
+    "affix": "Your Town Portal is no longer interrupted by taking damage. While casting Town Portal you gain a protective bubble that reduces damage taken by 65%.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1032,
+    "name": "Pauldrons of the Skeleton King",
+    "affix": "When receiving fatal damage, there is a chance that you are instead restored to 25% of maximum Life and cause nearby enemies to flee in fear.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1033,
+    "name": "Spaulders of Zakara",
+    "affix": "Your items become indestructible.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1034,
+    "name": "Vile Ward",
+    "affix": "Furious Charge deals 35% increased damage for every enemy hit while charging.",
+    "classes": [
+      6
+    ]
+  },
+  {
+    "id": 1035,
+    "name": "Armor of the Kind Regent",
+    "affix": "Smite will now also be cast at a second nearby enemy.",
+    "classes": [
+      3
+    ]
+  },
+  {
+    "id": 1036,
+    "name": "Chaigmail",
+    "affix": "After earning a survival bonus, quickly heal to full Life.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1037,
+    "name": "Cindercoat",
+    "affix": "Reduces the resource cost of Fire skills by 30%.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "id": 1038,
+    "name": "Goldskin",
+    "affix": "Chance for enemies to drop gold when you hit them.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1039,
+    "name": "Shi Mizu's Haori",
+    "affix": "While below 25% Life, all attacks are guaranteed Critical Hits.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1046,
+    "name": "Beckon Sail",
+    "affix": "When receiving fatal damage, you instead automatically cast Smoke Screen and are healed to 25% Life. This effect may occur once every 120 seconds.",
+    "classes": [
+      2
+    ]
+  },
+  {
+    "id": 1041,
+    "name": "Blackfeather",
+    "affix": "Dodging or getting hit by a ranged attack automatically shoots a homing rocket back at the attacker for 800% weapon damage as Physical.",
+    "classes": [
+      2
+    ]
+  },
+  {
+    "id": 1042,
+    "name": "Cape of the Dark Night",
+    "affix": "Automatically drop Caltrops when you are hit. This effect may only occur once every 6 seconds.",
+    "classes": [
+      2
+    ]
+  },
+  {
+    "id": 1043,
+    "name": "Cloak of Deception",
+    "affix": "Enemy missiles sometimes pass through you harmlessly.",
+    "classes": [
+      2
+    ]
+  },
+  {
+    "id": 1044,
+    "name": "The Cloak of the Garwulf",
+    "affix": "Companion - Wolf Companion now summons 3 wolves.",
+    "classes": [
+      2
+    ]
+  },
+  {
+    "id": 1045,
+    "name": "Bracers of Destruction",
+    "affix": "Seismic Slam deals 400% increased damage to the first two enemies it hits.",
+    "classes": [
+      6
+    ]
+  },
+  {
+    "id": 1046,
+    "name": "Bracers of the First Men",
+    "affix": "Hammer of the Ancients attacks 50% faster and deals 200% increased damage.",
+    "classes": [
+      6
+    ]
+  },
+  {
+    "id": 1047,
+    "name": "Coils of the First Spider",
+    "affix": "While channeling Firebats, gain 86,000 Life per Hit.",
+    "classes": [
+      4
+    ]
+  },
+  {
+    "id": 1048,
+    "name": "Custerian Wristguards",
+    "affix": "Picking up gold grants experience.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1049,
+    "name": "Drakon's Lesson",
+    "affix": "When your Shield Bash hits 3 or less enemies, its damage is increased by 200% and 25% of its Wrath Cost is refunded.",
+    "classes": [
+      3
+    ]
+  },
+  {
+    "id": 1056,
+    "name": "Gabriel's Vambraces",
+    "affix": "When your Blessed Hammer hits 3 or fewer enemies, 100% of its Wrath Cost is refunded.",
+    "classes": [
+      3
+    ]
+  },
+  {
+    "id": 1051,
+    "name": "Jeram's Bracers",
+    "affix": "Wall of Death can be cast up to twice again within 2 seconds before the cooldown begins.",
+    "classes": [
+      4
+    ]
+  },
+  {
+    "id": 1052,
+    "name": "Krelm's Buff Bracers",
+    "affix": "You are immune to Knockback and Stun effects.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1053,
+    "name": "Nemesis Bracers",
+    "affix": "Shrines and Pylons will spawn an enemy champion.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1054,
+    "name": "Promise of Glory",
+    "affix": "6% chance to spawn a Nephalem Glory globe when you Blind an enemy.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1055,
+    "name": "Ranslor's Folly",
+    "affix": "Energy Twister periodically pulls in lesser enemies within 30 yards.",
+    "classes": [
+      5
+    ]
+  },
+  {
+    "id": 1056,
+    "name": "Reaper's Wraps",
+    "affix": "Health globes restore 30% of your primary resource.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1057,
+    "name": "Sanguinary Vambracers",
+    "affix": "Chance on being hit to deal 1000% of your Thorns damage to nearby enemies.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 1058,
+    "name": "Spirit Guards",
+    "affix": "Your Spirit Generators reduce your damage taken by 40% for 3 seconds.",
+    "classes": [
+      1
+    ]
+  },
+  {
+    "id": 1059,
+    "name": "Strongarm Bracers",
+    "affix": "Enemies hit by knockbacks suffer 30% more damage for 5 seconds when they land.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1066,
+    "name": "Trag'Oul Coils",
+    "affix": "Healing wells replenish all resources and reduce all cooldowns by 60 seconds.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1061,
+    "name": "Warzechian Armguards",
+    "affix": "Every time you destroy a wreckable object, you gain a short burst of speed.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1062,
+    "name": "Wraps of Clarity",
+    "affix": "Your Hatred Generators reduce your damage taken by 30-35% for 5 seconds.",
+    "classes": [
+      2
+    ]
+  },
+  {
+    "id": 1063,
+    "name": "Frostburn",
+    "affix": "Your Cold damage has up to a 45% chance to Freeze enemies.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1064,
+    "name": "Gladiator Gauntlets",
+    "affix": "After earning a massacre bonus, gold rains from sky.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1065,
+    "name": "Gloves of Worship",
+    "affix": "Shrine effects last for 10 minutes.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1066,
+    "name": "St. Archew's Gage",
+    "affix": "The first time an elite pack damages you, gain an absorb shield equal to 150% of your maximum Life for 10 seconds.",
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1067,
+    "name": "Tasker and Theo",
+    "affix": "Increase attack speed of your pets by 50%.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1068,
+    "name": "Angel Hair Braid",
+    "affix": "Punish gains the effect of every rune.",
+    "classes": [
+      3
+    ]
+  },
+  {
+    "id": 1069,
+    "name": "Belt of the Trove",
+    "affix": "Every 6-8 seconds, call down Bombardment on a random nearby enemy.",
+    "classes": [
+      3
+    ]
+  },
+  {
+    "id": 1076,
+    "name": "Belt of Transcendence",
+    "affix": "Summon a Fetish Sycophant when you hit with a Mana spender.",
+    "classes": [
+      4
+    ]
+  },
+  {
+    "id": 1071,
+    "name": "Binding of the Lost",
+    "affix": "Each hit with Seven-Sided Strike grants 3.5% damage reduction for 7 seconds.",
+    "classes": [
+      1
+    ]
+  },
+  {
+    "id": 1072,
+    "name": "Blessed of Haull",
+    "affix": "Justice spawns a Blessed Hammer when it hits an enemy.",
+    "classes": [
+      3
+    ]
+  },
+  {
+    "id": 1073,
+    "name": "Cord of the Sherma",
+    "affix": "Chance on hit to create a chaos field that Blinds and Slows enemies inside for 4 seconds.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1074,
+    "name": "Crashing Rain",
+    "affix": "Rain of Vengeance also summons a crashing beast that deals 4000% weapon damage.",
+    "classes": [
+      2
+    ]
+  },
+  {
+    "id": 1075,
+    "name": "Fazula's Improbable Chain",
+    "affix": "Archon stacks also increase your Attack Speed, Armor and Resistances by 1%.",
+    "classes": [
+      5
+    ]
+  },
+  {
+    "id": 1076,
+    "name": "Goldwrap",
+    "affix": "On gold pickup: Gain armor for 5 seconds equal to the amount picked up.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1077,
+    "name": "Harrington Waistguard",
+    "affix": "Opening a chest grants 135% increased damage for 10 seconds.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1078,
+    "name": "Haunting Girdle",
+    "affix": "Haunt releases 1 extra spirit.",
+    "classes": [
+      4
+    ]
+  },
+  {
+    "id": 1079,
+    "name": "Hunter's Wrath",
+    "affix": "Your Hatred generators attack 30% faster and deal 40% increased damage.",
+    "classes": [
+      2
+    ]
+  },
+  {
+    "id": 1086,
+    "name": "Hwoj Wrap",
+    "affix": "Locust Swarm also Slows enemies by 80%.",
+    "classes": [
+      4
+    ]
+  },
+  {
+    "id": 1081,
+    "name": "Insatiable Belt",
+    "affix": "Picking up a Health Globe increases your maximum Life by 5% for 15 seconds, stacking up to 5 times",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "id": 1082,
+    "name": "Jang's Envelopment",
+    "affix": "Enemies damaged by Black Hole are also slowed by 80% for 3 seconds.",
+    "classes": [
+      5
+    ]
+  },
+  {
+    "id": 1083,
+    "name": "Krelm's Buff Belt",
+    "affix": "Gain 25% run speed. This effect is lost for 5 seconds after taking damage.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1084,
+    "name": "Omnislash",
+    "affix": "Slash attacks in all directions.",
+    "classes": [
+      3
+    ]
+  },
+  {
+    "id": 1085,
+    "name": "Omryn's Chain",
+    "affix": "Drop Caltrops when using Vault.",
+    "classes": [
+      2
+    ]
+  },
+  {
+    "id": 1086,
+    "name": "Razor Strop",
+    "affix": "Picking up a Health Globe releases an explosion that deals 400% weapon damage as Fire to enemies within 20 yards.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1087,
+    "name": "Sacred Harness",
+    "affix": "Judgment is cast at your landing location when casting Falling Sword.",
+    "classes": [
+      3
+    ]
+  },
+  {
+    "id": 1088,
+    "name": "Sash of Knives",
+    "affix": "With every attack, you throw a dagger at a nearby enemy for 650% weapon damage as Physical.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1089,
+    "name": "Sebor's Nightmare",
+    "affix": "Haunt is cast on all nearby enemies when you open a chest.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1096,
+    "name": "Thundergod's Vigor",
+    "affix": "Blocking, dodging or being hit causes you to discharge bolts of electricity that deal 130% weapon damage as Lightning.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1091,
+    "name": "Chilanik's Chain",
+    "affix": "Using War Cry increases the movement speed for you and all allies affected by 40% for 10 seconds.",
+    "classes": [
+      6,
+      2
+    ]
+  },
+  {
+    "id": 1092,
+    "name": "Lamentation",
+    "affix": "Rend can now stack up to 2 times on an enemy.",
+    "classes": [
+      6
+    ]
+  },
+  {
+    "id": 1093,
+    "name": "Pride of Cassius",
+    "affix": "Increases the duration of Ignore Pain by 6 seconds.",
+    "classes": [
+      6
+    ]
+  },
+  {
+    "id": 1094,
+    "name": "The Undisputed Champion",
+    "affix": "Frenzy gains the effect of every rune.",
+    "classes": [
+      6
+    ]
+  },
+  {
+    "id": 1095,
+    "name": "Death's Bargain",
+    "affix": "Gain an aura of death that deals 1000% of your Life per Second to enemies within 20 yards. You no longer regenerate Life",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1096,
+    "name": "Depth Diggers",
+    "affix": "Primary skills that generate resource deal 100% additional damage.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1097,
+    "name": "Hexing Pants of Mr. Yan",
+    "affix": "Your resource generation and damage is increased by 25% while moving and decreased by 20% while standing still.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1098,
+    "name": "Pox Faulds",
+    "affix": "When 3 or more enemies are within 12 yards, you release a vile stench that deals 550%weapon damage as Poison every second for 5 seconds to enemies within 15 yards.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1099,
+    "name": "Boots of Disregard",
+    "affix": "Gain 10000 Life Regeneration per second for each second you stand still. This effect stacks up to 8 times",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1106,
+    "name": "Fire Walkers",
+    "affix": "Burn the ground you walk on, dealing 400% weapon damage each second.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1101,
+    "name": "Ice Climbers",
+    "affix": "Gain immunity to Freeze and Immobilize effects.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1102,
+    "name": "Illusionary Boots",
+    "affix": "You may move unhindered through enemies.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1103,
+    "name": "Irontoe Mudsputters",
+    "affix": "Gain up to 30% increased movement speed based on amount of Life missing.",
+    "classes": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 1104,
+    "name": "Lut Socks",
+    "affix": "Leap can be cast again within 2 seconds before the cooldown begins.",
+    "classes": [
+      6
+    ]
+  },
+  {
+    "id": 1105,
+    "name": "Nilfur's Boast",
+    "affix": "Increase the damage of Meteor by 100%. When your Meteor hits 3 or less enemies, the damage is increased by 200%.",
+    "classes": [
+      5
+    ]
+  },
+  {
+    "id": 1106,
+    "name": "The Crudest Boots",
+    "affix": "Mystic Ally summons two Mystic Allies that fight by your side.",
+    "classes": [
+      1
+    ]
+  },
+  {
+    "id": 1107,
+    "name": "Dread Iron",
+    "affix": "Ground Stomp causes an Avalanche.",
+    "classes": [
+      6
+    ]
+  }
+]

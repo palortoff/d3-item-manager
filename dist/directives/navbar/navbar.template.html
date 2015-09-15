@@ -1,0 +1,53 @@
+<nav >
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Diablo 3 Item Manager</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="javascript:void(0);" ng-click="vm.showDisclaimer()"><i class="fa fa-info-circle fa-lg"></i></a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        {{vm.gameModes.current()}}
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ng-repeat="gm in vm.gameModes.all()" ng-click="vm.gameModes.setCurrent(gm)"><a href="javascript:void(0);">{{gm}}</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        {{vm.seasons.current()}}
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ng-click="vm.seasons.setCurrent('Non Season')"><a href="javascript:void(0);">Non Season</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li ng-repeat="s in vm.seasons.all()" ng-click="vm.seasons.setCurrent(s)"><a href="javascript:void(0);">{{s}}</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        {{vm.classes.current().name | capitalize}}
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ng-repeat="c in vm.classes.distinct()" ng-click="vm.classes.setCurrent(c.id)"><a href="javascript:void(0);">{{c.name|capitalize}}</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li ng-click="vm.classes.setCurrent(0)"><a href="javascript:void(0);">All</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="javascript:void(0);" ng-click="vm.showOptions()"><i class="fa fa-cog fa-lg"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
