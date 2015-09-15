@@ -33,7 +33,7 @@
         }
 
         function setDefault() {
-            if (!_.find(all, current)) {
+            if (!_.find(_all, current)) {
                 setCurrent(_all[0]);
             }
         }
@@ -45,7 +45,7 @@
         }
 
         function add(gm) {
-            if (_.contains(all, gm)) return;
+            if (_.contains(_all, gm)) return;
             _all.push(gm);
             save();
         }
