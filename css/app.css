@@ -1,0 +1,21 @@
+body {
+  padding-top: 70px;
+}
+
+disclaimer .panel {
+  width: 80%;
+  transform: translateX(10%);
+}
+
+options .panel-info {
+  width: 80%;
+  transform: translateX(10%);
+}
+options ul input.form-control {
+  width: 80%;
+}
+options i.text-danger {
+  transform: translateY(20%);
+}
+
+/*# sourceMappingURL=app.css.map */

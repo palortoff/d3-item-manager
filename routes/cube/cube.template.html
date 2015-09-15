@@ -1,0 +1,20 @@
+<div ng-repeat="section in vm.sections" ng-show="vm.section() == section">
+    <table class="table table-striped">
+        <thead>
+            <th>Name</th>
+            <th>Cubed</th>
+            <th ng-repeat="column in vm.columns.all()">{{column}}</th>
+            <th>Affix</th>
+        </thead>
+        <tr ng-repeat="item in vm[section] | orderBy:'name' | filter: vm.itemFilter.filter" ng-if="vm.isVisible(item)">
+            <td>{{item.name}}</td>
+            <td class="text-center">
+                <input type="checkbox" ng-model="item.track[vm.gameMode()][vm.season()]['Cubed']" ng-click="vm.itemChanged(section)">
+            </td>
+            <td class="text-center" ng-repeat="column in vm.columns.all()">
+                <input type="checkbox" ng-model="item.track[vm.gameMode()][vm.season()][column]" ng-click="vm.itemChanged(section)">
+            </td>
+            <td>{{item.affix}}</td>
+        </tr>
+    </table>
+</div>
