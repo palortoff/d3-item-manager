@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 3001,
     "name": "Countess Julia's Cameo",
     "affix": "Prevent all Arcane damage taken and heal yourself for 25% of the amount prevented.",
     "classes": [
@@ -13,7 +13,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 3002,
     "name": "Dovu Energy Trap",
     "affix": "Increases duration of Stun effects by 25%.",
     "classes": [
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 3003,
     "name": "Golden Gorget of Leoric",
     "affix": "After earning a massacre bonus, 6 Skeletons are summoned to fight by your side for 10 seconds",
     "classes": [
@@ -39,7 +39,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 3004,
     "name": "Kymbo's Gold",
     "affix": "Picking up gold heals you for an amount equal to the gold that was picked up.",
     "classes": [
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 3005,
     "name": "Mara's Kaleidoscope",
     "affix": "Prevent all Poison damage taken and heal yourself for 15% of the amount prevented.",
     "classes": [
@@ -65,7 +65,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 3006,
     "name": "Moonlight Ward",
     "affix": "Hitting an enemy within 15 yards has a chance to ward you with shards of Arcane energy that explode when enemies get close, dealing 320% weapon damage as Arcane to enemies within 15 yards.",
     "classes": [
@@ -78,7 +78,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 3007,
     "name": "Overwhelming Desire",
     "affix": "Chance on hit to charm the enemy. While charmed, the enemy takes 35% more damage",
     "classes": [
@@ -91,7 +91,7 @@
     ]
   },
   {
-    "id": 8,
+    "id": 3008,
     "name": "Rakoff's Glass of Life",
     "affix": "Enemies you kill have a 4% additional chance to drop a health globe.",
     "classes": [
@@ -104,7 +104,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 3009,
     "name": "Talisman of Aranoch",
     "affix": "Prevent all Cold damage taken and heal yourself for 15% of the amount prevented.",
     "classes": [
@@ -117,7 +117,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 3010,
     "name": "The Ess of Johan",
     "affix": "Chance on hit to pull in enemies toward your target and Slow them by 80%.",
     "classes": [
@@ -130,7 +130,7 @@
     ]
   },
   {
-    "id": 11,
+    "id": 3011,
     "name": "The Star of Azkaranth",
     "affix": "Prevent all Fire damage taken and heal yourself for 15% of the amount prevented.",
     "classes": [
@@ -143,7 +143,7 @@
     ]
   },
   {
-    "id": 12,
+    "id": 3012,
     "name": "Xephirian Amulet",
     "affix": "Prevent all Lightning damage taken and heal yourself for 15% of the amount prevented.",
     "classes": [
@@ -156,7 +156,7 @@
     ]
   },
   {
-    "id": 13,
+    "id": 3013,
     "name": "Arcstone",
     "affix": "Lightning pulses periodically between all wearers of this item, dealing 1500% weapon damage.",
     "classes": [
@@ -169,7 +169,7 @@
     ]
   },
   {
-    "id": 14,
+    "id": 3014,
     "name": "Avarice Band",
     "affix": "Each time you pick up gold, increase your Gold and Health Pickup radius by 1 yard for 10 seconds, stacking up to 30 times",
     "classes": [
@@ -182,7 +182,7 @@
     ]
   },
   {
-    "id": 15,
+    "id": 3015,
     "name": "Band of Hollow Whispers",
     "affix": "This ring occasionally haunts nearby enemies.",
     "classes": [
@@ -195,7 +195,7 @@
     ]
   },
   {
-    "id": 16,
+    "id": 3016,
     "name": "Band of the Rue Chambers",
     "affix": "Your Spirit Generators generate 50% more Spirit.",
     "classes": [
@@ -203,7 +203,7 @@
     ]
   },
   {
-    "id": 17,
+    "id": 3017,
     "name": "Broken Promises",
     "affix": "After 5 consecutive non-critical hits, your chance to critically hit is increased to 100% for 3seconds.",
     "classes": [
@@ -216,7 +216,7 @@
     ]
   },
   {
-    "id": 18,
+    "id": 3018,
     "name": "Bul'Kathos's Wedding Band",
     "affix": "You drain life from enemies around you.",
     "classes": [
@@ -229,7 +229,7 @@
     ]
   },
   {
-    "id": 19,
+    "id": 3019,
     "name": "Convention of Elements",
     "affix": "Gain 200% increased damage to a single element for 4 seconds. This effect rotates through the elements available to your class in the following order: Arcane, Cold, Fire, Holy, Lightning, Physical, Poison.",
     "classes": [
@@ -242,7 +242,7 @@
     ]
   },
   {
-    "id": 20,
+    "id": 3020,
     "name": "Eternal Union",
     "affix": "Increases the duration of Phalanx avatars by 200%.",
     "classes": [
@@ -250,7 +250,7 @@
     ]
   },
   {
-    "id": 21,
+    "id": 3021,
     "name": "Halo of Arlyse",
     "affix": "Your Ice Armor now reduces damage from melee attacks by 60% and automatically casts Frost Nova whenever you take 10% of your Life in damage.",
     "classes": [
@@ -258,7 +258,7 @@
     ]
   },
   {
-    "id": 22,
+    "id": 3022,
     "name": "Hellfire Ring",
     "affix": "Chance on hit to engulf the ground in lava, dealing 200% weapon damage per second for 6 seconds.",
     "classes": [
@@ -271,7 +271,7 @@
     ]
   },
   {
-    "id": 23,
+    "id": 3023,
     "name": "Krede's Flame",
     "affix": "Taking Fire damage restores your primary resource.",
     "classes": [
@@ -284,7 +284,7 @@
     ]
   },
   {
-    "id": 24,
+    "id": 3024,
     "name": "Nagelring",
     "affix": "Summons a Fallen Lunatic to your side every 10 seconds.",
     "classes": [
@@ -297,7 +297,7 @@
     ]
   },
   {
-    "id": 25,
+    "id": 3025,
     "name": "Obsidian Ring of the Zodiac",
     "affix": "Reduce the remaining cooldown of one of your skills by 1 seconds when you hit with a resource-spending attack.",
     "classes": [
@@ -310,7 +310,7 @@
     ]
   },
   {
-    "id": 26,
+    "id": 3026,
     "name": "Oculus Ring",
     "affix": "Chance to create an area of focused power on killing a monster. Damage is increased by 40% while standing in the area.",
     "classes": [
@@ -323,7 +323,7 @@
     ]
   },
   {
-    "id": 27,
+    "id": 3027,
     "name": "Pandemonium Loop",
     "affix": "Enemies slain while Feared die in a bloody explosion for 800% weapon damage and cause other nearby enemies to flee in Fear",
     "classes": [
@@ -336,7 +336,7 @@
     ]
   },
   {
-    "id": 28,
+    "id": 3028,
     "name": "Puzzle Ring",
     "affix": "Summon a treasure goblin who picks up normal-quality items for you. After picking up 12 items, he drops a rare item with a chance for a legendary.",
     "classes": [
@@ -349,7 +349,7 @@
     ]
   },
   {
-    "id": 29,
+    "id": 3029,
     "name": "Rechel's Ring of Larceny",
     "affix": "Gain 60% increased movement speed for 4 seconds after Fearing an enemy.",
     "classes": [
@@ -362,7 +362,7 @@
     ]
   },
   {
-    "id": 30,
+    "id": 3030,
     "name": "Ring of Royal Grandeur",
     "affix": "Reduces the number of items needed for set bonuses by 1 (to a minimum of 2).",
     "classes": [
@@ -375,7 +375,7 @@
     ]
   },
   {
-    "id": 31,
+    "id": 3031,
     "name": "Rogar's Huge Stone",
     "affix": "Increase your Life per Second by up to 100% based on your missing Life.",
     "classes": [
@@ -388,7 +388,7 @@
     ]
   },
   {
-    "id": 32,
+    "id": 3032,
     "name": "Skull Grasp",
     "affix": "Increase the damage of Whirlwind by 400% weapon damage.",
     "classes": [
@@ -396,7 +396,7 @@
     ]
   },
   {
-    "id": 33,
+    "id": 3033,
     "name": "The Short Man's Finger",
     "affix": "Gargantuan instead summons three smaller gargantuans each more powerful than before.",
     "classes": [
@@ -404,7 +404,7 @@
     ]
   },
   {
-    "id": 34,
+    "id": 3034,
     "name": "The Tall Man's Finger",
     "affix": "Zombie Dogs instead summons a single gargantuan dog with more damage and health than all other dogs combined.",
     "classes": [
@@ -412,7 +412,7 @@
     ]
   },
   {
-    "id": 35,
+    "id": 3035,
     "name": "Unity",
     "affix": "All damage taken is split between wearers of this item.",
     "classes": [
@@ -425,7 +425,7 @@
     ]
   },
   {
-    "id": 36,
+    "id": 3036,
     "name": "Wyrdward",
     "affix": "Lightning damage has a 35% chance to Stun for 1.5 seconds.",
     "classes": [

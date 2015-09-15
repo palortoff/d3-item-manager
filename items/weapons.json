@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 2001,
     "name": "Genzaniku",
     "affix": "Chance to summon a ghostly Fallen Champion when attacking.",
     "classes": [
@@ -13,7 +13,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 2002,
     "name": "Hack",
     "affix": "100% of your Thorns damage is applied on every attack.",
     "classes": [
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 2003,
     "name": "Sky Splitter",
     "affix": "20% chance to Smite enemies for 600-750% weapon damage as Lightning when you hit them.",
     "classes": [
@@ -39,7 +39,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 2004,
     "name": "The Burning Axe of Sankis",
     "affix": "Chance to fight through the pain when enemies hit you.",
     "classes": [
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 2005,
     "name": "The Butcher's Sickle",
     "affix": "25% chance to drag enemies to you when attacking.",
     "classes": [
@@ -64,7 +64,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 2006,
     "name": "Envious Blade",
     "affix": "Gain 100% Critical Hit Chance against enemies at full health",
     "classes": [
@@ -77,7 +77,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 2007,
     "name": "Eun-jang-do",
     "affix": "Attacking enemies below 20% Life freezes them for 3 seconds.",
     "classes": [
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "id": 8,
+    "id": 2008,
     "name": "Wizardspike",
     "affix": "Performing an attack has a 25% chance to hurl a Frozen Orb.",
     "classes": [
@@ -103,7 +103,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 2009,
     "name": "Jace's Hammer of Vigilance",
     "affix": "Increase the size of your Blessed Hammers.",
     "classes": [
@@ -111,7 +111,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 2010,
     "name": "Mad Monarch's Scepter",
     "affix": "After killing 10 enemies you release a Poison Nova that deals 1400% weapon damage as Poison to enemies within 30 yards.",
     "classes": [
@@ -124,7 +124,7 @@
     ]
   },
   {
-    "id": 11,
+    "id": 2011,
     "name": "Odyn Son",
     "affix": "40% chance to Chain Lightning enemies when you hit them.",
     "classes": [
@@ -137,7 +137,7 @@
     ]
   },
   {
-    "id": 12,
+    "id": 2012,
     "name": "Solanium",
     "affix": "Critical Hits have a 4% chance to spawn a health globe.",
     "classes": [
@@ -150,7 +150,7 @@
     ]
   },
   {
-    "id": 13,
+    "id": 2013,
     "name": "Arreat's Law",
     "affix": "Weapon Throw generates up to 15-20 additional Fury based on how far away the enemy hit is. Maximum benefit when the enemy hit is 20 or more yards away.",
     "classes": [
@@ -158,7 +158,7 @@
     ]
   },
   {
-    "id": 14,
+    "id": 2014,
     "name": "Azurewrath",
     "affix": "Undead and Demon enemies within 25 yards take 650% weapon damage as Holy every second and are sometimes knocked into the air.",
     "classes": [
@@ -171,7 +171,7 @@
     ]
   },
   {
-    "id": 15,
+    "id": 2015,
     "name": "Fulminator",
     "affix": "Lightning damage has a chance to turn enemies into lightning rods, causing them to pulse 555% weapon damage as Lightning every second to nearby enemies for 6 seconds.",
     "classes": [
@@ -184,7 +184,7 @@
     ]
   },
   {
-    "id": 16,
+    "id": 2016,
     "name": "In-geom",
     "affix": "Your skill cooldowns are reduced by 10 seconds for 15 seconds after killing an elite pack.",
     "classes": [
@@ -197,7 +197,7 @@
     ]
   },
   {
-    "id": 17,
+    "id": 2017,
     "name": "Rimeheart",
     "affix": "10% chance on hit to instantly deal 10000% weapon damage as Cold to enemies that are Frozen.",
     "classes": [
@@ -210,7 +210,7 @@
     ]
   },
   {
-    "id": 18,
+    "id": 2018,
     "name": "Sever",
     "affix": "Slain enemies rest in pieces.",
     "classes": [
@@ -223,7 +223,7 @@
     ]
   },
   {
-    "id": 19,
+    "id": 2019,
     "name": "Shard of Hate",
     "affix": "Elemental skills have a chance to trigger a powerful attack that deals 250% weapon damage:Cold skills trigger Freezing Skull, Poison skills trigger Poison Nova Lightning skills trigger Charged Bolt",
     "classes": [
@@ -236,7 +236,7 @@
     ]
   },
   {
-    "id": 20,
+    "id": 2020,
     "name": "Skycutter",
     "affix": "Chance to summon angelic assistance when attacking.",
     "classes": [
@@ -249,7 +249,7 @@
     ]
   },
   {
-    "id": 21,
+    "id": 2021,
     "name": "Thunderfury, Blessed Blade of the Windseeker",
     "affix": "Chance on hit to blast your enemy with Lightning, dealing 372% weapon damage as Lightning and then jumping to additional nearby enemies. Each enemy hit has their attack speed and movement speed reduced by 30% for 3 seconds. Jumps up to 5 targets.",
     "classes": [
@@ -262,7 +262,7 @@
     ]
   },
   {
-    "id": 22,
+    "id": 2022,
     "name": "Anessazi Edge",
     "affix": "Zombie Dogs stuns enemies around them for 1.5 seconds when summoned.",
     "classes": [
@@ -270,7 +270,7 @@
     ]
   },
   {
-    "id": 23,
+    "id": 2023,
     "name": "Deadly Rebirth",
     "affix": "Grasp of the Dead gains the effect of the Rain of Corpses rune.",
     "classes": [
@@ -278,7 +278,7 @@
     ]
   },
   {
-    "id": 24,
+    "id": 2024,
     "name": "Rhen'ho Flayer",
     "affix": "Plague of Toads now seek out enemies and can explode twice.",
     "classes": [
@@ -286,7 +286,7 @@
     ]
   },
   {
-    "id": 25,
+    "id": 2025,
     "name": "Sacred Harvester",
     "affix": "Soul Harvest now stacks up to 10 times.",
     "classes": [
@@ -294,7 +294,7 @@
     ]
   },
   {
-    "id": 26,
+    "id": 2026,
     "name": "Starmetal Kukri",
     "affix": "Reduce the cooldown of Fetish Army and Big Bad Voodoo by 1 second each time your fetishes deal damage.",
     "classes": [
@@ -302,7 +302,7 @@
     ]
   },
   {
-    "id": 27,
+    "id": 2027,
     "name": "The Dagger of Darts",
     "affix": "Your Poison Darts and your Fetishes' Poison Darts now pierce.",
     "classes": [
@@ -310,7 +310,7 @@
     ]
   },
   {
-    "id": 28,
+    "id": 2028,
     "name": "The Gidbinn",
     "affix": "Chance to summon a Fetish when attacking.",
     "classes": [
@@ -318,7 +318,7 @@
     ]
   },
   {
-    "id": 29,
+    "id": 2029,
     "name": "The Spider Queen's Grasp",
     "affix": "Corpse Spiders releases a web on impact that Slows enemies by 60?80%.",
     "classes": [
@@ -326,7 +326,7 @@
     ]
   },
   {
-    "id": 30,
+    "id": 2030,
     "name": "Jawbreaker",
     "affix": "When Dashing Strike hits an enemy more than 30 yards away, its Charge cost is refunded.",
     "classes": [
@@ -334,7 +334,7 @@
     ]
   },
   {
-    "id": 31,
+    "id": 2031,
     "name": "Lion's Claw",
     "affix": "Seven-Sided Strike performs an additional 7 strikes.",
     "classes": [
@@ -342,7 +342,7 @@
     ]
   },
   {
-    "id": 32,
+    "id": 2032,
     "name": "The Fist of Az'Turrasq",
     "affix": "Exploding Palm's on-death explosion damage is increased by 100%.",
     "classes": [
@@ -350,7 +350,7 @@
     ]
   },
   {
-    "id": 33,
+    "id": 2033,
     "name": "Vengeful Wind",
     "affix": "Increases the maximum stack count of Sweeping Wind by 3.",
     "classes": [
@@ -358,7 +358,7 @@
     ]
   },
   {
-    "id": 34,
+    "id": 2034,
     "name": "Darklight",
     "affix": "Fist of the Heavens has a 60% chance to also be cast at your location.",
     "classes": [
@@ -366,7 +366,7 @@
     ]
   },
   {
-    "id": 35,
+    "id": 2035,
     "name": "Golden Scourge",
     "affix": "Smite now jumps to 3 additional enemies.",
     "classes": [
@@ -374,7 +374,7 @@
     ]
   },
   {
-    "id": 36,
+    "id": 2036,
     "name": "Gyrfalcon's Foote",
     "affix": "Removes the resource cost of Blessed Shield.",
     "classes": [
@@ -382,7 +382,7 @@
     ]
   },
   {
-    "id": 37,
+    "id": 2037,
     "name": "Inviolable Faith",
     "affix": "Casting Consecration also casts Consecration beneath all of your allies.",
     "classes": [
@@ -390,7 +390,7 @@
     ]
   },
   {
-    "id": 38,
+    "id": 2038,
     "name": "Johanna's Argument",
     "affix": "Increase the attack speed of Blessed Hammer by 100%.",
     "classes": [
@@ -398,7 +398,7 @@
     ]
   },
   {
-    "id": 39,
+    "id": 2039,
     "name": "Justinian's Mercy",
     "affix": "Blessed Hammer gains the effect of the Dominion rune.",
     "classes": [
@@ -406,7 +406,7 @@
     ]
   },
   {
-    "id": 40,
+    "id": 2040,
     "name": "Kassar's Retribution",
     "affix": "Casting Justice increases your movement speed by 20% for 2 seconds.",
     "classes": [
@@ -414,7 +414,7 @@
     ]
   },
   {
-    "id": 41,
+    "id": 2041,
     "name": "Swiftmount",
     "affix": "Doubles the duration of Steed Charge.",
     "classes": [
@@ -422,7 +422,7 @@
     ]
   },
   {
-    "id": 42,
+    "id": 2042,
     "name": "Dishonored Legacy",
     "affix": "Cleave deals up to 400% increased damage based on percentage on missing Fury.",
     "classes": [
@@ -430,7 +430,7 @@
     ]
   },
   {
-    "id": 43,
+    "id": 2043,
     "name": "Fjord Cutter",
     "affix": "You are surrounded by a Chilling Aura when attacking.",
     "classes": [
@@ -438,7 +438,7 @@
     ]
   },
   {
-    "id": 44,
+    "id": 2044,
     "name": "Remorsless",
     "affix": "Hammer of the Ancients has a 25?30% chance to summon an Ancient for 20 seconds.",
     "classes": [
@@ -446,7 +446,7 @@
     ]
   },
   {
-    "id": 45,
+    "id": 2045,
     "name": "Burst of Wrath",
     "affix": "Killing enemies and destroying objects has a chance to grant 20% of your maximum primary resource",
     "classes": [
@@ -458,7 +458,7 @@
     ]
   },
   {
-    "id": 46,
+    "id": 2046,
     "name": "Butcher's Carver",
     "affix": "The Butcher still inhabits his carver.",
     "classes": [
@@ -470,7 +470,7 @@
     ]
   },
   {
-    "id": 47,
+    "id": 2047,
     "name": "Cinder Switch",
     "affix": "50% chance to cast a fireball when attacking.",
     "classes": [
@@ -482,7 +482,7 @@
     ]
   },
   {
-    "id": 48,
+    "id": 2048,
     "name": "Arthef's Spark of Life",
     "affix": "Heal for 4% of your missing Life when you kill an Undead enemy.",
     "classes": [
@@ -494,7 +494,7 @@
     ]
   },
   {
-    "id": 49,
+    "id": 2049,
     "name": "Schaefer's Hammer",
     "affix": "Casting a Lightning skill charges you with Lightning, causing you to deal 850% weapon damage as Lightning every second for 5 seconds to nearby enemies.",
     "classes": [
@@ -506,7 +506,7 @@
     ]
   },
   {
-    "id": 50,
+    "id": 2050,
     "name": "Skywarden",
     "affix": "Every 60 seconds, gain a random Law for 60 seconds.",
     "classes": [
@@ -514,7 +514,7 @@
     ]
   },
   {
-    "id": 51,
+    "id": 2051,
     "name": "Soulsmasher",
     "affix": "When you kill an enemy, it explodes for 600% of your Life per Kill as damage to all enemies within 20 yards. You no longer benefit from your Life per Kill",
     "classes": [
@@ -526,7 +526,7 @@
     ]
   },
   {
-    "id": 52,
+    "id": 2052,
     "name": "Sunder",
     "affix": "50% chance to sunder the ground your enemies walk on when you attack.",
     "classes": [
@@ -538,7 +538,7 @@
     ]
   },
   {
-    "id": 53,
+    "id": 2053,
     "name": "The Furnace",
     "affix": "Increases damage against elites by 50%.",
     "classes": [
@@ -549,7 +549,7 @@
     ]
   },
   {
-    "id": 54,
+    "id": 2054,
     "name": "Bovine Bardiche",
     "affix": "Chance on hit to summon a herd of murderous cows.",
     "classes": [
@@ -560,7 +560,7 @@
     ]
   },
   {
-    "id": 55,
+    "id": 2055,
     "name": "Vigilance",
     "affix": "Getting hit has a chance to automatically cast Inner Sanctuary.",
     "classes": [
@@ -571,7 +571,7 @@
     ]
   },
   {
-    "id": 56,
+    "id": 2056,
     "name": "Ahavarion,Spear of Lycander",
     "affix": "Chance on killing a demon to gain a random Shrine effect.",
     "classes": [
@@ -581,7 +581,7 @@
     ]
   },
   {
-    "id": 57,
+    "id": 2057,
     "name": "Maloth's Focus",
     "affix": "Enemies occasionally flee at the sight of this staff.",
     "classes": [
@@ -591,7 +591,7 @@
     ]
   },
   {
-    "id": 58,
+    "id": 2058,
     "name": "The Grand Vizier",
     "affix": "Reduces the Arcane Power cost of Meteor by 50%.",
     "classes": [
@@ -599,7 +599,7 @@
     ]
   },
   {
-    "id": 59,
+    "id": 2059,
     "name": "The Smoldering Core",
     "affix": "Lesser enemies are now lured to your Meteor impact areas.",
     "classes": [
@@ -607,7 +607,7 @@
     ]
   },
   {
-    "id": 60,
+    "id": 2060,
     "name": "The Tormentor",
     "affix": "Chance to charm enemies when you hit them.",
     "classes": [
@@ -617,7 +617,7 @@
     ]
   },
   {
-    "id": 61,
+    "id": 2061,
     "name": "Valthek's Rebuke",
     "affix": "Energy Twister now travels in a straight path.",
     "classes": [
@@ -625,7 +625,7 @@
     ]
   },
   {
-    "id": 62,
+    "id": 2062,
     "name": "Wormwood",
     "affix": "Locust Swarm continuously plagues enemies around you.",
     "classes": [
@@ -633,7 +633,7 @@
     ]
   },
   {
-    "id": 63,
+    "id": 2063,
     "name": "Blade of Prophecy",
     "affix": "Two Condemned enemies also trigger Condemn's explosion.",
     "classes": [
@@ -641,7 +641,7 @@
     ]
   },
   {
-    "id": 64,
+    "id": 2064,
     "name": "Blood Brother",
     "affix": "Grants a 20% chance to block attacks. Blocked attacks inflict 30% less damage. After blocking an attack, your next attack inflicts 30% additional damage.",
     "classes": [
@@ -653,7 +653,7 @@
     ]
   },
   {
-    "id": 65,
+    "id": 2065,
     "name": "Cam's Rebuttal",
     "affix": "Falling Sword can be used again within 4 seconds before the cooldown is triggered.",
     "classes": [
@@ -661,7 +661,7 @@
     ]
   },
   {
-    "id": 66,
+    "id": 2066,
     "name": "Maximus",
     "affix": "Chance on hit to summon a Demonic Slave.",
     "classes": [
@@ -673,7 +673,7 @@
     ]
   },
   {
-    "id": 67,
+    "id": 2067,
     "name": "Scourge",
     "affix": "45% chance when attacking to explode with demonic fury for 2000% weapon damage as Fire.",
     "classes": [
@@ -685,7 +685,7 @@
     ]
   },
   {
-    "id": 68,
+    "id": 2068,
     "name": "Stalgard's Decimator",
     "affix": "Your melee attacks throw a piercing axe at a nearby enemy, dealing 700% weapon damage as Physical.",
     "classes": [
@@ -697,7 +697,7 @@
     ]
   },
   {
-    "id": 69,
+    "id": 2069,
     "name": "Flying Dragon",
     "affix": "Chance to double your attack speed when attacking.",
     "classes": [
@@ -705,7 +705,7 @@
     ]
   },
   {
-    "id": 70,
+    "id": 2070,
     "name": "Incense Torch of the Grand Temple",
     "affix": "Reduces the Spirit cost of Wave of Light by 50%.",
     "classes": [
@@ -713,7 +713,7 @@
     ]
   },
   {
-    "id": 71,
+    "id": 2071,
     "name": "The Flow of Eternity",
     "affix": "Reduces the cooldown of Seven-Sided Strike by 60%.",
     "classes": [
@@ -721,7 +721,7 @@
     ]
   },
   {
-    "id": 72,
+    "id": 2072,
     "name": "Warstaff of General Quang",
     "affix": "Tempest Rush gains the effect of the Tailwind rune.",
     "classes": [
@@ -729,7 +729,7 @@
     ]
   },
   {
-    "id": 73,
+    "id": 2073,
     "name": "Baleful Remnant",
     "affix": "Enemies killed while Akarat's Champion is active turn into Phalanx Avatars for 10 seconds.",
     "classes": [
@@ -737,7 +737,7 @@
     ]
   },
   {
-    "id": 74,
+    "id": 2074,
     "name": "Fate of the Fell",
     "affix": "Gain two additional rays of Heaven's Fury.",
     "classes": [
@@ -745,7 +745,7 @@
     ]
   },
   {
-    "id": 75,
+    "id": 2075,
     "name": "Golden Flense",
     "affix": "Sweep Attack restores 6 Wrath for each enemy hit.",
     "classes": [
@@ -753,7 +753,7 @@
     ]
   },
   {
-    "id": 76,
+    "id": 2076,
     "name": "The Mortal Drama",
     "affix": "Double the number of Bombardment impacts.",
     "classes": [
@@ -761,7 +761,7 @@
     ]
   },
   {
-    "id": 77,
+    "id": 2077,
     "name": "Bastion's Revered",
     "affix": "Frenzy now stacks up to 10 times.",
     "classes": [
@@ -769,7 +769,7 @@
     ]
   },
   {
-    "id": 78,
+    "id": 2078,
     "name": "Fury of the Vanished Peak",
     "affix": "Reduces the Fury cost of Seismic Slam by 40?50%.",
     "classes": [
@@ -777,7 +777,7 @@
     ]
   },
   {
-    "id": 79,
+    "id": 2079,
     "name": "Madawc's Sorrow",
     "affix": "Stun enemies for 2 seconds the first time you hit them.",
     "classes": [
@@ -785,7 +785,7 @@
     ]
   },
   {
-    "id": 80,
+    "id": 2080,
     "name": "The Gavel of Judgment",
     "affix": "Hammer of the Ancients returns 20?25 Fury if it hits 3 or less enemies.",
     "classes": [
@@ -793,7 +793,7 @@
     ]
   },
   {
-    "id": 81,
+    "id": 2081,
     "name": "Cluckeye",
     "affix": "50% chance to cluck when attacking.",
     "classes": [
@@ -803,7 +803,7 @@
     ]
   },
   {
-    "id": 82,
+    "id": 2082,
     "name": "Kridershot",
     "affix": "Elemental Arrow now generates 4 Hatred.",
     "classes": [
@@ -811,7 +811,7 @@
     ]
   },
   {
-    "id": 83,
+    "id": 2083,
     "name": "Leonine Bow of Hashir",
     "affix": "Bola Shot has a 20% chance on explosion to pull in all enemies within 24 yards.",
     "classes": [
@@ -819,7 +819,7 @@
     ]
   },
   {
-    "id": 84,
+    "id": 2084,
     "name": "Odyssey's End",
     "affix": "Enemies snared by your Entangling Shot take 20?25% increased damage from all sources.",
     "classes": [
@@ -827,7 +827,7 @@
     ]
   },
   {
-    "id": 85,
+    "id": 2085,
     "name": "The Raven's Wing",
     "affix": "A raven flies to your side.",
     "classes": [
@@ -837,7 +837,7 @@
     ]
   },
   {
-    "id": 86,
+    "id": 2086,
     "name": "Yang's Recurve",
     "affix": "Multishot attacks 40% faster.",
     "classes": [
@@ -845,7 +845,7 @@
     ]
   },
   {
-    "id": 87,
+    "id": 2087,
     "name": "Buriza-Do Kyanon",
     "affix": "Your projectiles pierce 2 additional times.",
     "classes": [
@@ -853,7 +853,7 @@
     ]
   },
   {
-    "id": 88,
+    "id": 2088,
     "name": "Chanon Bolter",
     "affix": "Your Spike Traps lure enemies to them. Enemies may be taunted once every 12 seconds.",
     "classes": [
@@ -861,7 +861,7 @@
     ]
   },
   {
-    "id": 89,
+    "id": 2089,
     "name": "Demon Machine",
     "affix": "65% chance to shoot explosive bolts when attacking.",
     "classes": [
@@ -871,7 +871,7 @@
     ]
   },
   {
-    "id": 90,
+    "id": 2090,
     "name": "Hellrack",
     "affix": "Chance to root enemies to the ground when you hit them.",
     "classes": [
@@ -881,7 +881,7 @@
     ]
   },
   {
-    "id": 91,
+    "id": 2091,
     "name": "Pus Spitter",
     "affix": "50% chance to lob an acid blob when attacking.",
     "classes": [
@@ -891,7 +891,7 @@
     ]
   },
   {
-    "id": 92,
+    "id": 2092,
     "name": "Wojahnni Assaulter",
     "affix": "Rapid Fire deals 40% more damage for every second that you channel. Stacks up to 4 times.",
     "classes": [
@@ -899,7 +899,7 @@
     ]
   },
   {
-    "id": 93,
+    "id": 2093,
     "name": "Calamity",
     "affix": "Enemies you hit become Marked for Death.",
     "classes": [
@@ -907,7 +907,7 @@
     ]
   },
   {
-    "id": 94,
+    "id": 2094,
     "name": "Danetta's Revenge",
     "affix": "Vault gains the effect of the Rattling Roll rune.",
     "classes": [
@@ -915,7 +915,7 @@
     ]
   },
   {
-    "id": 95,
+    "id": 2095,
     "name": "Danetta's Spite",
     "affix": "Leave a clone of yourself behind after using Vault.",
     "classes": [
@@ -923,7 +923,7 @@
     ]
   },
   {
-    "id": 96,
+    "id": 2096,
     "name": "Helltrapper",
     "affix": "10% chance on hit to summon a Spike Trap, Caltrops or Sentry",
     "classes": [
@@ -931,7 +931,7 @@
     ]
   },
   {
-    "id": 97,
+    "id": 2097,
     "name": "K'mar Tenclip",
     "affix": "Strafe gains the effect of the Drifting Shadow rune.",
     "classes": [
@@ -939,7 +939,7 @@
     ]
   },
   {
-    "id": 98,
+    "id": 2098,
     "name": "The Demon's Demise",
     "affix": "Spike Trap - Sticky Trap spreads to nearby enemies when it explodes.",
     "classes": [
@@ -947,7 +947,7 @@
     ]
   },
   {
-    "id": 99,
+    "id": 2099,
     "name": "Valla's Bequest",
     "affix": "Strafe projectiles pierce.",
     "classes": [
@@ -955,7 +955,7 @@
     ]
   },
   {
-    "id": 100,
+    "id": 2100,
     "name": "Aether Walker",
     "affix": "Teleport no longer has a cooldown but costs 25 Arcane Power.",
     "visibility": {
@@ -967,7 +967,7 @@
     ]
   },
   {
-    "id": 101,
+    "id": 2101,
     "name": "Gesture of Orpheus",
     "affix": "Reduces the cooldown of Slow Time by 40%.",
     "classes": [
@@ -975,7 +975,7 @@
     ]
   },
   {
-    "id": 102,
+    "id": 2102,
     "name": "Serpent's Sparker",
     "affix": "You may have one extra Hydra active at a time.",
     "classes": [
@@ -983,7 +983,7 @@
     ]
   },
   {
-    "id": 103,
+    "id": 2103,
     "name": "Slorak's Madness",
     "affix": "This wand finds your death humorous.",
     "classes": [
@@ -991,7 +991,7 @@
     ]
   },
   {
-    "id": 104,
+    "id": 2104,
     "name": "Wand of Woh",
     "affix": "3 additional Explosive Blasts are triggered after casting Explosive Blast.",
     "classes": [
@@ -999,7 +999,7 @@
     ]
   },
   {
-    "id": 105,
+    "id": 2105,
     "name": "Coven's Criterion",
     "affix": "You take 60% less damage from blocked attacks.",
     "classes": [
@@ -1012,7 +1012,7 @@
     ]
   },
   {
-    "id": 106,
+    "id": 2106,
     "name": "Defender of Westmarch",
     "affix": "Blocks have a chance of summoning a charging wolf that deals 1000% weapon damage to all enemies it passes through.",
     "classes": [
@@ -1024,7 +1024,7 @@
     ]
   },
   {
-    "id": 107,
+    "id": 2107,
     "name": "Denial",
     "affix": "Each enemy hit by your Sweep Attack increases the damage of your next Sweep Attack by 40%, stacking up to 5 times.",
     "classes": [
@@ -1032,7 +1032,7 @@
     ]
   },
   {
-    "id": 108,
+    "id": 2108,
     "name": "Eberli Charo",
     "affix": "Reduces the cooldown of Heaven's Fury by 50%.",
     "classes": [
@@ -1040,7 +1040,7 @@
     ]
   },
   {
-    "id": 109,
+    "id": 2109,
     "name": "Freeze of Deflection",
     "affix": "Blocking an attack has a chance to Freeze the attacker for 1.5 seconds.",
     "classes": [
@@ -1053,7 +1053,7 @@
     ]
   },
   {
-    "id": 110,
+    "id": 2110,
     "name": "Ivory Tower",
     "affix": "Blocks release forward a Fires of Heaven.",
     "classes": [
@@ -1061,7 +1061,7 @@
     ]
   },
   {
-    "id": 111,
+    "id": 2111,
     "name": "Vo'Toyias Spiker",
     "affix": "Enemies affected by Provoke take double damage from Thorns.",
     "classes": [
@@ -1069,7 +1069,7 @@
     ]
   },
   {
-    "id": 112,
+    "id": 2112,
     "name": "Wall of Man",
     "affix": "30% chance to be protected by a shield of bones when you are hit.",
     "classes": [
@@ -1082,7 +1082,7 @@
     ]
   },
   {
-    "id": 113,
+    "id": 2113,
     "name": "Akarat's Awakening",
     "affix": "Every successful block has a 25% chance to reduce all cooldowns by 1 second.",
     "classes": [
@@ -1090,7 +1090,7 @@
     ]
   },
   {
-    "id": 114,
+    "id": 2114,
     "name": "Frydehr's Wrath",
     "affix": "Condemn has no cooldown but instead costs 40 Wrath.",
     "classes": [
@@ -1098,7 +1098,7 @@
     ]
   },
   {
-    "id": 115,
+    "id": 2115,
     "name": "Guard of Johanna",
     "affix": "Blessed Hammer damage is increased by 250% for the first 3 enemies it hits.",
     "classes": [
@@ -1106,7 +1106,7 @@
     ]
   },
   {
-    "id": 116,
+    "id": 2116,
     "name": "Hallowed Bulwark",
     "affix": "Iron Skin also increases your Block Amount by 60%.",
     "classes": [
@@ -1114,7 +1114,7 @@
     ]
   },
   {
-    "id": 117,
+    "id": 2117,
     "name": "Hellskull",
     "affix": "Gain 10% increased damage while wielding a two-handed weapon.",
     "classes": [
@@ -1122,7 +1122,7 @@
     ]
   },
   {
-    "id": 118,
+    "id": 2118,
     "name": "Jekangbord",
     "affix": "Blessed Shield ricochets to 6 additional enemies",
     "classes": [
@@ -1130,7 +1130,7 @@
     ]
   },
   {
-    "id": 119,
+    "id": 2119,
     "name": "Piro Marella",
     "affix": "Reduces the Wrath cost of Shield Bash by 50%.",
     "classes": [
@@ -1138,7 +1138,7 @@
     ]
   },
   {
-    "id": 120,
+    "id": 2120,
     "name": "Salvation",
     "affix": "Blocked attacks heal you and your allies for 30% of the amount blocked",
     "classes": [
@@ -1146,7 +1146,7 @@
     ]
   },
   {
-    "id": 121,
+    "id": 2121,
     "name": "Sublime Conviction",
     "affix": "When you block, you have up to a 20% chance to Stun the attacker for 1.5 seconds based on your current Wrath.",
     "classes": [
@@ -1154,7 +1154,7 @@
     ]
   },
   {
-    "id": 122,
+    "id": 2122,
     "name": "The Final Witness",
     "affix": "Shield Glare now hits all enemies around you.",
     "classes": [
@@ -1162,7 +1162,7 @@
     ]
   },
   {
-    "id": 123,
+    "id": 2123,
     "name": "Unrelenting Phalanx",
     "affix": "Phalanx now casts twice.",
     "classes": [
@@ -1170,7 +1170,7 @@
     ]
   },
   {
-    "id": 124,
+    "id": 2124,
     "name": "Henri's Perquisition",
     "affix": "The first time an enemy deals damage to you, reduce that damage by 45-60% and Charm the enemy for 3 seconds.",
     "classes": [
@@ -1178,7 +1178,7 @@
     ]
   },
   {
-    "id": 125,
+    "id": 2125,
     "name": "Homunculus",
     "affix": "A Zombie Dog is automatically summoned to your side every 2 seconds.",
     "classes": [
@@ -1186,7 +1186,7 @@
     ]
   },
   {
-    "id": 126,
+    "id": 2126,
     "name": "Shukrani's Triumph",
     "affix": "Spirit Walk lasts until you attack or until an enemy is within 30 yards of you.",
     "classes": [
@@ -1194,7 +1194,7 @@
     ]
   },
   {
-    "id": 127,
+    "id": 2127,
     "name": "Uhkapian Serpent",
     "affix": "25?30% of the damage you take is redirected to your Zombie Dogs.",
     "classes": [
@@ -1202,7 +1202,7 @@
     ]
   },
   {
-    "id": 128,
+    "id": 2128,
     "name": "Cosmic Strand",
     "affix": "Teleport gains the effect of the Wormhole rune.",
     "classes": [
@@ -1210,7 +1210,7 @@
     ]
   },
   {
-    "id": 129,
+    "id": 2129,
     "name": "Light of Grace",
     "affix": "Ray of Frost now pierces.",
     "classes": [
@@ -1218,7 +1218,7 @@
     ]
   },
   {
-    "id": 130,
+    "id": 2130,
     "name": "Mirrorball",
     "affix": "Magic Missile fires 1?2 extra missiles.",
     "classes": [
@@ -1226,7 +1226,7 @@
     ]
   },
   {
-    "id": 131,
+    "id": 2131,
     "name": "Myken's Ball of Hate",
     "affix": "Electrocute can chain to enemies that have already been hit.",
     "classes": [
@@ -1234,7 +1234,7 @@
     ]
   },
   {
-    "id": 132,
+    "id": 2132,
     "name": "The Oculus",
     "affix": "Taking damage has up to a 15?20% chance to reset the cooldown on Teleport.",
     "classes": [
@@ -1242,7 +1242,7 @@
     ]
   },
   {
-    "id": 133,
+    "id": 2133,
     "name": "Triumvirate",
     "affix": "Your Signature Spells increase the damage of Arcane Orb by 75?100% for 6 seconds, stacking up to 3 times.",
     "classes": [
@@ -1250,7 +1250,7 @@
     ]
   },
   {
-    "id": 134,
+    "id": 2134,
     "name": "Winter Flurry",
     "affix": "Enemies killed by Cold damage have a 15?20% chance to release a Frost Nova.",
     "classes": [
@@ -1258,7 +1258,7 @@
     ]
   },
   {
-    "id": 135,
+    "id": 2135,
     "name": "Bombardier's Rucksack",
     "affix": "You may have 2 additional Sentries.",
     "classes": [
@@ -1266,7 +1266,7 @@
     ]
   },
   {
-    "id": 136,
+    "id": 2136,
     "name": "Dead Man's Legacy",
     "affix": "Multishot hits enemies below 60% health twice.",
     "classes": [
@@ -1274,7 +1274,7 @@
     ]
   },
   {
-    "id": 137,
+    "id": 2137,
     "name": "Emimei's Duffel",
     "affix": "Bolas now explode instantly.",
     "classes": [
@@ -1282,7 +1282,7 @@
     ]
   },
   {
-    "id": 138,
+    "id": 2138,
     "name": "Meticulous Bolts",
     "affix": "Elemental Arrow - Ball Lightning now travels at 40% speed.",
     "classes": [
@@ -1290,7 +1290,7 @@
     ]
   },
   {
-    "id": 139,
+    "id": 2139,
     "name": "Spines of Seething Hatred",
     "affix": "Chakram now generates 4 Hatred.",
     "classes": [
@@ -1298,7 +1298,7 @@
     ]
   },
   {
-    "id": 140,
+    "id": 2140,
     "name": "The Ninth Cirri Satchel",
     "affix": "Hungering Arrow has 25% additional chance to pierce.",
     "classes": [
@@ -1306,7 +1306,7 @@
     ]
   },
   {
-    "id": 141,
+    "id": 2141,
     "name": "SuWong Diviner",
     "affix": "Acid Cloud gains the effect of the Lob Blob Bomb rune.",
     "classes": [
@@ -1314,7 +1314,7 @@
     ]
   },
   {
-    "id": 142,
+    "id": 2142,
     "name": "Scrimshaw",
     "affix": "Reduces the Mana cost of Zombie Charger by 50%.",
     "classes": [
