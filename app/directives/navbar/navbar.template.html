@@ -24,21 +24,25 @@
 
                 <li class="dropdown">
                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                        {{vm.season() | capitalize}}
+                        {{vm.seasons.current() | capitalize}}
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li ng-repeat="s in vm.seasons" ng-click="vm.setSeason(s)"><a href="javascript:void(0);">{{s|capitalize}}</a></li>
+                        <li ng-click="vm.seasons.setCurrent('Non Season')"><a href="javascript:void(0);">Non Season</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li ng-repeat="s in vm.seasons.all()" ng-click="vm.seasons.setCurrent(s)"><a href="javascript:void(0);">{{s|capitalize}}</a></li>
                     </ul>
                 </li>
 
                 <li class="dropdown">
                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                        {{vm.className() | capitalize}}
+                        {{vm.classes.current().name | capitalize}}
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li ng-repeat="c in vm.classes" ng-click="vm.setClass(c)"><a href="javascript:void(0);">{{c.name|capitalize}}</a></li>
+                        <li ng-repeat="c in vm.classes.distinct()" ng-click="vm.classes.setCurrent(c.id)"><a href="javascript:void(0);">{{c.name|capitalize}}</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li ng-click="vm.classes.setCurrent(0)"><a href="javascript:void(0);">All</a></li>
                     </ul>
                 </li>
 

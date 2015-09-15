@@ -7,20 +7,13 @@
         var vm = this;
 
         vm.gameModes = gameModes;
+        vm.seasons = seasons;
+        vm.classes = classes;
 
-        vm.classes = classes.all;
-        vm.setClass = classes.set;
-        vm.class = classes.current;
-        vm.className = classes.currentName;
-
-        vm.seasons = seasons.all;
-        vm.setSeason = seasons.set;
-        vm.season = seasons.current;
-
-        vm.showDisclaimer = function(){
+        vm.showDisclaimer = function() {
             localStorage.setItem('disclaimerRead', 0);
         };
-        vm.showOptions = function(){
+        vm.showOptions = function() {
             localStorage.setItem('showOptions', "true");
         };
     }

@@ -3,8 +3,8 @@
 
     angular.module('d3-item-manager').factory('gameModes', gameModes);
 
-    var keyAll = 'gameModes';
-    var keyCurrent = 'gameMode';
+    var keyAll = 'allGameModes';
+    var keyCurrent = 'currentGameMode';
     var defaultSet = ['Softcore', 'Hardcore'];
 
     var _all = JSON.parse(localStorage.getItem(keyAll)) || defaultSet;
@@ -12,14 +12,14 @@
 
     function gameModes() {
         return {
-            current: current,
-            setCurrent:     setCurrent,
-            remove:  remove,
-            add:     add,
-            all:     all
+            current:    current,
+            setCurrent: setCurrent,
+            remove:     remove,
+            add:        add,
+            all:        all
         };
 
-        function current(){
+        function current() {
             return _current;
         }
 

@@ -3,34 +3,41 @@
 
     angular.module('d3-item-manager').factory('classes', classes);
 
-    var all = [
-        {id:   1,name: 'monk'},
-        {id:   2,name: 'demon-hunter'},
-        {id:   3,name: 'crusader'},
-        {id:   4,name: 'witch-doctor'},
-        {id:   5,name: 'wizard'},
-        {id:   6,name: 'barbarian'}
+    var keyCurrent = 'currentClass';
+
+    var _all = [
+        {id: 0, name: 'all'},
+        {id: 6, name: 'barbarian'},
+        {id: 3, name: 'crusader'},
+        {id: 2, name: 'demon-hunter'},
+        {id: 1, name: 'monk'},
+        {id: 4, name: 'witch-doctor'},
+        {id: 5, name: 'wizard'}
     ];
-    var current = all[0];
+    var _current = localStorage.getItem(keyCurrent) || 6;
 
     function classes() {
-        current = localStorage.getItem('class') || all[0].id;
-
         return {
-            all:     all,
-            current: function() {return current;},
-            currentName: currentName,
-            set:     set
+            all:        all,
+            distinct: distinct,
+            current:    current,
+            setCurrent: setCurrent
         };
 
-        function set(c) {
-            current = c.id;
-            localStorage.setItem('class', c.id)
+        function current() {
+            return _.find(all(), function(c) {return c.id == _current;});
         }
 
-        function currentName(){
-            var c = _.find(all, function(c){return c.id == current;});
-            return c.name;
+        function all() {
+            return _all;
+        }
+        function distinct(){
+            return _all.filter(function(c){return c.id != 0;});
+        }
+
+        function setCurrent(id) {
+            _current = id;
+            localStorage.setItem(keyCurrent, id)
         }
     }
 
