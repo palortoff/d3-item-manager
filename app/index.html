@@ -18,8 +18,11 @@
 <options></options>
 <div ng-controller="MainController as main">
     <div class="well well-sm">
-        <label for="search">Search item</label>
-        <input type="text" id="search" ng-model="main.itemFilter.filter">
+        <div class="form-inline">
+            <div class="form-group"></div>
+            <label for="search">Search item: </label>
+            <input class="form-control" type="text" id="search" ng-model="main.itemFilter.filter">
+        </div>
     </div>
     <ul class="nav nav-tabs">
         <li

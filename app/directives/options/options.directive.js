@@ -15,13 +15,23 @@
             controllerAs: 'vm'
         };
 
-        function OptionsController(gameModes){
+        function OptionsController(gameModes, seasons){
             var vm = this;
-            vm.showOptions= showOptions;
-            vm.dismiss = dismiss;
+            vm.seasonsExpanded = true;
+
             vm.gameModes = gameModes;
             vm.addNewGameMode = addNewGameMode;
 
+            vm.seasons = seasons;
+            vm.addNewSeason = addNewSeason;
+
+            vm.showOptions= showOptions;
+            vm.dismiss = dismiss;
+
+            function addNewSeason(){
+                seasons.add(vm.newSeason);
+                vm.newSeason='';
+            }
             function addNewGameMode(){
                 gameModes.add(vm.newGameMode);
                 vm.newGameMode='';

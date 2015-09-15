@@ -24,13 +24,13 @@
 
                 <li class="dropdown">
                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                        {{vm.seasons.current() | capitalize}}
+                        {{vm.seasons.current()}}
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
                         <li ng-click="vm.seasons.setCurrent('Non Season')"><a href="javascript:void(0);">Non Season</a></li>
                         <li role="separator" class="divider"></li>
-                        <li ng-repeat="s in vm.seasons.all()" ng-click="vm.seasons.setCurrent(s)"><a href="javascript:void(0);">{{s|capitalize}}</a></li>
+                        <li ng-repeat="s in vm.seasons.all()" ng-click="vm.seasons.setCurrent(s)"><a href="javascript:void(0);">{{s}}</a></li>
                     </ul>
                 </li>
 
