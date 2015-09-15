@@ -6,11 +6,7 @@
     function NavBarController(classes, gameModes, seasons) {
         var vm = this;
 
-        vm.gmm = gameModes;
-
-        vm.gameModes = gameModes.all;
-        vm.gameMode = gameModes.current;
-        vm.setGameMode = gameModes.set;
+        vm.gameModes = gameModes;
 
         vm.classes = classes.all;
         vm.setClass = classes.set;

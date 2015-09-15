@@ -3,45 +3,55 @@
 
     angular.module('d3-item-manager').factory('gameModes', gameModes);
 
-    function gameModes() {
-        var all = JSON.parse(localStorage.getItem('gameModes')) || ['Softcore', 'Hardcore'];
-        var current = localStorage.getItem('gameMode') || all[0];
+    var keyAll = 'gameModes';
+    var keyCurrent = 'gameMode';
+    var defaultSet = ['Softcore', 'Hardcore'];
 
+    var _all = JSON.parse(localStorage.getItem(keyAll)) || defaultSet;
+    var _current = localStorage.getItem(keyCurrent) || _all[0];
+
+    function gameModes() {
         return {
-            all:     all,
-            current: function() {return current;},
-            set:     set,
+            current: current,
+            setCurrent:     setCurrent,
             remove:  remove,
             add:     add,
-
-            allGameModes: allGameModes
+            all:     all
         };
 
-        function allGameModes(){
-            return all;
+        function current(){
+            return _current;
         }
 
-        function set(c) {
-            current = c;
-            localStorage.setItem('gameMode', c)
+        function all() {
+            return _all;
+        }
+
+        function setCurrent(c) {
+            _current = c;
+            localStorage.setItem(keyCurrent, c)
+        }
+
+        function setDefault() {
+            if (!_.find(all, current)) {
+                setCurrent(_all[0]);
+            }
         }
 
         function remove(gm) {
-            all = all.filter(function(item){return item !== gm;});
-            if (!_.find(all, current)){
-                set(all[0]);
-            }
+            _all = _all.filter(function(item) {return item !== gm;});
+            setDefault();
             save();
         }
 
-        function add(gm){
+        function add(gm) {
             if (_.contains(all, gm)) return;
-            all.push(gm);
+            _all.push(gm);
             save();
         }
 
-        function save(){
-            localStorage.setItem('gameModes', JSON.stringify(all));
+        function save() {
+            localStorage.setItem(keyAll, JSON.stringify(_all));
         }
     }
 

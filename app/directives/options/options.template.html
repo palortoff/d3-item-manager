@@ -5,12 +5,12 @@
             <ul class="list-group">
                 <li class="list-group-item  active">Game Modes</li>
                 <li class="list-group-item"
-                    ng-repeat="gm in vm.gameModes.allGameModes()">
+                    ng-repeat="gm in vm.gameModes.all()">
                     {{gm}}
                     <i class="fa fa-times-circle fa-lg pull-right text-danger"
                        title="Delete"
                        ng-click="vm.gameModes.remove(gm)"
-                       ng-if="vm.gameModes.allGameModes().length > 1"></i>
+                       ng-if="vm.gameModes.all().length > 1"></i>
                 </li>
                 <li class="list-group-item">
                     <form class="form-inline" ng-submit="vm.addNewGameMode()">

@@ -14,11 +14,11 @@
                 <li><a href="javascript:void(0);" ng-click="vm.showDisclaimer()"><i class="fa fa-info-circle fa-lg"></i></a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                        {{vm.gmm.current()}}
+                        {{vm.gameModes.current()}}
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li ng-repeat="gm in vm.gmm.allGameModes()" ng-click="vm.gmm.set(gm)"><a href="javascript:void(0);">{{gm}}</a></li>
+                        <li ng-repeat="gm in vm.gameModes.all()" ng-click="vm.gameModes.setCurrent(gm)"><a href="javascript:void(0);">{{gm}}</a></li>
                     </ul>
                 </li>
 
