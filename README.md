@@ -1,4 +1,4 @@
-# Diablo 3 Item Manager
+# [Diablo 3 Item Manager](http://palortoff.github.io/d3-item-manager)
 
 Simple web app to manage your Diablo 3 items.
 
