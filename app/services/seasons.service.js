@@ -8,7 +8,7 @@
     var defaultSet = ['Season 4'];
 
     var _all = JSON.parse(localStorage.getItem(keyAll)) || defaultSet;
-    var _current = localStorage.getItem(keyCurrent) || _all[0];
+    var _current = localStorage.getItem(keyCurrent) || "Non Season";
 
     function seasons() {
         return {
