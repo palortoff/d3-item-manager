@@ -16,20 +16,8 @@
 
 <disclaimer></disclaimer>
 <options></options>
-<div ng-controller="MainController as main">
-    <item-filter></item-filter>
-    
-    <ul class="nav nav-tabs">
-        <li
-            ng-repeat="section in main.sections"
-            role="presentation"
-            ng-class="{active: main.section() === section}"
-            ng-click="main.setSection(section)">
-            <a href="javascript:void(0);"> {{section | capitalize}}</a>
-        </li>
-    </ul>
-    <ng-view></ng-view>
-</div>
+
+<ng-view></ng-view>
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
