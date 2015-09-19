@@ -6,15 +6,16 @@
     function itemFilter(){
         return {
             restrict:'E',
-            scope: {},
+            scope: {
+                filterValue:'='
+            },
+            bindToController: true,
             templateUrl: 'directives/itemFilter/itemFilter.template.html',
             controller: ItemFilterController,
             controllerAs: 'vm'
         };
 
-        function ItemFilterController(itemFilter){
-            var vm = this;
-            vm.itemFilter = itemFilter;
+        function ItemFilterController(){
         }
     }
 

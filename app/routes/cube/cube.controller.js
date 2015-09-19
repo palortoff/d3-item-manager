@@ -3,12 +3,12 @@
 
     angular.module('d3-item-manager').controller('CubeController', CubeController);
 
-    function CubeController(loadItems, sections, isItemVisible, gameModes, seasons, itemFilter, columns) {
+    function CubeController(loadItems, sections, isItemVisible, gameModes, seasons, columns) {
         var vm = this;
 
         vm.itemChanged = itemChanged;
 
-        vm.itemFilter = itemFilter;
+        vm.itemFilter = '';
 
         vm.sections = sections.all;
         vm.section = sections.current;
