@@ -1,6 +1,6 @@
 {
   "name": "d3-item-manager",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Item manager for diablo 3",
   "author": "palortoff",
   "license": "MIT",
@@ -20,19 +20,21 @@
   },
   "scripts": {
     "postinstall": "bower install",
-    "deploy": "npm run deploy_1",
-    "postdeploy_1": "npm run deploy_2",
-    "postdeploy_2": "npm run deploy_3",
-    "postdeploy_3": "npm run deploy_4",
-    "postdeploy_4": "npm run deploy_5",
-    "postdeploy_5": "npm run deploy_6",
-    "postdeploy_6": "npm run deploy_7",
+    "deploy": "npm run deploy_1 -s",
+    "postdeploy_1": "npm run deploy_2 -s",
+    "postdeploy_2": "npm run deploy_3 -s",
+    "postdeploy_3": "npm run deploy_4 -s",
+    "postdeploy_4": "npm run deploy_5 -s",
+    "postdeploy_5": "npm run deploy_6 -s",
+    "postdeploy_6": "npm run deploy_7 -s",
+    "postdeploy_7": "npm run deploy_8 -s",
     "deploy_1": "git checkout releases",
     "deploy_2": "git merge master",
     "deploy_3": "gulp",
     "deploy_4": "git add dist",
     "deploy_5": "git commit -m \"updated dist\"",
     "deploy_6": "git push",
-    "deploy_7": "git subtree push --prefix dist origin gh-pages"
+    "deploy_7": "git subtree push --prefix dist origin gh-pages",
+    "deploy_8": "git checkout master"
   }
 }

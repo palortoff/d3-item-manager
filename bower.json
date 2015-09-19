@@ -9,6 +9,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "fontawesome": "~4.4.0"
+    "fontawesome": "~4.4.0",
+    "bootswatch": "~3.3.5+3"
   }
 }
