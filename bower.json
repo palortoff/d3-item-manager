@@ -1,0 +1,14 @@
+{
+  "name": "d3-item-manager",
+  "version": "1.0.2",
+  "homepage": "https://github.com/palortoff/d3-item-manager",
+  "description": "Diablo 3 item manager",
+  "authors": [
+    "palortoff"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "fontawesome": "~4.4.0"
+  }
+}
