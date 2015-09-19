@@ -19,6 +19,9 @@
         vm.season = seasons.current;
         vm.columns = columns;
 
+        vm.toggle = toggle;
+        vm.class = getClass;
+
         init();
 
         function init() {
@@ -51,6 +54,34 @@
         function itemChanged(section) {
             localStorage.setItem(section, JSON.stringify(vm.tracking[section]));
         }
+
+        function toggle(item, column) {
+            if (!item.track[vm.gameMode()]) {
+                item.track[vm.gameMode()] = {};
+            }
+            if (!item.track[vm.gameMode()][vm.season()]) {
+                item.track[vm.gameMode()][vm.season()] = {};
+            }
+            item.track[vm.gameMode()][vm.season()][column] = !item.track[vm.gameMode()][vm.season()][column];
+        }
+
+        function getClass(item, column){
+            if (!isChecked(item, column)){
+                return '';
+            }
+            else{
+                return 'checked'
+            }
+        }
+        function isChecked(item, column){
+            try{
+                return item.track[vm.gameMode()][vm.season()][column];
+            }
+            catch(e){
+                return false;
+            }
+        }
+
     }
 
 })();

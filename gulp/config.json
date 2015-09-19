@@ -13,6 +13,9 @@
     ],
     "less": [
       "app/**/*.less"
+    ],
+    "lessInclude": [
+      "bower_components"
     ]
   },
   "port": 8047

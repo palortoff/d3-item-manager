@@ -10,7 +10,7 @@ var sourceMaps = require('gulp-sourcemaps');
 function task(){
     return gulp.src(config.app.less)
         .pipe(sourceMaps.init())
-        .pipe(less({paths: ['bower_components']}))
+        .pipe(less({paths: config.app.lessInclude}))
         .pipe(concat('app.css'))
         .pipe(sourceMaps.write('./'))
         .pipe(gulp.dest(config.buildTarget + '/css'));

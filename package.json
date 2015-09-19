@@ -19,6 +19,7 @@
     "rimraf": "^2.4.3"
   },
   "scripts": {
+    "postinstall": "bower install",
     "deploy": "npm run deploy_1",
     "postdeploy_1": "npm run deploy_2",
     "postdeploy_2": "npm run deploy_3",
