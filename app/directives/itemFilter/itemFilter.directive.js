@@ -16,6 +16,17 @@
         };
 
         function ItemFilterController(){
+            var vm = this;
+            vm.clear = clear;
+            vm.showClear = showClear;
+
+            function clear(){
+                vm.filterValue = '';
+            }
+
+            function showClear(){
+                return vm.filterValue.length > 0;
+            }
         }
     }
 

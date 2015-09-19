@@ -1,8 +1,7 @@
 <div class="well well-sm">
-    <div class="form-inline">
-        <div class="form-group">
-            <label for="search">Search item: </label>
-            <input class="form-control" type="text" id="search" ng-model="vm.filterValue">
-        </div>
+    <label for="search">Search item: </label>
+    <div class="btn-group">
+        <input class="form-control" type="text" id="search" ng-model="vm.filterValue">
+        <span id="searchclear" class="glyphicon glyphicon-remove-circle" ng-click="vm.clear()" ng-show="vm.showClear()"></span>
     </div>
 </div>
