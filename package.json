@@ -1,6 +1,6 @@
 {
   "name": "d3-item-manager",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Item manager for diablo 3",
   "author": "palortoff",
   "license": "MIT",
@@ -19,6 +19,7 @@
     "rimraf": "^2.4.3"
   },
   "scripts": {
+    "postinstall": "bower install",
     "deploy": "npm run deploy_1",
     "postdeploy_1": "npm run deploy_2",
     "postdeploy_2": "npm run deploy_3",

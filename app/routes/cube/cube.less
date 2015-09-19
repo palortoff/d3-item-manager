@@ -1,14 +1,22 @@
 // TODO: use variable for color
+//noinspection CssUnknownTarget
+@import "fontawesome/less/variables.less";
+
 .table-kenais {
   tbody {
     tr:nth-of-type(6n+1),
     tr:nth-of-type(6n+2),
-    tr:nth-of-type(6n+3)
-    {
+    tr:nth-of-type(6n+3) {
       background-color: #3d3d3d;
-
-      &:hover{
-        //background-color: red;
+    }
+    td.check {
+      &:hover {
+        background-color: #6f6f6f;
+      }
+      &.checked {
+        i.item-checked:before {
+          content: @fa-var-check;
+        }
       }
     }
   }

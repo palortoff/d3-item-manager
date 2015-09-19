@@ -3,12 +3,12 @@
 
     angular.module('d3-item-manager').controller('CubeController', CubeController);
 
-    function CubeController(loadItems, sections, isItemVisible, gameModes, seasons, itemFilter, columns) {
+    function CubeController(loadItems, sections, isItemVisible, gameModes, seasons, columns) {
         var vm = this;
 
         vm.itemChanged = itemChanged;
 
-        vm.itemFilter = itemFilter;
+        vm.itemFilter = '';
 
         vm.sections = sections.all;
         vm.section = sections.current;
@@ -18,6 +18,9 @@
         vm.gameMode = gameModes.current;
         vm.season = seasons.current;
         vm.columns = columns;
+
+        vm.toggle = toggle;
+        vm.class = getClass;
 
         init();
 
@@ -51,6 +54,34 @@
         function itemChanged(section) {
             localStorage.setItem(section, JSON.stringify(vm.tracking[section]));
         }
+
+        function toggle(item, column) {
+            if (!item.track[vm.gameMode()]) {
+                item.track[vm.gameMode()] = {};
+            }
+            if (!item.track[vm.gameMode()][vm.season()]) {
+                item.track[vm.gameMode()][vm.season()] = {};
+            }
+            item.track[vm.gameMode()][vm.season()][column] = !item.track[vm.gameMode()][vm.season()][column];
+        }
+
+        function getClass(item, column){
+            if (!isChecked(item, column)){
+                return '';
+            }
+            else{
+                return 'checked'
+            }
+        }
+        function isChecked(item, column){
+            try{
+                return item.track[vm.gameMode()][vm.season()][column];
+            }
+            catch(e){
+                return false;
+            }
+        }
+
     }
 
 })();
