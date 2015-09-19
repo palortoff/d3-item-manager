@@ -376,6 +376,41 @@
 (function() {
     'use strict';
 
+    angular.module('d3-item-manager').controller('NavBarController', NavBarController);
+
+    function NavBarController(classes, gameModes, seasons) {
+        var vm = this;
+
+        vm.gameModes = gameModes;
+        vm.seasons = seasons;
+        vm.classes = classes;
+
+        vm.showDisclaimer = function() {
+            localStorage.setItem('disclaimerRead', 0);
+        };
+        vm.showOptions = function() {
+            localStorage.setItem('showOptions', "true");
+        };
+    }
+    NavBarController.$inject = ["classes", "gameModes", "seasons"];
+})();
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').directive('navBar', function () {
+        return {
+            restrict:'E',
+            templateUrl: 'directives/navbar/navbar.template.html',
+            scope: {},
+            controller: 'NavBarController',
+            controllerAs: 'vm'
+        };
+    })
+})();
+(function() {
+    'use strict';
+
     angular.module('d3-item-manager').directive('options', options);
 
     var disclaimerVersion = 1;
@@ -538,40 +573,5 @@
     }
     CubeController.$inject = ["loadItems", "sections", "isItemVisible", "gameModes", "seasons", "columns"];
 
-})();
-(function() {
-    'use strict';
-
-    angular.module('d3-item-manager').controller('NavBarController', NavBarController);
-
-    function NavBarController(classes, gameModes, seasons) {
-        var vm = this;
-
-        vm.gameModes = gameModes;
-        vm.seasons = seasons;
-        vm.classes = classes;
-
-        vm.showDisclaimer = function() {
-            localStorage.setItem('disclaimerRead', 0);
-        };
-        vm.showOptions = function() {
-            localStorage.setItem('showOptions', "true");
-        };
-    }
-    NavBarController.$inject = ["classes", "gameModes", "seasons"];
-})();
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').directive('navBar', function () {
-        return {
-            restrict:'E',
-            templateUrl: 'directives/navbar/navbar.template.html',
-            scope: {},
-            controller: 'NavBarController',
-            controllerAs: 'vm'
-        };
-    })
 })();
 //# sourceMappingURL=app.js.map

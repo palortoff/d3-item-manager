@@ -40,7 +40,7 @@ options i.text-danger {
   background-color: #3d3d3d;
 }
 .table-kenais tbody td.check:hover {
-  background-color: #6f6f6f;
+  background-color: #464545;
 }
 .table-kenais tbody td.check.checked i.item-checked:before {
   content: "\f00c";
