@@ -34,14 +34,6 @@
 (function() {
     'use strict';
 
-    angular.module('d3-item-manager').value('itemFilter', {
-        filter: ''
-    });
-
-})();
-(function() {
-    'use strict';
-
     angular.module('d3-item-manager').config(["$routeProvider", function($routeProvider) {
 
         $routeProvider.
@@ -221,18 +213,15 @@
 
     angular.module('d3-item-manager').factory('loadItems', loadItems);
 
-    function loadItems($http){
-        return  function (section)
-        {
-            return $http.get('items/'+section+'.json').
+    function loadItems($http) {
+        return function(section) {
+            return $http.get('items/' + section + '.json?' + Date.now()).
                 then(function(result) {
                     return result.data;
                 });
         }
     }
     loadItems.$inject = ["$http"];
-
-
 })();
 (function() {
     'use strict';
@@ -354,37 +343,35 @@
 (function() {
     'use strict';
 
-    angular.module('d3-item-manager').controller('NavBarController', NavBarController);
+    angular.module('d3-item-manager').directive('itemFilter', itemFilter);
 
-    function NavBarController(classes, gameModes, seasons) {
-        var vm = this;
-
-        vm.gameModes = gameModes;
-        vm.seasons = seasons;
-        vm.classes = classes;
-
-        vm.showDisclaimer = function() {
-            localStorage.setItem('disclaimerRead', 0);
-        };
-        vm.showOptions = function() {
-            localStorage.setItem('showOptions', "true");
-        };
-    }
-    NavBarController.$inject = ["classes", "gameModes", "seasons"];
-})();
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').directive('navBar', function () {
+    function itemFilter(){
         return {
             restrict:'E',
-            templateUrl: 'directives/navbar/navbar.template.html',
-            scope: {},
-            controller: 'NavBarController',
+            scope: {
+                filterValue:'='
+            },
+            bindToController: true,
+            templateUrl: 'directives/itemFilter/itemFilter.template.html',
+            controller: ItemFilterController,
             controllerAs: 'vm'
         };
-    })
+
+        function ItemFilterController(){
+            var vm = this;
+            vm.clear = clear;
+            vm.showClear = showClear;
+
+            function clear(){
+                vm.filterValue = '';
+            }
+
+            function showClear(){
+                return vm.filterValue.length > 0;
+            }
+        }
+    }
+
 })();
 (function() {
     'use strict';
@@ -445,14 +432,36 @@
 (function() {
     'use strict';
 
+    angular.module('d3-item-manager').directive('sectionPicker', sectionPicker);
+
+    function sectionPicker(){
+        SectionPickerController.$inject = ["sections"];
+        return {
+            restrict:'E',
+            scope: {},
+            templateUrl: 'directives/sectionPicker/sectionPicker.template.html',
+            controller: SectionPickerController,
+            controllerAs: 'vm'
+        };
+
+        function SectionPickerController(sections){
+            var vm = this;
+            vm.sections = sections;
+        }
+    }
+
+})();
+(function() {
+    'use strict';
+
     angular.module('d3-item-manager').controller('CubeController', CubeController);
 
-    function CubeController(loadItems, sections, isItemVisible, gameModes, seasons, itemFilter, columns) {
+    function CubeController(loadItems, sections, isItemVisible, gameModes, seasons, columns) {
         var vm = this;
 
         vm.itemChanged = itemChanged;
 
-        vm.itemFilter = itemFilter;
+        vm.itemFilter = '';
 
         vm.sections = sections.all;
         vm.section = sections.current;
@@ -462,6 +471,9 @@
         vm.gameMode = gameModes.current;
         vm.season = seasons.current;
         vm.columns = columns;
+
+        vm.toggle = toggle;
+        vm.class = getClass;
 
         init();
 
@@ -495,92 +507,71 @@
         function itemChanged(section) {
             localStorage.setItem(section, JSON.stringify(vm.tracking[section]));
         }
-    }
-    CubeController.$inject = ["loadItems", "sections", "isItemVisible", "gameModes", "seasons", "itemFilter", "columns"];
 
-})();
-(function() {
-    'use strict';
-    angular.module('d3-item-manager').controller('EditorController', EditorController);
-
-    function EditorController($q, loadItems, sections, isItemVisible, classes) {
-        var vm = this;
-
-        vm.isVisible = isItemVisible;
-
-        vm.sections = sections.all;
-        vm.section = sections.current;
-
-        vm.toggleVisibility = toggleVisibility;
-
-        init();
-
-        function init() {
-            sections.all.forEach(function(section) {load(section)});
+        function toggle(item, column) {
+            if (!item.track[vm.gameMode()]) {
+                item.track[vm.gameMode()] = {};
+            }
+            if (!item.track[vm.gameMode()][vm.season()]) {
+                item.track[vm.gameMode()][vm.season()] = {};
+            }
+            item.track[vm.gameMode()][vm.season()][column] = !item.track[vm.gameMode()][vm.season()][column];
         }
 
-
-
-        function load(section) {
-            _loadItems(section).
-                then(function(data) {
-                    vm[section] = data;
-                }).
-                then(addVisibility.bind(null, section));
-        }
-
-        function _loadItems(section){
-            var data = localStorage.getItem('json_' + section);
-            if (data){
-                data = JSON.parse(data);
-                return $q.when(data);
+        function getClass(item, column){
+            if (!isChecked(item, column)){
+                return '';
             }
             else{
-                return loadItems(section);
+                return 'checked'
+            }
+        }
+        function isChecked(item, column){
+            try{
+                return item.track[vm.gameMode()][vm.season()][column];
+            }
+            catch(e){
+                return false;
             }
         }
 
-        function addVisibility(section) {
-            vm[section].forEach(function(item) {
-                if (!item.classes) {
-                    item.classes = [];
-                }
-            })
-        }
-
-        function toggleVisibility(item) {
-            if (isItemVisible(item)) {
-                item.classes = item.classes.filter(function(c){return c != classes.current();});
-            }
-            else {
-                item.classes.push(classes.current());
-            }
-
-            saveSection();
-        }
-
-        function saveSection(){
-            localStorage.setItem('json_' + sections.current(), JSON.stringify(vm[sections.current()]));
-        }
     }
-    EditorController.$inject = ["$q", "loadItems", "sections", "isItemVisible", "classes"];
+    CubeController.$inject = ["loadItems", "sections", "isItemVisible", "gameModes", "seasons", "columns"];
 
 })();
 (function() {
     'use strict';
 
-    angular.module('d3-item-manager').controller('MainController', MainController);
+    angular.module('d3-item-manager').controller('NavBarController', NavBarController);
 
-    function MainController(sections, itemFilter) {
+    function NavBarController(classes, gameModes, seasons) {
         var vm = this;
 
-        vm.sections = sections.all;
-        vm.section = sections.current;
-        vm.setSection = sections.set;
+        vm.gameModes = gameModes;
+        vm.seasons = seasons;
+        vm.classes = classes;
 
-        vm.itemFilter = itemFilter;
+        vm.showDisclaimer = function() {
+            localStorage.setItem('disclaimerRead', 0);
+        };
+        vm.showOptions = function() {
+            localStorage.setItem('showOptions', "true");
+        };
     }
-    MainController.$inject = ["sections", "itemFilter"];
+    NavBarController.$inject = ["classes", "gameModes", "seasons"];
+})();
 
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').directive('navBar', function () {
+        return {
+            restrict:'E',
+            templateUrl: 'directives/navbar/navbar.template.html',
+            scope: {},
+            controller: 'NavBarController',
+            controllerAs: 'vm'
+        };
+    })
 })();
 //# sourceMappingURL=app.js.map
