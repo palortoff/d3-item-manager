@@ -64,6 +64,12 @@
                 item.track[vm.gameMode()][vm.season()] = {};
             }
             item.track[vm.gameMode()][vm.season()][column] = !item.track[vm.gameMode()][vm.season()][column];
+            save();
+        }
+
+        function save(){
+            // TODO: not optimal, but this will be removed when new item structure is implemented.
+            _.forEach(sections.all, itemChanged);
         }
 
         function getClass(item, column) {
