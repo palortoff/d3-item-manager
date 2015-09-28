@@ -61,7 +61,7 @@
   },
   {
     "id": 1006,
-    "name": "Leorics Crown",
+    "name": "Leoric's Crown",
     "affix": "Increase the effect of any gem socketed into this item by 100%.",
     "classes": [
       6,
@@ -248,7 +248,6 @@
     "name": "Velvet Camaral",
     "affix": "Double the number of enemies your Electrocute jumps to.",
     "classes": [
-      4,
       5
     ]
   },
@@ -330,7 +329,7 @@
   },
   {
     "id": 1036,
-    "name": "Chaigmail",
+    "name": "Chaingmail",
     "affix": "After earning a survival bonus, quickly heal to full Life.",
     "classes": [
       6,
@@ -543,7 +542,7 @@
   },
   {
     "id": 1057,
-    "name": "Sanguinary Vambracers",
+    "name": "Sanguinary Vambraces",
     "affix": "Chance on being hit to deal 1000% of your Thorns damage to nearby enemies.",
     "classes": [
       1,
@@ -1028,7 +1027,7 @@
   },
   {
     "id": 1102,
-    "name": "Illusionary Boots",
+    "name": "Illusory Boots",
     "affix": "You may move unhindered through enemies.",
     "classes": [
       6,

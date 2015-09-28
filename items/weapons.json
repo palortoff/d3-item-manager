@@ -440,7 +440,7 @@
   },
   {
     "id": 2044,
-    "name": "Remorsless",
+    "name": "Remorseless",
     "affix": "Hammer of the Ancients has a 25?30% chance to summon an Ancient for 20 seconds.",
     "classes": [
       6
@@ -574,7 +574,7 @@
   },
   {
     "id": 2056,
-    "name": "Ahavarion,Spear of Lycander",
+    "name": "Ahavarion, Spear of Lycander",
     "affix": "Chance on killing a demon to gain a random Shrine effect.",
     "classes": [
       1,
