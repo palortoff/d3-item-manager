@@ -34,27 +34,6 @@
 (function() {
     'use strict';
 
-    angular.module('d3-item-manager').config(["$routeProvider", function($routeProvider) {
-
-        $routeProvider.
-            when('/', {
-                redirectTo: '/cube'
-            }).
-            when('/cube', {
-                templateUrl: 'routes/cube/cube.template.html',
-                controller:'CubeController',
-                controllerAs: 'vm'
-            }).
-            when('/editor', {
-                templateUrl: 'routes/editor/editor.template.html',
-                controller: 'EditorController',
-                controllerAs: 'vm'
-            });
-    }]);
-})();
-(function() {
-    'use strict';
-
     angular.module('d3-item-manager').factory('classes', classes);
 
     var keyCurrent = 'currentClass';
@@ -308,13 +287,55 @@
 (function() {
     'use strict';
 
+    angular.module('d3-item-manager').factory('version', version);
+
+    function version($http) {
+        return {
+            get:        getVersion
+        };
+
+        function getVersion(){
+            return $http.get('version.json?' + Date.now()).
+                then(function(result) {
+                    return result.data;
+                });
+
+        }
+    }
+    version.$inject = ["$http"];
+
+})();
+(function() {
+    'use strict';
+
+    angular.module('d3-item-manager').config(["$routeProvider", function($routeProvider) {
+
+        $routeProvider.
+            when('/', {
+                redirectTo: '/cube'
+            }).
+            when('/cube', {
+                templateUrl: 'routes/cube/cube.template.html',
+                controller:'CubeController',
+                controllerAs: 'vm'
+            }).
+            when('/editor', {
+                templateUrl: 'routes/editor/editor.template.html',
+                controller: 'EditorController',
+                controllerAs: 'vm'
+            });
+    }]);
+})();
+(function() {
+    'use strict';
+
     angular.module('d3-item-manager').directive('disclaimer', disclaimer);
 
     var disclaimerVersion = 1;
     var key = 'disclaimerRead';
 
     function disclaimer(){
-        DisclaimerController.$inject = ["d3Config"];
+        DisclaimerController.$inject = ["d3Config", "version"];
         return {
             restrict:'E',
             scope: {},
@@ -323,11 +344,17 @@
             controllerAs: 'vm'
         };
 
-        function DisclaimerController(d3Config){
+        function DisclaimerController(d3Config, version){
             var vm = this;
             vm.d3Config = d3Config;
             vm.showDisclaimer= showDisclaimer;
             vm.dismiss = dismiss;
+            vm.version = '';
+
+            version.get().then(function(version){
+                vm.version = version.version;
+            });
+
 
             function showDisclaimer(){
                 return localStorage.getItem(key) != disclaimerVersion;
@@ -509,6 +536,7 @@
 
         vm.toggle = toggle;
         vm.class = getClass;
+        vm.allColumns = allColumns;
 
         init();
 
@@ -551,25 +579,35 @@
                 item.track[vm.gameMode()][vm.season()] = {};
             }
             item.track[vm.gameMode()][vm.season()][column] = !item.track[vm.gameMode()][vm.season()][column];
+            save();
         }
 
-        function getClass(item, column){
-            if (!isChecked(item, column)){
+        function save(){
+            // TODO: not optimal, but this will be removed when new item structure is implemented.
+            _.forEach(sections.all, itemChanged);
+        }
+
+        function getClass(item, column) {
+            if (!isChecked(item, column)) {
                 return '';
             }
-            else{
+            else {
                 return 'checked'
             }
         }
-        function isChecked(item, column){
-            try{
+
+        function isChecked(item, column) {
+            try {
                 return item.track[vm.gameMode()][vm.season()][column];
             }
-            catch(e){
+            catch (e) {
                 return false;
             }
         }
 
+        function allColumns() {
+            return _.flatten(['Cubed', vm.columns.all()]);
+        }
     }
     CubeController.$inject = ["loadItems", "sections", "isItemVisible", "gameModes", "seasons", "columns"];
 
