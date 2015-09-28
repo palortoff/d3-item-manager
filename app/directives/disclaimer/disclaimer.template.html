@@ -1,7 +1,10 @@
 <div ng-show="vm.showDisclaimer()">
 
     <div class="panel panel-info">
-        <div class="panel-heading">Please read: <i class="fa fa-info-circle pull-right"></i></div>
+        <div class="panel-heading">
+            Please read:
+            <i class="fa fa-info-circle pull-right"></i>
+        </div>
         <div class="panel-body">
             <p>All data processed on this site is saved in your browser's local storage. No data is ever sent to a server.</p>
             <p>For any problems with the site please file an issue under <a href="{{vm.d3Config.githubUrl}}/issues">{{vm.d3Config.githubUrl}}/issues</a>.</p>
@@ -10,6 +13,7 @@
         </div>
         <div class="panel-footer">
             <button class="btn btn-primary" ng-click="vm.dismiss()">OK</button>
+            <span class="version pull-right">v{{vm.version}}</span>
         </div>
     </div>
 </div>

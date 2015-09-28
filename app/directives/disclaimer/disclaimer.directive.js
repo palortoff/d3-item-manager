@@ -15,11 +15,17 @@
             controllerAs: 'vm'
         };
 
-        function DisclaimerController(d3Config){
+        function DisclaimerController(d3Config, version){
             var vm = this;
             vm.d3Config = d3Config;
             vm.showDisclaimer= showDisclaimer;
             vm.dismiss = dismiss;
+            vm.version = '';
+
+            version.get().then(function(version){
+                vm.version = version.version;
+            });
+
 
             function showDisclaimer(){
                 return localStorage.getItem(key) != disclaimerVersion;
