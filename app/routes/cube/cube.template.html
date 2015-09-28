@@ -5,17 +5,12 @@
     <table class="table table-kenais">
         <thead>
             <th>Name</th>
-            <th>Cubed</th>
-            <th ng-repeat="column in vm.columns.all()">{{column}}</th>
+            <th ng-repeat="column in vm.allColumns()">{{column}}</th>
             <th>Affix</th>
         </thead>
         <tr ng-repeat="item in vm[section] | orderBy:'name' | filter: vm.itemFilter" ng-if="vm.isVisible(item)">
             <td>{{item.name}}</td>
-            <!--// TODO: add 'Cubed' to array-->
-            <td class="text-center check" ng-click="vm.toggle(item, 'Cubed')" ng-class="vm.class(item, 'Cubed')">
-                <i class="fa item-checked" ng-show="item.track[vm.gameMode()][vm.season()]['Cubed']"></i>
-            </td>
-            <td class="text-center check" ng-repeat="column in vm.columns.all()" ng-click="vm.toggle(item, column)" ng-class="vm.class(item, column)">
+            <td class="text-center check" ng-repeat="column in vm.allColumns()" ng-click="vm.toggle(item, column)" ng-class="vm.class(item, column)">
                 <i class="fa item-checked"></i>
             </td>
             <td>{{item.affix}}</td>

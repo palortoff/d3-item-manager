@@ -21,6 +21,7 @@
 
         vm.toggle = toggle;
         vm.class = getClass;
+        vm.allColumns = allColumns;
 
         init();
 
@@ -65,23 +66,27 @@
             item.track[vm.gameMode()][vm.season()][column] = !item.track[vm.gameMode()][vm.season()][column];
         }
 
-        function getClass(item, column){
-            if (!isChecked(item, column)){
+        function getClass(item, column) {
+            if (!isChecked(item, column)) {
                 return '';
             }
-            else{
+            else {
                 return 'checked'
             }
         }
-        function isChecked(item, column){
-            try{
+
+        function isChecked(item, column) {
+            try {
                 return item.track[vm.gameMode()][vm.season()][column];
             }
-            catch(e){
+            catch (e) {
                 return false;
             }
         }
 
+        function allColumns() {
+            return _.flatten(['Cubed', vm.columns.all()]);
+        }
     }
 
 })();
