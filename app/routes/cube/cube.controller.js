@@ -3,10 +3,8 @@
 
     angular.module('d3-item-manager').controller('CubeController', CubeController);
 
-    function CubeController(loadItems, sections, isItemVisible, gameModes, seasons, columns) {
+    function CubeController(items, itemTracking, sections, isItemVisible, gameModes, seasons, columns) {
         var vm = this;
-
-        vm.itemChanged = itemChanged;
 
         vm.itemFilter = '';
 
@@ -26,23 +24,16 @@
         init();
 
         function init() {
-            vm.tracking = {};
             sections.all.forEach(function(section) {load(section)});
         }
 
         function load(section) {
-            loadItems(section).
+            items.load(section).
                 then(function(data) {
                     vm[section] = data;
                 }).
-                then(loadTracking.bind(null, section)).
+                then(itemTracking.load.bind(null, section)).
                 then(addTracking.bind(null, section));
-        }
-
-        function loadTracking(section) {
-            vm.tracking[section] = JSON.parse(localStorage.getItem(section));
-            if (!vm.tracking[section]) vm.tracking[section] = {};
-            return vm.tracking[section];
         }
 
         function addTracking(section, tracking) {
@@ -52,9 +43,6 @@
             })
         }
 
-        function itemChanged(section) {
-            localStorage.setItem(section, JSON.stringify(vm.tracking[section]));
-        }
 
         function toggle(item, column) {
             if (!item.track[vm.gameMode()]) {
@@ -64,12 +52,7 @@
                 item.track[vm.gameMode()][vm.season()] = {};
             }
             item.track[vm.gameMode()][vm.season()][column] = !item.track[vm.gameMode()][vm.season()][column];
-            save();
-        }
-
-        function save(){
-            // TODO: not optimal, but this will be removed when new item structure is implemented.
-            _.forEach(sections.all, itemChanged);
+            itemTracking.save();
         }
 
         function getClass(item, column) {
