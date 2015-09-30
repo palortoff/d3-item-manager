@@ -34,6 +34,27 @@
 (function() {
     'use strict';
 
+    angular.module('d3-item-manager').config(["$routeProvider", function($routeProvider) {
+
+        $routeProvider.
+            when('/', {
+                redirectTo: '/cube'
+            }).
+            when('/cube', {
+                templateUrl: 'routes/cube/cube.template.html',
+                controller:'CubeController',
+                controllerAs: 'vm'
+            }).
+            when('/editor', {
+                templateUrl: 'routes/editor/editor.template.html',
+                controller: 'EditorController',
+                controllerAs: 'vm'
+            });
+    }]);
+})();
+(function() {
+    'use strict';
+
     angular.module('d3-item-manager').factory('classes', classes);
 
     var keyCurrent = 'currentClass';
@@ -190,17 +211,59 @@
 (function() {
     'use strict';
 
-    angular.module('d3-item-manager').factory('loadItems', loadItems);
+    angular.module('d3-item-manager').factory('items', items);
 
-    function loadItems($http) {
-        return function(section) {
+    function items($http) {
+        return {
+            load
+        };
+
+        function load(section) {
             return $http.get('items/' + section + '.json?' + Date.now()).
                 then(function(result) {
                     return result.data;
                 });
         }
     }
-    loadItems.$inject = ["$http"];
+    items.$inject = ["$http"];
+})();
+(function() {
+    'use strict';
+
+    angular.module('d3-item-manager').factory('itemTracking', itemTracking);
+
+    function itemTracking(sections, $timeout) {
+        var tracking = {};
+        var notifyTimer;
+        return {
+            load,
+            save
+        };
+
+        function load(section) {
+            tracking[section] = JSON.parse(localStorage.getItem(section));
+            if (!tracking[section]) tracking[section] = {};
+            return tracking[section];
+        }
+
+        function save() {
+// TODO: not optimal, but this will be removed when new item structure is implemented.
+            _.forEach(sections.all, saveSection);
+        }
+
+        function saveSection(section) {
+            notifySave();
+            localStorage.setItem(section, JSON.stringify(tracking[section]));
+        }
+
+        function notifySave(){
+            $timeout.cancel(notifyTimer);
+            notifyTimer = $timeout(function(){
+            toastr.success('Items saved', {timeOut: 1000});
+            }, 1000);
+        }
+    }
+    itemTracking.$inject = ["sections", "$timeout"];
 })();
 (function() {
     'use strict';
@@ -304,27 +367,6 @@
     }
     version.$inject = ["$http"];
 
-})();
-(function() {
-    'use strict';
-
-    angular.module('d3-item-manager').config(["$routeProvider", function($routeProvider) {
-
-        $routeProvider.
-            when('/', {
-                redirectTo: '/cube'
-            }).
-            when('/cube', {
-                templateUrl: 'routes/cube/cube.template.html',
-                controller:'CubeController',
-                controllerAs: 'vm'
-            }).
-            when('/editor', {
-                templateUrl: 'routes/editor/editor.template.html',
-                controller: 'EditorController',
-                controllerAs: 'vm'
-            });
-    }]);
 })();
 (function() {
     'use strict';
@@ -518,10 +560,8 @@
 
     angular.module('d3-item-manager').controller('CubeController', CubeController);
 
-    function CubeController(loadItems, sections, isItemVisible, gameModes, seasons, columns) {
+    function CubeController(items, itemTracking, sections, isItemVisible, gameModes, seasons, columns) {
         var vm = this;
-
-        vm.itemChanged = itemChanged;
 
         vm.itemFilter = '';
 
@@ -541,23 +581,16 @@
         init();
 
         function init() {
-            vm.tracking = {};
             sections.all.forEach(function(section) {load(section)});
         }
 
         function load(section) {
-            loadItems(section).
+            items.load(section).
                 then(function(data) {
                     vm[section] = data;
                 }).
-                then(loadTracking.bind(null, section)).
+                then(itemTracking.load.bind(null, section)).
                 then(addTracking.bind(null, section));
-        }
-
-        function loadTracking(section) {
-            vm.tracking[section] = JSON.parse(localStorage.getItem(section));
-            if (!vm.tracking[section]) vm.tracking[section] = {};
-            return vm.tracking[section];
         }
 
         function addTracking(section, tracking) {
@@ -567,9 +600,6 @@
             })
         }
 
-        function itemChanged(section) {
-            localStorage.setItem(section, JSON.stringify(vm.tracking[section]));
-        }
 
         function toggle(item, column) {
             if (!item.track[vm.gameMode()]) {
@@ -579,12 +609,7 @@
                 item.track[vm.gameMode()][vm.season()] = {};
             }
             item.track[vm.gameMode()][vm.season()][column] = !item.track[vm.gameMode()][vm.season()][column];
-            save();
-        }
-
-        function save(){
-            // TODO: not optimal, but this will be removed when new item structure is implemented.
-            _.forEach(sections.all, itemChanged);
+            itemTracking.save();
         }
 
         function getClass(item, column) {
@@ -609,7 +634,7 @@
             return _.flatten(['Cubed', vm.columns.all()]);
         }
     }
-    CubeController.$inject = ["loadItems", "sections", "isItemVisible", "gameModes", "seasons", "columns"];
+    CubeController.$inject = ["items", "itemTracking", "sections", "isItemVisible", "gameModes", "seasons", "columns"];
 
 })();
 //# sourceMappingURL=app.js.map
