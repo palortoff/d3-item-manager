@@ -1,9 +1,9 @@
 (function() {
     'use strict';
 
-    angular.module('d3-item-manager').controller('CubeController', CubeController);
+    angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
-    function CubeController(items, itemTracking, sections, isItemVisible, gameModes, seasons, columns) {
+    function ItemsController(items, itemTracking, sections, isItemVisible, gameModes, seasons, columns) {
         var vm = this;
 
         vm.itemFilter = '';
