@@ -7,7 +7,12 @@
         <th>Affix</th>
     </thead>
     <tr ng-repeat="item in vm.items | orderBy:'name' | filter: vm.itemFilter" ng-if="vm.isVisible(item)">
-        <td>{{item.name}}</td>
+        <td>
+            {{item.name}}
+            <i class="season-small" ng-show="vm.isSeasonal(item)" title="current season"></i>
+            <i class="bounty-cache" ng-show="vm.isBounty(item)" title="{{vm.bountyTitle(item)}}"></i>
+            <i class="crafted" ng-show="vm.isCrafted(item)" title="crafted"></i>
+        </td>
         <td class="text-center check" ng-repeat="column in vm.allColumns()" ng-click="vm.toggle(item, column)" ng-class="vm.cellClass(item, column)">
             <i class="fa item-checked"></i>
         </td>

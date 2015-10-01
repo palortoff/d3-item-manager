@@ -27,7 +27,8 @@
     'use strict';
 
     angular.module('d3-item-manager').constant('d3Config', {
-        githubUrl: 'https://github.com/palortoff/d3-item-manager'
+        githubUrl:  'https://github.com/palortoff/d3-item-manager',
+        gameSeason: 4
     })
 
 })();
@@ -207,6 +208,8 @@
         return function(item) {
             if (!isLoaded) return false;
 
+            if (classes.current().id == 0) return true;
+
             if (item.name === "Eye of Peshkov")
             {
                 isLoaded = true; // TODO: remove debug line
@@ -298,11 +301,44 @@
             }
         },
         4:{
-            name: 'other...'
+            name: 'Horadric Cache Items',
+            filter: function(item){
+                return !!item.bounty;
+            }
+        },
+        5: {
+            name: 'Season 1',
+            filter: function(item){
+                return item.season ==1;
+            }
+        },
+        6: {
+            name: 'Season 2',
+            filter: function(item){
+                return item.season ==2;
+            }
+        },
+        7: {
+            name: 'Season 3',
+            filter: function(item){
+                return item.season ==3;
+            }
+        },
+        8: {
+            name: 'Season 4',
+            filter: function(item){
+                return item.season ==4;
+            }
+        },
+        9: { // TODO: need rarity
+            name: 'Crafted',
+            filter: function(item){
+                return item.crafted;
+            }
         }
     };
 
-    var selectionOrder=[1,2,3];
+    var selectionOrder=[1,2,3,-1,4,8];
 
     var current;
     var key='itemCategory';
@@ -313,7 +349,7 @@
         return {
             all: categories,
             current: function(){return categories[current];},
-            getCategory: function(id){return categories[id]},
+            getCategory: function(id){return (id <=0) ? categories[0]: categories[id]},
             selectionOrder: selectionOrder,
             set: set
         };
@@ -640,7 +676,7 @@
 
     angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
-    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory) {
+    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory,d3Config) {
         var vm = this;
 
         vm.itemFilter = '';
@@ -651,6 +687,10 @@
         vm.season = seasons.current;
         vm.columns = columns;
         vm.itemCategory = itemCategory;
+        vm.isSeasonal = isSeasonal;
+        vm.bountyTitle = bountyTitle;
+        vm.isBounty = isBounty;
+        vm.isCrafted = isCrafted;
 
         vm.toggle = toggle;
         vm.cellClass = cellClass;
@@ -712,13 +752,26 @@
             if (!isItemVisibleForCategory(item)) {
                 return false;
             }
-            if (!isItemVisibleForClass(item)) {
-                return false;
-            }
-            return true;
+            return isItemVisibleForClass(item);
+
+        }
+
+        function isSeasonal(item){
+            return item.season == d3Config.gameSeason;
+        }
+
+        function isBounty(item){
+            return !!item.bounty;
+        }
+
+        function bountyTitle(item){
+            return (isBounty(item)) ? 'Act ' + item.bounty.act : '';
+        }
+        function isCrafted(item){
+            return item.crafted;
         }
     }
-    ItemsController.$inject = ["items", "itemTracking", "isItemVisibleForCategory", "isItemVisibleForClass", "gameModes", "seasons", "columns", "itemCategory"];
+    ItemsController.$inject = ["items", "itemTracking", "isItemVisibleForCategory", "isItemVisibleForClass", "gameModes", "seasons", "columns", "itemCategory", "d3Config"];
 
 })();
 //# sourceMappingURL=app.js.map
