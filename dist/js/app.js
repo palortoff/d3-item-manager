@@ -38,16 +38,11 @@
 
         $routeProvider.
             when('/', {
-                redirectTo: '/cube'
+                redirectTo: '/items'
             }).
-            when('/cube', {
-                templateUrl: 'routes/cube/cube.template.html',
-                controller:'CubeController',
-                controllerAs: 'vm'
-            }).
-            when('/editor', {
-                templateUrl: 'routes/editor/editor.template.html',
-                controller: 'EditorController',
+            when('/items', {
+                templateUrl: 'routes/items/items.template.html',
+                controller:'ItemsController',
                 controllerAs: 'vm'
             });
     }]);
@@ -73,7 +68,7 @@
     function classes() {
         return {
             all:        all,
-            distinct: distinct,
+            distinct:   distinct,
             current:    current,
             setCurrent: setCurrent
         };
@@ -85,8 +80,9 @@
         function all() {
             return _all;
         }
-        function distinct(){
-            return _all.filter(function(c){return c.id != 0;});
+
+        function distinct() {
+            return _all.filter(function(c) {return c.id != 0;});
         }
 
         function setCurrent(id) {
@@ -195,17 +191,64 @@
 (function() {
     'use strict';
 
-    angular.module('d3-item-manager').factory('isItemVisible', isItemVisible);
+    angular.module('d3-item-manager').factory('isItemVisibleForClass', isItemVisibleForClass);
 
-    function isItemVisible(classes) {
+    function isItemVisibleForClass(classes, $http) {
+
+        var itemTypeClass;
+        var isLoaded = false;
+
+        $http.get('items/itemTypeClass.json?' + Date.now()).
+            then(function(result) {
+                itemTypeClass = result.data;
+                isLoaded = true;
+            });
+
         return function(item) {
-            if (classes.current().id == 0) return true;
-            return !!_.find(item.classes, function(itemClass) {
-                return itemClass == classes.current().id;
-            })
+            if (!isLoaded) return false;
+
+            if (item.name === "Eye of Peshkov")
+            {
+                isLoaded = true; // TODO: remove debug line
+            }
+
+            var itemVisibility = isItemVisible(item);
+            if (itemVisibility === false) return false;
+            if (itemVisibility === true) return true;
+
+            return isItemTypeVisible(item);
+
+        };
+
+        function isItemVisible(item){
+            if (item.classes){
+                return _.contains(item.classes, classes.current().name);
+            }
+            return undefined;
+        }
+
+        function isItemTypeVisible(item){
+            if (itemTypeClass[item.type.id]){
+                return _.contains(itemTypeClass[item.type.id], classes.current().name);
+            }
+
+            return true;
         }
     }
-    isItemVisible.$inject = ["classes"];
+    isItemVisibleForClass.$inject = ["classes", "$http"];
+
+})();
+(function() {
+    'use strict';
+
+    angular.module('d3-item-manager').factory('isItemVisibleForCategory', isItemVisibleForCategory);
+
+    function isItemVisibleForCategory(itemCategory) {
+        return function(item) {
+            return itemCategory.current().filter(item);
+        }
+    }
+    isItemVisibleForCategory.$inject = ["itemCategory"];
 
 })();
 (function() {
@@ -218,8 +261,8 @@
             load
         };
 
-        function load(section) {
-            return $http.get('items/' + section + '.json?' + Date.now()).
+        function load() {
+            return $http.get('items/items.json?' + Date.now()).
                 then(function(result) {
                     return result.data;
                 });
@@ -230,40 +273,122 @@
 (function() {
     'use strict';
 
+    angular.module('d3-item-manager').factory('itemCategory', itemCategory);
+
+    var categories = {
+        0:{
+            "class":"divider"
+        },
+        1: {
+            name: "Cube: Weapons",
+            filter: function(item){
+                return item.cube && item.cubeCategory === "Weapon";
+            }
+        },
+        2: {
+            name: "Cube: Armor",
+            filter: function(item){
+                return item.cube && item.cubeCategory === "Armor";
+            }
+        },
+        3:{
+            name: "Cube: Jewelry",
+            filter: function(item){
+                return item.cube && item.cubeCategory === "Jewelry";
+            }
+        },
+        4:{
+            name: 'other...'
+        }
+    };
+
+    var selectionOrder=[1,2,3];
+
+    var current;
+    var key='itemCategory';
+
+    function itemCategory(){
+        current = localStorage.getItem(key) || 1;
+
+        return {
+            all: categories,
+            current: function(){return categories[current];},
+            getCategory: function(id){return categories[id]},
+            selectionOrder: selectionOrder,
+            set: set
+        };
+
+        function set(s){
+            current = s;
+            localStorage.setItem(key, s)
+        }
+    }
+
+})();
+(function() {
+    'use strict';
+
     angular.module('d3-item-manager').factory('itemTracking', itemTracking);
 
-    function itemTracking(sections, $timeout) {
-        var tracking = {};
+    var key = 'itemTracking';
+
+    function itemTracking($timeout) {
+        var tracking;
         var notifyTimer;
+        var tracking2;
         return {
             load,
             save
         };
 
-        function load(section) {
-            tracking[section] = JSON.parse(localStorage.getItem(section));
-            if (!tracking[section]) tracking[section] = {};
-            return tracking[section];
+        function load() {
+            upgradeIfNecessary();
+            tracking = JSON.parse(localStorage.getItem(key)) || {};
+            return tracking;
         }
 
         function save() {
-// TODO: not optimal, but this will be removed when new item structure is implemented.
-            _.forEach(sections.all, saveSection);
-        }
-
-        function saveSection(section) {
             notifySave();
-            localStorage.setItem(section, JSON.stringify(tracking[section]));
+            localStorage.setItem(key, JSON.stringify(tracking));
         }
 
-        function notifySave(){
+        function notifySave() {
             $timeout.cancel(notifyTimer);
-            notifyTimer = $timeout(function(){
-            toastr.success('Items saved', {timeOut: 1000});
+            notifyTimer = $timeout(function() {
+                toastr.success('Items saved', {timeOut: 1000});
             }, 1000);
         }
+
+        function upgradeIfNecessary() {
+            upgradeFromCubeSectionsToOneTrackingContainer();
+        }
+
+        function upgradeFromCubeSectionsToOneTrackingContainer() {
+            var hasOldSectionData = !!localStorage.getItem('armor') || !!localStorage.getItem('weapons') || !!localStorage.getItem('jewelry');
+            var hasTrackingContainer = !!localStorage.getItem(key);
+
+            if (hasOldSectionData && !hasTrackingContainer) {
+                var armor = JSON.parse(localStorage.getItem('armor'));
+                var weapons = JSON.parse(localStorage.getItem('weapons'));
+                var jewls = JSON.parse(localStorage.getItem('jewelry'));
+                tracking = _.defaults({}, armor, weapons, jewls);
+                save();
+                console.log("upgradedFromCubeSectionsToOneTrackingContainer");
+
+                localStorage.setItem('armor_backup', JSON.stringify(armor));
+                localStorage.setItem('weapons_backup', JSON.stringify(weapons));
+                localStorage.setItem('jewls_backup', JSON.stringify(jewls));
+
+                localStorage.removeItem('armor');
+                localStorage.removeItem('weapons');
+                localStorage.removeItem('jewelry');
+
+            }
+
+        }
+
     }
-    itemTracking.$inject = ["sections", "$timeout"];
+    itemTracking.$inject = ["$timeout"];
 })();
 (function() {
     'use strict';
@@ -319,30 +444,6 @@
 
         function save() {
             localStorage.setItem(keyAll, JSON.stringify(_all));
-        }
-    }
-
-})();
-(function() {
-    'use strict';
-
-    angular.module('d3-item-manager').factory('sections', sections);
-
-    var all = ['armor', 'weapons', 'jewelry'];
-    var current = all[0];
-
-    function sections(){
-        current = localStorage.getItem('section') || all[0];
-
-        return {
-            all: all,
-            current: function(){return current;},
-            set: set
-        };
-
-        function set(s){
-            current = s;
-            localStorage.setItem('section', s)
         }
     }
 
@@ -447,12 +548,13 @@
 
     angular.module('d3-item-manager').controller('NavBarController', NavBarController);
 
-    function NavBarController(classes, gameModes, seasons) {
+    function NavBarController(classes, gameModes, seasons, itemCategory) {
         var vm = this;
 
         vm.gameModes = gameModes;
         vm.seasons = seasons;
         vm.classes = classes;
+        vm.itemCategory = itemCategory;
 
         vm.showDisclaimer = function() {
             localStorage.setItem('disclaimerRead', 0);
@@ -461,7 +563,7 @@
             localStorage.setItem('showOptions', "true");
         };
     }
-    NavBarController.$inject = ["classes", "gameModes", "seasons"];
+    NavBarController.$inject = ["classes", "gameModes", "seasons", "itemCategory"];
 })();
 
 (function () {
@@ -536,65 +638,42 @@
 (function() {
     'use strict';
 
-    angular.module('d3-item-manager').directive('sectionPicker', sectionPicker);
+    angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
-    function sectionPicker(){
-        SectionPickerController.$inject = ["sections"];
-        return {
-            restrict:'E',
-            scope: {},
-            templateUrl: 'directives/sectionPicker/sectionPicker.template.html',
-            controller: SectionPickerController,
-            controllerAs: 'vm'
-        };
-
-        function SectionPickerController(sections){
-            var vm = this;
-            vm.sections = sections;
-        }
-    }
-
-})();
-(function() {
-    'use strict';
-
-    angular.module('d3-item-manager').controller('CubeController', CubeController);
-
-    function CubeController(items, itemTracking, sections, isItemVisible, gameModes, seasons, columns) {
+    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory) {
         var vm = this;
 
         vm.itemFilter = '';
 
-        vm.sections = sections.all;
-        vm.section = sections.current;
-
-        vm.isVisible = isItemVisible;
+        vm.isVisible = isVisible;
 
         vm.gameMode = gameModes.current;
         vm.season = seasons.current;
         vm.columns = columns;
+        vm.itemCategory = itemCategory;
 
         vm.toggle = toggle;
-        vm.class = getClass;
+        vm.cellClass = cellClass;
         vm.allColumns = allColumns;
+        vm.items = undefined;
 
         init();
 
         function init() {
-            sections.all.forEach(function(section) {load(section)});
+           loadItems();
         }
 
-        function load(section) {
-            items.load(section).
+        function loadItems() {
+            items.load().
                 then(function(data) {
-                    vm[section] = data;
+                    vm.items = data;
                 }).
-                then(itemTracking.load.bind(null, section)).
-                then(addTracking.bind(null, section));
+                then(itemTracking.load).
+                then(addTracking);
         }
 
-        function addTracking(section, tracking) {
-            vm[section].forEach(function(item) {
+        function addTracking(tracking) {
+            vm.items.forEach(function(item) {
                 if (!tracking[item.id]) tracking[item.id] = {};
                 item.track = tracking[item.id];
             })
@@ -612,13 +691,8 @@
             itemTracking.save();
         }
 
-        function getClass(item, column) {
-            if (!isChecked(item, column)) {
-                return '';
-            }
-            else {
-                return 'checked'
-            }
+        function cellClass(item, column) {
+            return isChecked(item, column) ? 'checked' : '';
         }
 
         function isChecked(item, column) {
@@ -633,8 +707,18 @@
         function allColumns() {
             return _.flatten(['Cubed', vm.columns.all()]);
         }
+
+        function isVisible(item){
+            if (!isItemVisibleForCategory(item)) {
+                return false;
+            }
+            if (!isItemVisibleForClass(item)) {
+                return false;
+            }
+            return true;
+        }
     }
-    CubeController.$inject = ["items", "itemTracking", "sections", "isItemVisible", "gameModes", "seasons", "columns"];
+    ItemsController.$inject = ["items", "itemTracking", "isItemVisibleForCategory", "isItemVisibleForClass", "gameModes", "seasons", "columns", "itemCategory"];
 
 })();
 //# sourceMappingURL=app.js.map
