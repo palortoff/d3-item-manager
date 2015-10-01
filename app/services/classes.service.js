@@ -19,7 +19,7 @@
     function classes() {
         return {
             all:        all,
-            distinct: distinct,
+            distinct:   distinct,
             current:    current,
             setCurrent: setCurrent
         };
@@ -31,8 +31,9 @@
         function all() {
             return _all;
         }
-        function distinct(){
-            return _all.filter(function(c){return c.id != 0;});
+
+        function distinct() {
+            return _all.filter(function(c) {return c.id != 0;});
         }
 
         function setCurrent(id) {

@@ -3,35 +3,62 @@
 
     angular.module('d3-item-manager').factory('itemTracking', itemTracking);
 
-    function itemTracking(sections, $timeout) {
-        var tracking = {};
+    var key = 'itemTracking';
+
+    function itemTracking($timeout) {
+        var tracking;
         var notifyTimer;
+        var tracking2;
         return {
             load,
             save
         };
 
-        function load(section) {
-            tracking[section] = JSON.parse(localStorage.getItem(section));
-            if (!tracking[section]) tracking[section] = {};
-            return tracking[section];
+        function load() {
+            upgradeIfNecessary();
+            tracking = JSON.parse(localStorage.getItem(key)) || {};
+            return tracking;
         }
 
         function save() {
-// TODO: not optimal, but this will be removed when new item structure is implemented.
-            _.forEach(sections.all, saveSection);
-        }
-
-        function saveSection(section) {
             notifySave();
-            localStorage.setItem(section, JSON.stringify(tracking[section]));
+            localStorage.setItem(key, JSON.stringify(tracking));
         }
 
-        function notifySave(){
+        function notifySave() {
             $timeout.cancel(notifyTimer);
-            notifyTimer = $timeout(function(){
-            toastr.success('Items saved', {timeOut: 1000});
+            notifyTimer = $timeout(function() {
+                toastr.success('Items saved', {timeOut: 1000});
             }, 1000);
         }
+
+        function upgradeIfNecessary() {
+            upgradeFromCubeSectionsToOneTrackingContainer();
+        }
+
+        function upgradeFromCubeSectionsToOneTrackingContainer() {
+            var hasOldSectionData = !!localStorage.getItem('armor') || !!localStorage.getItem('weapons') || !!localStorage.getItem('jewelry');
+            var hasTrackingContainer = !!localStorage.getItem(key);
+
+            if (hasOldSectionData && !hasTrackingContainer) {
+                var armor = JSON.parse(localStorage.getItem('armor'));
+                var weapons = JSON.parse(localStorage.getItem('weapons'));
+                var jewls = JSON.parse(localStorage.getItem('jewelry'));
+                tracking = _.defaults({}, armor, weapons, jewls);
+                save();
+                console.log("upgradedFromCubeSectionsToOneTrackingContainer");
+
+                localStorage.setItem('armor_backup', JSON.stringify(armor));
+                localStorage.setItem('weapons_backup', JSON.stringify(weapons));
+                localStorage.setItem('jewls_backup', JSON.stringify(jewls));
+
+                localStorage.removeItem('armor');
+                localStorage.removeItem('weapons');
+                localStorage.removeItem('jewelry');
+
+            }
+
+        }
+
     }
 })();

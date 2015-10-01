@@ -13,6 +13,3 @@ Please submit all pull requests against the master branch.
 
 This site was inspired by [Raylehnhoff's](https://github.com/Raylehnhoff/Have-I-Cubed-This-Yet) 
 "[Have I Cubed This Yet](http://raylehnhoff.github.io/Have-I-Cubed-This-Yet/)"
-
-Initial item data was extracted from this project.
-

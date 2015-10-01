@@ -5,16 +5,11 @@
 
         $routeProvider.
             when('/', {
-                redirectTo: '/cube'
+                redirectTo: '/items'
             }).
-            when('/cube', {
-                templateUrl: 'routes/cube/cube.template.html',
-                controller:'CubeController',
-                controllerAs: 'vm'
-            }).
-            when('/editor', {
-                templateUrl: 'routes/editor/editor.template.html',
-                controller: 'EditorController',
+            when('/items', {
+                templateUrl: 'routes/items/items.template.html',
+                controller:'ItemsController',
                 controllerAs: 'vm'
             });
     });
