@@ -16,6 +16,9 @@
     ],
     "lessInclude": [
       "bower_components"
+    ],
+    "images":[
+      "images/**"
     ]
   },
   "port": 8047
