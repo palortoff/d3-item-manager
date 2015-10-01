@@ -3,41 +3,40 @@
 
     angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
-    function ItemsController(items, itemTracking, sections, isItemVisible, gameModes, seasons, columns) {
+    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory) {
         var vm = this;
 
         vm.itemFilter = '';
 
-        vm.sections = sections.all;
-        vm.section = sections.current;
-
-        vm.isVisible = isItemVisible;
+        vm.isVisible = isVisible;
 
         vm.gameMode = gameModes.current;
         vm.season = seasons.current;
         vm.columns = columns;
+        vm.itemCategory = itemCategory;
 
         vm.toggle = toggle;
-        vm.class = getClass;
+        vm.cellClass = cellClass;
         vm.allColumns = allColumns;
+        vm.items = undefined;
 
         init();
 
         function init() {
-            sections.all.forEach(function(section) {load(section)});
+           loadItems();
         }
 
-        function load(section) {
-            items.load(section).
+        function loadItems() {
+            items.load().
                 then(function(data) {
-                    vm[section] = data;
+                    vm.items = data;
                 }).
-                then(itemTracking.load.bind(null, section)).
-                then(addTracking.bind(null, section));
+                then(itemTracking.load).
+                then(addTracking);
         }
 
-        function addTracking(section, tracking) {
-            vm[section].forEach(function(item) {
+        function addTracking(tracking) {
+            vm.items.forEach(function(item) {
                 if (!tracking[item.id]) tracking[item.id] = {};
                 item.track = tracking[item.id];
             })
@@ -55,13 +54,8 @@
             itemTracking.save();
         }
 
-        function getClass(item, column) {
-            if (!isChecked(item, column)) {
-                return '';
-            }
-            else {
-                return 'checked'
-            }
+        function cellClass(item, column) {
+            return isChecked(item, column) ? 'checked' : '';
         }
 
         function isChecked(item, column) {
@@ -75,6 +69,16 @@
 
         function allColumns() {
             return _.flatten(['Cubed', vm.columns.all()]);
+        }
+
+        function isVisible(item){
+            if (!isItemVisibleForCategory(item)) {
+                return false;
+            }
+            if (!isItemVisibleForClass(item)) {
+                return false;
+            }
+            return true;
         }
     }
 

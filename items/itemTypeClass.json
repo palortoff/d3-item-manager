@@ -1,0 +1,94 @@
+{
+  "Axe2H": [
+    "crusader",
+    "barbarian",
+    "monk",
+    "witch-doctor",
+    "wizard"
+  ],
+  "Belt_Barbarian": [
+    "barbarian"
+  ],
+  "Bow": [
+    "demon-hunter"
+  ],
+  "CeremonialDagger": [
+    "witch-doctor"
+  ],
+  "Cloak": [
+    "demon-hunter"
+  ],
+  "CombatStaff": [
+    "monk"
+  ],
+  "Crossbow": [
+    "demon-hunter"
+  ],
+  "CrusaderShield": [
+    "crusader"
+  ],
+  "FistWeapon": [
+    "monk"
+  ],
+  "Flail1H": [
+    "crusader"
+  ],
+  "Flail2H": [
+    "crusader"
+  ],
+  "HandXbow": [
+    "demon-hunter"
+  ],
+  "Mace2H": [
+    "crusader",
+    "barbarian",
+    "monk",
+    "witch-doctor",
+    "wizard"
+  ],
+  "MightyWeapon1H": [
+    "barbarian"
+  ],
+  "MightyWeapon2H": [
+    "barbarian"
+  ],
+  "Mojo": [
+    "witch-doctor"
+  ],
+  "Orb": [
+    "wizard"
+  ],
+  "Polearm": [
+    "crusader",
+    "barbarian",
+    "monk",
+    "witch-doctor"
+  ],
+  "Quiver": [
+    "demon-hunter"
+  ],
+  "SpiritStone_Monk": [
+    "monk"
+  ],
+  "Staff": [
+    "monk",
+    "witch-doctor",
+    "wizard"
+  ],
+  "Sword2H": [
+    "crusader",
+    "barbarian",
+    "monk",
+    "witch-doctor",
+    "wizard"
+  ],
+  "VoodooMask": [
+    "witch-doctor"
+  ],
+  "Wand": [
+    "wizard"
+  ],
+  "WizardHat": [
+    "wizard"
+  ]
+}

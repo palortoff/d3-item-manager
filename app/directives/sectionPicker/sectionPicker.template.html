@@ -1,9 +1,0 @@
-<ul class="nav nav-tabs">
-    <li
-        ng-repeat="section in vm.sections.all"
-        role="presentation"
-        ng-class="{active: vm.sections.current() === section}"
-        ng-click="vm.sections.set(section)">
-        <a href="javascript:void(0);"> {{section | capitalize}}</a>
-    </li>
-</ul>

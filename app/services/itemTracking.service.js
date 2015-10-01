@@ -3,28 +3,25 @@
 
     angular.module('d3-item-manager').factory('itemTracking', itemTracking);
 
-    function itemTracking(sections, $timeout) {
-        var tracking = {};
+    var key = 'itemTracking';
+
+    function itemTracking($timeout) {
+        var tracking;
         var notifyTimer;
         return {
             load,
             save
         };
 
-        function load(section) {
-            tracking[section] = JSON.parse(localStorage.getItem(section));
-            if (!tracking[section]) tracking[section] = {};
-            return tracking[section];
+        function load() {
+            //update();
+            tracking = JSON.parse(localStorage.getItem(key)) || {};
+            return tracking;
         }
 
         function save() {
-// TODO: not optimal, but this will be removed when new item structure is implemented.
-            _.forEach(sections.all, saveSection);
-        }
-
-        function saveSection(section) {
             notifySave();
-            localStorage.setItem(section, JSON.stringify(tracking[section]));
+            localStorage.setItem(key, JSON.stringify(tracking));
         }
 
         function notifySave(){
