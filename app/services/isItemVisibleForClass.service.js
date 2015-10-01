@@ -17,6 +17,8 @@
         return function(item) {
             if (!isLoaded) return false;
 
+            if (classes.current().id == 0) return true;
+
             if (item.name === "Eye of Peshkov")
             {
                 isLoaded = true; // TODO: remove debug line

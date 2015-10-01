@@ -3,7 +3,7 @@
 
     angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
-    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory) {
+    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory,d3Config) {
         var vm = this;
 
         vm.itemFilter = '';
@@ -14,6 +14,10 @@
         vm.season = seasons.current;
         vm.columns = columns;
         vm.itemCategory = itemCategory;
+        vm.isSeasonal = isSeasonal;
+        vm.bountyTitle = bountyTitle;
+        vm.isBounty = isBounty;
+        vm.isCrafted = isCrafted;
 
         vm.toggle = toggle;
         vm.cellClass = cellClass;
@@ -75,10 +79,23 @@
             if (!isItemVisibleForCategory(item)) {
                 return false;
             }
-            if (!isItemVisibleForClass(item)) {
-                return false;
-            }
-            return true;
+            return isItemVisibleForClass(item);
+
+        }
+
+        function isSeasonal(item){
+            return item.season == d3Config.gameSeason;
+        }
+
+        function isBounty(item){
+            return !!item.bounty;
+        }
+
+        function bountyTitle(item){
+            return (isBounty(item)) ? 'Act ' + item.bounty.act : '';
+        }
+        function isCrafted(item){
+            return item.crafted;
         }
     }
 

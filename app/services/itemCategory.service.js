@@ -26,11 +26,44 @@
             }
         },
         4:{
-            name: 'other...'
+            name: 'Horadric Cache Items',
+            filter: function(item){
+                return !!item.bounty;
+            }
+        },
+        5: {
+            name: 'Season 1',
+            filter: function(item){
+                return item.season ==1;
+            }
+        },
+        6: {
+            name: 'Season 2',
+            filter: function(item){
+                return item.season ==2;
+            }
+        },
+        7: {
+            name: 'Season 3',
+            filter: function(item){
+                return item.season ==3;
+            }
+        },
+        8: {
+            name: 'Season 4',
+            filter: function(item){
+                return item.season ==4;
+            }
+        },
+        9: { // TODO: need rarity
+            name: 'Crafted',
+            filter: function(item){
+                return item.crafted;
+            }
         }
     };
 
-    var selectionOrder=[1,2,3];
+    var selectionOrder=[1,2,3,-1,4,8];
 
     var current;
     var key='itemCategory';
@@ -41,7 +74,7 @@
         return {
             all: categories,
             current: function(){return categories[current];},
-            getCategory: function(id){return categories[id]},
+            getCategory: function(id){return (id <=0) ? categories[0]: categories[id]},
             selectionOrder: selectionOrder,
             set: set
         };
