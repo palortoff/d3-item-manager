@@ -58,5 +58,33 @@ options i.text-danger {
 .table-kenais tbody td.check.checked i.item-checked:before {
   content: "\f00c";
 }
+i.season-small {
+  display: inline-block;
+  margin-left: 10px;
+  width: 15px;
+  height: 21px;
+  background: url("http://eu.battle.net/d3/static/images/profile/seasonal-leaf.png") -24px -2px no-repeat;
+  transform: translateY(5px);
+}
+i.bounty-cache {
+  display: inline-block;
+  margin-left: 10px;
+  width: 21px;
+  height: 21px;
+  background-image: url("../images/bounty.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  transform: translateY(5px);
+}
+i.crafted {
+  display: inline-block;
+  margin-left: 10px;
+  width: 21px;
+  height: 21px;
+  background-image: url("http://media.blizzard.com/d3/icons/items/large/crafting_looted_reagent_01_demonhunter_male.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  transform: translateY(5px);
+}
 
 /*# sourceMappingURL=app.css.map */

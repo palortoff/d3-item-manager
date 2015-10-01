@@ -12405,7 +12405,10 @@
     "setItem": false,
     "tooltipParams": "item/golden-gorget-of-leoric",
     "passive": "After earning a massacre bonus, 4–6 Skeletons are summoned to fight by your side for 10 seconds.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 1
+    }
   },
   {
     "id": 3007,
@@ -12421,7 +12424,10 @@
     "setItem": false,
     "tooltipParams": "item/overwhelming-desire",
     "passive": "Chance on hit to charm the enemy. While charmed, the enemy takes 35% more damage.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 3
+    }
   },
   {
     "id": 3002,
@@ -12736,7 +12742,10 @@
     "setItem": false,
     "tooltipParams": "item/burst-of-wrath",
     "passive": "Killing enemies and destroying objects has a chance to grant 20% of your maximum primary resource.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 3
+    }
   },
   {
     "id": 1093,
@@ -13149,7 +13158,10 @@
     "setItem": false,
     "tooltipParams": "item/insatiable-belt",
     "passive": "Picking up a Health Globe increases your maximum Life by 5% for 15 seconds, stacking up to 5 times.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 3
+    }
   },
   {
     "id": 1073,
@@ -13528,7 +13540,10 @@
     "setItem": false,
     "tooltipParams": "item/boots-of-disregard",
     "passive": "Gain 10000 Life regeneration per Second for each second you stand still. This effect stacks up to 4 times.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 3
+    }
   },
   {
     "id": 1102,
@@ -13544,7 +13559,10 @@
     "setItem": false,
     "tooltipParams": "item/illusory-boots",
     "passive": "You may move unhindered through enemies.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 2
+    }
   },
   {
     "id": 1103,
@@ -14240,7 +14258,10 @@
     "setItem": false,
     "tooltipParams": "item/sanguinary-vambraces",
     "passive": "Chance on being hit to deal 1000% of your Thorns damage to nearby enemies.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 1
+    }
   },
   {
     "id": 1053,
@@ -15126,7 +15147,10 @@
     "setItem": false,
     "tooltipParams": "item/cloak-of-deception",
     "passive": "Enemy missiles sometimes pass through you harmlessly.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 2
+    }
   },
   {
     "id": 4926,
@@ -15431,7 +15455,10 @@
     "setItem": false,
     "tooltipParams": "item/salvation",
     "passive": "Blocked attacks heal you and your allies for 20–30% of the amount blocked.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 5
+    }
   },
   {
     "id": 4934,
@@ -15536,7 +15563,10 @@
     "setItem": false,
     "tooltipParams": "item/envious-blade",
     "passive": "Gain 100% Critical Hit Chance against enemies at full health.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 3
+    }
   },
   {
     "id": 2007,
@@ -16160,7 +16190,10 @@
     "setItem": false,
     "tooltipParams": "item/gloves-of-worship",
     "passive": "Shrine effects last for 10 minutes.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 2
+    }
   },
   {
     "id": 4963,
@@ -16604,7 +16637,10 @@
     "setItem": false,
     "tooltipParams": "item/helltrapper",
     "passive": "7–10% chance on hit to summon a Spike Trap, Caltrops or Sentry.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 5
+    }
   },
   {
     "id": 1006,
@@ -16896,7 +16932,10 @@
     "setItem": false,
     "tooltipParams": "item/prides-fall",
     "passive": "Your resource costs are reduced by 30% after not taking damage for 5 seconds.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 3
+    }
   },
   {
     "id": 5004,
@@ -17293,7 +17332,10 @@
     "setItem": false,
     "tooltipParams": "item/mad-monarchs-scepter",
     "passive": "After killing 10 enemies, you release a Poison Nova that deals 1050–1400% weapon damage as Poison to enemies within 30 yards.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 1
+    }
   },
   {
     "id": 2012,
@@ -17484,7 +17526,10 @@
     "setItem": false,
     "tooltipParams": "item/soulsmasher",
     "passive": "When you kill an enemy, it explodes for 450–600% of your Life per Kill as damage to all enemies within 20 yards. You no longer benefit from your Life per Kill.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 5
+    }
   },
   {
     "id": 5034,
@@ -18262,7 +18307,10 @@
     "setItem": false,
     "tooltipParams": "item/deaths-bargain",
     "passive": "Gain an aura of death that deals 750–1000% of your Life per Second as Physical damage to enemies within 16 yards. You no longer regenerate Life.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 5
+    }
   },
   {
     "id": 5069,
@@ -19159,7 +19207,10 @@
     "crafted": false,
     "setItem": false,
     "tooltipParams": "item/ring-of-royal-grandeur",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 1
+    }
   },
   {
     "id": 3014,
@@ -19175,7 +19226,10 @@
     "setItem": false,
     "tooltipParams": "item/avarice-band",
     "passive": "Each time you pick up gold, increase your Gold and Health Pickup radius by 1 yard for 10 seconds, stacking up to 30 times.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 3
+    }
   },
   {
     "id": 3027,
@@ -19191,7 +19245,10 @@
     "setItem": false,
     "tooltipParams": "item/pandemonium-loop",
     "passive": "Enemies slain while Feared die in a bloody explosion and cause other nearby enemies to flee in Fear.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 5
+    }
   },
   {
     "id": 5105,
@@ -19408,7 +19465,10 @@
     "setItem": false,
     "tooltipParams": "item/covens-criterion",
     "passive": "You take 45–60% less damage from blocked attacks.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 2
+    }
   },
   {
     "id": 1031,
@@ -19645,7 +19705,10 @@
     "setItem": false,
     "tooltipParams": "item/pauldrons-of-the-skeleton-king",
     "passive": "When receiving fatal damage, there is a chance that you are instead restored to 25% of maximum Life and cause nearby enemies to flee in fear.",
-    "cube": true
+    "cube": true,
+    "bounty": {
+      "act": 1
+    }
   },
   {
     "id": 5123,
