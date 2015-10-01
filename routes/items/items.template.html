@@ -1,0 +1,18 @@
+<item-filter filter-value="vm.itemFilter"></item-filter>
+
+<table class="table table-kenais">
+    <thead>
+        <th>Name</th>
+        <th ng-repeat="column in vm.allColumns()">{{column}}</th>
+        <th>Affix</th>
+    </thead>
+    <tr ng-repeat="item in vm.items | orderBy:'name' | filter: vm.itemFilter" ng-if="vm.isVisible(item)">
+        <td>{{item.name}}</td>
+        <td class="text-center check" ng-repeat="column in vm.allColumns()" ng-click="vm.toggle(item, column)" ng-class="vm.cellClass(item, column)">
+            <i class="fa item-checked"></i>
+        </td>
+        <td>{{item.passive}}</td>
+    </tr>
+</table>
+
+<!--<pre>{{vm.items|json}}</pre>-->
