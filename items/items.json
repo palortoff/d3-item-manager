@@ -16655,6 +16655,7 @@
     "crafted": false,
     "setItem": false,
     "tooltipParams": "item/leorics-crown",
+    "passive": "Increase the effect of any gem socketed into this item by 75–100%.",
     "cube": true
   },
   {
@@ -19207,6 +19208,7 @@
     "crafted": false,
     "setItem": false,
     "tooltipParams": "item/ring-of-royal-grandeur",
+    "passive": "Reduces the number of items needed for set bonuses by 1 (to a minimum of 2).",
     "cube": true,
     "bounty": {
       "act": "1"
