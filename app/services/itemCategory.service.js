@@ -69,7 +69,7 @@
         }
     };
 
-    var selectionOrder = [1, 2, 3, -1, 4, 8, 9, 10];
+    var selectionOrder = [1, 2, 3, -1, 4, 8];
 
     var current;
     var key = 'itemCategory';
