@@ -6,9 +6,6 @@
     "witch-doctor",
     "wizard"
   ],
-  "Belt_Barbarian": [
-    "barbarian"
-  ],
   "Bow": [
     "demon-hunter"
   ],
@@ -67,9 +64,6 @@
   "Quiver": [
     "demon-hunter"
   ],
-  "SpiritStone_Monk": [
-    "monk"
-  ],
   "Staff": [
     "monk",
     "witch-doctor",
@@ -90,5 +84,122 @@
   ],
   "WizardHat": [
     "wizard"
+  ],
+  "Belt_Barbarian": [
+    "barb"
+  ],
+  "SpiritStone_Monk": [
+    "monk"
+  ],
+  "WizardHat": [
+    "wizard"
+  ],
+  "Boots_Crusader": [
+    "crusader"
+  ],
+  "Boots_Barbarian": [
+    "barb"
+  ],
+  "Boots_Monk": [
+    "monk"
+  ],
+  "Boots_Wizard": [
+    "wizard"
+  ],
+  "Boots_WitchDoctor": [
+    "witch-doctor"
+  ],
+  "Boots_DemonHunter": [
+    "demon-hunter"
+  ],
+  "ChestArmor_Crusader": [
+    "crusader"
+  ],
+  "ChestArmor_Barbarian": [
+    "barb"
+  ],
+  "ChestArmor_Monk": [
+    "monk"
+  ],
+  "ChestArmor_Wizard": [
+    "wizard"
+  ],
+  "ChestArmor_WitchDoctor": [
+    "witch-doctor"
+  ],
+  "ChestArmor_DemonHunter": [
+    "demon-hunter"
+  ],
+  "Gloves_Crusader": [
+    "crusader"
+  ],
+  "Gloves_Barbarian": [
+    "barb"
+  ],
+  "Gloves_Monk": [
+    "monk"
+  ],
+  "Gloves_Wizard": [
+    "wizard"
+  ],
+  "Gloves_WitchDoctor": [
+    "witch-doctor"
+  ],
+  "Gloves_DemonHunter": [
+    "demon-hunter"
+  ],
+  "Helm_Crusader": [
+    "crusader"
+  ],
+  "Helm_Barbarian": [
+    "barb"
+  ],
+  "Helm_Monk": [
+    "monk"
+  ],
+  "Helm_Wizard": [
+    "wizard"
+  ],
+  "Helm_WitchDoctor": [
+    "witch-doctor"
+  ],
+  "Helm_DemonHunter": [
+    "demon-hunter"
+  ],
+  "Legs_Crusader": [
+    "crusader"
+  ],
+  "Legs_Barbarian": [
+    "barb"
+  ],
+  "Legs_Monk": [
+    "monk"
+  ],
+  "Legs_Wizard": [
+    "wizard"
+  ],
+  "Legs_WitchDoctor": [
+    "witch-doctor"
+  ],
+  "Legs_DemonHunter": [
+    "demon-hunter"
+  ],
+  "Shoulders_Crusader": [
+    "crusader"
+  ],
+  "Shoulders_Barbarian": [
+    "barb"
+  ],
+  "Shoulders_Monk": [
+    "monk"
+  ],
+  "Shoulders_Wizard": [
+    "wizard"
+  ],
+  "Shoulders_WitchDoctor": [
+    "witch-doctor"
+  ],
+  "Shoulders_DemonHunter": [
+    "demon-hunter"
   ]
 }
