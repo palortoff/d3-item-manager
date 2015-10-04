@@ -18,10 +18,10 @@
 
     function classes() {
         return {
-            all:        all,
-            distinct:   distinct,
-            current:    current,
-            setCurrent: setCurrent
+            all,
+            distinct,
+            current,
+            setCurrent
         };
 
         function current() {
