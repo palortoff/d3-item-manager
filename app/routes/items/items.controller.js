@@ -3,7 +3,7 @@
 
     angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
-    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config) {
+    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config, isEndGame) {
         var vm = this;
 
         vm.itemFilter = '';
@@ -76,9 +76,9 @@
         }
 
         function isVisible(item) {
-            if (!isItemVisibleForCategory(item)) {
-                return false;
-            }
+            if (!isEndGame(item)) return false;
+            if (!isItemVisibleForCategory(item)) return false;
+
             return isItemVisibleForClass(item);
 
         }
