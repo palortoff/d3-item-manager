@@ -3,7 +3,7 @@
 
     angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
-    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory,d3Config) {
+    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config) {
         var vm = this;
 
         vm.itemFilter = '';
@@ -23,11 +23,12 @@
         vm.cellClass = cellClass;
         vm.allColumns = allColumns;
         vm.items = undefined;
+        vm.link = link;
 
         init();
 
         function init() {
-           loadItems();
+            loadItems();
         }
 
         function loadItems() {
@@ -45,7 +46,6 @@
                 item.track = tracking[item.id];
             })
         }
-
 
         function toggle(item, column) {
             if (!item.track[vm.gameMode()]) {
@@ -75,7 +75,7 @@
             return _.flatten(['Cubed', vm.columns.all()]);
         }
 
-        function isVisible(item){
+        function isVisible(item) {
             if (!isItemVisibleForCategory(item)) {
                 return false;
             }
@@ -83,19 +83,36 @@
 
         }
 
-        function isSeasonal(item){
+        function isSeasonal(item) {
             return item.season == d3Config.gameSeason;
         }
 
-        function isBounty(item){
+        function isBounty(item) {
             return !!item.bounty;
         }
 
-        function bountyTitle(item){
+        function bountyTitle(item) {
             return (isBounty(item)) ? 'Act ' + item.bounty.act : '';
         }
-        function isCrafted(item){
+
+        function isCrafted(item) {
             return item.crafted;
+        }
+
+        function link(item) {
+            var artisan = '';
+            if (item.crafted) {
+                switch (item.slots[0]) {
+                    case 'neck':
+                    case 'left-finger':
+                    case 'right-finger':
+                        artisan = 'artisan/jeweler/';
+                        break;
+                    default:
+                        artisan = 'artisan/blacksmith/';
+                }
+            }
+            return "http://eu.battle.net/d3/en/" + artisan + item.tooltipParams;
         }
     }
 
