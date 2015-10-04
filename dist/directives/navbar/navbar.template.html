@@ -52,10 +52,10 @@
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="{{vm.itemCategory.getCategory(catId).class}}"
-                            ng-click="vm.itemCategory.set(catId)"
-                            ng-repeat="catId in vm.itemCategory.selectionOrder">
-                            <a href="javascript:void(0);">{{vm.itemCategory.getCategory(catId).name}}</a>
+                        <li ng-repeat="cat in vm.itemCategory.all"
+                            class="{{cat.class}}"
+                            ng-click="vm.itemCategory.set(cat.id)">
+                            <a href="javascript:void(0);">{{cat.name}}</a>
                         </li>
                     </ul>
                 </li>
