@@ -38,6 +38,7 @@
     "deploy_8": "git checkout master"
   },
   "dependencies": {
+    "bower": "^1.5.3",
     "gulp-babel": "^5.2.1"
   }
 }

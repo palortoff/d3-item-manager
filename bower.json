@@ -10,6 +10,7 @@
   "private": true,
   "dependencies": {
     "fontawesome": "~4.4.0",
-    "bootswatch": "~3.3.5+3"
+    "bootswatch": "~3.3.5+3",
+    "angular-bootstrap-toggle-switch": "~0.5.5"
   }
 }
