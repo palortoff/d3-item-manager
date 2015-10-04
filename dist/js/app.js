@@ -1,36 +1,81 @@
-(function() {
+'use strict';
+
+(function () {
     'use strict';
 
     angular.module('d3-item-manager', ['ngRoute']);
 })();
-(function() {
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').filter('capitalize', capitalizeFilter);
+
+    function capitalizeFilter() {
+        return function (input) {
+            if (typeof input === "String") return input;
+            var tokens = input.split('-');
+            tokens = _.map(tokens, capitalize);
+            return tokens.join(' ');
+        };
+
+        function capitalize(input) {
+            input = input.toLowerCase();
+            return input.substring(0, 1).toUpperCase() + input.substring(1);
+        }
+    }
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').constant('d3Config', {
+        githubUrl: 'https://github.com/palortoff/d3-item-manager',
+        gameSeason: 4
+    });
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').config(["$routeProvider", function ($routeProvider) {
+
+        $routeProvider.when('/', {
+            redirectTo: '/items'
+        }).when('/items', {
+            templateUrl: 'routes/items/items.template.html',
+            controller: 'ItemsController',
+            controllerAs: 'vm'
+        });
+    }]);
+})();
+'use strict';
+
+(function () {
     'use strict';
 
     angular.module('d3-item-manager').factory('classes', classes);
 
     var keyCurrent = 'currentClass';
 
-    var _all = [
-        {id: 0, name: 'all'},
-        {id: 6, name: 'barbarian'},
-        {id: 3, name: 'crusader'},
-        {id: 2, name: 'demon-hunter'},
-        {id: 1, name: 'monk'},
-        {id: 4, name: 'witch-doctor'},
-        {id: 5, name: 'wizard'}
-    ];
+    var _all = [{ id: 0, name: 'all' }, { id: 6, name: 'barbarian' }, { id: 3, name: 'crusader' }, { id: 2, name: 'demon-hunter' }, { id: 1, name: 'monk' }, { id: 4, name: 'witch-doctor' }, { id: 5, name: 'wizard' }];
     var _current = localStorage.getItem(keyCurrent) || 6;
 
     function classes() {
         return {
-            all:        all,
-            distinct:   distinct,
-            current:    current,
+            all: all,
+            distinct: distinct,
+            current: current,
             setCurrent: setCurrent
         };
 
         function current() {
-            return _.find(all(), function(c) {return c.id == _current;});
+            return _.find(all(), function (c) {
+                return c.id == _current;
+            });
         }
 
         function all() {
@@ -38,17 +83,20 @@
         }
 
         function distinct() {
-            return _all.filter(function(c) {return c.id != 0;});
+            return _all.filter(function (c) {
+                return c.id != 0;
+            });
         }
 
         function setCurrent(id) {
             _current = id;
-            localStorage.setItem(keyCurrent, id)
+            localStorage.setItem(keyCurrent, id);
         }
     }
-
 })();
-(function() {
+'use strict';
+
+(function () {
     'use strict';
 
     angular.module('d3-item-manager').factory('columns', columns);
@@ -60,9 +108,9 @@
 
     function columns() {
         return {
-            remove:     remove,
-            add:        add,
-            all:        all
+            remove: remove,
+            add: add,
+            all: all
         };
 
         function all() {
@@ -70,7 +118,9 @@
         }
 
         function remove(gm) {
-            _all = _all.filter(function(item) {return item !== gm;});
+            _all = _all.filter(function (item) {
+                return item !== gm;
+            });
             save();
         }
 
@@ -84,9 +134,10 @@
             localStorage.setItem(keyAll, JSON.stringify(_all));
         }
     }
-
 })();
-(function() {
+'use strict';
+
+(function () {
     'use strict';
 
     angular.module('d3-item-manager').factory('gameModes', gameModes);
@@ -100,11 +151,11 @@
 
     function gameModes() {
         return {
-            current:    current,
+            current: current,
             setCurrent: setCurrent,
-            remove:     remove,
-            add:        add,
-            all:        all
+            remove: remove,
+            add: add,
+            all: all
         };
 
         function current() {
@@ -117,7 +168,7 @@
 
         function setCurrent(c) {
             _current = c;
-            localStorage.setItem(keyCurrent, c)
+            localStorage.setItem(keyCurrent, c);
         }
 
         function setDefault() {
@@ -127,7 +178,9 @@
         }
 
         function remove(gm) {
-            _all = _all.filter(function(item) {return item !== gm;});
+            _all = _all.filter(function (item) {
+                return item !== gm;
+            });
             setDefault();
             save();
         }
@@ -142,9 +195,10 @@
             localStorage.setItem(keyAll, JSON.stringify(_all));
         }
     }
-
 })();
-(function() {
+'use strict';
+
+(function () {
     'use strict';
 
     angular.module('d3-item-manager').factory('isItemVisibleForClass', isItemVisibleForClass);
@@ -154,19 +208,17 @@
         var itemTypeClass;
         var isLoaded = false;
 
-        $http.get('items/itemTypeClass.json?' + Date.now()).
-            then(function(result) {
-                itemTypeClass = result.data;
-                isLoaded = true;
-            });
+        $http.get('items/itemTypeClass.json?' + Date.now()).then(function (result) {
+            itemTypeClass = result.data;
+            isLoaded = true;
+        });
 
-        return function(item) {
+        return function (item) {
             if (!isLoaded) return false;
 
             if (classes.current().id == 0) return true;
 
-            if (item.name === "Eye of Peshkov")
-            {
+            if (item.name === "Eye of Peshkov") {
                 isLoaded = true; // TODO: remove debug line
             }
 
@@ -175,18 +227,17 @@
             if (itemVisibility === true) return true;
 
             return isItemTypeVisible(item);
-
         };
 
-        function isItemVisible(item){
-            if (item.classes){
+        function isItemVisible(item) {
+            if (item.classes) {
                 return _.contains(item.classes, classes.current().name);
             }
             return undefined;
         }
 
-        function isItemTypeVisible(item){
-            if (itemTypeClass[item.type.id]){
+        function isItemTypeVisible(item) {
+            if (itemTypeClass[item.type.id]) {
                 return _.contains(itemTypeClass[item.type.id], classes.current().name);
             }
 
@@ -194,106 +245,109 @@
         }
     }
     isItemVisibleForClass.$inject = ["classes", "$http"];
-
 })();
-(function() {
+'use strict';
+
+(function () {
     'use strict';
 
     angular.module('d3-item-manager').factory('isItemVisibleForCategory', isItemVisibleForCategory);
 
     function isItemVisibleForCategory(itemCategory) {
-        return function(item) {
+        return function (item) {
             return itemCategory.current().filter(item);
-        }
+        };
     }
     isItemVisibleForCategory.$inject = ["itemCategory"];
-
 })();
-(function() {
+'use strict';
+
+(function () {
     'use strict';
 
     angular.module('d3-item-manager').factory('items', items);
 
     function items($http) {
         return {
-            load
+            load: load
         };
 
         function load() {
-            return $http.get('items/items.json?' + Date.now()).
-                then(function(result) {
-                    return result.data;
-                });
+            return $http.get('items/items.json?' + Date.now()).then(function (result) {
+                return result.data;
+            });
         }
     }
     items.$inject = ["$http"];
 })();
-(function() {
+'use strict';
+
+(function () {
     'use strict';
 
     angular.module('d3-item-manager').factory('itemCategory', itemCategory);
 
     var categories = {
-        0:  {
+        0: {
             "class": "divider"
         },
-        1:  {
-            name:   "Cube: Weapons",
-            filter: function(item) {
+        1: {
+            name: "Cube: Weapons",
+            filter: function filter(item) {
                 return item.cube && item.cubeCategory === "Weapon";
             }
         },
-        2:  {
-            name:   "Cube: Armor",
-            filter: function(item) {
+        2: {
+            name: "Cube: Armor",
+            filter: function filter(item) {
                 return item.cube && item.cubeCategory === "Armor";
             }
         },
-        3:  {
-            name:   "Cube: Jewelry",
-            filter: function(item) {
+        3: {
+            name: "Cube: Jewelry",
+            filter: function filter(item) {
                 return item.cube && item.cubeCategory === "Jewelry";
             }
         },
-        4:  {
-            name:   'Horadric Cache Items',
-            filter: function(item) {
+        4: {
+            name: 'Horadric Cache Items',
+            filter: function filter(item) {
                 return !!item.bounty;
             }
         },
-        5:  {
-            name:   'Season 1',
-            filter: function(item) {
+        5: {
+            name: 'Season 1',
+            filter: function filter(item) {
                 return item.season == 1;
             }
         },
-        6:  {
-            name:   'Season 2',
-            filter: function(item) {
+        6: {
+            name: 'Season 2',
+            filter: function filter(item) {
                 return item.season == 2;
             }
         },
-        7:  {
-            name:   'Season 3',
-            filter: function(item) {
+        7: {
+            name: 'Season 3',
+            filter: function filter(item) {
                 return item.season == 3;
             }
         },
-        8:  {
-            name:   'Season 4',
-            filter: function(item) {
+        8: {
+            name: 'Season 4',
+            filter: function filter(item) {
                 return item.season == 4;
             }
         },
-        9:  {
-            name:   'Crafted (Legendary)',
-            filter: function(item) {
+        9: {
+            name: 'Crafted (Legendary)',
+            filter: function filter(item) {
                 return item.crafted && item.displayColor === "orange" && item.requiredLevel == 70;
             }
         },
         10: {
-            name:   'Crafted (Set)',
-            filter: function(item) {
+            name: 'Crafted (Set)',
+            filter: function filter(item) {
                 return item.crafted && item.displayColor === "green" && item.requiredLevel == 70;
             }
         }
@@ -301,28 +355,33 @@
 
     var selectionOrder = [1, 2, 3, -1, 4, 8];
 
-    var current;
+    var _current;
     var key = 'itemCategory';
 
     function itemCategory() {
-        current = localStorage.getItem(key) || 1;
+        _current = localStorage.getItem(key) || 1;
 
         return {
-            all:            categories,
-            current:        function() {return categories[current];},
-            getCategory:    function(id) {return (id <= 0) ? categories[0] : categories[id]},
+            all: categories,
+            current: function current() {
+                return categories[_current];
+            },
+            getCategory: function getCategory(id) {
+                return id <= 0 ? categories[0] : categories[id];
+            },
             selectionOrder: selectionOrder,
-            set:            set
+            set: set
         };
 
         function set(s) {
-            current = s;
-            localStorage.setItem(key, s)
+            _current = s;
+            localStorage.setItem(key, s);
         }
     }
-
 })();
-(function() {
+'use strict';
+
+(function () {
     'use strict';
 
     angular.module('d3-item-manager').factory('itemTracking', itemTracking);
@@ -334,8 +393,8 @@
         var notifyTimer;
         var tracking2;
         return {
-            load,
-            save
+            load: load,
+            save: save
         };
 
         function load() {
@@ -351,8 +410,8 @@
 
         function notifySave() {
             $timeout.cancel(notifyTimer);
-            notifyTimer = $timeout(function() {
-                toastr.success('Items saved', {timeOut: 1000});
+            notifyTimer = $timeout(function () {
+                toastr.success('Items saved', { timeOut: 1000 });
             }, 1000);
         }
 
@@ -379,15 +438,14 @@
                 localStorage.removeItem('armor');
                 localStorage.removeItem('weapons');
                 localStorage.removeItem('jewelry');
-
             }
-
         }
-
     }
     itemTracking.$inject = ["$timeout"];
 })();
-(function() {
+'use strict';
+
+(function () {
     'use strict';
 
     angular.module('d3-item-manager').factory('seasons', seasons);
@@ -401,11 +459,11 @@
 
     function seasons() {
         return {
-            current:    current,
+            current: current,
             setCurrent: setCurrent,
-            remove:     remove,
-            add:        add,
-            all:        all
+            remove: remove,
+            add: add,
+            all: all
         };
 
         function current() {
@@ -418,7 +476,7 @@
 
         function setCurrent(c) {
             _current = c;
-            localStorage.setItem(keyCurrent, c)
+            localStorage.setItem(keyCurrent, c);
         }
 
         function setDefault() {
@@ -428,7 +486,9 @@
         }
 
         function remove(gm) {
-            _all = _all.filter(function(item) {return item !== gm;});
+            _all = _all.filter(function (item) {
+                return item !== gm;
+            });
             setDefault();
             save();
         }
@@ -443,75 +503,30 @@
             localStorage.setItem(keyAll, JSON.stringify(_all));
         }
     }
-
 })();
-(function() {
+'use strict';
+
+(function () {
     'use strict';
 
     angular.module('d3-item-manager').factory('version', version);
 
     function version($http) {
         return {
-            get:        getVersion
+            get: getVersion
         };
 
-        function getVersion(){
-            return $http.get('version.json?' + Date.now()).
-                then(function(result) {
-                    return result.data;
-                });
-
+        function getVersion() {
+            return $http.get('version.json?' + Date.now()).then(function (result) {
+                return result.data;
+            });
         }
     }
     version.$inject = ["$http"];
-
 })();
-(function() {
-    'use strict';
+'use strict';
 
-    angular.module('d3-item-manager').filter('capitalize', capitalizeFilter);
-
-    function capitalizeFilter() {
-        return function(input) {
-            if (typeof input === "String") return input;
-            var tokens = input.split('-');
-            tokens = _.map(tokens, capitalize);
-            return tokens.join(' ');
-        };
-
-        function capitalize(input) {
-            input = input.toLowerCase();
-            return input.substring(0, 1).toUpperCase() + input.substring(1);
-        }
-    }
-
-})();
-(function() {
-    'use strict';
-
-    angular.module('d3-item-manager').constant('d3Config', {
-        githubUrl:  'https://github.com/palortoff/d3-item-manager',
-        gameSeason: 4
-    })
-
-})();
-(function() {
-    'use strict';
-
-    angular.module('d3-item-manager').config(["$routeProvider", function($routeProvider) {
-
-        $routeProvider.
-            when('/', {
-                redirectTo: '/items'
-            }).
-            when('/items', {
-                templateUrl: 'routes/items/items.template.html',
-                controller:'ItemsController',
-                controllerAs: 'vm'
-            });
-    }]);
-})();
-(function() {
+(function () {
     'use strict';
 
     angular.module('d3-item-manager').directive('disclaimer', disclaimer);
@@ -519,49 +534,49 @@
     var disclaimerVersion = 1;
     var key = 'disclaimerRead';
 
-    function disclaimer(){
+    function disclaimer() {
         DisclaimerController.$inject = ["d3Config", "version"];
         return {
-            restrict:'E',
+            restrict: 'E',
             scope: {},
             templateUrl: 'directives/disclaimer/disclaimer.template.html',
             controller: DisclaimerController,
             controllerAs: 'vm'
         };
 
-        function DisclaimerController(d3Config, version){
+        function DisclaimerController(d3Config, version) {
             var vm = this;
             vm.d3Config = d3Config;
-            vm.showDisclaimer= showDisclaimer;
+            vm.showDisclaimer = showDisclaimer;
             vm.dismiss = dismiss;
             vm.version = '';
 
-            version.get().then(function(version){
+            version.get().then(function (version) {
                 vm.version = version.version;
             });
 
-
-            function showDisclaimer(){
+            function showDisclaimer() {
                 return localStorage.getItem(key) != disclaimerVersion;
             }
 
-            function dismiss(){
+            function dismiss() {
                 localStorage.setItem(key, disclaimerVersion);
             }
         }
     }
-
 })();
-(function() {
+'use strict';
+
+(function () {
     'use strict';
 
     angular.module('d3-item-manager').directive('itemFilter', itemFilter);
 
-    function itemFilter(){
+    function itemFilter() {
         return {
-            restrict:'E',
+            restrict: 'E',
             scope: {
-                filterValue:'='
+                filterValue: '='
             },
             bindToController: true,
             templateUrl: 'directives/itemFilter/itemFilter.template.html',
@@ -569,23 +584,24 @@
             controllerAs: 'vm'
         };
 
-        function ItemFilterController(){
+        function ItemFilterController() {
             var vm = this;
             vm.clear = clear;
             vm.showClear = showClear;
 
-            function clear(){
+            function clear() {
                 vm.filterValue = '';
             }
 
-            function showClear(){
+            function showClear() {
                 return vm.filterValue.length > 0;
             }
         }
     }
-
 })();
-(function() {
+'use strict';
+
+(function () {
     'use strict';
 
     angular.module('d3-item-manager').controller('NavBarController', NavBarController);
@@ -598,30 +614,33 @@
         vm.classes = classes;
         vm.itemCategory = itemCategory;
 
-        vm.showDisclaimer = function() {
+        vm.showDisclaimer = function () {
             localStorage.setItem('disclaimerRead', 0);
         };
-        vm.showOptions = function() {
+        vm.showOptions = function () {
             localStorage.setItem('showOptions', "true");
         };
     }
     NavBarController.$inject = ["classes", "gameModes", "seasons", "itemCategory"];
 })();
+'use strict';
 
 (function () {
     'use strict';
 
     angular.module('d3-item-manager').directive('navBar', function () {
         return {
-            restrict:'E',
+            restrict: 'E',
             templateUrl: 'directives/navbar/navbar.template.html',
             scope: {},
             controller: 'NavBarController',
             controllerAs: 'vm'
         };
-    })
+    });
 })();
-(function() {
+'use strict';
+
+(function () {
     'use strict';
 
     angular.module('d3-item-manager').directive('options', options);
@@ -629,17 +648,17 @@
     var disclaimerVersion = 1;
     var key = 'showOptions';
 
-    function options(){
+    function options() {
         OptionsController.$inject = ["gameModes", "seasons", "columns"];
         return {
-            restrict:'E',
+            restrict: 'E',
             scope: {},
             templateUrl: 'directives/options/options.template.html',
             controller: OptionsController,
             controllerAs: 'vm'
         };
 
-        function OptionsController(gameModes, seasons, columns){
+        function OptionsController(gameModes, seasons, columns) {
             var vm = this;
             vm.gameModes = gameModes;
             vm.addNewGameMode = addNewGameMode;
@@ -650,39 +669,40 @@
             vm.columns = columns;
             vm.addNewColumn = addNewColumn;
 
-            vm.showOptions= showOptions;
+            vm.showOptions = showOptions;
             vm.dismiss = dismiss;
 
-            function addNewSeason(){
+            function addNewSeason() {
                 seasons.add(vm.newSeason);
-                vm.newSeason='';
+                vm.newSeason = '';
             }
-            function addNewGameMode(){
+            function addNewGameMode() {
                 gameModes.add(vm.newGameMode);
-                vm.newGameMode='';
+                vm.newGameMode = '';
             }
-            function addNewColumn(){
+            function addNewColumn() {
                 columns.add(vm.newColumn);
-                vm.newColumn='';
+                vm.newColumn = '';
             }
 
-            function showOptions(){
+            function showOptions() {
                 return localStorage.getItem(key) === "true";
             }
 
-            function dismiss(){
+            function dismiss() {
                 localStorage.setItem(key, "false");
             }
         }
     }
-
 })();
-(function() {
+'use strict';
+
+(function () {
     'use strict';
 
     angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
-    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory,d3Config) {
+    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config) {
         var vm = this;
 
         vm.itemFilter = '';
@@ -706,25 +726,21 @@
         init();
 
         function init() {
-           loadItems();
+            loadItems();
         }
 
         function loadItems() {
-            items.load().
-                then(function(data) {
-                    vm.items = data;
-                }).
-                then(itemTracking.load).
-                then(addTracking);
+            items.load().then(function (data) {
+                vm.items = data;
+            }).then(itemTracking.load).then(addTracking);
         }
 
         function addTracking(tracking) {
-            vm.items.forEach(function(item) {
+            vm.items.forEach(function (item) {
                 if (!tracking[item.id]) tracking[item.id] = {};
                 item.track = tracking[item.id];
-            })
+            });
         }
-
 
         function toggle(item, column) {
             if (!item.track[vm.gameMode()]) {
@@ -744,8 +760,7 @@
         function isChecked(item, column) {
             try {
                 return item.track[vm.gameMode()][vm.season()][column];
-            }
-            catch (e) {
+            } catch (e) {
                 return false;
             }
         }
@@ -754,30 +769,28 @@
             return _.flatten(['Cubed', vm.columns.all()]);
         }
 
-        function isVisible(item){
+        function isVisible(item) {
             if (!isItemVisibleForCategory(item)) {
                 return false;
             }
             return isItemVisibleForClass(item);
-
         }
 
-        function isSeasonal(item){
+        function isSeasonal(item) {
             return item.season == d3Config.gameSeason;
         }
 
-        function isBounty(item){
+        function isBounty(item) {
             return !!item.bounty;
         }
 
-        function bountyTitle(item){
-            return (isBounty(item)) ? 'Act ' + item.bounty.act : '';
+        function bountyTitle(item) {
+            return isBounty(item) ? 'Act ' + item.bounty.act : '';
         }
-        function isCrafted(item){
+        function isCrafted(item) {
             return item.crafted;
         }
     }
     ItemsController.$inject = ["items", "itemTracking", "isItemVisibleForCategory", "isItemVisibleForClass", "gameModes", "seasons", "columns", "itemCategory", "d3Config"];
-
 })();
 //# sourceMappingURL=app.js.map
