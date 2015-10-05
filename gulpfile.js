@@ -13,7 +13,12 @@ gulp.task('app:images', require('./gulp/appImages.task'));
 
 gulp.task('app', ['app:html', 'app:js', 'app:less', 'app:json', 'app:version', 'app:images']);
 
-gulp.task('default', ['clean', 'app']);
+gulp.task('thirdparty:js', require('./gulp/thirdPartyJs.task'));
+gulp.task('thirdparty:less', require('./gulp/thirdPartyLess.task'));
+
+gulp.task('thirdparty', ['thirdparty:js', 'thirdparty:less']);
+
+gulp.task('default', ['clean', 'app', 'thirdparty']);
 
 gulp.task('serve', ['default'], require('./gulp/serve.task'));
 gulp.task('chrome', ['serve'], require('./gulp/chrome.task'));

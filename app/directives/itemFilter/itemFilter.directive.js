@@ -3,31 +3,34 @@
 
     angular.module('d3-item-manager').directive('itemFilter', itemFilter);
 
-    function itemFilter(){
+    function itemFilter() {
         return {
-            restrict:'E',
-            scope: {
-                filterValue:'='
+            restrict: 'E',
+
+            scope:            {
+                filterValue:   '=',
+                filterOverAll: '=',
+                onlyCubable:   '=',
+                hideCubed:     '='
             },
             bindToController: true,
-            templateUrl: 'directives/itemFilter/itemFilter.template.html',
-            controller: ItemFilterController,
-            controllerAs: 'vm'
+            templateUrl:      'directives/itemFilter/itemFilter.template.html',
+                              controller,
+            controllerAs:     'vm'
         };
 
-        function ItemFilterController(){
+        function controller() {
             var vm = this;
             vm.clear = clear;
             vm.showClear = showClear;
 
-            function clear(){
+            function clear() {
                 vm.filterValue = '';
             }
 
-            function showClear(){
+            function showClear() {
                 return vm.filterValue.length > 0;
             }
         }
     }
-
 })();

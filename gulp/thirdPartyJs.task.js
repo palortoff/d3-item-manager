@@ -8,11 +8,10 @@ var sourceMaps = require('gulp-sourcemaps');
 var babel = require('gulp-babel');
 
 function task() {
-    return gulp.src(config.app.js)
+    return gulp.src(config.thirdParty.js)
         .pipe(sourceMaps.init())
-        .pipe(babel())
-        .pipe(concat('app.js'))
-        .pipe(ngAnnotate())
+        .pipe(concat('thirdParty.js'))
+        .pipe(sourceMaps.write('./'))
         .pipe(sourceMaps.write('./'))
         .pipe(gulp.dest(config.buildTarget + '/js'));
 }

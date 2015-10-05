@@ -1,4 +1,9 @@
-<item-filter filter-value="vm.itemFilter"></item-filter>
+<item-filter
+    filter-value="vm.itemFilter"
+    filter-over-all="vm.filterOverAll"
+    hide-cubed="vm.hideCubed"
+    only-cubable="vm.onlyCubable"
+    ></item-filter>
 
 <table class="table table-kenais">
     <thead>
@@ -6,7 +11,7 @@
         <th ng-repeat="column in vm.allColumns()">{{column}}</th>
         <th>Affix</th>
     </thead>
-    <tr ng-repeat="item in vm.items | orderBy:'name' | filter: vm.itemFilter" ng-if="vm.isVisible(item)">
+    <tr ng-repeat="item in vm.items | orderBy:'name' | filter: {name:vm.itemFilter}" ng-if="vm.isVisible(item)">
         <td>
             <a ng-href="{{vm.link(item)}}" class="d3-link {{item.displayColor}}" target="_d3">{{item.name}}</a>
             <i class="season-small" ng-show="vm.isSeasonal(item)" title="current season"></i>

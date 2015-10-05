@@ -3,10 +3,13 @@
 
     angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
-    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config) {
+    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config, isEndGame) {
         var vm = this;
 
         vm.itemFilter = '';
+        vm.filterOverAll = false;
+        vm.onlyCubable = false;
+        vm.hideCubed = false;
 
         vm.isVisible = isVisible;
 
@@ -71,14 +74,24 @@
             }
         }
 
+        function isCubed(item){
+            return isChecked(item, 'Cubed');
+        }
+
         function allColumns() {
             return _.flatten(['Cubed', vm.columns.all()]);
         }
 
         function isVisible(item) {
-            if (!isItemVisibleForCategory(item)) {
-                return false;
-            }
+            if (!isEndGame(item)) return false;
+
+            if (vm.filterOverAll && vm.itemFilter.length > 0) return true;
+
+            if (vm.onlyCubable && !item.cube) return false;
+            if (vm.hideCubed && isCubed(item)) return false;
+
+            if (!isItemVisibleForCategory(item)) return false;
+
             return isItemVisibleForClass(item);
 
         }
