@@ -8,7 +8,7 @@
 <table class="table table-kenais">
     <thead>
         <th>Name</th>
-        <th ng-repeat="column in vm.allColumns()">{{column}}</th>
+        <th ng-repeat="column in vm.allColumns()" class="text-center">{{column}}</th>
         <th>Affix</th>
     </thead>
     <tr ng-repeat="item in vm.items | orderBy:'name' | filter: {name:vm.itemFilter}" ng-if="vm.isVisible(item)">
@@ -24,5 +24,3 @@
         <td>{{item.passive}}</td>
     </tr>
 </table>
-
-<!--<pre>{{vm.items|json}}</pre>-->
