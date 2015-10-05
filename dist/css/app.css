@@ -7,6 +7,25 @@ disclaimer .panel {
   transform: translateX(10%);
 }
 
+.dropdown-menu li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #ebebeb;
+  white-space: nowrap;
+}
+.dropdown-menu > div:last-child > li[role="separator"] {
+  display: none;
+}
+
+item-filter .form-group {
+  padding-right: 10px;
+}
+item-filter .form-group label {
+  padding-right: 5px;
+}
 item-filter .btn-group input.form-control {
   height: 25px;
   padding: 5px;
@@ -22,18 +41,8 @@ item-filter .btn-group #searchclear {
   cursor: pointer;
   color: #ccc;
 }
-
-.dropdown-menu li > a {
-  display: block;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: normal;
-  line-height: 1.42857143;
-  color: #ebebeb;
-  white-space: nowrap;
-}
-.dropdown-menu > div:last-child > li[role="separator"] {
-  display: none;
+item-filter .ats-switch {
+  outline: none !important;
 }
 
 options .panel-info {

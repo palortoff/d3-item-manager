@@ -3,7 +3,7 @@
 (function () {
     'use strict';
 
-    angular.module('d3-item-manager', ['ngRoute']);
+    angular.module('d3-item-manager', ['ngRoute', 'toggle-switch']);
 })();
 'use strict';
 
@@ -194,6 +194,22 @@
         function save() {
             localStorage.setItem(keyAll, JSON.stringify(_all));
         }
+    }
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').factory('isEndGame', isEndGame);
+
+    function isEndGame() {
+        return function (item) {
+            if (item.crafted && item.setItem) {
+                return item.requiredLevel === 70;
+            }
+            return true;
+        };
     }
 })();
 'use strict';
@@ -560,40 +576,6 @@
 (function () {
     'use strict';
 
-    angular.module('d3-item-manager').directive('itemFilter', itemFilter);
-
-    function itemFilter() {
-        return {
-            restrict: 'E',
-            scope: {
-                filterValue: '='
-            },
-            bindToController: true,
-            templateUrl: 'directives/itemFilter/itemFilter.template.html',
-            controller: ItemFilterController,
-            controllerAs: 'vm'
-        };
-
-        function ItemFilterController() {
-            var vm = this;
-            vm.clear = clear;
-            vm.showClear = showClear;
-
-            function clear() {
-                vm.filterValue = '';
-            }
-
-            function showClear() {
-                return vm.filterValue.length > 0;
-            }
-        }
-    }
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
     angular.module('d3-item-manager').controller('NavBarController', NavBarController);
 
     function NavBarController(classes, gameModes, seasons, itemCategory) {
@@ -627,6 +609,44 @@
             controllerAs: 'vm'
         };
     });
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').directive('itemFilter', itemFilter);
+
+    function itemFilter() {
+        return {
+            restrict: 'E',
+
+            scope: {
+                filterValue: '=',
+                filterOverAll: '=',
+                onlyCubable: '=',
+                hideCubed: '='
+            },
+            bindToController: true,
+            templateUrl: 'directives/itemFilter/itemFilter.template.html',
+            controller: controller,
+            controllerAs: 'vm'
+        };
+
+        function controller() {
+            var vm = this;
+            vm.clear = clear;
+            vm.showClear = showClear;
+
+            function clear() {
+                vm.filterValue = '';
+            }
+
+            function showClear() {
+                return vm.filterValue.length > 0;
+            }
+        }
+    }
 })();
 'use strict';
 
@@ -692,10 +712,13 @@
 
     angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
-    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config) {
+    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config, isEndGame) {
         var vm = this;
 
         vm.itemFilter = '';
+        vm.filterOverAll = false;
+        vm.onlyCubable = false;
+        vm.hideCubed = false;
 
         vm.isVisible = isVisible;
 
@@ -756,14 +779,24 @@
             }
         }
 
+        function isCubed(item) {
+            return isChecked(item, 'Cubed');
+        }
+
         function allColumns() {
             return _.flatten(['Cubed', vm.columns.all()]);
         }
 
         function isVisible(item) {
-            if (!isItemVisibleForCategory(item)) {
-                return false;
-            }
+            if (!isEndGame(item)) return false;
+
+            if (vm.filterOverAll && vm.itemFilter.length > 0) return true;
+
+            if (vm.onlyCubable && !item.cube) return false;
+            if (vm.hideCubed && isCubed(item)) return false;
+
+            if (!isItemVisibleForCategory(item)) return false;
+
             return isItemVisibleForClass(item);
         }
 
@@ -799,6 +832,6 @@
             return "http://eu.battle.net/d3/en/" + artisan + item.tooltipParams;
         }
     }
-    ItemsController.$inject = ["items", "itemTracking", "isItemVisibleForCategory", "isItemVisibleForClass", "gameModes", "seasons", "columns", "itemCategory", "d3Config"];
+    ItemsController.$inject = ["items", "itemTracking", "isItemVisibleForCategory", "isItemVisibleForClass", "gameModes", "seasons", "columns", "itemCategory", "d3Config", "isEndGame"];
 })();
 //# sourceMappingURL=app.js.map
