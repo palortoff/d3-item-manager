@@ -26,7 +26,7 @@
       "bower_components/angular-bootstrap-toggle-switch/angular-toggle-switch.js"
     ],
     "less":[
-      "bower_components/angular-bootstrap-toggle-switch/style/bootstrap3/angular-toggle-switch-bootstrap-3.less"
+      "thirdParty/angular-toggle-switch/angular-toggle-switch.less"
     ]
   },
   "port": 8047
