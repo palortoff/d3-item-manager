@@ -11,9 +11,6 @@
         vm.classes = classes;
         vm.itemCategory = itemCategory;
 
-        vm.showDisclaimer = function() {
-            localStorage.setItem('disclaimerRead', 0);
-        };
         vm.showOptions = function() {
             localStorage.setItem('showOptions', "true");
         };
