@@ -3,13 +3,13 @@
 
     angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
-    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config, isEndGame) {
+    function ItemsController($scope, items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config, isEndGame) {
         var vm = this;
 
         vm.itemFilter = '';
-        vm.filterOverAll = false;
-        vm.onlyCubable = false;
-        vm.hideCubed = false;
+        persist('filterOverAll');
+        persist('onlyCubable');
+        persist('hideCubed');
 
         vm.isVisible = isVisible;
 
@@ -74,7 +74,7 @@
             }
         }
 
-        function isCubed(item){
+        function isCubed(item) {
             return isChecked(item, 'Cubed');
         }
 
@@ -126,6 +126,18 @@
                 }
             }
             return "http://eu.battle.net/d3/en/" + artisan + item.tooltipParams;
+        }
+
+        function persist(key) {
+            vm[key] = localStorage.getItem(key) === 'true' || false;
+
+            $scope.$watch(getKey, function(){
+                localStorage.setItem(key, vm[key]);
+            });
+
+            function getKey(){
+                return vm[key];
+            }
         }
     }
 
