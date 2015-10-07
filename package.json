@@ -28,6 +28,7 @@
     "postdeploy_5": "npm run deploy_6",
     "postdeploy_6": "npm run deploy_7",
     "postdeploy_7": "npm run deploy_8",
+    "predeploy_1": "git pull",
     "deploy_1": "git checkout releases",
     "deploy_2": "git merge master",
     "deploy_3": "gulp",
