@@ -110,4 +110,5 @@ angular.module('toggle-switch', ['ng']).directive('toggleSwitch', ['$compile', f
 }]);
 
 //# sourceMappingURL=thirdParty.js.map
+
 //# sourceMappingURL=thirdParty.js.map

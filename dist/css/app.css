@@ -2,24 +2,6 @@ body {
   padding-top: 70px;
 }
 
-disclaimer .panel {
-  width: 80%;
-  transform: translateX(10%);
-}
-
-.dropdown-menu li > a {
-  display: block;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: normal;
-  line-height: 1.42857143;
-  color: #ebebeb;
-  white-space: nowrap;
-}
-.dropdown-menu > div:last-child > li[role="separator"] {
-  display: none;
-}
-
 item-filter .form-group {
   padding-right: 10px;
 }
@@ -45,14 +27,32 @@ item-filter .ats-switch {
   outline: none !important;
 }
 
-options .panel-info {
+.dropdown-menu li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #EBEBEB;
+  white-space: nowrap;
+}
+.dropdown-menu > div:last-child > li[role="separator"] {
+  display: none;
+}
+
+.panel.about-panel {
   width: 80%;
   transform: translateX(10%);
 }
-options ul input.form-control {
+
+.config-panel.panel-info {
+  width: 80%;
+  transform: translateX(10%);
+}
+.config-panel ul input.form-control {
   width: 80%;
 }
-options i.text-danger {
+.config-panel i.text-danger {
   transform: translateY(20%);
 }
 
