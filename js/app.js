@@ -33,7 +33,8 @@
 
     angular.module('d3-item-manager').constant('d3Config', {
         githubUrl: 'https://github.com/palortoff/d3-item-manager',
-        gameSeason: 4
+        gameSeason: 4,
+        aboutVersion: 1
     });
 })();
 'use strict';
@@ -48,9 +49,26 @@
         }).when('/items', {
             templateUrl: 'routes/items/items.template.html',
             controller: 'ItemsController',
+            controllerAs: 'vm',
+            resolve: { factory: checkRouting }
+        }).when('/about', {
+            templateUrl: 'routes/about/about.template.html',
+            controller: 'AboutController',
             controllerAs: 'vm'
+        }).when('/config', {
+            templateUrl: 'routes/config/config.template.html',
+            controller: 'ConfigController',
+            controllerAs: 'vm',
+            resolve: { factory: checkRouting }
         });
     }]);
+
+    function checkRouting($location, d3Config) {
+        if (localStorage.getItem('aboutSeen') != d3Config.aboutVersion) {
+            $location.path('/about');
+        }
+    }
+    checkRouting.$inject = ["$location", "d3Config"];
 })();
 'use strict';
 
@@ -535,86 +553,6 @@
 (function () {
     'use strict';
 
-    angular.module('d3-item-manager').directive('disclaimer', disclaimer);
-
-    var disclaimerVersion = 1;
-    var key = 'disclaimerRead';
-
-    function disclaimer() {
-        DisclaimerController.$inject = ["d3Config", "version"];
-        return {
-            restrict: 'E',
-            scope: {},
-            templateUrl: 'directives/disclaimer/disclaimer.template.html',
-            controller: DisclaimerController,
-            controllerAs: 'vm'
-        };
-
-        function DisclaimerController(d3Config, version) {
-            var vm = this;
-            vm.d3Config = d3Config;
-            vm.showDisclaimer = showDisclaimer;
-            vm.dismiss = dismiss;
-            vm.version = '';
-
-            version.get().then(function (version) {
-                vm.version = version.version;
-            });
-
-            function showDisclaimer() {
-                return localStorage.getItem(key) != disclaimerVersion;
-            }
-
-            function dismiss() {
-                localStorage.setItem(key, disclaimerVersion);
-            }
-        }
-    }
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').controller('NavBarController', NavBarController);
-
-    function NavBarController(classes, gameModes, seasons, itemCategory) {
-        var vm = this;
-
-        vm.gameModes = gameModes;
-        vm.seasons = seasons;
-        vm.classes = classes;
-        vm.itemCategory = itemCategory;
-
-        vm.showDisclaimer = function () {
-            localStorage.setItem('disclaimerRead', 0);
-        };
-        vm.showOptions = function () {
-            localStorage.setItem('showOptions', "true");
-        };
-    }
-    NavBarController.$inject = ["classes", "gameModes", "seasons", "itemCategory"];
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').directive('navBar', function () {
-        return {
-            restrict: 'E',
-            templateUrl: 'directives/navbar/navbar.template.html',
-            scope: {},
-            controller: 'NavBarController',
-            controllerAs: 'vm'
-        };
-    });
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
     angular.module('d3-item-manager').directive('itemFilter', itemFilter);
 
     function itemFilter() {
@@ -653,57 +591,90 @@
 (function () {
     'use strict';
 
-    angular.module('d3-item-manager').directive('options', options);
+    angular.module('d3-item-manager').controller('NavBarController', NavBarController);
 
-    var disclaimerVersion = 1;
-    var key = 'showOptions';
+    function NavBarController(classes, gameModes, seasons, itemCategory) {
+        var vm = this;
 
-    function options() {
-        OptionsController.$inject = ["gameModes", "seasons", "columns"];
+        vm.gameModes = gameModes;
+        vm.seasons = seasons;
+        vm.classes = classes;
+        vm.itemCategory = itemCategory;
+    }
+    NavBarController.$inject = ["classes", "gameModes", "seasons", "itemCategory"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').directive('navBar', function () {
         return {
             restrict: 'E',
+            templateUrl: 'directives/navbar/navbar.template.html',
             scope: {},
-            templateUrl: 'directives/options/options.template.html',
-            controller: OptionsController,
+            controller: 'NavBarController',
             controllerAs: 'vm'
         };
+    });
+})();
+'use strict';
 
-        function OptionsController(gameModes, seasons, columns) {
-            var vm = this;
-            vm.gameModes = gameModes;
-            vm.addNewGameMode = addNewGameMode;
+(function () {
+    'use strict';
 
-            vm.seasons = seasons;
-            vm.addNewSeason = addNewSeason;
+    angular.module('d3-item-manager').controller('AboutController', AboutController);
 
-            vm.columns = columns;
-            vm.addNewColumn = addNewColumn;
+    var key = 'aboutSeen';
+    function AboutController($location, d3Config, version) {
+        var vm = this;
+        vm.d3Config = d3Config;
+        vm.dismiss = dismiss;
+        vm.version = '';
 
-            vm.showOptions = showOptions;
-            vm.dismiss = dismiss;
+        version.get().then(function (version) {
+            vm.version = version.version;
+        });
 
-            function addNewSeason() {
-                seasons.add(vm.newSeason);
-                vm.newSeason = '';
-            }
-            function addNewGameMode() {
-                gameModes.add(vm.newGameMode);
-                vm.newGameMode = '';
-            }
-            function addNewColumn() {
-                columns.add(vm.newColumn);
-                vm.newColumn = '';
-            }
-
-            function showOptions() {
-                return localStorage.getItem(key) === "true";
-            }
-
-            function dismiss() {
-                localStorage.setItem(key, "false");
-            }
+        function dismiss() {
+            localStorage.setItem(key, d3Config.aboutVersion);
+            $location.path('/');
         }
     }
+    AboutController.$inject = ["$location", "d3Config", "version"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').controller('ConfigController', ConfigController);
+
+    function ConfigController($location, gameModes, columns) {
+        var vm = this;
+        vm.gameModes = gameModes;
+        vm.addNewGameMode = addNewGameMode;
+
+        vm.columns = columns;
+        vm.addNewColumn = addNewColumn;
+
+        vm.dismiss = dismiss;
+
+        function addNewGameMode() {
+            gameModes.add(vm.newGameMode);
+            vm.newGameMode = '';
+        }
+
+        function addNewColumn() {
+            columns.add(vm.newColumn);
+            vm.newColumn = '';
+        }
+
+        function dismiss() {
+            $location.path('/');
+        }
+    }
+    ConfigController.$inject = ["$location", "gameModes", "columns"];
 })();
 'use strict';
 
@@ -712,13 +683,13 @@
 
     angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
-    function ItemsController(items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config, isEndGame) {
+    function ItemsController($scope, items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config, isEndGame) {
         var vm = this;
 
         vm.itemFilter = '';
-        vm.filterOverAll = false;
-        vm.onlyCubable = false;
-        vm.hideCubed = false;
+        persist('filterOverAll');
+        persist('onlyCubable');
+        persist('hideCubed');
 
         vm.isVisible = isVisible;
 
@@ -831,7 +802,19 @@
             }
             return "http://eu.battle.net/d3/en/" + artisan + item.tooltipParams;
         }
+
+        function persist(key) {
+            vm[key] = localStorage.getItem(key) === 'true' || false;
+
+            $scope.$watch(getKey, function () {
+                localStorage.setItem(key, vm[key]);
+            });
+
+            function getKey() {
+                return vm[key];
+            }
+        }
     }
-    ItemsController.$inject = ["items", "itemTracking", "isItemVisibleForCategory", "isItemVisibleForClass", "gameModes", "seasons", "columns", "itemCategory", "d3Config", "isEndGame"];
+    ItemsController.$inject = ["$scope", "items", "itemTracking", "isItemVisibleForCategory", "isItemVisibleForClass", "gameModes", "seasons", "columns", "itemCategory", "d3Config", "isEndGame"];
 })();
 //# sourceMappingURL=app.js.map

@@ -89,7 +89,7 @@
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .ats-switch:hover {
-  border-color: #ffffff;
+  border-color: #fff;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 255, 255, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 255, 255, 0.6);
@@ -170,7 +170,7 @@
 }
 .ats-switch span.switch-right {
   color: #000;
-  background: #ebebeb;
+  background: #EBEBEB;
 }
 .ats-switch.switch-primary span.switch-left {
   color: #fff;
@@ -178,23 +178,23 @@
 }
 .ats-switch.switch-info span.switch-left {
   color: #fff;
-  background: #3498db;
+  background: #3498DB;
 }
 .ats-switch.switch-success span.switch-left {
   color: #fff;
   background: #00bc8c;
 }
 .ats-switch.switch-warning span.switch-left {
-  background: #f39c12;
+  background: #F39C12;
   color: #fff;
 }
 .ats-switch.switch-danger span.switch-left {
   color: #fff;
-  background: #e74c3c;
+  background: #E74C3C;
 }
 .ats-switch.switch-default span.switch-left {
   color: #000;
-  background: #ebebeb;
+  background: #EBEBEB;
 }
 
 /*# sourceMappingURL=thirdParty.css.map */
