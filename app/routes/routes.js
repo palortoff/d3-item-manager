@@ -17,12 +17,12 @@
                 templateUrl:  'routes/about/about.template.html',
                 controller:   'AboutController',
                 controllerAs: 'vm'
-            //}).
-            //when('/config', {
-            //    templateUrl:  'routes/config/config.template.html',
-            //    controller:   'ConfigController',
-            //    controllerAs: 'vm',
-            //    resolve:      {factory: checkRouting}
+            }).
+            when('/config', {
+                templateUrl:  'routes/config/config.template.html',
+                controller:   'ConfigController',
+                controllerAs: 'vm',
+                resolve:      {factory: checkRouting}
             });
     });
 

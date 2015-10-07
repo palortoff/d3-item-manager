@@ -10,9 +10,5 @@
         vm.seasons = seasons;
         vm.classes = classes;
         vm.itemCategory = itemCategory;
-
-        vm.showOptions = function() {
-            localStorage.setItem('showOptions', "true");
-        };
     }
 })();
