@@ -1,4 +1,20 @@
-# v.1.3.7
+# v1.3.8
+
+### Bug Fixes
+
+* Ten pairs of items shared their state. Item tracking was removed for these items.
+**    Gyana Na Kashu, Carnevil
+**    Tiklandian Visage, The Magistrate
+**    Fury of the Ancients, Chaingmail
+**    Bracers of the First Men, Beckon Sail
+**    Gabriel's Vambraces, Reaper's Wraps
+**    Trag'Oul Coils, St. Archew's Gage
+**    Belt of Transcendence, Goldwrap
+**    Razor Strop, Hwoj Wrap
+**    Thundergod's Vigor, Depth Diggers
+**    The Crudest Boots, Fire Walkers
+
+# v1.3.7
 
 ### Features
 
@@ -8,19 +24,19 @@
 
 * Seasons are no longer configurable over the UI
 
-# v.1.3.6
+# v1.3.6
 
 ### Cosmetical
 
 * Make table headers centered
 
-# v.1.3.5
+# v1.3.5
 
 ### Bug fixes
 
 * Fixed class filters for Barbarians
 
-# v.1.3.4
+# v1.3.4
 
 ### Features
 
@@ -29,20 +45,20 @@
 * Option to show only cubable items
 * Option to hide cubed items
 
-# v.1.3.3
+# v1.3.3
 
 ### Features
 
 * Add more item filterse
 * Restrict more items to specific classes
 
-# v.1.3.2
+# v1.3.2
 
 ### Bug Fixes
 
 * Change code to ES5 to support older browsers
 
-# v1.3.1
+# v.3.1
 
 ### Bug Fixes
 
@@ -52,25 +68,25 @@
 
 * Add more item filters
 
-# v1.3.0
+# v.3.0
 
 ### Features
 
 * Add icons for crafted, bounty and seasonal items
 
-# v1.2.1
+# v.2.1
 
 ### Technical
 
 * Change item data source. Now using item data extracted from the official API
 
-# v1.2.0
+# v.2.0
 
 ### Cosmetical
 
 Show notification after saving items
 
-# v1.1.2
+# v.1.2
 
 ### Bug Fixes
 
@@ -85,11 +101,11 @@ Show notification after saving items
 
 * Add version to about page
 
-# v1.1.1
+# v.1.1
 
 Various technical changes
 
-# v1.1.0
+# v.1.0
 
 ### Bug Fixes
 
@@ -103,7 +119,7 @@ Various technical changes
 * Add Clear button to search
 * Change item checking from input checkbox to clickable cell
 
-# v1.0.0
+# v.0.0
 
 initial Release
 
