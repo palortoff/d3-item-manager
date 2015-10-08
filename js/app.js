@@ -401,7 +401,9 @@
             return _.contains(['Shield', 'CrusaderShield', 'Quiver', 'Mojo', 'Orb'], item.type.id);
         } }, { id: 24, name: "Follower", filter: function filter(item) {
             return _.contains(item.slots, 'follower-special');
-        } }, { "class": 'divider hide' }];
+        } }, { "class": 'divider hide' }, { id: 25, name: "Items with data loss before v1.3.8", filter: function filter(item) {
+            return _.contains([10161, 10162, 10261, 10262, 10361, 10362, 10461, 10462, 10561, 10562, 10661, 10662, 10761, 10762, 10861, 10862, 10961, 10962, 11061, 11062], item.id);
+        }, "class": 'hide' }, { "class": 'divider hide' }];
 })();
 'use strict';
 
@@ -412,24 +414,28 @@
 
     var key = 'itemTracking';
 
-    function itemTracking($timeout) {
+    function itemTracking($timeout, itemCategory) {
         var tracking;
         var notifyTimer;
-        var tracking2;
         return {
             load: load,
             save: save
         };
 
         function load() {
-            upgradeIfNecessary();
+            upgradeFromCubeSectionsToOneTrackingContainer();
             tracking = JSON.parse(localStorage.getItem(key)) || {};
+            removeDuplicateItemsIds();
             return tracking;
+        }
+
+        function saveWithoutToastr() {
+            localStorage.setItem(key, JSON.stringify(tracking));
         }
 
         function save() {
             notifySave();
-            localStorage.setItem(key, JSON.stringify(tracking));
+            saveWithoutToastr();
         }
 
         function notifySave() {
@@ -437,10 +443,6 @@
             notifyTimer = $timeout(function () {
                 toastr.success('Items saved', { timeOut: 1000 });
             }, 1000);
-        }
-
-        function upgradeIfNecessary() {
-            upgradeFromCubeSectionsToOneTrackingContainer();
         }
 
         function upgradeFromCubeSectionsToOneTrackingContainer() {
@@ -464,8 +466,53 @@
                 localStorage.removeItem('jewelry');
             }
         }
+
+        function removeDuplicateItemsIds() {
+            var hasBadData = _.chain(tracking).filter(itemHasBadId).filter(itemHasDataStored).value().length > 0;
+
+            if (hasBadData) {
+                notifyForBadData();
+                removeBadData();
+            }
+        }
+
+        function notifyForBadData() {
+            itemCategory.set(25);
+            toastr.error('You had items stored that conflicted with other items. Please check the displayed list of items.', 'Data loss detected', { timeOut: 0 });
+        }
+
+        function removeBadData() {
+            _.forEach([1016, 1026, 1036, 1046, 1056, 1066, 1076, 1086, 1096, 1106], function (id) {
+                delete tracking[id];
+            });
+            saveWithoutToastr();
+        }
+
+        function itemHasBadId(item, key) {
+            switch (key) {
+                case "1016":
+                case "1026":
+                case "1036":
+                case "1046":
+                case "1056":
+                case "1066":
+                case "1076":
+                case "1086":
+                case "1096":
+                case "1106":
+                    return true;
+                default:
+                    return false;
+            }
+        }
+
+        function itemHasDataStored(item) {
+            var s = item.hasOwnProperty('Softcore');
+            var h = item.hasOwnProperty('Hardcore');
+            return s || h;
+        }
     }
-    itemTracking.$inject = ["$timeout"];
+    itemTracking.$inject = ["$timeout", "itemCategory"];
 })();
 'use strict';
 
@@ -650,7 +697,7 @@
 
     angular.module('d3-item-manager').controller('ConfigController', ConfigController);
 
-    function ConfigController($location, gameModes, columns) {
+    function ConfigController($location, gameModes, columns, itemCategory) {
         var vm = this;
         vm.gameModes = gameModes;
         vm.addNewGameMode = addNewGameMode;
@@ -659,6 +706,8 @@
         vm.addNewColumn = addNewColumn;
 
         vm.dismiss = dismiss;
+
+        vm.showCategory = showCategory;
 
         function addNewGameMode() {
             gameModes.add(vm.newGameMode);
@@ -673,8 +722,13 @@
         function dismiss() {
             $location.path('/');
         }
+
+        function showCategory(id) {
+            itemCategory.set(id);
+            $location.path('/items');
+        }
     }
-    ConfigController.$inject = ["$location", "gameModes", "columns"];
+    ConfigController.$inject = ["$location", "gameModes", "columns", "itemCategory"];
 })();
 'use strict';
 
