@@ -3,16 +3,17 @@
 ### Bug Fixes
 
 * Ten pairs of items shared their state. Item tracking was removed for these items.
-**    Gyana Na Kashu, Carnevil
-**    Tiklandian Visage, The Magistrate
-**    Fury of the Ancients, Chaingmail
-**    Bracers of the First Men, Beckon Sail
-**    Gabriel's Vambraces, Reaper's Wraps
-**    Trag'Oul Coils, St. Archew's Gage
-**    Belt of Transcendence, Goldwrap
-**    Razor Strop, Hwoj Wrap
-**    Thundergod's Vigor, Depth Diggers
-**    The Crudest Boots, Fire Walkers
+
+* Gyana Na Kashu, Carnevil
+* Tiklandian Visage, The Magistrate
+* Fury of the Ancients, Chaingmail
+* Bracers of the First Men, Beckon Sail
+* Gabriel's Vambraces, Reaper's Wraps
+* Trag'Oul Coils, St. Archew's Gage
+* Belt of Transcendence, Goldwrap
+* Razor Strop, Hwoj Wrap
+* Thundergod's Vigor, Depth Diggers
+* The Crudest Boots, Fire Walkers
 
 # v1.3.7
 
