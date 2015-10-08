@@ -152,7 +152,7 @@
     "cube": true
   },
   {
-    "id": 1106,
+    "id": 11062,
     "blizId": "P1_Unique_Boots_010",
     "name": "The Crudest Boots",
     "cubeCategory": "Armor",
@@ -352,7 +352,7 @@
     ]
   },
   {
-    "id": 1076,
+    "id": 10761,
     "blizId": "P2_Unique_Belt_02",
     "name": "Belt of Transcendence",
     "cubeCategory": "Armor",
@@ -1166,7 +1166,7 @@
     ]
   },
   {
-    "id": 1056,
+    "id": 10562,
     "blizId": "P3_Unique_Bracer_101",
     "name": "Gabriel's Vambraces",
     "cubeCategory": "Armor",
@@ -1238,7 +1238,7 @@
     ]
   },
   {
-    "id": 1046,
+    "id": 10462,
     "blizId": "P3_Unique_Bracer_105",
     "name": "Bracers of the First Men",
     "cubeCategory": "Armor",
@@ -1354,7 +1354,7 @@
     "cube": true
   },
   {
-    "id": 1036,
+    "id": 10361,
     "blizId": "P3_Unique_Shoulder_102",
     "name": "Fury of the Ancients",
     "cubeCategory": "Armor",
@@ -2488,7 +2488,7 @@
     "cube": true
   },
   {
-    "id": 1096,
+    "id": 10962,
     "blizId": "Unique_BarbBelt_003_x1",
     "name": "Thundergod's Vigor",
     "cubeCategory": "Armor",
@@ -2803,7 +2803,7 @@
     ]
   },
   {
-    "id": 1076,
+    "id": 10762,
     "blizId": "Unique_Belt_010_x1",
     "name": "Goldwrap",
     "cubeCategory": "Armor",
@@ -2957,7 +2957,7 @@
     ]
   },
   {
-    "id": 1086,
+    "id": 10861,
     "blizId": "Unique_Belt_101_x1",
     "name": "Razor Strop",
     "cubeCategory": "Armor",
@@ -3089,7 +3089,7 @@
     ]
   },
   {
-    "id": 1086,
+    "id": 10862,
     "blizId": "Unique_Belt_107_x1",
     "name": "Hwoj Wrap",
     "cubeCategory": "Armor",
@@ -3212,7 +3212,7 @@
     ]
   },
   {
-    "id": 1106,
+    "id": 11061,
     "blizId": "Unique_Boots_007_p2",
     "name": "Fire Walkers",
     "cubeCategory": "Armor",
@@ -4435,7 +4435,7 @@
     "cube": true
   },
   {
-    "id": 1056,
+    "id": 10561,
     "blizId": "Unique_Bracer_103_x1",
     "name": "Reaper's Wraps",
     "cubeCategory": "Armor",
@@ -4456,7 +4456,7 @@
     "cube": true
   },
   {
-    "id": 1066,
+    "id": 10661,
     "blizId": "Unique_Bracer_104_x1",
     "name": "Trag'Oul Coils",
     "cubeCategory": "Armor",
@@ -4939,7 +4939,7 @@
     "cube": true
   },
   {
-    "id": 1036,
+    "id": 10362,
     "blizId": "Unique_Chest_010_x1",
     "name": "Chaingmail",
     "cubeCategory": "Armor",
@@ -5617,7 +5617,7 @@
     "cube": true
   },
   {
-    "id": 1046,
+    "id": 10461,
     "blizId": "Unique_Cloak_005_x1",
     "name": "Beckon Sail",
     "cubeCategory": "Armor",
@@ -7091,7 +7091,7 @@
     ]
   },
   {
-    "id": 1066,
+    "id": 10662,
     "blizId": "Unique_Gloves_101_p2",
     "name": "St. Archew's Gage",
     "cubeCategory": "Armor",
@@ -9765,7 +9765,7 @@
     ]
   },
   {
-    "id": 1096,
+    "id": 10961,
     "blizId": "Unique_Pants_006_p1",
     "name": "Depth Diggers",
     "cubeCategory": "Armor",
@@ -12502,7 +12502,7 @@
     ]
   },
   {
-    "id": 1016,
+    "id": 10161,
     "blizId": "Unique_SpiritStone_004_x1",
     "name": "Gyana Na Kashu",
     "cubeCategory": "Armor",
@@ -13619,7 +13619,7 @@
     ]
   },
   {
-    "id": 1026,
+    "id": 10262,
     "blizId": "Unique_VoodooMask_001_x1",
     "name": "Tiklandian Visage",
     "cubeCategory": "Armor",
@@ -13741,7 +13741,7 @@
     "cube": true
   },
   {
-    "id": 1016,
+    "id": 10162,
     "blizId": "Unique_VoodooMask_101_x1",
     "name": "Carnevil",
     "cubeCategory": "Armor",
@@ -14093,7 +14093,7 @@
     "cube": true
   },
   {
-    "id": 1026,
+    "id": 10261,
     "blizId": "Unique_WizardHat_103_x1",
     "name": "The Magistrate",
     "cubeCategory": "Armor",
