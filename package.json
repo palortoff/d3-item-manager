@@ -32,6 +32,7 @@
     "predeploy_1": "git pull",
     "deploy_1": "git checkout releases",
     "deploy_2": "git merge master",
+    "predeploy_3": "npm install",
     "deploy_3": "gulp",
     "deploy_4": "git add dist",
     "deploy_5": "git commit -m \"updated dist\"",

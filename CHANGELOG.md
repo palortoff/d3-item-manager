@@ -1,3 +1,9 @@
+# v_next
+
+### Changes
+
+* Application name changed to ``D3 Item Manager``
+
 # v1.3.8
 
 ### Bug Fixes
