@@ -9,7 +9,8 @@
         };
 
         function load() {
-            return $http.get(`items/items_${config.get().itemLanguage}.json?${Date.now()}`).
+            var itemLanguage = config.get().itemLanguage || 'en_GB'; // TODO: factor out!
+            return $http.get(`items/items_${itemLanguage}.json?${Date.now()}`).
                 then(function(result) {
                     return result.data;
                 });
