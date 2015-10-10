@@ -36,6 +36,7 @@
             }, 1000);
         }
 
+        // TODO: factor this out into own service
         function upgradeFromCubeSectionsToOneTrackingContainer() {
             var hasOldSectionData = !!localStorage.getItem('armor') || !!localStorage.getItem('weapons') || !!localStorage.getItem('jewelry');
             var hasTrackingContainer = !!localStorage.getItem(key);

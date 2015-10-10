@@ -19,11 +19,6 @@
 
             if (classes.current().id == 0) return true;
 
-            if (item.name === "Eye of Peshkov")
-            {
-                isLoaded = true; // TODO: remove debug line
-            }
-
             var itemVisibility = isItemVisible(item);
             if (itemVisibility === false) return false;
             if (itemVisibility === true) return true;
