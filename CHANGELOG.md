@@ -1,4 +1,8 @@
-# v_next
+# v1.4.0
+
+###
+
+* Translated items and affixes into all supported languages
 
 ### Changes
 
