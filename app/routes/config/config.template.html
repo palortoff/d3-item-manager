@@ -1,6 +1,18 @@
 <div class="panel panel-info config-panel">
     <div class="panel-heading">Options: <i class="fa fa-cog fa-lg pull-right"></i></div>
     <div class="panel-body">
+        <div class="form-group">
+            <label>Item language:</label>
+            <span class="dropdown">
+                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    {{vm.currentItemLanguage().name}}
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenu1">
+                    <li ng-repeat="locale in vm.d3Config.locales"><a href="javascript:void(0);" ng-click="vm.setItemLanguage(locale.id)">{{locale.name}}</a></li>
+                </ul>
+            </span>
+        </div>
         <ul class="list-group">
             <li class="list-group-item  active"
                 ng-click="vm.gameModesExpanded = !vm.gameModesExpanded">

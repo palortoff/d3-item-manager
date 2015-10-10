@@ -3,7 +3,7 @@
 
     angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
-    function ItemsController($scope, items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config, isEndGame) {
+    function ItemsController($scope, items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config, isEndGame, config) {
         var vm = this;
 
         vm.itemFilter = '';
@@ -125,7 +125,13 @@
                         artisan = 'artisan/blacksmith/';
                 }
             }
-            return "http://eu.battle.net/d3/en/" + artisan + item.tooltipParams;
+            var locale = currentItemLocale();
+            return `http://${locale.region}.battle.net/d3/${locale.short}/${artisan}${item.tooltipParams}`;
+        }
+
+        function currentItemLocale() { // TODO: duplicated code! DRY!!!
+            var id = config.get().itemLanguage || 'en_GB';
+            return _.find(d3Config.locales, function(l) {return l.id == id;});
         }
 
         function persist(key) {
