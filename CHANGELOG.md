@@ -1,3 +1,13 @@
+# v1.4.0
+
+###
+
+* Translated items and affixes into all supported languages
+
+### Changes
+
+* Application name changed to ``D3 Item Manager``
+
 # v1.3.8
 
 ### Bug Fixes
