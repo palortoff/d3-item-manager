@@ -1,6 +1,12 @@
+# v1.4.1
+
+### Bug Fixes
+
+* Items were not shown when no language was selected manually
+
 # v1.4.0
 
-###
+### Features
 
 * Translated items and affixes into all supported languages
 
