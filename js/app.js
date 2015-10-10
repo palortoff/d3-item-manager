@@ -10,6 +10,39 @@
 (function () {
     'use strict';
 
+    angular.module('d3-item-manager').config(["$routeProvider", function ($routeProvider) {
+
+        $routeProvider.when('/', {
+            redirectTo: '/items'
+        }).when('/items', {
+            templateUrl: 'routes/items/items.template.html',
+            controller: 'ItemsController',
+            controllerAs: 'vm',
+            resolve: { factory: checkRouting }
+        }).when('/about', {
+            templateUrl: 'routes/about/about.template.html',
+            controller: 'AboutController',
+            controllerAs: 'vm'
+        }).when('/config', {
+            templateUrl: 'routes/config/config.template.html',
+            controller: 'ConfigController',
+            controllerAs: 'vm',
+            resolve: { factory: checkRouting }
+        });
+    }]);
+
+    function checkRouting($location, d3Config) {
+        if (localStorage.getItem('aboutSeen') != d3Config.aboutVersion) {
+            $location.path('/about');
+        }
+    }
+    checkRouting.$inject = ["$location", "d3Config"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
     angular.module('d3-item-manager').filter('capitalize', capitalizeFilter);
 
     function capitalizeFilter() {
@@ -90,39 +123,6 @@
             region: 'tw'
         }]
     });
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').config(["$routeProvider", function ($routeProvider) {
-
-        $routeProvider.when('/', {
-            redirectTo: '/items'
-        }).when('/items', {
-            templateUrl: 'routes/items/items.template.html',
-            controller: 'ItemsController',
-            controllerAs: 'vm',
-            resolve: { factory: checkRouting }
-        }).when('/about', {
-            templateUrl: 'routes/about/about.template.html',
-            controller: 'AboutController',
-            controllerAs: 'vm'
-        }).when('/config', {
-            templateUrl: 'routes/config/config.template.html',
-            controller: 'ConfigController',
-            controllerAs: 'vm',
-            resolve: { factory: checkRouting }
-        });
-    }]);
-
-    function checkRouting($location, d3Config) {
-        if (localStorage.getItem('aboutSeen') != d3Config.aboutVersion) {
-            $location.path('/about');
-        }
-    }
-    checkRouting.$inject = ["$location", "d3Config"];
 })();
 'use strict';
 
@@ -386,7 +386,8 @@
         };
 
         function load() {
-            return $http.get('items/items_' + config.get().itemLanguage + '.json?' + Date.now()).then(function (result) {
+            var itemLanguage = config.get().itemLanguage || 'en_GB'; // TODO: factor out!
+            return $http.get('items/items_' + itemLanguage + '.json?' + Date.now()).then(function (result) {
                 return result.data;
             });
         }
@@ -679,6 +680,38 @@
 (function () {
     'use strict';
 
+    angular.module('d3-item-manager').controller('NavBarController', NavBarController);
+
+    function NavBarController(classes, gameModes, seasons, itemCategory) {
+        var vm = this;
+
+        vm.gameModes = gameModes;
+        vm.seasons = seasons;
+        vm.classes = classes;
+        vm.itemCategory = itemCategory;
+    }
+    NavBarController.$inject = ["classes", "gameModes", "seasons", "itemCategory"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').directive('navBar', function () {
+        return {
+            restrict: 'E',
+            templateUrl: 'directives/navbar/navbar.template.html',
+            scope: {},
+            controller: 'NavBarController',
+            controllerAs: 'vm'
+        };
+    });
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
     angular.module('d3-item-manager').directive('itemFilter', itemFilter);
 
     function itemFilter() {
@@ -711,38 +744,6 @@
             }
         }
     }
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').controller('NavBarController', NavBarController);
-
-    function NavBarController(classes, gameModes, seasons, itemCategory) {
-        var vm = this;
-
-        vm.gameModes = gameModes;
-        vm.seasons = seasons;
-        vm.classes = classes;
-        vm.itemCategory = itemCategory;
-    }
-    NavBarController.$inject = ["classes", "gameModes", "seasons", "itemCategory"];
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').directive('navBar', function () {
-        return {
-            restrict: 'E',
-            templateUrl: 'directives/navbar/navbar.template.html',
-            scope: {},
-            controller: 'NavBarController',
-            controllerAs: 'vm'
-        };
-    });
 })();
 'use strict';
 
