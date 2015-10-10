@@ -31,10 +31,64 @@
 (function () {
     'use strict';
 
+    // TODO: rename this into constants, conflicts with config.service
+    // TODO: move locales into service m
+
     angular.module('d3-item-manager').constant('d3Config', {
         githubUrl: 'https://github.com/palortoff/d3-item-manager',
         gameSeason: 4,
-        aboutVersion: 1
+        aboutVersion: 1,
+        locales: [{
+            id: "en_GB",
+            name: "English",
+            short: 'en',
+            region: 'eu'
+        }, {
+            id: "de_DE",
+            name: "German",
+            short: 'de',
+            region: 'eu'
+        }, {
+            id: "es_ES",
+            name: "Spanish",
+            short: 'es',
+            region: 'eu'
+        }, {
+            id: "fr_FR",
+            name: "French",
+            short: 'fr',
+            region: 'eu'
+        }, {
+            id: "it_IT",
+            name: "Italian",
+            short: 'it',
+            region: 'eu'
+        }, {
+            id: "pl_PL",
+            name: "Polish",
+            short: 'pl',
+            region: 'eu'
+        }, {
+            id: "pt_PT",
+            name: "Portuguese",
+            short: 'pt',
+            region: 'eu'
+        }, {
+            id: "ru_RU",
+            name: "Russian",
+            short: 'ru',
+            region: 'eu'
+        }, {
+            id: "kr_KR",
+            name: "Korean (South Korea)",
+            short: 'kr',
+            region: 'kr'
+        }, {
+            id: "sh_TW",
+            name: "Traditional Chinese",
+            short: 'tw',
+            region: 'tw'
+        }]
     });
 })();
 'use strict';
@@ -150,6 +204,31 @@
 
         function save() {
             localStorage.setItem(keyAll, JSON.stringify(_all));
+        }
+    }
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').factory('config', config);
+
+    var key = 'config';
+    var _config = JSON.parse(localStorage.getItem(key)) || {};
+
+    function config() {
+        return {
+            get: get,
+            save: save
+        };
+
+        function get() {
+            return _config;
+        }
+
+        function save() {
+            localStorage.setItem(key, JSON.stringify(_config));
         }
     }
 })();
@@ -301,18 +380,18 @@
 
     angular.module('d3-item-manager').factory('items', items);
 
-    function items($http) {
+    function items($http, config) {
         return {
             load: load
         };
 
         function load() {
-            return $http.get('items/items.json?' + Date.now()).then(function (result) {
+            return $http.get('items/items_' + config.get().itemLanguage + '.json?' + Date.now()).then(function (result) {
                 return result.data;
             });
         }
     }
-    items.$inject = ["$http"];
+    items.$inject = ["$http", "config"];
 })();
 'use strict';
 
@@ -697,17 +776,20 @@
 
     angular.module('d3-item-manager').controller('ConfigController', ConfigController);
 
-    function ConfigController($location, gameModes, columns, itemCategory) {
+    function ConfigController($location, gameModes, columns, itemCategory, d3Config, config) {
         var vm = this;
         vm.gameModes = gameModes;
         vm.addNewGameMode = addNewGameMode;
 
         vm.columns = columns;
         vm.addNewColumn = addNewColumn;
+        vm.d3Config = d3Config;
 
         vm.dismiss = dismiss;
 
         vm.showCategory = showCategory;
+        vm.setItemLanguage = setItemLanguage;
+        vm.currentItemLanguage = currentItemLanguage;
 
         function addNewGameMode() {
             gameModes.add(vm.newGameMode);
@@ -727,8 +809,20 @@
             itemCategory.set(id);
             $location.path('/items');
         }
+
+        function setItemLanguage(id) {
+            config.get().itemLanguage = id;
+            config.save();
+        }
+
+        function currentItemLanguage() {
+            var id = config.get().itemLanguage || 'en_GB';
+            return _.find(d3Config.locales, function (l) {
+                return l.id == id;
+            });
+        }
     }
-    ConfigController.$inject = ["$location", "gameModes", "columns", "itemCategory"];
+    ConfigController.$inject = ["$location", "gameModes", "columns", "itemCategory", "d3Config", "config"];
 })();
 'use strict';
 
@@ -737,7 +831,7 @@
 
     angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
-    function ItemsController($scope, items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config, isEndGame) {
+    function ItemsController($scope, items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config, isEndGame, config) {
         var vm = this;
 
         vm.itemFilter = '';
@@ -854,7 +948,16 @@
                         artisan = 'artisan/blacksmith/';
                 }
             }
-            return "http://eu.battle.net/d3/en/" + artisan + item.tooltipParams;
+            var locale = currentItemLocale();
+            return 'http://' + locale.region + '.battle.net/d3/' + locale.short + '/' + artisan + item.tooltipParams;
+        }
+
+        function currentItemLocale() {
+            // TODO: duplicated code! DRY!!!
+            var id = config.get().itemLanguage || 'en_GB';
+            return _.find(d3Config.locales, function (l) {
+                return l.id == id;
+            });
         }
 
         function persist(key) {
@@ -869,6 +972,6 @@
             }
         }
     }
-    ItemsController.$inject = ["$scope", "items", "itemTracking", "isItemVisibleForCategory", "isItemVisibleForClass", "gameModes", "seasons", "columns", "itemCategory", "d3Config", "isEndGame"];
+    ItemsController.$inject = ["$scope", "items", "itemTracking", "isItemVisibleForCategory", "isItemVisibleForClass", "gameModes", "seasons", "columns", "itemCategory", "d3Config", "isEndGame", "config"];
 })();
 //# sourceMappingURL=app.js.map

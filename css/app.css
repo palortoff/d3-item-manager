@@ -55,6 +55,14 @@ item-filter .ats-switch {
 .config-panel i.text-danger {
   transform: translateY(20%);
 }
+.config-panel button.dropdown-toggle {
+  margin-left: 10px;
+  padding: 2px 10px;
+}
+.config-panel .dropdown.open .dropdown-menu {
+  transform: translateY(8px);
+  margin-left: 10px;
+}
 
 .table-kenais tbody tr:nth-of-type(6n+1),
 .table-kenais tbody tr:nth-of-type(6n+2),
