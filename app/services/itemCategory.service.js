@@ -16,8 +16,10 @@
         };
 
         function set(s) {
-            selected = s;
-            localStorage.setItem(key, s);
+            if (!_.isUndefined(s)) {
+                selected = s;
+                localStorage.setItem(key, s);
+            }
         }
 
         function getCategory(id) {
@@ -71,7 +73,7 @@
         {id: 24, name: "Follower", filter: function(item) {return _.contains(item.slots, 'follower-special');}},
 
         {"class": 'divider hide'},
-        {id: 25, name:"Items with data loss before v1.3.8", filter: function(item){return _.contains([10161, 10162,10261, 10262,10361, 10362,10461, 10462,10561, 10562,10661, 10662,10761, 10762,10861, 10862,10961, 10962,11061, 11062], item.id);}, "class": 'hide'},
+        {id: 25, name: "Items with data loss before v1.3.8", filter: function(item) {return _.contains([10161, 10162, 10261, 10262, 10361, 10362, 10461, 10462, 10561, 10562, 10661, 10662, 10761, 10762, 10861, 10862, 10961, 10962, 11061, 11062], item.id);}, "class": 'hide'},
         {"class": 'divider hide'}
     ];
 

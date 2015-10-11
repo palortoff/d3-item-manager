@@ -29,7 +29,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li ng-click="vm.seasons.setCurrent('Non Season')"><a href="javascript:void(0);">Non Season</a></li>
-                        <li role="separator" class="divider"></li>
+                        <li class="divider"></li>
                         <li ng-repeat="s in vm.seasons.all()" ng-click="vm.seasons.setCurrent(s)"><a href="javascript:void(0);">{{s}}</a></li>
                     </ul>
                 </li>
@@ -41,7 +41,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li ng-repeat="c in vm.classes.distinct()" ng-click="vm.classes.setCurrent(c.id)"><a href="javascript:void(0);">{{c.displayName}}</a></li>
-                        <li role="separator" class="divider"></li>
+                        <li class="divider"></li>
                         <li ng-click="vm.classes.setCurrent(0)"><a href="javascript:void(0);">All</a></li>
                     </ul>
                 </li>
