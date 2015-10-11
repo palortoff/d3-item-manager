@@ -27,7 +27,7 @@
     });
 
     function checkRouting($location, constants) {
-        if (localStorage.getItem('aboutSeen') != constants.aboutVersion) {
+        if (localStorage.getItem('aboutSeen') !== constants.aboutVersion) {
             $location.path('/about');
         }
     }

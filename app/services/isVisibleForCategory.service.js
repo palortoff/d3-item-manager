@@ -6,7 +6,7 @@
     function isItemVisibleForCategory(itemCategory) {
         return function(item) {
             return itemCategory.current().filter(item);
-        }
+        };
     }
 
 })();

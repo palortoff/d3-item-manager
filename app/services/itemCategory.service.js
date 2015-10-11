@@ -17,7 +17,7 @@
 
         function set(s) {
             selected = s;
-            localStorage.setItem(key, s)
+            localStorage.setItem(key, s);
         }
 
         function getCategory(id) {
@@ -30,7 +30,7 @@
 
         function categoryById(id) {
             return _.find(all, function(cat) {
-                return cat.id == id
+                return cat.id == id; // jshint ignore:line
             });
         }
     }
@@ -43,15 +43,15 @@
         {"class": "divider"},
 
         {id: 4, name: 'Horadric Cache Items', filter: function(item) { return !!item.bounty; }},
-        {id: 5, name: 'Season 1', filter: function(item) { return item.season == 1; }, "class": 'hide'},
-        {id: 6, name: 'Season 2', filter: function(item) { return item.season == 2; }, "class": 'hide'},
-        {id: 7, name: 'Season 3', filter: function(item) { return item.season == 3; }, "class": 'hide'},
-        {id: 8, name: 'Season 4', filter: function(item) { return item.season == 4; }},
+        {id: 5, name: 'Season 1', filter: function(item) { return item.season === 1; }, "class": 'hide'},
+        {id: 6, name: 'Season 2', filter: function(item) { return item.season === 2; }, "class": 'hide'},
+        {id: 7, name: 'Season 3', filter: function(item) { return item.season === 3; }, "class": 'hide'},
+        {id: 8, name: 'Season 4', filter: function(item) { return item.season === 4; }},
 
         {"class": "divider"},
 
-        {id: 9, name: 'Crafted (Legendary)', filter: function(item) { return item.crafted && item.displayColor === "orange" && item.requiredLevel == 70; }, "class": 'hide'},
-        {id: 10, name: 'Crafted (Set)', filter: function(item) { return item.crafted && item.displayColor === "green" && item.requiredLevel == 70; }, "class": 'hide'},
+        {id: 9, name: 'Crafted (Legendary)', filter: function(item) { return item.crafted && item.displayColor === "orange" && item.requiredLevel === 70; }, "class": 'hide'},
+        {id: 10, name: 'Crafted (Set)', filter: function(item) { return item.crafted && item.displayColor === "green" && item.requiredLevel === 70; }, "class": 'hide'},
 
         {"class": "divider hide"},
 

@@ -45,9 +45,9 @@
 
         function addTracking(tracking) {
             vm.items.forEach(function(item) {
-                if (!tracking[item.id]) tracking[item.id] = {};
+                if (!tracking[item.id]) {tracking[item.id] = {};}
                 item.track = tracking[item.id];
-            })
+            });
         }
 
         function toggle(item, column) {
@@ -83,21 +83,21 @@
         }
 
         function isVisible(item) {
-            if (!isEndGame(item)) return false;
+            if (!isEndGame(item)) {return false;}
 
-            if (vm.filterOverAll && vm.itemFilter.length > 0) return true;
+            if (vm.filterOverAll && vm.itemFilter.length > 0) {return true;}
 
-            if (vm.onlyCubable && !item.cube) return false;
-            if (vm.hideCubed && isCubed(item)) return false;
+            if (vm.onlyCubable && !item.cube) {return false;}
+            if (vm.hideCubed && isCubed(item)) {return false;}
 
-            if (!isItemVisibleForCategory(item)) return false;
+            if (!isItemVisibleForCategory(item)) {return false;}
 
             return isItemVisibleForClass(item);
 
         }
 
         function isSeasonal(item) {
-            return item.season == constants.gameSeason;
+            return item.season === constants.gameSeason;
         }
 
         function isBounty(item) {

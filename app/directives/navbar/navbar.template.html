@@ -36,11 +36,11 @@
 
                 <li class="dropdown">
                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                        {{vm.classes.current().name | capitalize}}
+                        {{vm.classes.current().name}}
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li ng-repeat="c in vm.classes.distinct()" ng-click="vm.classes.setCurrent(c.id)"><a href="javascript:void(0);">{{c.name|capitalize}}</a></li>
+                        <li ng-repeat="c in vm.classes.distinct()" ng-click="vm.classes.setCurrent(c.id)"><a href="javascript:void(0);">{{c.name}}</a></li>
                         <li role="separator" class="divider"></li>
                         <li ng-click="vm.classes.setCurrent(0)"><a href="javascript:void(0);">All</a></li>
                     </ul>

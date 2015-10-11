@@ -20,7 +20,7 @@
         };
 
         function controller() {
-            var vm = this;
+            var vm = this; // jshint ignore:line
             vm.clear = clear;
             vm.showClear = showClear;
 

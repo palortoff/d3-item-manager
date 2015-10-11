@@ -29,7 +29,7 @@
 
         function setCurrent(c) {
             _current = c;
-            localStorage.setItem(keyCurrent, c)
+            localStorage.setItem(keyCurrent, c);
         }
 
         function setDefault() {
@@ -45,7 +45,7 @@
         }
 
         function add(gm) {
-            if (_.contains(_all, gm)) return;
+            if (_.contains(_all, gm)) {return;}
             _all.push(gm);
             save();
         }

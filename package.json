@@ -41,7 +41,8 @@
     "deploy_5": "git commit -m \"updated dist\"",
     "deploy_6": "git push",
     "deploy_7": "git subtree push --prefix dist origin gh-pages",
-    "deploy_8": "git checkout master"
+    "deploy_8": "git checkout master",
+    "lint": "jshint app"
   },
   "dependencies": {}
 }
