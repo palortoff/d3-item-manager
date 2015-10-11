@@ -26,8 +26,8 @@
             });
     });
 
-    function checkRouting($location, d3Config) {
-        if (localStorage.getItem('aboutSeen') != d3Config.aboutVersion) {
+    function checkRouting($location, constants) {
+        if (localStorage.getItem('aboutSeen') != constants.aboutVersion) {
             $location.path('/about');
         }
     }

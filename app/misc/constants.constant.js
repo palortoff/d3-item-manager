@@ -1,10 +1,9 @@
 (function() {
     'use strict';
 
-    // TODO: rename this into constants, conflicts with config.service
     // TODO: move locales into service m
 
-    angular.module('d3-item-manager').constant('d3Config', {
+    angular.module('d3-item-manager').constant('constants', {
         githubUrl:    'https://github.com/palortoff/d3-item-manager',
         gameSeason:   4,
         aboutVersion: 1,

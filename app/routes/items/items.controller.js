@@ -3,7 +3,7 @@
 
     angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
-    function ItemsController($scope, items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config, isEndGame, config) {
+    function ItemsController($scope, items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, constants, isEndGame, config) {
         var vm = this;
 
         vm.itemFilter = '';
@@ -97,7 +97,7 @@
         }
 
         function isSeasonal(item) {
-            return item.season == d3Config.gameSeason;
+            return item.season == constants.gameSeason;
         }
 
         function isBounty(item) {
@@ -131,7 +131,7 @@
 
         function currentItemLocale() { // TODO: duplicated code! DRY!!!
             var id = config.get().itemLanguage || 'en_GB';
-            return _.find(d3Config.locales, function(l) {return l.id == id;});
+            return _.find(constants.locales, function(l) {return l.id == id;});
         }
 
         function persist(key) {

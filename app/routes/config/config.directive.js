@@ -3,14 +3,14 @@
 
     angular.module('d3-item-manager').controller('ConfigController', ConfigController);
 
-    function ConfigController($location, gameModes, columns, itemCategory, d3Config, config) {
+    function ConfigController($location, gameModes, columns, itemCategory, constants, config) {
         var vm = this;
         vm.gameModes = gameModes;
         vm.addNewGameMode = addNewGameMode;
 
         vm.columns = columns;
         vm.addNewColumn = addNewColumn;
-        vm.d3Config = d3Config;
+        vm.constants = constants;
 
         vm.dismiss = dismiss;
 
@@ -44,7 +44,7 @@
 
         function currentItemLanguage() {
             var id = config.get().itemLanguage || 'en_GB';
-            return _.find(d3Config.locales, function(l) {return l.id == id;});
+            return _.find(constants.locales, function(l) {return l.id == id;});
         }
     }
 
