@@ -6,7 +6,9 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
+    "bower": "^1.5.3",
     "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
     "gulp-batch": "^1.0.5",
     "gulp-concat": "^2.6.0",
     "gulp-connect": "^2.2.0",
@@ -16,6 +18,7 @@
     "gulp-uglify": "^1.4.1",
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.5",
+    "jshint": "^2.8.0",
     "rimraf": "^2.4.3"
   },
   "scripts": {
@@ -40,8 +43,5 @@
     "deploy_7": "git subtree push --prefix dist origin gh-pages",
     "deploy_8": "git checkout master"
   },
-  "dependencies": {
-    "bower": "^1.5.3",
-    "gulp-babel": "^5.2.1"
-  }
+  "dependencies": {}
 }

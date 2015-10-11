@@ -16,7 +16,7 @@
         function load() {
             upgradeDataStructureBeforeItemLoad();
             tracking = JSON.parse(localStorage.getItem(key)) || {};
-            postItemLoadUpdate();
+            postItemLoadUpdate(tracking, saveWithoutToastr);
             return tracking;
         }
 

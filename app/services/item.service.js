@@ -3,14 +3,14 @@
 
     angular.module('d3-item-manager').factory('items', items);
 
-    function items($http, config) {
+    function items($http, locales) {
         return {
             load
         };
 
         function load() {
-            var itemLanguage = config.get().itemLanguage || 'en_GB'; // TODO: factor out!
-            return $http.get(`items/items_${itemLanguage}.json?${Date.now()}`).
+            var locale = locales.currentItemLanguage().id;
+            return $http.get(`items/items_${locale}.json?${Date.now()}`).
                 then(function(result) {
                     return result.data;
                 });

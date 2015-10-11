@@ -3,12 +3,13 @@
 
     angular.module('d3-item-manager').factory('postItemLoadUpdate', postItemLoadUpdate);
 
-    function postItemLoadUpdate(itemCategory, itemTracking) {
+    function postItemLoadUpdate(itemCategory) {
         var tracking;
-        return function(){
-            tracking = itemTracking.load();
+        var save;
+        return function(trackingData, saveFn){
+            tracking = trackingData;
+            save = saveFn;
             removeDuplicateItemsIds();
-            itemTracking.save();
         };
 
         function removeDuplicateItemsIds() {
@@ -21,6 +22,7 @@
             if (hasBadData) {
                 notifyForBadData();
                 removeBadData();
+                save();
             }
         }
 
@@ -31,7 +33,6 @@
 
         function removeBadData() {
             _.forEach([1016,1026,1036,1046,1056,1066,1076,1086,1096,1106], function(id){delete tracking[id];});
-            saveWithoutToastr();
         }
 
         //noinspection JSUnusedLocalSymbols
