@@ -11,7 +11,7 @@
         <th ng-repeat="column in vm.allColumns()" class="text-center">{{column}}</th>
         <th>Affix</th>
     </thead>
-    <tr ng-repeat="item in vm.items | orderBy:'name' | filter: {name:vm.itemFilter}" ng-if="vm.isVisible(item)">
+    <tr ng-repeat="item in vm.items | orderBy:'name' | filter: vm.itemFilter" ng-if="vm.isVisible(item)">
         <td>
             <a ng-href="{{vm.link(item)}}" class="d3-link {{item.displayColor}}" target="_d3">{{item.name}}</a>
             <i class="season-small" ng-show="vm.isSeasonal(item)" title="current season"></i>
