@@ -5,7 +5,7 @@
 
     var key = 'itemTracking';
 
-    function itemTracking($timeout, itemCategory) {
+    function itemTracking($timeout, itemCategory, upgradeDataStructureBeforeItemLoad) {
         var tracking;
         var notifyTimer;
         return {
@@ -14,7 +14,7 @@
         };
 
         function load() {
-            upgradeFromCubeSectionsToOneTrackingContainer();
+            upgradeDataStructureBeforeItemLoad();
             tracking = JSON.parse(localStorage.getItem(key)) || {};
             removeDuplicateItemsIds();
             return tracking;
@@ -34,30 +34,6 @@
             notifyTimer = $timeout(function() {
                 toastr.success('Items saved', {timeOut: 1000});
             }, 1000);
-        }
-
-        // TODO: factor this out into own service
-        function upgradeFromCubeSectionsToOneTrackingContainer() {
-            var hasOldSectionData = !!localStorage.getItem('armor') || !!localStorage.getItem('weapons') || !!localStorage.getItem('jewelry');
-            var hasTrackingContainer = !!localStorage.getItem(key);
-
-            if (hasOldSectionData && !hasTrackingContainer) {
-                var armor = JSON.parse(localStorage.getItem('armor'));
-                var weapons = JSON.parse(localStorage.getItem('weapons'));
-                var jewls = JSON.parse(localStorage.getItem('jewelry'));
-                tracking = _.defaults({}, armor, weapons, jewls);
-                save();
-                console.log("upgradedFromCubeSectionsToOneTrackingContainer");
-
-                localStorage.setItem('armor_backup', JSON.stringify(armor));
-                localStorage.setItem('weapons_backup', JSON.stringify(weapons));
-                localStorage.setItem('jewls_backup', JSON.stringify(jewls));
-
-                localStorage.removeItem('armor');
-                localStorage.removeItem('weapons');
-                localStorage.removeItem('jewelry');
-
-            }
         }
 
         function removeDuplicateItemsIds() {
