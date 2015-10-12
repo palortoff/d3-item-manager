@@ -12,7 +12,6 @@ function task() {
         .pipe(sourceMaps.init())
         .pipe(concat('thirdParty.js'))
         .pipe(sourceMaps.write('./'))
-        .pipe(sourceMaps.write('./'))
         .pipe(gulp.dest(config.buildTarget + '/js'));
 }
 

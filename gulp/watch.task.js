@@ -14,6 +14,7 @@ function task() {
     watchAndRun(config.app.html, require('./appHtml.task'), 'updating app:html');
     watchAndRun(config.app.less, require('./appLess.task'), 'updating app:less');
     watchAndRun(config.thirdParty.less, require('./thirdPartyLess.task'), 'updating thirdparty:less');
+    watchAndRun(config.thirdParty.js, require('./thirdPartyJs.task'), 'updating thirdparty:js');
 }
 
 function watchAndRun(glob, task, message) {
