@@ -3,7 +3,8 @@
   "app": {
     "js": [
       "app/app.js",
-      "app/**/*.js"
+      "app/**/*.js",
+      "!app/**/*test.js"
     ],
     "html": [
       "app/**/*.html"

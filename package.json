@@ -18,7 +18,15 @@
     "gulp-uglify": "^1.4.1",
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.5",
+    "jasmine-core": "^2.3.4",
     "jshint": "^2.8.0",
+    "karma": "^0.13.10",
+    "karma-babel-preprocessor": "^5.2.2",
+    "karma-chrome-launcher": "^0.2.1",
+    "karma-cli": "^0.1.1",
+    "karma-fixture": "^0.2.5",
+    "karma-jasmine": "^0.3.6",
+    "karma-json-fixtures-preprocessor": "0.0.5",
     "rimraf": "^2.4.3"
   },
   "scripts": {
@@ -42,8 +50,6 @@
     "deploy_6": "git push",
     "deploy_7": "git subtree push --prefix dist origin gh-pages",
     "deploy_8": "git checkout master",
-    "test": "npm run lint",
-    "lint": "jshint app"
-  },
-  "dependencies": {}
+    "test": "jshint app && karma start"
+  }
 }
