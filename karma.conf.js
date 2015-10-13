@@ -19,7 +19,7 @@ module.exports = function(config) {
             "app/**/*.js": ['babel'],
             "**/*.json":   ['json_fixtures']
         },
-        browsers:                 ['Chrome_Mini'],
+        browsers:                 ['Chrome'],
         customLaunchers:          {
             Chrome_Mini: {
                 base:  'Chrome',
