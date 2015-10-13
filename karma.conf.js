@@ -2,7 +2,7 @@
 
 module.exports = function(config) {
     //noinspection JSUnusedGlobalSymbols
-    config.set({
+    var configuration = {
         basePath:                 '',
         frameworks:               ['jasmine', 'fixture'],
         files:                    [
@@ -19,11 +19,15 @@ module.exports = function(config) {
             "app/**/*.js": ['babel'],
             "**/*.json":   ['json_fixtures']
         },
-        browsers:                 ['Chrome'],
+        browsers:                 ['Chrome_Mini'],
         customLaunchers:          {
-            Chrome_Mini: {
+            Chrome_Mini:      {
                 base:  'Chrome',
                 flags: ['--window-size=400,200', '--window-position=-9999,0']
+            },
+            Chrome_travis_ci: {
+                base:  'Chrome',
+                flags: ['--no-sandbox']
             }
         },
         jsonFixturesPreprocessor: {
@@ -40,5 +44,12 @@ module.exports = function(config) {
                 return file.originalPath;
             }
         }
-    });
+    };
+
+    if(process.env.TRAVIS){
+        configuration.browsers = ['Chrome_travis_ci'];
+    }
+
+    config.set(configuration);
+
 };
