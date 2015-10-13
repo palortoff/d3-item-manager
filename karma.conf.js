@@ -17,6 +17,7 @@ module.exports = function(config) {
         singleRun:                true,
         preprocessors:            {
             "app/**/*.js": ['babel'],
+            "tests/**/*.js": ['babel'],
             "**/*.json":   ['json_fixtures']
         },
         browsers:                 ['Chrome_Mini'],
