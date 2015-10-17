@@ -26,8 +26,8 @@
             });
     });
 
-    function checkRouting($location, constants) {
-        if (localStorage.getItem('aboutSeen') !== constants.aboutVersion) {
+    function checkRouting($location, about) {
+        if (!about.hasBeenSeen()) {
             $location.path('/about');
         }
     }
