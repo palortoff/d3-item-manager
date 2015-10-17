@@ -3,13 +3,13 @@
 
   angular.module('d3-item-manager').factory('about', about);
 
-  function about(constants) {
+  function about(config, constants) {
     return {
       hasBeenSeen
     };
 
     function hasBeenSeen() {
-      return localStorage.getItem('aboutSeen') === constants.aboutVersion;
+      return config.getItem('aboutSeen') === constants.aboutVersion;
     }
   }
 })();

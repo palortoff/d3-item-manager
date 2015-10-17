@@ -4,7 +4,7 @@
     angular.module('d3-item-manager').controller('AboutController', AboutController);
 
     var key = 'aboutSeen';
-    function AboutController($location, constants, version){
+    function AboutController($location, constants, version, config){
         var vm = this;
         vm.constants = constants;
         vm.dismiss = dismiss;
@@ -15,7 +15,7 @@
         });
 
         function dismiss(){
-            localStorage.setItem(key, constants.aboutVersion);
+            config.setItem(key, constants.aboutVersion);
             $location.path('/');
         }
     }

@@ -3,29 +3,29 @@
 
   angular.module('d3-item-manager').factory('config', config);
 
-  var key = 'config';
-  var _config = JSON.parse(localStorage.getItem(key)) || {};
+  var localStorageKey = 'config';
+  var _config = JSON.parse(localStorage.getItem(localStorageKey)) || {};
 
-  function config() {
-    return {
-      get,
-      save,
+  function config(configUpdate) {
+    var service = {
       getItem,
       setItem,
       isSet
     };
+    configUpdate(service);
+    return service;
 
-    function getItem(key, defaultValue) {
-      return _config[key] || defaultValue;
+    function getItem(itemKey, defaultValue) {
+      return _config[itemKey] || defaultValue;
     }
 
-    function setItem(key, value){
-      _config[key] = value;
+    function setItem(itemKey, value){
+      _config[itemKey] = value;
       save();
     }
 
-    function isSet(key){
-      return !_.isUndefined(_config[key]);
+    function isSet(itemKey){
+      return !_.isUndefined(_config[itemKey]);
     }
 
     function get() {
@@ -33,8 +33,10 @@
     }
 
     function save() {
-      localStorage.setItem(key, JSON.stringify(_config));
+      localStorage.setItem(localStorageKey, JSON.stringify(_config));
     }
   }
 
 })();
+
+// TODO: page to manually edit/delete all config values
