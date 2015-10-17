@@ -3,6 +3,8 @@
 
     angular.module('d3-item-manager').factory('locales', locales);
 
+    var itemLanguageKey = 'itemLanguage';
+
     function locales(config) {
         return {
             all,
@@ -11,7 +13,7 @@
         };
 
         function currentItemLanguage(){
-            var id = config.get().itemLanguage || 'en_GB';
+            var id = config.getItem(itemLanguageKey, 'en_GB');
             return _.find(allLocales, function(l) {return l.id === id;});
         }
 
@@ -20,8 +22,7 @@
         }
 
         function setItemLanguageById(id){
-            config.get().itemLanguage = id;
-            config.save();
+            config.setItem(itemLanguageKey, id);
         }
     }
 
