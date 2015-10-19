@@ -11,11 +11,11 @@
         var _current = config.getItem(keyCurrent, _all[0]);
 
         return {
-            current:    current,
-            setCurrent: setCurrent,
-            remove:     remove,
-            add:        add,
-            all:        all
+            current,
+            setCurrent,
+            remove,
+            add,
+            all
         };
 
         function current() {

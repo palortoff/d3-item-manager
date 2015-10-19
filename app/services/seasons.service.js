@@ -11,11 +11,11 @@
         var _current = config.getItem(keyCurrent, "Non Season");
 
         return {
-            current:    current,
-            setCurrent: setCurrent,
-            remove:     remove,
-            add:        add,
-            all:        all
+            current,
+            setCurrent,
+            remove,
+            add,
+            all
         };
 
         function current() {

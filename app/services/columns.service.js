@@ -9,9 +9,9 @@
         var _all = config.getItem(keyAll, ['Stashed']) ;
 
         return {
-            remove:     remove,
-            add:        add,
-            all:        all
+            remove,
+            add,
+            all
         };
 
         function all() {
