@@ -26,7 +26,6 @@
                 localStorage.removeItem('armor');
                 localStorage.removeItem('weapons');
                 localStorage.removeItem('jewelry');
-
             }
         };
 

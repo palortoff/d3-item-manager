@@ -3,7 +3,7 @@
 
     angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
-    function ItemsController($scope, items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, constants, isEndGame, locales) {
+    function ItemsController($scope, items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, constants, isEndGame, locales, config) {
         var vm = this;
 
         vm.itemFilter = '';
@@ -130,10 +130,10 @@
         }
 
         function persist(key) {
-            vm[key] = localStorage.getItem(key) === 'true' || false;
+            vm[key] = config.getItem(key) === 'true' || false;
 
             $scope.$watch(getKey, function(){
-                localStorage.setItem(key, vm[key]);
+                config.setItem(key, vm[key]);
             });
 
             function getKey(){

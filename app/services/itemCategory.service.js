@@ -5,8 +5,8 @@
 
     var key = 'itemCategory';
 
-    function itemCategory() {
-        var selected = localStorage.getItem(key) || 1;
+    function itemCategory(config) {
+        var selected = config.getItem(key) || 1;
 
         return {
             all,
@@ -18,7 +18,7 @@
         function set(s) {
             if (!_.isUndefined(s)) {
                 selected = s;
-                localStorage.setItem(key, s);
+                config.setItem(key, s);
             }
         }
 

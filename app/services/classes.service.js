@@ -14,9 +14,10 @@
         {id: 4, name: 'witch-doctor', displayName: 'Witch Doctor'},
         {id: 5, name: 'wizard', displayName: 'Wizard'}
     ];
-    var _current = Number(localStorage.getItem(keyCurrent)) || 0;
 
-    function classes() {
+    function classes(config) {
+        var _current = Number(config.getItem(keyCurrent)) || 0;
+
         return {
             all,
             distinct,
@@ -38,7 +39,7 @@
 
         function setCurrent(id) {
             _current = id;
-            localStorage.setItem(keyCurrent, id);
+            config.setItem(keyCurrent, id);
         }
     }
 

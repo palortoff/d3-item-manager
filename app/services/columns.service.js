@@ -4,11 +4,10 @@
     angular.module('d3-item-manager').factory('columns', columns);
 
     var keyAll = 'allColumns';
-    var defaultSet = ['Stashed'];
 
-    var _all = JSON.parse(localStorage.getItem(keyAll)) || defaultSet;
+    function columns(config) {
+        var _all = config.getItem(keyAll, ['Stashed']) ;
 
-    function columns() {
         return {
             remove:     remove,
             add:        add,
@@ -31,7 +30,7 @@
         }
 
         function save() {
-            localStorage.setItem(keyAll, JSON.stringify(_all));
+            config.setItem(keyAll, JSON.stringify(_all));
         }
     }
 
