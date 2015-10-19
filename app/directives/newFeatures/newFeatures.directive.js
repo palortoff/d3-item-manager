@@ -13,7 +13,7 @@
     };
 
     function controller($location, config) {
-      var vm = this;
+      var vm = this; // jshint ignore:line
 
       vm.itemLanguageNotConfigured = itemLanguageNotConfigured;
       vm.showConfig = showConfig;
