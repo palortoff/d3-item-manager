@@ -6,6 +6,8 @@
     var keyAll = 'allSeasons';
     var keyCurrent = 'currentSeason';
 
+    // TODO: add non-season to array
+
     function seasons(config) {
         var _all = config.getItem(keyAll, ['Season 4']);
         var _current = config.getItem(keyCurrent, "Non Season");
@@ -15,8 +17,13 @@
             setCurrent,
             remove,
             add,
-            all
+            all,
+            reallyAll
         };
+
+        function reallyAll(){
+            return _.flatten(['Non Season', all()]);
+        }
 
         function current() {
             return _current;

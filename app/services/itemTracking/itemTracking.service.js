@@ -9,15 +9,21 @@
         var tracking;
         var notifyTimer;
         return {
-            load,
-            save
+            get,
+            save,
+            setCompleteTrackingReloadRequired
         };
 
+        function get(){
+            if (!tracking){
+                load();
+            }
+            return tracking;
+        }
         function load() {
             upgradeDataStructureBeforeItemLoad();
             tracking = JSON.parse(localStorage.getItem(key)) || {};
             postItemLoadUpdate(tracking, saveWithoutToastr);
-            return tracking;
         }
 
         function saveWithoutToastr() {
@@ -34,6 +40,10 @@
             notifyTimer = $timeout(function() {
                 toastr.success('Items saved', {timeOut: 1000});
             }, 1000);
+        }
+        function setCompleteTrackingReloadRequired(t){
+            tracking = t;
+            saveWithoutToastr();
         }
     }
 })();

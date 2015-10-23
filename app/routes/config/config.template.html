@@ -70,6 +70,32 @@
                 </form>
             </li>
         </ul>
+        <ul class="list-group backup-restore">
+            <li class="list-group-item active"
+                ng-click="vm.backupExpanded = !vm.backupExpanded">
+                <i class="fa fa-lg" ng-class="{'fa-caret-down': !!vm.backupExpanded, 'fa-caret-right': !vm.backupExpanded}"></i>
+                Backup / Restore / Export
+            </li>
+            <li class="list-group-item" ng-if="vm.backupExpanded">
+                <button class="btn btn-sm btn-info"
+                        download-data
+                        dd-getter="vm.backupData()"
+                        dd-json="true"
+                        dd-filename="'d3-item-manager.json'">Backup data</button>
+                Backup all data for restoring it later.
+            </li>
+            <li class="list-group-item" ng-if="vm.backupExpanded">
+                <button class="btn btn-sm btn-info" ng-click="vm.triggerRestore()">Restore data</button>
+                Restore data with a backup file
+            </li>
+            <li class="list-group-item" ng-if="vm.backupExpanded">
+                <button class="btn btn-sm btn-info"
+                        download-data
+                        dd-getter="vm.exportData()"
+                        dd-filename="'d3-item-manager.csv'">Export data</button>
+                Export data, to import into Excel etc.
+            </li>
+        </ul>
         <p><strong>Note</strong>: Deleting game modes or columns will not delete the saved data. Data can be recovered by re-adding a game mode, season or column of the same name.</p>
         <p><strong>Note</strong>: To display the items vulnerable to data loss up until v1.3.7 click <a href="javascript:void(0);" ng-click="vm.showCategory(25)">here</a></p>
     </div>

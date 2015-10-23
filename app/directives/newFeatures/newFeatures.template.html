@@ -1,5 +1,4 @@
-<div class="panel panel-warning" ng-if="vm.itemLanguageNotConfigured()">
-  <div class="panel-heading">
+<banner-alert class="warning no-language" ng-if="vm.itemLanguageNotConfigured()">
     <div class="row">
       <div class="col-xs-6 feature-warning">
         No item language configured.
@@ -9,5 +8,4 @@
         <button class="btn btn-sm btn-info" ng-click="vm.setDefaultItemLanguage()">Use english</button>
       </div>
     </div>
-  </div>
-</div>
+</banner-alert>

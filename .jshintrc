@@ -27,6 +27,7 @@
     "beforeAll": false,
     "before": false,
     "fixture": false,
-    "expect":false
+    "expect":false,
+    "$":false
   }
 }

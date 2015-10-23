@@ -3,7 +3,14 @@
 
     angular.module('d3-item-manager').controller('ConfigController', ConfigController);
 
-    function ConfigController($location, gameModes, columns, itemCategory, constants, locales) {
+    function ConfigController($location,
+                              gameModes,
+                              columns,
+                              itemCategory,
+                              locales,
+                              backup,
+                              restore,
+                              exportService) {
         var vm = this;
         vm.gameModes = gameModes;
         vm.addNewGameMode = addNewGameMode;
@@ -12,6 +19,9 @@
         vm.locales = locales;
         vm.dismiss = dismiss;
         vm.showCategory = showCategory;
+        vm.backupData = backup.data;
+        vm.triggerRestore = restore.trigger;
+        vm.exportData = exportService.data;
 
         function addNewGameMode() {
             gameModes.add(vm.newGameMode);
@@ -32,5 +42,4 @@
             $location.path('/items');
         }
     }
-
 })();

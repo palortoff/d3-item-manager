@@ -39,7 +39,7 @@
                 then(function(data) {
                     vm.items = data;
                 }).
-                then(itemTracking.load).
+                then(itemTracking.get).
                 then(addTracking);
         }
 
@@ -130,7 +130,7 @@
         }
 
         function persist(key) {
-            vm[key] = config.getItem(key) === 'true' || false;
+            vm[key] = (config.getItem(key) === true) || false;
 
             $scope.$watch(getKey, function(){
                 config.setItem(key, vm[key]);

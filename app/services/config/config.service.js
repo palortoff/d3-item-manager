@@ -10,7 +10,9 @@
     var service = {
       getItem,
       setItem,
-      isSet
+      isSet,
+      getCompleteConfig,
+      setCompleteConfigReloadRequired
     };
     configUpdate(service);
     return service;
@@ -34,6 +36,13 @@
 
     function save() {
       localStorage.setItem(localStorageKey, JSON.stringify(_config));
+    }
+    function getCompleteConfig(){
+      return _config;
+    }
+    function setCompleteConfigReloadRequired(c){
+      _config = c;
+      save();
     }
   }
 

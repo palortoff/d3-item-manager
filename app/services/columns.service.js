@@ -5,14 +5,21 @@
 
     var keyAll = 'allColumns';
 
+    // TODO: add cubed to array
+
     function columns(config) {
-        var _all = config.getItem(keyAll, ['Stashed']) ;
+        var _all = config.getItem(keyAll, ['Stashed']);
 
         return {
             remove,
             add,
-            all
+            all,
+            reallyAll
         };
+
+        function reallyAll(){
+            return _.flatten(['Cubed', all()]);
+        }
 
         function all() {
             return _all;
@@ -30,7 +37,7 @@
         }
 
         function save() {
-            config.setItem(keyAll, JSON.stringify(_all));
+            config.setItem(keyAll, _all);
         }
     }
 
