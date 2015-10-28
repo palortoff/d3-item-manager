@@ -116,13 +116,13 @@
             var artisan = '';
             if (item.crafted) {
                 switch (item.slots[0]) {
-                    case 'neck':
-                    case 'left-finger':
-                    case 'right-finger':
-                        artisan = 'artisan/jeweler/';
-                        break;
-                    default:
-                        artisan = 'artisan/blacksmith/';
+                case 'neck':
+                case 'left-finger':
+                case 'right-finger':
+                    artisan = 'artisan/jeweler/';
+                    break;
+                default:
+                    artisan = 'artisan/blacksmith/';
                 }
             }
             var locale = locales.currentItemLanguage();

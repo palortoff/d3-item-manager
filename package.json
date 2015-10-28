@@ -7,7 +7,8 @@
   "private": true,
   "devDependencies": {
     "bower": "^1.5.3",
-    "gulp": "^3.9.0",
+    "eslint": "^1.7.3",
+    "gulp": "gulpjs/gulp#4.0",
     "gulp-babel": "^5.2.1",
     "gulp-batch": "^1.0.5",
     "gulp-concat": "^2.6.0",
@@ -52,5 +53,8 @@
     "deploy_8": "git subtree push --prefix dist origin gh-pages",
     "deploy_9": "git checkout master",
     "test": "jshint app && karma start"
+  },
+  "dependencies": {
+    "gulp-eslint": "^1.0.0"
   }
 }

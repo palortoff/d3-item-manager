@@ -38,19 +38,19 @@
         //noinspection JSUnusedLocalSymbols
         function itemHasBadId(item, key) {
             switch (key) {
-                case "1016":
-                case "1026":
-                case "1036":
-                case "1046":
-                case "1056":
-                case "1066":
-                case "1076":
-                case "1086":
-                case "1096":
-                case "1106":
-                    return true;
-                default:
-                    return false;
+            case "1016":
+            case "1026":
+            case "1036":
+            case "1046":
+            case "1056":
+            case "1066":
+            case "1076":
+            case "1086":
+            case "1096":
+            case "1106":
+                return true;
+            default:
+                return false;
             }
         }
 

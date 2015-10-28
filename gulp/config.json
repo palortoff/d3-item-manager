@@ -6,6 +6,9 @@
       "app/**/*.js",
       "!app/**/*test.js"
     ],
+    "eslint":[
+      "app/**/*.js"
+    ],
     "html": [
       "app/**/*.html"
     ],

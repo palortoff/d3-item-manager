@@ -32,7 +32,7 @@
 
         function categoryById(id) {
             return _.find(all, function(cat) {
-                return cat.id == id; // jshint ignore:line
+                return cat.id == id; //eslint-disable-line eqeqeq
             });
         }
     }

@@ -15,7 +15,7 @@
             },
             bindToController: true,
             templateUrl:      'directives/itemFilter/itemFilter.template.html',
-                              controller,
+            controller,
             controllerAs:     'vm'
         };
 
