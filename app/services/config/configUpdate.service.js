@@ -16,10 +16,10 @@
             moveToConfig('hideCubed');
             moveToConfig('currentClass');
             moveToConfig('allColumns', JSON.parse);
-            moveToConfig('allGameModes');
+            moveToConfig('allGameModes', JSON.parse);
             moveToConfig('currentGameMode');
             moveToConfig('itemCategory');
-            moveToConfig('allSeasons');
+            moveToConfig('allSeasons', JSON.parse);
             moveToConfig('currentSeason');
 
             removeFromLocalStorage('armor_backup');
