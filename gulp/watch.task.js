@@ -1,3 +1,5 @@
+'use strict';
+
 var watch = require('gulp-watch');
 var batch = require('gulp-batch');
 var gutil = require('gulp-util');
@@ -11,6 +13,8 @@ function task() {
     watchAndRun(config.app.json, require('./appJson.task'), 'updating app:json');
     watchAndRun(config.app.html, require('./appHtml.task'), 'updating app:html');
     watchAndRun(config.app.less, require('./appLess.task'), 'updating app:less');
+    watchAndRun(config.thirdParty.less, require('./thirdPartyLess.task'), 'updating thirdparty:less');
+    watchAndRun(config.thirdParty.js, require('./thirdPartyJs.task'), 'updating thirdparty:js');
 }
 
 function watchAndRun(glob, task, message) {

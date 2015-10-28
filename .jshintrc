@@ -1,0 +1,33 @@
+{
+  "eqnull": true,
+  "nonew": true,
+  "curly": true,
+  "noarg": true,
+  "forin": true,
+  "noempty": true,
+  "node": true,
+  "eqeqeq": true,
+  "strict": true,
+  "undef": true,
+  "bitwise": true,
+  "browser": true,
+  "globalstrict": false,
+  "esnext": true,
+  "globals": {
+    "_": false,
+    "angular": false,
+    "toastr": false,
+    "describe": false,
+    "fdescribe": false,
+    "xdescribe": false,
+    "it": false,
+    "xit": false,
+    "fit": false,
+    "beforeEach": false,
+    "beforeAll": false,
+    "before": false,
+    "fixture": false,
+    "expect":false,
+    "$":false
+  }
+}

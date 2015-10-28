@@ -5,18 +5,17 @@
 
     var keyAll = 'allGameModes';
     var keyCurrent = 'currentGameMode';
-    var defaultSet = ['Softcore', 'Hardcore'];
 
-    var _all = JSON.parse(localStorage.getItem(keyAll)) || defaultSet;
-    var _current = localStorage.getItem(keyCurrent) || _all[0];
+    function gameModes(config) {
+        var _all = config.getItem(keyAll, ['Softcore', 'Hardcore']);
+        var _current = config.getItem(keyCurrent, _all[0]);
 
-    function gameModes() {
         return {
-            current:    current,
-            setCurrent: setCurrent,
-            remove:     remove,
-            add:        add,
-            all:        all
+            current,
+            setCurrent,
+            remove,
+            add,
+            all
         };
 
         function current() {
@@ -29,7 +28,7 @@
 
         function setCurrent(c) {
             _current = c;
-            localStorage.setItem(keyCurrent, c)
+            config.setItem(keyCurrent, c);
         }
 
         function setDefault() {
@@ -45,13 +44,13 @@
         }
 
         function add(gm) {
-            if (_.contains(_all, gm)) return;
+            if (_.contains(_all, gm)) {return;}
             _all.push(gm);
             save();
         }
 
         function save() {
-            localStorage.setItem(keyAll, JSON.stringify(_all));
+            config.setItem(keyAll, JSON.stringify(_all));
         }
     }
 

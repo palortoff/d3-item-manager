@@ -9,5 +9,5 @@
             controller: 'NavBarController',
             controllerAs: 'vm'
         };
-    })
+    });
 })();

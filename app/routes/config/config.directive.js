@@ -3,20 +3,25 @@
 
     angular.module('d3-item-manager').controller('ConfigController', ConfigController);
 
-    function ConfigController($location, gameModes, columns, itemCategory, d3Config, config) {
+    function ConfigController($location,
+                              gameModes,
+                              columns,
+                              itemCategory,
+                              locales,
+                              backup,
+                              restore,
+                              exportService) {
         var vm = this;
         vm.gameModes = gameModes;
         vm.addNewGameMode = addNewGameMode;
-
         vm.columns = columns;
         vm.addNewColumn = addNewColumn;
-        vm.d3Config = d3Config;
-
+        vm.locales = locales;
         vm.dismiss = dismiss;
-
         vm.showCategory = showCategory;
-        vm.setItemLanguage = setItemLanguage;
-        vm.currentItemLanguage = currentItemLanguage;
+        vm.backupData = backup.data;
+        vm.triggerRestore = restore.trigger;
+        vm.exportData = exportService.data;
 
         function addNewGameMode() {
             gameModes.add(vm.newGameMode);
@@ -36,16 +41,5 @@
             itemCategory.set(id);
             $location.path('/items');
         }
-
-        function setItemLanguage(id) {
-            config.get().itemLanguage = id;
-            config.save();
-        }
-
-        function currentItemLanguage() {
-            var id = config.get().itemLanguage || 'en_GB';
-            return _.find(d3Config.locales, function(l) {return l.id == id;});
-        }
     }
-
 })();

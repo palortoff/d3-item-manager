@@ -4,16 +4,22 @@
     angular.module('d3-item-manager').factory('columns', columns);
 
     var keyAll = 'allColumns';
-    var defaultSet = ['Stashed'];
 
-    var _all = JSON.parse(localStorage.getItem(keyAll)) || defaultSet;
+    // TODO: add cubed to array
 
-    function columns() {
+    function columns(config) {
+        var _all = config.getItem(keyAll, ['Stashed']);
+
         return {
-            remove:     remove,
-            add:        add,
-            all:        all
+            remove,
+            add,
+            all,
+            reallyAll
         };
+
+        function reallyAll(){
+            return _.flatten(['Cubed', all()]);
+        }
 
         function all() {
             return _all;
@@ -25,13 +31,13 @@
         }
 
         function add(gm) {
-            if (_.contains(_all, gm)) return;
+            if (_.contains(_all, gm)) {return;}
             _all.push(gm);
             save();
         }
 
         function save() {
-            localStorage.setItem(keyAll, JSON.stringify(_all));
+            config.setItem(keyAll, _all);
         }
     }
 

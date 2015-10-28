@@ -11,6 +11,13 @@
   "dependencies": {
     "fontawesome": "~4.4.0",
     "bootswatch": "3.3.5+3",
-    "angular-bootstrap-toggle-switch": "~0.5.5"
+    "angular-bootstrap-toggle-switch": "~0.5.5",
+    "toastr": "~2.1.2",
+    "angular": "angularjs#1.4.7",
+    "angular-route": "1.4.7",
+    "jquery": "2.1.4",
+    "underscore": "1.8.3",
+    "angular-bootstrap": "~0.14.3",
+    "bootstrap-filestyle": "~1.2.1"
   }
 }

@@ -3,7 +3,7 @@
 
     angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
-    function ItemsController($scope, items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, d3Config, isEndGame, config) {
+    function ItemsController($scope, items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, constants, isEndGame, locales, config) {
         var vm = this;
 
         vm.itemFilter = '';
@@ -39,15 +39,15 @@
                 then(function(data) {
                     vm.items = data;
                 }).
-                then(itemTracking.load).
+                then(itemTracking.get).
                 then(addTracking);
         }
 
         function addTracking(tracking) {
             vm.items.forEach(function(item) {
-                if (!tracking[item.id]) tracking[item.id] = {};
+                if (!tracking[item.id]) {tracking[item.id] = {};}
                 item.track = tracking[item.id];
-            })
+            });
         }
 
         function toggle(item, column) {
@@ -83,21 +83,21 @@
         }
 
         function isVisible(item) {
-            if (!isEndGame(item)) return false;
+            if (!isEndGame(item)) {return false;}
 
-            if (vm.filterOverAll && vm.itemFilter.length > 0) return true;
+            if (vm.filterOverAll && vm.itemFilter.length > 0) {return true;}
 
-            if (vm.onlyCubable && !item.cube) return false;
-            if (vm.hideCubed && isCubed(item)) return false;
+            if (vm.onlyCubable && !item.cube) {return false;}
+            if (vm.hideCubed && isCubed(item)) {return false;}
 
-            if (!isItemVisibleForCategory(item)) return false;
+            if (!isItemVisibleForCategory(item)) {return false;}
 
             return isItemVisibleForClass(item);
 
         }
 
         function isSeasonal(item) {
-            return item.season == d3Config.gameSeason;
+            return item.season === constants.gameSeason;
         }
 
         function isBounty(item) {
@@ -125,20 +125,15 @@
                         artisan = 'artisan/blacksmith/';
                 }
             }
-            var locale = currentItemLocale();
+            var locale = locales.currentItemLanguage();
             return `http://${locale.region}.battle.net/d3/${locale.short}/${artisan}${item.tooltipParams}`;
         }
 
-        function currentItemLocale() { // TODO: duplicated code! DRY!!!
-            var id = config.get().itemLanguage || 'en_GB';
-            return _.find(d3Config.locales, function(l) {return l.id == id;});
-        }
-
         function persist(key) {
-            vm[key] = localStorage.getItem(key) === 'true' || false;
+            vm[key] = (config.getItem(key) === true) || false;
 
             $scope.$watch(getKey, function(){
-                localStorage.setItem(key, vm[key]);
+                config.setItem(key, vm[key]);
             });
 
             function getKey(){

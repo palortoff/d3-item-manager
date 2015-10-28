@@ -15,18 +15,13 @@
             });
 
         return function(item) {
-            if (!isLoaded) return false;
+            if (!isLoaded) {return false;}
 
-            if (classes.current().id == 0) return true;
-
-            if (item.name === "Eye of Peshkov")
-            {
-                isLoaded = true; // TODO: remove debug line
-            }
+            if (classes.current().id === 0) {return true;}
 
             var itemVisibility = isItemVisible(item);
-            if (itemVisibility === false) return false;
-            if (itemVisibility === true) return true;
+            if (itemVisibility === false) {return false;}
+            if (itemVisibility === true) {return true;}
 
             return isItemTypeVisible(item);
 

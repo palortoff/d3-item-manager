@@ -6,17 +6,18 @@
     var keyCurrent = 'currentClass';
 
     var _all = [
-        {id: 0, name: 'all'},
-        {id: 6, name: 'barbarian'},
-        {id: 3, name: 'crusader'},
-        {id: 2, name: 'demon-hunter'},
-        {id: 1, name: 'monk'},
-        {id: 4, name: 'witch-doctor'},
-        {id: 5, name: 'wizard'}
+        {id: 0, displayName: 'All'},
+        {id: 6, name: 'barbarian', displayName: 'Barbarian'},
+        {id: 3, name: 'crusader', displayName: 'Crusader'},
+        {id: 2, name: 'demon-hunter', displayName: 'Demon Hunter'},
+        {id: 1, name: 'monk', displayName: 'Monk'},
+        {id: 4, name: 'witch-doctor', displayName: 'Witch Doctor'},
+        {id: 5, name: 'wizard', displayName: 'Wizard'}
     ];
-    var _current = localStorage.getItem(keyCurrent) || 6;
 
-    function classes() {
+    function classes(config) {
+        var _current = Number(config.getItem(keyCurrent)) || 0;
+
         return {
             all,
             distinct,
@@ -25,7 +26,7 @@
         };
 
         function current() {
-            return _.find(all(), function(c) {return c.id == _current;});
+            return _.find(all(), function(c) {return c.id === _current;});
         }
 
         function all() {
@@ -33,12 +34,12 @@
         }
 
         function distinct() {
-            return _all.filter(function(c) {return c.id != 0;});
+            return _all.filter(function(c) {return c.id !== 0;});
         }
 
         function setCurrent(id) {
             _current = id;
-            localStorage.setItem(keyCurrent, id)
+            config.setItem(keyCurrent, id);
         }
     }
 

@@ -5,19 +5,25 @@
 
     var keyAll = 'allSeasons';
     var keyCurrent = 'currentSeason';
-    var defaultSet = ['Season 4'];
 
-    var _all = JSON.parse(localStorage.getItem(keyAll)) || defaultSet;
-    var _current = localStorage.getItem(keyCurrent) || "Non Season";
+    // TODO: add non-season to array
 
-    function seasons() {
+    function seasons(config) {
+        var _all = config.getItem(keyAll, ['Season 4']);
+        var _current = config.getItem(keyCurrent, "Non Season");
+
         return {
-            current:    current,
-            setCurrent: setCurrent,
-            remove:     remove,
-            add:        add,
-            all:        all
+            current,
+            setCurrent,
+            remove,
+            add,
+            all,
+            reallyAll
         };
+
+        function reallyAll(){
+            return _.flatten(['Non Season', all()]);
+        }
 
         function current() {
             return _current;
@@ -29,7 +35,7 @@
 
         function setCurrent(c) {
             _current = c;
-            localStorage.setItem(keyCurrent, c)
+            config.setItem(keyCurrent, c);
         }
 
         function setDefault() {
@@ -45,13 +51,13 @@
         }
 
         function add(gm) {
-            if (_.contains(_all, gm)) return;
+            if (_.contains(_all, gm)) {return;}
             _all.push(gm);
             save();
         }
 
         function save() {
-            localStorage.setItem(keyAll, JSON.stringify(_all));
+            config.setItem(keyAll, JSON.stringify(_all));
         }
     }
 

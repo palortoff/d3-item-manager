@@ -3,7 +3,8 @@
   "app": {
     "js": [
       "app/app.js",
-      "app/**/*.js"
+      "app/**/*.js",
+      "!app/**/*test.js"
     ],
     "html": [
       "app/**/*.html"
@@ -23,11 +24,27 @@
   },
   "thirdParty":{
     "js":[
-      "bower_components/angular-bootstrap-toggle-switch/angular-toggle-switch.js"
+      "bower_components/jquery/dist/jquery.js",
+      "bower_components/bootstrap-filestyle/src/bootstrap-filestyle.js",
+      "bower_components/bootstrap/dist/js/bootstrap.js",
+      "bower_components/underscore/underscore.js",
+      "bower_components/angular/angular.js",
+      "bower_components/angular-route/angular-route.js",
+      "bower_components/toastr/toastr.js",
+      "bower_components/angular-bootstrap-toggle-switch/angular-toggle-switch.js",
+      "bower_components/angular-bootstrap/ui-bootstrap.js",
+      "bower_components/angular-bootstrap/ui-bootstrap-tpls.js"
     ],
     "less":[
-      "thirdParty/angular-toggle-switch/angular-toggle-switch.less"
+      "thirdParty/angular-toggle-switch/angular-toggle-switch.less",
+      "thirdParty/toastr/toastr.less",
+      "thirdParty/bootswatch/bootswatch.less",
+      "bower_components/fontawesome/less/font-awesome.less"
+    ],
+    "fonts":[
+      "bower_components/fontawesome/fonts/*"
     ]
+
   },
   "port": 8047
 }
