@@ -1,18 +1,55 @@
 body {
   padding-top: 70px;
 }
-
-.dropdown-menu li > a {
-  display: block;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: normal;
-  line-height: 1.42857143;
-  color: #EBEBEB;
-  white-space: nowrap;
+.btn {
+  outline: none !important;
 }
-.dropdown-menu > div:last-child > li[role="separator"] {
-  display: none;
+
+banner-alert {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 6px;
+  border-radius: 4px;
+}
+banner-alert.warning {
+  background-color: #F39C12;
+}
+banner-alert.warning i.fa:before {
+  content: "\f071";
+}
+banner-alert.error {
+  background-color: #E74C3C;
+}
+banner-alert.error i.fa:before {
+  content: "\f057";
+}
+banner-alert.success {
+  background-color: #00bc8c;
+}
+banner-alert.success i.fa:before {
+  content: "\f00c";
+}
+banner-alert.info {
+  background-color: #3498DB;
+}
+banner-alert.info i.fa:before {
+  content: "\f129";
+}
+banner-alert i.fa {
+  padding-top: 3px;
+}
+banner-alert i.fa:before {
+  padding-right: 12px;
+  padding-top: 6px;
+}
+banner-alert ng-transclude {
+  flex-grow: 1;
 }
 
 item-filter .form-group {
@@ -40,6 +77,34 @@ item-filter .ats-switch {
   outline: none !important;
 }
 
+.dropdown-menu li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #EBEBEB;
+  white-space: nowrap;
+}
+.dropdown-menu > div:last-child > li[role="separator"] {
+  display: none;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+new-features .no-language {
+  padding-top: 14px;
+}
+new-features .button-container {
+  margin-top: -6px;
+}
+
 .panel.about-panel {
   width: 80%;
   transform: translateX(10%);
@@ -62,6 +127,10 @@ item-filter .ats-switch {
 .config-panel .dropdown.open .dropdown-menu {
   transform: translateY(8px);
   margin-left: 10px;
+}
+.config-panel .backup-restore .btn {
+  width: 100px;
+  margin-right: 15px;
 }
 
 .table-kenais tbody tr:nth-of-type(6n+1),

@@ -1,0 +1,18 @@
+<div class="modal-header">
+    <h3 class="modal-title">Restore backup data</h3>
+</div>
+<div class="modal-body">
+    <input type="file"
+           accept=".json"
+           on-loaded-file="vm.onLoad(fileContent)"
+           class="filestyle"
+           data-buttonName="btn-primary"
+           data-buttonText="Chose backup file"
+           data-icon="false">
+    </div>
+<banner-alert class="error" ng-show="vm.hasInvalidRestoreData()">The provided file is not a D3 item manager backup file (d3-item-manager.json).</banner-alert>
+<banner-alert class="warning" ng-show="vm.canRestore()">Restoring backup data will overwrite your current data!</banner-alert>
+<div class="modal-footer">
+    <button class="btn btn-danger" type="button" ng-click="vm.restore()" ng-disabled="!vm.canRestore()">Restore</button>
+    <button class="btn btn-default" type="button" ng-click="vm.cancel()">Cancel</button>
+</div>
