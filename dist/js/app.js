@@ -9,68 +9,6 @@
 (function () {
     'use strict';
 
-    angular.module('d3-item-manager').directive('filestyle', filestyle);
-
-    // from https://github.com/markusslima/bootstrap-filestyle/issues/36
-
-    function filestyle() {
-        return {
-            restrict: 'AC',
-            scope: true,
-            link: function link(scope, element, attrs) {
-                var options = {
-                    'input': attrs.input !== 'false',
-                    'icon': attrs.icon !== 'false',
-                    'buttonBefore': attrs.buttonBefore === 'true',
-                    'disabled': attrs.disabled === 'true',
-                    'size': attrs.size,
-                    'buttonText': attrs.buttontext,
-                    'buttonName': attrs.buttonname,
-                    'iconName': attrs.iconName,
-                    'badge': attrs.badge !== 'false',
-                    'placeholder': attrs.placeholder
-                };
-                $(element).filestyle(options);
-            }
-        };
-    }
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    // from http://jsfiddle.net/alexsuch/6aG4x/
-    angular.module('d3-item-manager').directive('onLoadedFile', onLoadedFile);
-
-    function onLoadedFile($parse) {
-        return {
-            restrict: 'A',
-            scope: false,
-            link: function link(scope, element, attrs) {
-                var fn = $parse(attrs.onLoadedFile);
-
-                element.on('change', function (onChangeEvent) {
-                    var reader = new FileReader();
-
-                    reader.onload = function (onLoadEvent) {
-                        scope.$apply(function () {
-                            fn(scope, { fileContent: onLoadEvent.target.result });
-                        });
-                    };
-
-                    reader.readAsText((onChangeEvent.srcElement || onChangeEvent.target).files[0]);
-                });
-            }
-        };
-    }
-    onLoadedFile.$inject = ["$parse"];
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
     angular.module('d3-item-manager').factory('backup', backup);
 
     function backup(config, itemTracking) {
@@ -301,6 +239,68 @@
         }
     }
     restore.$inject = ["$uibModal", "$route", "config", "itemTracking"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').directive('filestyle', filestyle);
+
+    // from https://github.com/markusslima/bootstrap-filestyle/issues/36
+
+    function filestyle() {
+        return {
+            restrict: 'AC',
+            scope: true,
+            link: function link(scope, element, attrs) {
+                var options = {
+                    'input': attrs.input !== 'false',
+                    'icon': attrs.icon !== 'false',
+                    'buttonBefore': attrs.buttonBefore === 'true',
+                    'disabled': attrs.disabled === 'true',
+                    'size': attrs.size,
+                    'buttonText': attrs.buttontext,
+                    'buttonName': attrs.buttonname,
+                    'iconName': attrs.iconName,
+                    'badge': attrs.badge !== 'false',
+                    'placeholder': attrs.placeholder
+                };
+                $(element).filestyle(options);
+            }
+        };
+    }
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    // from http://jsfiddle.net/alexsuch/6aG4x/
+    angular.module('d3-item-manager').directive('onLoadedFile', onLoadedFile);
+
+    function onLoadedFile($parse) {
+        return {
+            restrict: 'A',
+            scope: false,
+            link: function link(scope, element, attrs) {
+                var fn = $parse(attrs.onLoadedFile);
+
+                element.on('change', function (onChangeEvent) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (onLoadEvent) {
+                        scope.$apply(function () {
+                            fn(scope, { fileContent: onLoadEvent.target.result });
+                        });
+                    };
+
+                    reader.readAsText((onChangeEvent.srcElement || onChangeEvent.target).files[0]);
+                });
+            }
+        };
+    }
+    onLoadedFile.$inject = ["$parse"];
 })();
 'use strict';
 
@@ -1277,10 +1277,10 @@
             moveToConfig('hideCubed');
             moveToConfig('currentClass');
             moveToConfig('allColumns', JSON.parse);
-            moveToConfig('allGameModes');
+            moveToConfig('allGameModes', JSON.parse);
             moveToConfig('currentGameMode');
             moveToConfig('itemCategory');
-            moveToConfig('allSeasons');
+            moveToConfig('allSeasons', JSON.parse);
             moveToConfig('currentSeason');
 
             removeFromLocalStorage('armor_backup');
