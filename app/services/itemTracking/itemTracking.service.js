@@ -5,7 +5,7 @@
 
     var key = 'itemTracking';
 
-    function itemTracking($timeout, upgradeDataStructureBeforeItemLoad, postItemLoadUpdate) {
+    function itemTracking($timeout, upgradeDataStructureBeforeItemLoad, itemTrackingUpgrade) {
         var tracking;
         var notifyTimer;
         return {
@@ -23,7 +23,7 @@
         function load() {
             upgradeDataStructureBeforeItemLoad();
             tracking = JSON.parse(localStorage.getItem(key)) || {};
-            postItemLoadUpdate(tracking, saveWithoutToastr);
+            itemTrackingUpgrade(tracking, saveWithoutToastr);
         }
 
         function saveWithoutToastr() {
