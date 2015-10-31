@@ -1,3 +1,24 @@
+# v1.5.2
+
+### Bug fixes
+
+* Clear search button now shows icon
+* Export file will now open in Excel without showing strange chars instead of Unicode characters
+* Export did not work in a very rare scenario
+
+# v1.5.1
+
+### Bug fixes
+
+* Game modes might not have been displayed properly
+
+# v1.5.0
+
+### Features
+
+* Search now searches over all features, not just item name
+* App now asks for language selection
+
 # v1.4.1
 
 ### Bug Fixes
