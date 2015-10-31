@@ -11,6 +11,7 @@
             scope:    {
                 getData:  '&ddGetter',
                 json:     '@ddJson',
+                encoding: '@ddEncoding',
                 type:     '@ddType',
                 filename: '=ddFilename'
             },
@@ -29,6 +30,9 @@
                         type = type || 'application/json';
                     }
                     type = type || 'text/plain';
+                    if (scope.encoding === 'utf8'){
+                        data = '\ufeff' + data;
+                    }
 
                     var blob = new Blob([data], {type: type});
                     var url = URL.createObjectURL(blob);
