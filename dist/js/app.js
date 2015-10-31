@@ -307,17 +307,6 @@
 (function () {
     'use strict';
 
-    angular.module('d3-item-manager').constant('constants', {
-        githubUrl: 'https://github.com/palortoff/d3-item-manager',
-        gameSeason: 4,
-        aboutVersion: "1"
-    });
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
     angular.module('download-data', []).directive('downloadData', downloadData);
 
     var idAppendix = 0;
@@ -328,6 +317,7 @@
             scope: {
                 getData: '&ddGetter',
                 json: '@ddJson',
+                encoding: '@ddEncoding',
                 type: '@ddType',
                 filename: '=ddFilename'
             },
@@ -346,6 +336,9 @@
                         type = type || 'application/json';
                     }
                     type = type || 'text/plain';
+                    if (scope.encoding === 'utf8') {
+                        data = '﻿' + data;
+                    }
 
                     var blob = new Blob([data], { type: type });
                     var url = URL.createObjectURL(blob);
@@ -361,6 +354,17 @@
         }
     }
     downloadData.$inject = ["$q"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').constant('constants', {
+        githubUrl: 'https://github.com/palortoff/d3-item-manager',
+        gameSeason: 4,
+        aboutVersion: "1"
+    });
 })();
 'use strict';
 
@@ -1404,7 +1408,7 @@
 
     var key = 'itemTracking';
 
-    function itemTracking($timeout, upgradeDataStructureBeforeItemLoad, postItemLoadUpdate) {
+    function itemTracking($timeout, upgradeDataStructureBeforeItemLoad, itemTrackingUpgrade) {
         var tracking;
         var notifyTimer;
         return {
@@ -1422,7 +1426,7 @@
         function load() {
             upgradeDataStructureBeforeItemLoad();
             tracking = JSON.parse(localStorage.getItem(key)) || {};
-            postItemLoadUpdate(tracking, saveWithoutToastr);
+            itemTrackingUpgrade(tracking, saveWithoutToastr);
         }
 
         function saveWithoutToastr() {
@@ -1445,16 +1449,59 @@
             saveWithoutToastr();
         }
     }
-    itemTracking.$inject = ["$timeout", "upgradeDataStructureBeforeItemLoad", "postItemLoadUpdate"];
+    itemTracking.$inject = ["$timeout", "upgradeDataStructureBeforeItemLoad", "itemTrackingUpgrade"];
 })();
 'use strict';
 
 (function () {
     'use strict';
 
-    angular.module('d3-item-manager').factory('postItemLoadUpdate', postItemLoadUpdate);
+    angular.module('d3-item-manager').factory('itemTrackingUpgrade', itemTrackingUpgrade);
 
-    function postItemLoadUpdate(itemCategory) {
+    var tracking;
+    var saveFn;
+    var configKey = 'itemTrackingVersion';
+
+    function itemTrackingUpgrade(config, itemTrackingUpgrade_001, itemTrackingUpgrade_002) {
+        return function (t, s) {
+            tracking = t;
+            saveFn = s;
+            runUpdates();
+        };
+
+        function runUpdates() {
+            runUpdate(1, itemTrackingUpgrade_001);
+            runUpdate(2, itemTrackingUpgrade_002);
+        }
+
+        function runUpdate(version, fn) {
+            if (currentVersion() < version) {
+                console.log('running itemTracking upgrade ' + version);
+                fn(tracking, saveFn);
+                updateCurrentVersion(version);
+            } else {
+                console.log('skipping itemTracking upgrade ' + version);
+            }
+        }
+
+        function currentVersion() {
+            return Number(config.getItem(configKey, 0));
+        }
+
+        function updateCurrentVersion(version) {
+            config.setItem(configKey, version);
+        }
+    }
+    itemTrackingUpgrade.$inject = ["config", "itemTrackingUpgrade_001", "itemTrackingUpgrade_002"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').factory('itemTrackingUpgrade_001', removeDataForDuplicateIdsWithContent);
+
+    function removeDataForDuplicateIdsWithContent(itemCategory) {
         var tracking;
         var save;
         return function (trackingData, saveFn) {
@@ -1509,7 +1556,27 @@
             return s || h;
         }
     }
-    postItemLoadUpdate.$inject = ["itemCategory"];
+    removeDataForDuplicateIdsWithContent.$inject = ["itemCategory"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').factory('itemTrackingUpgrade_002', removeEntriesForDuplicateIds);
+
+    function removeEntriesForDuplicateIds() {
+        return function (tracking, save) {
+            removeBadData(tracking);
+            save();
+        };
+
+        function removeBadData(tracking) {
+            _.forEach([1016, 1026, 1036, 1046, 1056, 1066, 1076, 1086, 1096, 1106], function (id) {
+                delete tracking[id];
+            });
+        }
+    }
 })();
 'use strict';
 
