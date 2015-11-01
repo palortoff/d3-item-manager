@@ -45,7 +45,8 @@
       "bower_components/fontawesome/less/font-awesome.less"
     ],
     "fonts":[
-      "bower_components/fontawesome/fonts/*"
+      "bower_components/fontawesome/fonts/*",
+      "bower_components/bootstrap/dist/fonts/*"
     ]
 
   },
