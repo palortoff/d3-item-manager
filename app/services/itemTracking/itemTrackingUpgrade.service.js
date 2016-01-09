@@ -8,8 +8,8 @@
     var configKey = 'itemTrackingVersion';
 
     function itemTrackingUpgrade(config,
-                                 itemTrackingUpgrade_001,
-                                 itemTrackingUpgrade_002) {
+                                 itemTrackingUpgrade_001,   //eslint-disable-line camelcase
+                                 itemTrackingUpgrade_002) { //eslint-disable-line camelcase
         return function(t, s) {
             tracking = t;
             saveFn = s;
@@ -33,7 +33,7 @@
         }
 
         function currentVersion() {
-            return Number(config.getItem(configKey,0));
+            return Number(config.getItem(configKey, 0));
         }
 
         function updateCurrentVersion(version) {

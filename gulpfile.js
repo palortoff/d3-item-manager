@@ -1,10 +1,8 @@
 'use strict';
 
 // TODO: karma
-// TODO: eslint
 // TODO: test = parallel(eslint, karma)
 
-// TODO: remove jshint package
 // TODO: update package.json (script test)
 
 
