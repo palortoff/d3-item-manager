@@ -7,5 +7,5 @@ module.exports = task;
 
 function task(){
     return gulp.src(config.app.images)
-        .pipe(gulp.dest(config.buildTarget+'/images'))
+        .pipe(gulp.dest(config.buildTarget+'/images'));
 }

@@ -5,7 +5,6 @@
 
 // TODO: update package.json (script test)
 
-
 var gulp = require("gulp");
 
 gulp.task('clean', require('./gulp/clean.task'));
@@ -32,6 +31,5 @@ gulp.task('build', gulp.parallel('app', 'thirdparty'));
 gulp.task('default', gulp.series('clean', 'build'));
 gulp.task('serve', gulp.series('default', 'startServer'));
 gulp.task('chrome', gulp.series('serve', 'startChrome'));
-
 
 gulp.task('watch', gulp.series('chrome', '_watch'));

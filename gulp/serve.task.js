@@ -3,7 +3,7 @@
 var config = require('./config.json');
 
 var connect = require('gulp-connect');
-var gulp_watch = require('gulp-watch');
+var gulpWatch = require('gulp-watch');
 
 function task(done) {
     connect.server({
@@ -12,7 +12,7 @@ function task(done) {
         livereload: true
     });
 
-    gulp_watch([config.buildTarget + '/**/*']).pipe(connect.reload());
+    gulpWatch([config.buildTarget + '/**/*']).pipe(connect.reload());
 
     done();
 }

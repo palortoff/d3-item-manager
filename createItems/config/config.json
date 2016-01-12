@@ -1,0 +1,62 @@
+{
+    "menuUrl": "http://eu.battle.net/d3/en/data/menu.json",
+    "itemsPerSecond": 25,
+    "locales": [
+        {
+            "id": "en_GB",
+            "url": "https://eu.api.battle.net/d3/data/item/"
+        },
+        {
+            "id": "de_DE",
+            "url": "https://eu.api.battle.net/d3/data/item/"
+        },
+        {
+            "id": "es_ES",
+            "url": "https://eu.api.battle.net/d3/data/item/"
+        },
+        {
+            "id": "fr_FR",
+            "url": "https://eu.api.battle.net/d3/data/item/"
+        },
+        {
+            "id": "it_IT",
+            "url": "https://eu.api.battle.net/d3/data/item/"
+        },
+        {
+            "id": "pl_PL",
+            "url": "https://eu.api.battle.net/d3/data/item/"
+        },
+        {
+            "id": "pt_PT",
+            "url": "https://eu.api.battle.net/d3/data/item/"
+        },
+        {
+            "id": "ru_RU",
+            "url": "https://eu.api.battle.net/d3/data/item/"
+        },
+        {
+            "id": "kr_KR",
+            "url": "https://kr.api.battle.net/d3/data/item/"
+        },
+        {
+            "id": "sh_TW",
+            "url": "https://tw.api.battle.net/d3/data/item/"
+        },
+        {
+            "id": "en_US",
+            "url": "https://us.api.battle.net/d3/data/item/"
+        },
+        {
+            "id": "pt_BR",
+            "url": "https://us.api.battle.net/d3/data/item/"
+        },
+        {
+            "id": "es_MX",
+            "url": "https://us.api.battle.net/d3/data/item/"
+        },
+        {
+            "id": "zh_CN",
+            "url": "https://api.battlenet.com.cn/d3/data/item/"
+        }
+    ]
+}

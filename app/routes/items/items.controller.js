@@ -35,12 +35,9 @@
         }
 
         function loadItems() {
-            items.load().
-                then(function(data) {
-                    vm.items = data;
-                }).
-                then(itemTracking.get).
-                then(addTracking);
+            items.load().then(function(data) {
+                vm.items = data;
+            }).then(itemTracking.get).then(addTracking);
         }
 
         function addTracking(tracking) {
@@ -116,13 +113,13 @@
             var artisan = '';
             if (item.crafted) {
                 switch (item.slots[0]) {
-                case 'neck':
-                case 'left-finger':
-                case 'right-finger':
-                    artisan = 'artisan/jeweler/';
-                    break;
-                default:
-                    artisan = 'artisan/blacksmith/';
+                    case 'neck':
+                    case 'left-finger':
+                    case 'right-finger':
+                        artisan = 'artisan/jeweler/';
+                        break;
+                    default:
+                        artisan = 'artisan/blacksmith/';
                 }
             }
             var locale = locales.currentItemLanguage();
@@ -132,11 +129,11 @@
         function persist(key) {
             vm[key] = (config.getItem(key) === true) || false;
 
-            $scope.$watch(getKey, function(){
+            $scope.$watch(getKey, function() {
                 config.setItem(key, vm[key]);
             });
 
-            function getKey(){
+            function getKey() {
                 return vm[key];
             }
         }

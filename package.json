@@ -8,6 +8,7 @@
   "devDependencies": {
     "bower": "^1.5.3",
     "eslint": "^1.7.3",
+    "eslint-format-with-full-path": "0.0.1",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-babel": "^5.2.1",
     "gulp-batch": "^1.0.5",
@@ -54,5 +55,13 @@
     "deploy_8": "git subtree push --prefix dist origin gh-pages",
     "deploy_9": "git checkout master",
     "test": "jshint app && karma start"
+  },
+  "dependencies": {
+    "chunking-streams": "0.0.8",
+    "lodash": "^3.10.1",
+    "q": "^1.4.1",
+    "q-io": "^1.13.2",
+    "request": "^2.67.0",
+    "rx": "^4.0.7"
   }
 }

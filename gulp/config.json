@@ -7,7 +7,10 @@
       "!app/**/*test.js"
     ],
     "eslint":[
-      "app/**/*.js"
+      "**/*.js",
+      "!bower_components/**/*.js",
+      "!node_modules/**/*.js",
+      "!dist/**/*.js"
     ],
     "html": [
       "app/**/*.html"
