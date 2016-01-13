@@ -2,12 +2,14 @@
     {
         "id": 1001,
         "blizId": "Unique_Bracer_102_x1",
+        "name": "Ancient Parthan Defenders",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1002,
         "blizId": "P2_Unique_Bracer_006",
+        "name": "Gungdo Gear",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -17,30 +19,35 @@
     {
         "id": 1003,
         "blizId": "Unique_Helm_003_p2",
+        "name": "Andariel's Visage",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1004,
         "blizId": "P2_Unique_Helm_001",
+        "name": "Broken Crown",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1005,
         "blizId": "Unique_Helm_102_x1",
+        "name": "Deathseer's Cowl",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1006,
         "blizId": "Unique_Helm_002_p1",
+        "name": "Leoric's Crown",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1007,
         "blizId": "Unique_Helm_103_x1",
+        "name": "Pride's Fall",
         "cubeCategory": "Armor",
         "cube": true,
         "bounty": {
@@ -50,6 +57,7 @@
     {
         "id": 1008,
         "blizId": "Unique_Helm_004_x1",
+        "name": "Skull of Resonance",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -59,114 +67,133 @@
     {
         "id": 1009,
         "blizId": "Unique_SpiritStone_103_x1",
+        "name": "Eye of Peshkov",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1011,
         "blizId": "Unique_SpiritStone_102_x1",
+        "name": "Kekegi's Unbreakable Spirit",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1012,
         "blizId": "P1_Unique_SpiritStone_008",
+        "name": "Madstone",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1013,
         "blizId": "Unique_SpiritStone_101_x1",
+        "name": "The Laws of Seph",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1014,
         "blizId": "Unique_SpiritStone_002_x1",
+        "name": "The Mind's Eye",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1015,
         "blizId": "Unique_SpiritStone_007_x1",
+        "name": "Tzo Krin's Gaze",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1017,
         "blizId": "Unique_VoodooMask_102_x1",
+        "name": "Mask of Jeram",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1018,
         "blizId": "Unique_VoodooMask_005_x1",
+        "name": "Quetzalcoatl",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1019,
         "blizId": "Unique_VoodooMask_002_x1",
+        "name": "The Grin Reaper",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1021,
         "blizId": "Unique_VoodooMask_008_x1",
+        "name": "Visage of Giyua",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1022,
         "blizId": "Unique_WizardHat_101_x1",
+        "name": "Archmage's Vicalyke",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1023,
         "blizId": "Unique_WizardHat_104_x1",
+        "name": "Crown of the Primus",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1024,
         "blizId": "Unique_WizardHat_001_x1",
+        "name": "Dark Mage's Shade",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1025,
         "blizId": "Unique_WizardHat_004_x1",
+        "name": "Storm Crow",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1027,
         "blizId": "P3_Unique_WizardHat_003",
+        "name": "The Swami",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1028,
         "blizId": "Unique_WizardHat_102_x1",
+        "name": "Velvet Camaral",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1029,
         "blizId": "Unique_Shoulder_002_p2",
+        "name": "Death Watch Mantle",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1031,
         "blizId": "Unique_Shoulder_001_x1",
+        "name": "Homing Pads",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1032,
         "blizId": "Unique_Shoulder_103_x1",
+        "name": "Pauldrons of the Skeleton King",
         "cubeCategory": "Armor",
         "cube": true,
         "bounty": {
@@ -176,12 +203,14 @@
     {
         "id": 1033,
         "blizId": "Unique_Shoulder_102_x1",
+        "name": "Spaulders of Zakara",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1034,
         "blizId": "Unique_Shoulder_003_p1",
+        "name": "Vile Ward",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -191,6 +220,7 @@
     {
         "id": 1035,
         "blizId": "Unique_Chest_102_x1",
+        "name": "Armor of the Kind Regent",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -200,36 +230,42 @@
     {
         "id": 1037,
         "blizId": "Unique_Chest_006_x1",
+        "name": "Cindercoat",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1038,
         "blizId": "Unique_Chest_001_x1",
+        "name": "Goldskin",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1039,
         "blizId": "Unique_Chest_101_x1",
+        "name": "Shi Mizu's Haori",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1041,
         "blizId": "Unique_Cloak_101_x1",
+        "name": "Blackfeather",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1042,
         "blizId": "Unique_Cloak_001_x1",
+        "name": "Cape of the Dark Night",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1043,
         "blizId": "Unique_Cloak_102_x1",
+        "name": "Cloak of Deception",
         "cubeCategory": "Armor",
         "cube": true,
         "bounty": {
@@ -239,12 +275,14 @@
     {
         "id": 1044,
         "blizId": "Unique_Cloak_002_p1",
+        "name": "The Cloak of the Garwulf",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1045,
         "blizId": "P3_Unique_Bracer_104",
+        "name": "Bracers of Destruction",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -254,6 +292,7 @@
     {
         "id": 1047,
         "blizId": "P3_Unique_Bracer_107",
+        "name": "Coils of the First Spider",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -263,12 +302,14 @@
     {
         "id": 1048,
         "blizId": "Unique_Bracer_107_x1",
+        "name": "Custerian Wristguards",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1049,
         "blizId": "P2_Unique_Bracer_110",
+        "name": "Drakon's Lesson",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -278,6 +319,7 @@
     {
         "id": 1051,
         "blizId": "P3_Unique_Bracer_106",
+        "name": "Jeram's Bracers",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -287,24 +329,28 @@
     {
         "id": 1052,
         "blizId": "Unique_Bracer_Set_02_x1",
+        "name": "Krelm's Buff Bracers",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1053,
         "blizId": "Unique_Bracer_106_x1",
+        "name": "Nemesis Bracers",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1054,
         "blizId": "Unique_Bracer_002_x1",
+        "name": "Promise of Glory",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1055,
         "blizId": "Unique_Bracer_108_x1",
+        "name": "Ranslor's Folly",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -314,6 +360,7 @@
     {
         "id": 1057,
         "blizId": "Unique_Bracer_105_x1",
+        "name": "Sanguinary Vambraces",
         "cubeCategory": "Armor",
         "cube": true,
         "bounty": {
@@ -323,6 +370,7 @@
     {
         "id": 1058,
         "blizId": "P2_Unique_Bracer_109",
+        "name": "Spirit Guards",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -332,18 +380,21 @@
     {
         "id": 1059,
         "blizId": "Unique_Bracer_007_x1",
+        "name": "Strongarm Bracers",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1061,
         "blizId": "Unique_Bracer_101_x1",
+        "name": "Warzechian Armguards",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1062,
         "blizId": "P3_Unique_Bracer_103",
+        "name": "Wraps of Clarity",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -353,18 +404,21 @@
     {
         "id": 1063,
         "blizId": "Unique_Gloves_002_x1",
+        "name": "Frostburn",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1064,
         "blizId": "Unique_Gloves_011_x1",
+        "name": "Gladiator Gauntlets",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1065,
         "blizId": "Unique_Gloves_103_x1",
+        "name": "Gloves of Worship",
         "cubeCategory": "Armor",
         "cube": true,
         "bounty": {
@@ -374,12 +428,14 @@
     {
         "id": 1067,
         "blizId": "Unique_Gloves_003_x1",
+        "name": "Tasker and Theo",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1068,
         "blizId": "Unique_Belt_003_p1",
+        "name": "Angel Hair Braid",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -389,6 +445,7 @@
     {
         "id": 1069,
         "blizId": "P2_Unique_Belt_008",
+        "name": "Belt of the Trove",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -398,6 +455,7 @@
     {
         "id": 1071,
         "blizId": "P3_Unique_Belt_03",
+        "name": "Binding of the Lost",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -407,6 +465,7 @@
     {
         "id": 1072,
         "blizId": "P2_Unique_Belt_05",
+        "name": "Blessed of Haull",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -416,12 +475,14 @@
     {
         "id": 1073,
         "blizId": "Unique_Belt_104_p2",
+        "name": "Cord of the Sherma",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1074,
         "blizId": "P2_Unique_Belt_01",
+        "name": "Crashing Rain",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -431,6 +492,7 @@
     {
         "id": 1075,
         "blizId": "P3_Unique_Belt_02",
+        "name": "Fazula's Improbable Chain",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -440,12 +502,14 @@
     {
         "id": 1077,
         "blizId": "Unique_Belt_105_x1",
+        "name": "Harrington Waistguard",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1078,
         "blizId": "P2_Unique_Belt_03",
+        "name": "Haunting Girdle",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -455,6 +519,7 @@
     {
         "id": 1079,
         "blizId": "P3_Unique_Belt_005",
+        "name": "Hunter's Wrath",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -464,6 +529,7 @@
     {
         "id": 1081,
         "blizId": "Unique_Belt_103_x1",
+        "name": "Insatiable Belt",
         "cubeCategory": "Armor",
         "cube": true,
         "bounty": {
@@ -473,6 +539,7 @@
     {
         "id": 1082,
         "blizId": "Unique_Belt_106_x1",
+        "name": "Jang's Envelopment",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -482,12 +549,14 @@
     {
         "id": 1083,
         "blizId": "Unique_Belt_Set_02_x1",
+        "name": "Krelm's Buff Belt",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1084,
         "blizId": "P2_Unique_Belt_04",
+        "name": "Omnislash",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -497,6 +566,7 @@
     {
         "id": 1085,
         "blizId": "P2_Unique_Belt_06",
+        "name": "Omryn's Chain",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -506,6 +576,7 @@
     {
         "id": 1087,
         "blizId": "P3_Unique_Belt_01",
+        "name": "Sacred Harness",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -515,42 +586,49 @@
     {
         "id": 1088,
         "blizId": "Unique_Belt_102_p2",
+        "name": "Sash of Knives",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1089,
         "blizId": "Unique_Belt_108_p2",
+        "name": "Sebor's Nightmare",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1091,
         "blizId": "Unique_BarbBelt_101_x1",
+        "name": "Chilanik's Chain",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1092,
         "blizId": "Unique_BarbBelt_005_p1",
+        "name": "Lamentation",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1093,
         "blizId": "Unique_BarbBelt_002_x1",
+        "name": "Pride of Cassius",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1094,
         "blizId": "P2_Unique_BarbBelt_006",
+        "name": "The Undisputed Champion",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1095,
         "blizId": "Unique_Pants_102_x1",
+        "name": "Death's Bargain",
         "cubeCategory": "Armor",
         "cube": true,
         "bounty": {
@@ -560,18 +638,21 @@
     {
         "id": 1097,
         "blizId": "Unique_Pants_101_x1",
+        "name": "Hexing Pants of Mr. Yan",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1098,
         "blizId": "Unique_Pants_007_p2",
+        "name": "Pox Faulds",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1099,
         "blizId": "Unique_Boots_102_x1",
+        "name": "Boots of Disregard",
         "cubeCategory": "Armor",
         "cube": true,
         "bounty": {
@@ -581,12 +662,14 @@
     {
         "id": 1101,
         "blizId": "Unique_Boots_008_x1",
+        "name": "Ice Climbers",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1102,
         "blizId": "Unique_Boots_103_x1",
+        "name": "Illusory Boots",
         "cubeCategory": "Armor",
         "cube": true,
         "bounty": {
@@ -596,12 +679,14 @@
     {
         "id": 1103,
         "blizId": "Unique_Boots_104_x1",
+        "name": "Irontoe Mudsputters",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 1104,
         "blizId": "Unique_Boots_009_x1",
+        "name": "Lut Socks",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -611,6 +696,7 @@
     {
         "id": 1105,
         "blizId": "P2_Unique_Boots_01",
+        "name": "Nilfur's Boast",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -620,42 +706,49 @@
     {
         "id": 1107,
         "blizId": "P2_Unique_BarbBelt_001",
+        "name": "Dread Iron",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 2001,
         "blizId": "Unique_Axe_1H_003_x1",
+        "name": "Genzaniku",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2002,
         "blizId": "Unique_Axe_1H_103_x1",
+        "name": "Hack",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2003,
         "blizId": "Unique_Axe_1H_005_p2",
+        "name": "Sky Splitter",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2004,
         "blizId": "Unique_Axe_1H_007_x1",
+        "name": "The Burning Axe of Sankis",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2005,
         "blizId": "Unique_Axe_1H_006_x1",
+        "name": "The Butcher's Sickle",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2006,
         "blizId": "Unique_Dagger_103_x1",
+        "name": "Envious Blade",
         "cubeCategory": "Weapon",
         "cube": true,
         "bounty": {
@@ -665,18 +758,21 @@
     {
         "id": 2007,
         "blizId": "Unique_Dagger_104_x1",
+        "name": "Eun-jang-do",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2008,
         "blizId": "Unique_Dagger_010_x1_210",
+        "name": "Wizardspike",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2009,
         "blizId": "Unique_Mace_1H_103_x1",
+        "name": "Jace's Hammer of Vigilance",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -686,6 +782,7 @@
     {
         "id": 2010,
         "blizId": "Unique_Mace_1H_101_x1",
+        "name": "Mad Monarch's Scepter",
         "cubeCategory": "Weapon",
         "cube": true,
         "bounty": {
@@ -695,18 +792,21 @@
     {
         "id": 2011,
         "blizId": "Unique_Mace_1H_002_x1",
+        "name": "Odyn Son",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2012,
         "blizId": "Unique_Mace_1H_102_x1",
+        "name": "Solanium",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2013,
         "blizId": "P3_Unique_Spear_001",
+        "name": "Arreat's Law",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -716,192 +816,224 @@
     {
         "id": 2014,
         "blizId": "P3_Unique_Sword_1H_012",
+        "name": "Azurewrath",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2015,
         "blizId": "P3_Unique_Sword_1H_104",
+        "name": "Fulminator",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2016,
         "blizId": "Unique_Sword_1H_113_x1",
+        "name": "In-geom",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2017,
         "blizId": "Unique_Sword_1H_109_x1",
+        "name": "Rimeheart",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2018,
         "blizId": "Unique_Sword_1H_007_x1",
+        "name": "Sever",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2019,
         "blizId": "Unique_Sword_1H_Promo_02_x1",
+        "name": "Shard of Hate",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2020,
         "blizId": "Unique_Sword_1H_004_x1",
+        "name": "Skycutter",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2021,
         "blizId": "Unique_Sword_1H_101_x1",
+        "name": "Thunderfury, Blessed Blade of the Windseeker",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2022,
         "blizId": "Unique_CeremonialDagger_001_x1",
+        "name": "Anessazi Edge",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2023,
         "blizId": "Unique_CeremonialDagger_003_x1",
+        "name": "Deadly Rebirth",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2024,
         "blizId": "Unique_CeremonialDagger_102_x1",
+        "name": "Rhen'ho Flayer",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2025,
         "blizId": "P1_CeremonialDagger_norm_unique_01",
+        "name": "Sacred Harvester",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2026,
         "blizId": "Unique_CeremonialDagger_101_x1",
+        "name": "Starmetal Kukri",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2027,
         "blizId": "P1_CeremonialDagger_norm_unique_02",
+        "name": "The Dagger of Darts",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2028,
         "blizId": "Unique_CeremonialDagger_002_x1",
+        "name": "The Gidbinn",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2029,
         "blizId": "Unique_CeremonialDagger_004_x1",
+        "name": "The Spider Queen's Grasp",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2030,
         "blizId": "Unique_Fist_101_x1",
+        "name": "Jawbreaker",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2031,
         "blizId": "P1_fistWeapon_norm_unique_01",
+        "name": "Lion's Claw",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2032,
         "blizId": "Unique_Fist_009_x1",
+        "name": "The Fist of Az'Turrasq",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2033,
         "blizId": "P1_fistWeapon_norm_unique_02",
+        "name": "Vengeful Wind",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2034,
         "blizId": "Unique_Flail_1H_106_x1",
+        "name": "Darklight",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2035,
         "blizId": "Unique_Flail_1H_101_x1",
+        "name": "Golden Scourge",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2036,
         "blizId": "Unique_Flail_1H_105_x1",
+        "name": "Gyrfalcon's Foote",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2037,
         "blizId": "Unique_Flail_1H_107_x1",
+        "name": "Inviolable Faith",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2038,
         "blizId": "P1_flail1H_norm_unique_01",
+        "name": "Johanna's Argument",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2039,
         "blizId": "Unique_Flail_1H_102_x1",
+        "name": "Justinian's Mercy",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2040,
         "blizId": "Unique_Flail_1H_104_x1",
+        "name": "Kassar's Retribution",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2041,
         "blizId": "Unique_Flail_1H_103_x1",
+        "name": "Swiftmount",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2042,
         "blizId": "Unique_Mighty_1H_103_x1",
+        "name": "Dishonored Legacy",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2043,
         "blizId": "P3_Unique_Mighty_1H_006",
+        "name": "Fjord Cutter",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2044,
         "blizId": "Unique_Mighty_1H_102_x1",
+        "name": "Remorseless",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2045,
         "blizId": "Unique_Axe_2H_103_x1",
+        "name": "Burst of Wrath",
         "cubeCategory": "Weapon",
         "cube": true,
         "bounty": {
@@ -911,30 +1043,35 @@
     {
         "id": 2046,
         "blizId": "Unique_Axe_2H_001_x1",
+        "name": "Butcher's Carver",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2047,
         "blizId": "Unique_Axe_2H_010_x1",
+        "name": "Cinder Switch",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2048,
         "blizId": "Unique_Mace_2H_003_x1",
+        "name": "Arthef's Spark of Life",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2049,
         "blizId": "Unique_Mace_2H_009_p2",
+        "name": "Schaefer's Hammer",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2050,
         "blizId": "Unique_Mace_2H_010_x1",
+        "name": "Skywarden",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -944,6 +1081,7 @@
     {
         "id": 2051,
         "blizId": "Unique_Mace_2H_104_x1",
+        "name": "Soulsmasher",
         "cubeCategory": "Weapon",
         "cube": true,
         "bounty": {
@@ -953,42 +1091,49 @@
     {
         "id": 2052,
         "blizId": "Unique_Mace_2H_006_x1",
+        "name": "Sunder",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2053,
         "blizId": "Unique_Mace_2H_103_x1",
+        "name": "The Furnace",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2054,
         "blizId": "Unique_Polearm_101_x1",
+        "name": "Bovine Bardiche",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2055,
         "blizId": "Unique_Polearm_001_x1",
+        "name": "Vigilance",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2056,
         "blizId": "Unique_Staff_101_x1",
+        "name": "Ahavarion, Spear of Lycander",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2057,
         "blizId": "Unique_Staff_006_x1",
+        "name": "Maloth's Focus",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2058,
         "blizId": "Unique_Staff_009_p1",
+        "name": "The Grand Vizier",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -998,6 +1143,7 @@
     {
         "id": 2059,
         "blizId": "Unique_Staff_103_x1",
+        "name": "The Smoldering Core",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -1007,12 +1153,14 @@
     {
         "id": 2060,
         "blizId": "Unique_Staff_007_x1",
+        "name": "The Tormentor",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2061,
         "blizId": "Unique_Staff_102_x1",
+        "name": "Valthek's Rebuke",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -1022,6 +1170,7 @@
     {
         "id": 2062,
         "blizId": "P2_Unique_Staff_003",
+        "name": "Wormwood",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -1031,6 +1180,7 @@
     {
         "id": 2063,
         "blizId": "Unique_Sword_2H_007_x1",
+        "name": "Blade of Prophecy",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -1040,12 +1190,14 @@
     {
         "id": 2064,
         "blizId": "Unique_Sword_2H_103_x1",
+        "name": "Blood Brother",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2065,
         "blizId": "Unique_Sword_2H_102_x1",
+        "name": "Cam's Rebuttal",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -1055,96 +1207,112 @@
     {
         "id": 2066,
         "blizId": "Unique_Sword_2H_010_x1",
+        "name": "Maximus",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2067,
         "blizId": "Unique_Sword_2H_004_x1",
+        "name": "Scourge",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2068,
         "blizId": "Unique_Sword_2H_101_x1",
+        "name": "Stalgard's Decimator",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2069,
         "blizId": "Unique_CombatStaff_2H_009_x1",
+        "name": "Flying Dragon",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2070,
         "blizId": "Unique_CombatStaff_2H_003_x1",
+        "name": "Incense Torch of the Grand Temple",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2071,
         "blizId": "Unique_CombatStaff_2H_005_x1",
+        "name": "The Flow of Eternity",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2072,
         "blizId": "Unique_CombatStaff_2H_102_x1",
+        "name": "Warstaff of General Quang",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2073,
         "blizId": "Unique_Flail_2H_102_x1",
+        "name": "Baleful Remnant",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2074,
         "blizId": "Unique_Flail_2H_103_x1",
+        "name": "Fate of the Fell",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2075,
         "blizId": "P2_Unique_Flail_2H_104",
+        "name": "Golden Flense",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2076,
         "blizId": "Unique_Flail_2H_101_x1",
+        "name": "The Mortal Drama",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2077,
         "blizId": "Unique_Mighty_2H_004_p1",
+        "name": "Bastion's Revered",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2078,
         "blizId": "Unique_Mighty_2H_006_x1",
+        "name": "Fury of the Vanished Peak",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2079,
         "blizId": "Unique_Mighty_2H_101_x1",
+        "name": "Madawc's Sorrow",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2080,
         "blizId": "P2_Unique_Mighty_2H_001",
+        "name": "The Gavel of Judgment",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2081,
         "blizId": "Unique_Bow_015_x1",
+        "name": "Cluckeye",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -1156,24 +1324,28 @@
     {
         "id": 2082,
         "blizId": "Unique_Bow_101_x1",
+        "name": "Kridershot",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2083,
         "blizId": "Unique_Bow_103_x1",
+        "name": "Leonine Bow of Hashir",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2084,
         "blizId": "Unique_Bow_102_x1",
+        "name": "Odyssey's End",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2085,
         "blizId": "Unique_Bow_008_x1",
+        "name": "The Raven's Wing",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -1185,24 +1357,28 @@
     {
         "id": 2086,
         "blizId": "Unique_Bow_104_x1",
+        "name": "Yang's Recurve",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2087,
         "blizId": "Unique_XBow_011_x1",
+        "name": "Buriza-Do Kyanon",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2088,
         "blizId": "Unique_Xbow_101_x1",
+        "name": "Chanon Bolter",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2089,
         "blizId": "Unique_XBow_001_x1",
+        "name": "Demon Machine",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -1214,6 +1390,7 @@
     {
         "id": 2090,
         "blizId": "Unique_XBow_002_x1",
+        "name": "Hellrack",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -1225,6 +1402,7 @@
     {
         "id": 2091,
         "blizId": "Unique_XBow_012_x1",
+        "name": "Pus Spitter",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -1236,30 +1414,35 @@
     {
         "id": 2092,
         "blizId": "Unique_Xbow_102_x1",
+        "name": "Wojahnni Assaulter",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2093,
         "blizId": "Unique_HandXBow_012_x1",
+        "name": "Calamity",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2094,
         "blizId": "Unique_HandXBow_002_x1",
+        "name": "Danetta's Revenge",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2095,
         "blizId": "Unique_HandXBow_001_x1",
+        "name": "Danetta's Spite",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2096,
         "blizId": "Unique_HandXBow_102_x1",
+        "name": "Helltrapper",
         "cubeCategory": "Weapon",
         "cube": true,
         "bounty": {
@@ -1269,54 +1452,63 @@
     {
         "id": 2097,
         "blizId": "Unique_HandXBow_101_x1",
+        "name": "K'mar Tenclip",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2098,
         "blizId": "P2_handXbow_norm_unique_03",
+        "name": "The Demon's Demise",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2099,
         "blizId": "P3_Unique_HandXBow_005",
+        "name": "Valla's Bequest",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2100,
         "blizId": "P1_Wand_norm_unique_01",
+        "name": "Aether Walker",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2101,
         "blizId": "P2_Unique_Wand_002",
+        "name": "Gesture of Orpheus",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2102,
         "blizId": "Unique_Wand_102_x1",
+        "name": "Serpent's Sparker",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2103,
         "blizId": "Unique_Wand_013_x1",
+        "name": "Slorak's Madness",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2104,
         "blizId": "Unique_Wand_101_x1",
+        "name": "Wand of Woh",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2105,
         "blizId": "Unique_Shield_107_x1",
+        "name": "Coven's Criterion",
         "cubeCategory": "Weapon",
         "cube": true,
         "bounty": {
@@ -1326,12 +1518,14 @@
     {
         "id": 2106,
         "blizId": "Unique_Shield_101_p2",
+        "name": "Defender of Westmarch",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2107,
         "blizId": "P2_Unique_Shield_007",
+        "name": "Denial",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -1341,6 +1535,7 @@
     {
         "id": 2108,
         "blizId": "Unique_Shield_102_x1",
+        "name": "Eberli Charo",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -1350,12 +1545,14 @@
     {
         "id": 2109,
         "blizId": "Unique_Shield_004_x1",
+        "name": "Freeze of Deflection",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2110,
         "blizId": "P2_Unique_Shield_002",
+        "name": "Ivory Tower",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -1365,6 +1562,7 @@
     {
         "id": 2111,
         "blizId": "Unique_Shield_104_x1",
+        "name": "Vo'Toyias Spiker",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -1374,54 +1572,63 @@
     {
         "id": 2112,
         "blizId": "Unique_Shield_011_x1",
+        "name": "Wall of Man",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2113,
         "blizId": "Unique_CruShield_104_x1",
+        "name": "Akarat's Awakening",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2114,
         "blizId": "P1_CruShield_norm_unique_01",
+        "name": "Frydehr's Wrath",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2115,
         "blizId": "Unique_Shield_103_x1",
+        "name": "Guard of Johanna",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2116,
         "blizId": "Unique_CruShield_103_x1",
+        "name": "Hallowed Bulwark",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2117,
         "blizId": "Unique_CruShield_105_x1",
+        "name": "Hellskull",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2118,
         "blizId": "Unique_CruShield_102_x1",
+        "name": "Jekangbord",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2119,
         "blizId": "Unique_CruShield_101_x1",
+        "name": "Piro Marella",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2120,
         "blizId": "Unique_CruShield_108_x1",
+        "name": "Salvation",
         "cubeCategory": "Weapon",
         "cube": true,
         "bounty": {
@@ -1431,126 +1638,147 @@
     {
         "id": 2121,
         "blizId": "Unique_CruShield_106_x1",
+        "name": "Sublime Conviction",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2122,
         "blizId": "Unique_CruShield_107_x1",
+        "name": "The Final Witness",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2123,
         "blizId": "P1_CruShield_norm_unique_02",
+        "name": "Unrelenting Phalanx",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2124,
         "blizId": "P2_mojo_norm_unique_02",
+        "name": "Henri's Perquisition",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2125,
         "blizId": "Unique_Mojo_004_p2",
+        "name": "Homunculus",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2126,
         "blizId": "Unique_Mojo_102_x1",
+        "name": "Shukrani's Triumph",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2127,
         "blizId": "Unique_Mojo_008_x1",
+        "name": "Uhkapian Serpent",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2128,
         "blizId": "Unique_Orb_004_x1",
+        "name": "Cosmic Strand",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2129,
         "blizId": "Unique_Orb_103_x1",
+        "name": "Light of Grace",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2130,
         "blizId": "Unique_Orb_101_x1",
+        "name": "Mirrorball",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2131,
         "blizId": "Unique_Orb_102_x1",
+        "name": "Myken's Ball of Hate",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2132,
         "blizId": "Unique_Orb_001_x1",
+        "name": "The Oculus",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2133,
         "blizId": "P2_Unique_Orb_003",
+        "name": "Triumvirate",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2134,
         "blizId": "Unique_Orb_005_x1",
+        "name": "Winter Flurry",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2135,
         "blizId": "Unique_Quiver_102_x1",
+        "name": "Bombardier's Rucksack",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2136,
         "blizId": "P2_Unique_Quiver_007",
+        "name": "Dead Man's Legacy",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2137,
         "blizId": "Unique_Quiver_103_x1",
+        "name": "Emimei's Duffel",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2138,
         "blizId": "Unique_Quiver_001_p1",
+        "name": "Meticulous Bolts",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2139,
         "blizId": "Unique_Quiver_005_p1",
+        "name": "Spines of Seething Hatred",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2140,
         "blizId": "Unique_Quiver_101_x1",
+        "name": "The Ninth Cirri Satchel",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
         "id": 2141,
         "blizId": "Unique_Staff_104_x1",
+        "name": "SuWong Diviner",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -1560,6 +1788,7 @@
     {
         "id": 2142,
         "blizId": "Unique_Spear_004_p3",
+        "name": "Scrimshaw",
         "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
@@ -1569,18 +1798,21 @@
     {
         "id": 3001,
         "blizId": "Unique_Amulet_103_x1",
+        "name": "Countess Julia's Cameo",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3002,
         "blizId": "Unique_Amulet_107_x1",
+        "name": "Dovu Energy Trap",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3003,
         "blizId": "Unique_Amulet_105_x1",
+        "name": "Golden Gorget of Leoric",
         "cubeCategory": "Jewelry",
         "cube": true,
         "bounty": {
@@ -1590,24 +1822,28 @@
     {
         "id": 3004,
         "blizId": "Unique_Amulet_002_p1",
+        "name": "Kymbo's Gold",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3005,
         "blizId": "Unique_Amulet_015_x1",
+        "name": "Mara's Kaleidoscope",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3006,
         "blizId": "Unique_Amulet_003_x1",
+        "name": "Moonlight Ward",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3007,
         "blizId": "Unique_Amulet_106_x1",
+        "name": "Overwhelming Desire",
         "cubeCategory": "Jewelry",
         "cube": true,
         "bounty": {
@@ -1617,42 +1853,49 @@
     {
         "id": 3008,
         "blizId": "Unique_Amulet_108_x1",
+        "name": "Rakoff's Glass of Life",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3009,
         "blizId": "Unique_Amulet_012_x1",
+        "name": "Talisman of Aranoch",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3010,
         "blizId": "Unique_Amulet_104_x1",
+        "name": "The Ess of Johan",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3011,
         "blizId": "Unique_Amulet_006_x1",
+        "name": "The Star of Azkaranth",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3012,
         "blizId": "Unique_Amulet_004_x1",
+        "name": "Xephirian Amulet",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3013,
         "blizId": "P2_Unique_Ring_03",
+        "name": "Arcstone",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3014,
         "blizId": "Unique_Ring_108_x1",
+        "name": "Avarice Band",
         "cubeCategory": "Jewelry",
         "cube": true,
         "bounty": {
@@ -1662,12 +1905,14 @@
     {
         "id": 3015,
         "blizId": "Unique_Ring_001_x1",
+        "name": "Band of Hollow Whispers",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3016,
         "blizId": "Unique_Ring_106_x1",
+        "name": "Band of the Rue Chambers",
         "cubeCategory": "Jewelry",
         "cube": true,
         "classes": [
@@ -1677,24 +1922,28 @@
     {
         "id": 3017,
         "blizId": "Unique_Ring_006_p2",
+        "name": "Broken Promises",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3018,
         "blizId": "Unique_Ring_020_x1",
+        "name": "Bul-Kathos's Wedding Band",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3019,
         "blizId": "P2_Unique_Ring_04",
+        "name": "Convention of Elements",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3020,
         "blizId": "Unique_Ring_007_p1",
+        "name": "Eternal Union",
         "cubeCategory": "Jewelry",
         "cube": true,
         "classes": [
@@ -1704,6 +1953,7 @@
     {
         "id": 3021,
         "blizId": "p2_Unique_Ring_Wizard_001",
+        "name": "Halo of Arlyse",
         "cubeCategory": "Jewelry",
         "cube": true,
         "classes": [
@@ -1713,36 +1963,42 @@
     {
         "id": 3022,
         "blizId": "Unique_Ring_024_104",
+        "name": "Hellfire Ring",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3023,
         "blizId": "Unique_Ring_003_x1",
+        "name": "Krede's Flame",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3024,
         "blizId": "Unique_Ring_018_p2",
+        "name": "Nagelring",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3025,
         "blizId": "Unique_Ring_023_p2",
+        "name": "Obsidian Ring of the Zodiac",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3026,
         "blizId": "Unique_Ring_017_p2",
+        "name": "Oculus Ring",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3027,
         "blizId": "Unique_Ring_109_x1",
+        "name": "Pandemonium Loop",
         "cubeCategory": "Jewelry",
         "cube": true,
         "bounty": {
@@ -1752,18 +2008,21 @@
     {
         "id": 3028,
         "blizId": "Unique_Ring_004_x1",
+        "name": "Puzzle Ring",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3029,
         "blizId": "Unique_Ring_104_x1",
+        "name": "Rechel's Ring of Larceny",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3030,
         "blizId": "Unique_Ring_107_x1",
+        "name": "Ring of Royal Grandeur",
         "cubeCategory": "Jewelry",
         "cube": true,
         "bounty": {
@@ -1773,12 +2032,14 @@
     {
         "id": 3031,
         "blizId": "Unique_Ring_103_x1",
+        "name": "Rogar's Huge Stone",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3032,
         "blizId": "P2_Unique_Ring_01",
+        "name": "Skull Grasp",
         "cubeCategory": "Jewelry",
         "cube": true,
         "classes": [
@@ -1788,6 +2049,7 @@
     {
         "id": 3033,
         "blizId": "P2_Unique_Ring_02",
+        "name": "The Short Man's Finger",
         "cubeCategory": "Jewelry",
         "cube": true,
         "classes": [
@@ -1797,6 +2059,7 @@
     {
         "id": 3034,
         "blizId": "Unique_Ring_101_x1",
+        "name": "The Tall Man's Finger",
         "cubeCategory": "Jewelry",
         "cube": true,
         "classes": [
@@ -1806,2099 +2069,2519 @@
     {
         "id": 3035,
         "blizId": "Unique_Ring_010_x1",
+        "name": "Unity",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3036,
         "blizId": "Unique_Ring_102_p2",
+        "name": "Wyrdward",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 3037,
         "blizId": "Unique_Amulet_101_x1",
+        "name": "Haunt of Vaxo",
         "cubeCategory": "Jewelry",
         "cube": true
     },
     {
         "id": 4001,
         "blizId": "P2_Unique_Boots_02",
+        "name": "Inna's Sandals",
         "cubeCategory": "Armor"
     },
     {
         "id": 4002,
         "blizId": "P2_Unique_Gloves_01",
+        "name": "Natalya's Touch",
         "cubeCategory": "Armor"
     },
     {
         "id": 4003,
         "blizId": "P2_Unique_Gloves_02",
+        "name": "Tal Rasha's Grasp",
         "cubeCategory": "Armor"
     },
     {
         "id": 4004,
         "blizId": "P2_Unique_Gloves_03",
+        "name": "Zunimassa's Finger Wraps",
         "cubeCategory": "Armor"
     },
     {
         "id": 4005,
         "blizId": "P2_Unique_Gloves_04",
+        "name": "Inna's Hold",
         "cubeCategory": "Armor"
     },
     {
         "id": 4006,
         "blizId": "P2_Unique_Pants_01",
+        "name": "Natalya's Leggings",
         "cubeCategory": "Armor"
     },
     {
         "id": 4007,
         "blizId": "P2_Unique_Pants_02",
+        "name": "Immortal King's Stature",
         "cubeCategory": "Armor"
     },
     {
         "id": 4008,
         "blizId": "P2_Unique_Pants_03",
+        "name": "Tal Rasha's Stride",
         "cubeCategory": "Armor"
     },
     {
         "id": 4009,
         "blizId": "P2_Unique_Pants_04",
+        "name": "Zunimassa's Cloth",
         "cubeCategory": "Armor"
     },
     {
         "id": 4010,
         "blizId": "StaffOfCow",
+        "name": "Staff of Herding",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4011,
         "blizId": "StaffOfCow_Hell",
+        "name": "Hellish Staff of Herding",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4012,
         "blizId": "StaffOfCow_Inferno",
+        "name": "Infernal Staff of Herding",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4013,
         "blizId": "StaffOfCow_Nightmare",
+        "name": "Nightmarish Staff of Herding",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4014,
         "blizId": "Unique_Amulet_001_x1",
+        "name": "The Flavor of Time",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4015,
         "blizId": "Unique_Amulet_005_x1",
+        "name": "Ouroboros",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4016,
         "blizId": "Unique_Amulet_007_x1",
+        "name": "Tal Rasha's Allegiance",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4017,
         "blizId": "Unique_Amulet_008_x1",
+        "name": "The Traveler's Pledge",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4018,
         "blizId": "Unique_Amulet_009_x1",
+        "name": "Rondal's Locket",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4019,
         "blizId": "Unique_Amulet_010_x1",
+        "name": "Squirt's Necklace",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4020,
         "blizId": "Unique_Amulet_013_x1",
+        "name": "Holy Beacon",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4021,
         "blizId": "Unique_Amulet_014_x1",
+        "name": "Eye of Etlich",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4022,
         "blizId": "Unique_Amulet_016_x1",
+        "name": "Blackthorne's Duncraig Cross",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4023,
         "blizId": "Unique_Amulet_102_x1",
+        "name": "Ancestors' Grace",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4024,
         "blizId": "Unique_Amulet_109_x1_210",
+        "name": "Halcyon's Ascent",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4025,
         "blizId": "Unique_Amulet_Set_11_x1",
+        "name": "Sunwuko's Shines",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4026,
         "blizId": "Unique_Axe_1H_001_x1",
+        "name": "Flesh Tearer",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4027,
         "blizId": "Unique_Axe_1H_004_1xx",
+        "name": "The Wedge",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4028,
         "blizId": "Unique_Axe_1H_004_x1",
+        "name": "Utar's Roar",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4029,
         "blizId": "Unique_Axe_1H_013_1xx",
+        "name": "Hallowed Storm",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4030,
         "blizId": "Unique_Axe_1H_013_x1",
+        "name": "Hallowed Breach",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4031,
         "blizId": "Unique_Axe_2H_003_x1",
+        "name": "The Executioner",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4032,
         "blizId": "Unique_Axe_2H_009_x1",
+        "name": "Skorn",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4033,
         "blizId": "Unique_Axe_2H_010_1xx",
+        "name": "Fire Brand",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4034,
         "blizId": "Unique_Axe_2H_011_x1",
+        "name": "Messerschmidt's Reaver",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4035,
         "blizId": "Unique_BarbBelt_004_x1",
+        "name": "Girdle of Giants",
         "cubeCategory": "Armor"
     },
     {
         "id": 4036,
         "blizId": "Unique_BarbBelt_007_x1",
+        "name": "Kotuur's Brace",
         "cubeCategory": "Armor"
     },
     {
         "id": 4037,
         "blizId": "Unique_BarbBelt_009_x1",
+        "name": "Immortal King's Tribal Binding",
         "cubeCategory": "Armor"
     },
     {
         "id": 4038,
         "blizId": "Unique_Belt_001_x1",
+        "name": "Saffron Wrap",
         "cubeCategory": "Armor"
     },
     {
         "id": 4039,
         "blizId": "Unique_Belt_002_x1",
+        "name": "Vigilante Belt",
         "cubeCategory": "Armor"
     },
     {
         "id": 4040,
         "blizId": "Unique_Belt_004_1xx",
+        "name": "Quick Draw Belt",
         "cubeCategory": "Armor"
     },
     {
         "id": 4041,
         "blizId": "Unique_Belt_004_x1",
+        "name": "Fleeting Strap",
         "cubeCategory": "Armor"
     },
     {
         "id": 4042,
         "blizId": "Unique_Belt_005_x1",
+        "name": "Hellcat Waistguard",
         "cubeCategory": "Armor"
     },
     {
         "id": 4043,
         "blizId": "Unique_Belt_006_x1",
+        "name": "Tal Rasha's Brace",
         "cubeCategory": "Armor"
     },
     {
         "id": 4044,
         "blizId": "Unique_Belt_007_x1",
+        "name": "Inna's Favor",
         "cubeCategory": "Armor"
     },
     {
         "id": 4045,
         "blizId": "Unique_Belt_008_x1",
+        "name": "String of Ears",
         "cubeCategory": "Armor"
     },
     {
         "id": 4046,
         "blizId": "Unique_Belt_009_x1",
+        "name": "The Witching Hour",
         "cubeCategory": "Armor"
     },
     {
         "id": 4047,
         "blizId": "Unique_Belt_012_1xx",
+        "name": "Captain Crimson's Satin Sash",
         "cubeCategory": "Armor"
     },
     {
         "id": 4048,
         "blizId": "Unique_Belt_012_x1",
+        "name": "Captain Crimson's Silk Girdle",
         "cubeCategory": "Armor"
     },
     {
         "id": 4049,
         "blizId": "Unique_Belt_013_1xx",
+        "name": "Guardian's Sheath",
         "cubeCategory": "Armor"
     },
     {
         "id": 4050,
         "blizId": "Unique_Belt_013_x1",
+        "name": "Guardian's Case",
         "cubeCategory": "Armor"
     },
     {
         "id": 4051,
         "blizId": "Unique_Belt_014_1xx",
+        "name": "Demon's Lock",
         "cubeCategory": "Armor"
     },
     {
         "id": 4052,
         "blizId": "Unique_Belt_014_x1",
+        "name": "Demon's Restraint",
         "cubeCategory": "Armor"
     },
     {
         "id": 4053,
         "blizId": "Unique_Belt_015_x1",
+        "name": "Blackthorne's Notched Belt",
         "cubeCategory": "Armor"
     },
     {
         "id": 4054,
         "blizId": "Unique_Boots_001_x1",
+        "name": "Boj Anglers",
         "cubeCategory": "Armor"
     },
     {
         "id": 4055,
         "blizId": "Unique_Boots_005_1xx",
+        "name": "Lost Boys",
         "cubeCategory": "Armor"
     },
     {
         "id": 4056,
         "blizId": "Unique_Boots_005_x1",
+        "name": "Board Walkers",
         "cubeCategory": "Armor"
     },
     {
         "id": 4057,
         "blizId": "Unique_Boots_011_x1",
+        "name": "Natalya's Bloody Footprints",
         "cubeCategory": "Armor"
     },
     {
         "id": 4058,
         "blizId": "Unique_Boots_012_x1",
+        "name": "Immortal King's Stride",
         "cubeCategory": "Armor"
     },
     {
         "id": 4059,
         "blizId": "Unique_Boots_013_x1",
+        "name": "Zunimassa's Trail",
         "cubeCategory": "Armor"
     },
     {
         "id": 4060,
         "blizId": "Unique_Boots_014_1xx",
+        "name": "Asheara's Tracks",
         "cubeCategory": "Armor"
     },
     {
         "id": 4061,
         "blizId": "Unique_Boots_014_x1",
+        "name": "Asheara's Finders",
         "cubeCategory": "Armor"
     },
     {
         "id": 4062,
         "blizId": "Unique_Boots_015_1xx",
+        "name": "Cain's Sandals",
         "cubeCategory": "Armor"
     },
     {
         "id": 4063,
         "blizId": "Unique_Boots_015_x1",
+        "name": "Cain's Travelers",
         "cubeCategory": "Armor"
     },
     {
         "id": 4064,
         "blizId": "Unique_Boots_017_1xx",
+        "name": "Captain Crimson's Whalers",
         "cubeCategory": "Armor"
     },
     {
         "id": 4065,
         "blizId": "Unique_Boots_017_x1",
+        "name": "Captain Crimson's Waders",
         "cubeCategory": "Armor"
     },
     {
         "id": 4066,
         "blizId": "Unique_Boots_018_1xx",
+        "name": "Sage's Journey",
         "cubeCategory": "Armor"
     },
     {
         "id": 4067,
         "blizId": "Unique_Boots_018_x1",
+        "name": "Sage's Passage",
         "cubeCategory": "Armor"
     },
     {
         "id": 4068,
         "blizId": "Unique_Boots_019_x1",
+        "name": "Blackthorne's Spurs",
         "cubeCategory": "Armor"
     },
     {
         "id": 4069,
         "blizId": "Unique_Boots_Set_01_p1",
+        "name": "Roland's Stride",
         "cubeCategory": "Armor"
     },
     {
         "id": 4070,
         "blizId": "Unique_Boots_Set_01_p2",
+        "name": "Sabaton of the Wastes",
         "cubeCategory": "Armor"
     },
     {
         "id": 4071,
         "blizId": "Unique_Boots_Set_01_p3",
+        "name": "Uliana's Destiny",
         "cubeCategory": "Armor"
     },
     {
         "id": 4072,
         "blizId": "Unique_Boots_Set_02_p2",
+        "name": "Striders of Destiny",
         "cubeCategory": "Armor"
     },
     {
         "id": 4073,
         "blizId": "Unique_Boots_Set_02_p3",
+        "name": "Arachyr's Stride",
         "cubeCategory": "Armor"
     },
     {
         "id": 4074,
         "blizId": "Unique_Boots_Set_03_p2",
+        "name": "Hell Walkers",
         "cubeCategory": "Armor"
     },
     {
         "id": 4075,
         "blizId": "Unique_Boots_Set_03_p3",
+        "name": "Foundation of the Light",
         "cubeCategory": "Armor"
     },
     {
         "id": 4076,
         "blizId": "Unique_Boots_Set_05_x1",
+        "name": "Raekor's Striders",
         "cubeCategory": "Armor"
     },
     {
         "id": 4077,
         "blizId": "Unique_Boots_Set_06_x1",
+        "name": "Firebird's Tarsi",
         "cubeCategory": "Armor"
     },
     {
         "id": 4078,
         "blizId": "Unique_Boots_Set_07_x1",
+        "name": "Marauder's Treads",
         "cubeCategory": "Armor"
     },
     {
         "id": 4079,
         "blizId": "Unique_Boots_Set_08_x1",
+        "name": "Eight-Demon Boots",
         "cubeCategory": "Armor"
     },
     {
         "id": 4080,
         "blizId": "Unique_Boots_Set_09_x1",
+        "name": "Jade Harvester's Swiftness",
         "cubeCategory": "Armor"
     },
     {
         "id": 4081,
         "blizId": "Unique_Boots_Set_10_x1",
+        "name": "Sabatons of Akkhan",
         "cubeCategory": "Armor"
     },
     {
         "id": 4082,
         "blizId": "Unique_Boots_Set_13_x1",
+        "name": "Vyr's Swaggering Stance",
         "cubeCategory": "Armor"
     },
     {
         "id": 4083,
         "blizId": "Unique_Boots_Set_14_x1",
+        "name": "The Shadow's Heels",
         "cubeCategory": "Armor"
     },
     {
         "id": 4084,
         "blizId": "Unique_Boots_Set_16_x1",
+        "name": "Helltooth Greaves",
         "cubeCategory": "Armor"
     },
     {
         "id": 4085,
         "blizId": "Unique_Bow_001_p1",
+        "name": "Etrayu",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4086,
         "blizId": "Unique_Bow_005_p1",
+        "name": "Uskang",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4087,
         "blizId": "Unique_Bow_007_1xx",
+        "name": "Longshot",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4088,
         "blizId": "Unique_Bow_007_x1",
+        "name": "Unbound Bolt",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4089,
         "blizId": "Unique_Bow_009_x1",
+        "name": "Windforce",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4090,
         "blizId": "Unique_Bow_010_1xx",
+        "name": "Venomhusk",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4091,
         "blizId": "Unique_Bow_010_x1",
+        "name": "Sydyru Crust",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4092,
         "blizId": "Unique_Bracer_001_1xx",
+        "name": "Wondrous Deflectors",
         "cubeCategory": "Armor"
     },
     {
         "id": 4093,
         "blizId": "Unique_Bracer_001_x1",
+        "name": "Kethryes' Splint",
         "cubeCategory": "Armor"
     },
     {
         "id": 4094,
         "blizId": "Unique_Bracer_004_x1",
+        "name": "Steady Strikers",
         "cubeCategory": "Armor"
     },
     {
         "id": 4095,
         "blizId": "Unique_Bracer_005_x1",
+        "name": "Lacuni Prowlers",
         "cubeCategory": "Armor"
     },
     {
         "id": 4096,
         "blizId": "Unique_Bracer_009_1xx",
+        "name": "Aughild's Ultimatum",
         "cubeCategory": "Armor"
     },
     {
         "id": 4097,
         "blizId": "Unique_Bracer_009_x1",
+        "name": "Aughild's Search",
         "cubeCategory": "Armor"
     },
     {
         "id": 4098,
         "blizId": "Unique_Bracer_010_1xx",
+        "name": "Guardian's Deflector",
         "cubeCategory": "Armor"
     },
     {
         "id": 4099,
         "blizId": "Unique_Bracer_010_x1",
+        "name": "Guardian's Aversion",
         "cubeCategory": "Armor"
     },
     {
         "id": 4100,
         "blizId": "Unique_Bracer_011_1xx",
+        "name": "Demon's Revenge",
         "cubeCategory": "Armor"
     },
     {
         "id": 4101,
         "blizId": "Unique_Bracer_011_x1",
+        "name": "Demon's Animus",
         "cubeCategory": "Armor"
     },
     {
         "id": 4102,
         "blizId": "Unique_Bracer_Set_12_x1",
+        "name": "Shackles of the Invoker",
         "cubeCategory": "Armor"
     },
     {
         "id": 4103,
         "blizId": "Unique_CeremonialDagger_006_1xx",
+        "name": "Umbral Oath",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4104,
         "blizId": "Unique_CeremonialDagger_006_x1",
+        "name": "Living Umbral Oath",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4105,
         "blizId": "Unique_CeremonialDagger_008_x1",
+        "name": "Last Breath",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4106,
         "blizId": "Unique_CeremonialDagger_009_x1",
+        "name": "Manajuma's Carving Knife",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4107,
         "blizId": "Unique_CeremonialDagger_011_1xx",
+        "name": "Hallowed Salvation",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4108,
         "blizId": "Unique_CeremonialDagger_011_x1",
+        "name": "Hallowed Sufferance",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4109,
         "blizId": "Unique_ChestArmor_028_x1",
+        "name": "Blackthorne's Surcoat",
         "cubeCategory": "Armor"
     },
     {
         "id": 4110,
         "blizId": "Unique_Chest_002_x1",
+        "name": "Tyrael's Might",
         "cubeCategory": "Armor"
     },
     {
         "id": 4111,
         "blizId": "Unique_Chest_012_x1",
+        "name": "Aquila Cuirass",
         "cubeCategory": "Armor"
     },
     {
         "id": 4112,
         "blizId": "Unique_Chest_013_x1",
+        "name": "Immortal King's Eternal Reign",
         "cubeCategory": "Armor"
     },
     {
         "id": 4113,
         "blizId": "Unique_Chest_014_x1",
+        "name": "Tal Rasha's Relentless Pursuit",
         "cubeCategory": "Armor"
     },
     {
         "id": 4114,
         "blizId": "Unique_Chest_015_x1",
+        "name": "Inna's Vast Expanse",
         "cubeCategory": "Armor"
     },
     {
         "id": 4115,
         "blizId": "Unique_Chest_016_x1",
+        "name": "Zunimassa's Marrow",
         "cubeCategory": "Armor"
     },
     {
         "id": 4116,
         "blizId": "Unique_Chest_018_x1",
+        "name": "Heart of Iron",
         "cubeCategory": "Armor"
     },
     {
         "id": 4117,
         "blizId": "Unique_Chest_019_1xx",
+        "name": "Robes of the Rydraelm",
         "cubeCategory": "Armor"
     },
     {
         "id": 4118,
         "blizId": "Unique_Chest_019_x1",
+        "name": "Mantle of the Rydraelm",
         "cubeCategory": "Armor"
     },
     {
         "id": 4119,
         "blizId": "Unique_Chest_025_1xx",
+        "name": "Born's Heart of Steel",
         "cubeCategory": "Armor"
     },
     {
         "id": 4120,
         "blizId": "Unique_Chest_025_x1",
+        "name": "Born's Frozen Soul",
         "cubeCategory": "Armor"
     },
     {
         "id": 4121,
         "blizId": "Unique_Chest_026_1xx",
+        "name": "Aughild's Dominion",
         "cubeCategory": "Armor"
     },
     {
         "id": 4122,
         "blizId": "Unique_Chest_026_x1",
+        "name": "Aughild's Rule",
         "cubeCategory": "Armor"
     },
     {
         "id": 4123,
         "blizId": "Unique_Chest_027_1xx",
+        "name": "Demon's Heart",
         "cubeCategory": "Armor"
     },
     {
         "id": 4124,
         "blizId": "Unique_Chest_027_x1",
+        "name": "Demon's Marrow",
         "cubeCategory": "Armor"
     },
     {
         "id": 4125,
         "blizId": "Unique_Chest_Set_01_p1",
+        "name": "Roland's Bearing",
         "cubeCategory": "Armor"
     },
     {
         "id": 4126,
         "blizId": "Unique_Chest_Set_01_p2",
+        "name": "Cuirass of the Wastes",
         "cubeCategory": "Armor"
     },
     {
         "id": 4127,
         "blizId": "Unique_Chest_Set_01_p3",
+        "name": "Uliana's Heart",
         "cubeCategory": "Armor"
     },
     {
         "id": 4128,
         "blizId": "Unique_Chest_Set_02_p2",
+        "name": "Harness of Truth",
         "cubeCategory": "Armor"
     },
     {
         "id": 4129,
         "blizId": "Unique_Chest_Set_02_p3",
+        "name": "Arachyr's Carapace",
         "cubeCategory": "Armor"
     },
     {
         "id": 4130,
         "blizId": "Unique_Chest_Set_03_p2",
+        "name": "Cage of the Hellborn",
         "cubeCategory": "Armor"
     },
     {
         "id": 4131,
         "blizId": "Unique_Chest_Set_03_p3",
+        "name": "Heart of the Light",
         "cubeCategory": "Armor"
     },
     {
         "id": 4132,
         "blizId": "Unique_Chest_Set_05_x1",
+        "name": "Raekor's Heart",
         "cubeCategory": "Armor"
     },
     {
         "id": 4133,
         "blizId": "Unique_Chest_Set_06_x1",
+        "name": "Firebird's Breast",
         "cubeCategory": "Armor"
     },
     {
         "id": 4134,
         "blizId": "Unique_Chest_Set_07_x1",
+        "name": "Marauder's Carapace",
         "cubeCategory": "Armor"
     },
     {
         "id": 4135,
         "blizId": "Unique_Chest_Set_08_x1",
+        "name": "Heart of the Crashing Wave",
         "cubeCategory": "Armor"
     },
     {
         "id": 4136,
         "blizId": "Unique_Chest_Set_09_x1",
+        "name": "Jade Harvester's Peace",
         "cubeCategory": "Armor"
     },
     {
         "id": 4137,
         "blizId": "Unique_Chest_Set_10_x1",
+        "name": "Breastplate of Akkhan",
         "cubeCategory": "Armor"
     },
     {
         "id": 4138,
         "blizId": "Unique_Chest_Set_13_x1",
+        "name": "Vyr's Astonishing Aura",
         "cubeCategory": "Armor"
     },
     {
         "id": 4139,
         "blizId": "Unique_Chest_Set_14_x1",
+        "name": "The Shadow's Bane",
         "cubeCategory": "Armor"
     },
     {
         "id": 4140,
         "blizId": "Unique_Chest_Set_16_x1",
+        "name": "Helltooth Tunic",
         "cubeCategory": "Armor"
     },
     {
         "id": 4141,
         "blizId": "Unique_Cloak_006_x1",
+        "name": "Natalya's Embrace",
         "cubeCategory": "Armor"
     },
     {
         "id": 4142,
         "blizId": "Unique_CombatStaff_2H_001_x1",
+        "name": "Inna's Reach",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4143,
         "blizId": "Unique_CombatStaff_2H_002_x1",
+        "name": "Balance",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4144,
         "blizId": "Unique_CombatStaff_2H_004_1xx",
+        "name": "Rozpedin's Staff",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4145,
         "blizId": "Unique_CombatStaff_2H_004_x1",
+        "name": "Rozpedin's Force",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4146,
         "blizId": "Unique_CombatStaff_2H_007_x1",
+        "name": "The Paddle",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4147,
         "blizId": "Unique_CombatStaff_2H_008_1xx",
+        "name": "Lai Yui's Taiji",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4148,
         "blizId": "Unique_CombatStaff_2H_008_x1",
+        "name": "Lai Yui's Persuader",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4149,
         "blizId": "Unique_CombatStaff_2H_101_x1",
+        "name": "Staff of Kyro",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4150,
         "blizId": "Unique_Dagger_002_x1",
+        "name": "Kill",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4151,
         "blizId": "Unique_Dagger_003_x1",
+        "name": "The Barber",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4152,
         "blizId": "Unique_Dagger_006_1xx",
+        "name": "Blood-Magic Blade",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4153,
         "blizId": "Unique_Dagger_006_x1",
+        "name": "Blood-Magic Edge",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4154,
         "blizId": "Unique_Dagger_007_x1",
+        "name": "Pig Sticker",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4155,
         "blizId": "Unique_Fist_003_x1",
+        "name": "Rabid Strike",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4156,
         "blizId": "Unique_Fist_004_1xx",
+        "name": "Demon Hand",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4157,
         "blizId": "Unique_Fist_004_x1",
+        "name": "Demon Claw",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4158,
         "blizId": "Unique_Fist_005_x1",
+        "name": "Logan's Claw",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4159,
         "blizId": "Unique_Fist_006_x1",
+        "name": "Won Khim Lau",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4160,
         "blizId": "Unique_Fist_007_x1",
+        "name": "Fleshrake",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4161,
         "blizId": "Unique_Fist_008_x1",
+        "name": "Crystal Fist",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4162,
         "blizId": "Unique_Fist_010_x1",
+        "name": "Shenlong's Relentless Assault",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4163,
         "blizId": "Unique_Fist_011_x1",
+        "name": "Shenlong's Fist of Legend",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4164,
         "blizId": "Unique_Fist_012_x1",
+        "name": "Sledge Fist",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4165,
         "blizId": "Unique_Fist_013_x1",
+        "name": "Scarbringer",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4166,
         "blizId": "Unique_Fist_015_1xx",
+        "name": "Hallowed Hand",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4167,
         "blizId": "Unique_Fist_015_x1",
+        "name": "Hallowed Hold",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4168,
         "blizId": "Unique_Gloves_001_1xx",
+        "name": "Pendergrasps",
         "cubeCategory": "Armor"
     },
     {
         "id": 4169,
         "blizId": "Unique_Gloves_001_x1",
+        "name": "Penders Purchase",
         "cubeCategory": "Armor"
     },
     {
         "id": 4170,
         "blizId": "Unique_Gloves_007_x1",
+        "name": "Stone Gauntlets",
         "cubeCategory": "Armor"
     },
     {
         "id": 4171,
         "blizId": "Unique_Gloves_008_x1",
+        "name": "Immortal King's Irons",
         "cubeCategory": "Armor"
     },
     {
         "id": 4172,
         "blizId": "Unique_Gloves_009_1xx",
+        "name": "Asheara's Iron Fist",
         "cubeCategory": "Armor"
     },
     {
         "id": 4173,
         "blizId": "Unique_Gloves_009_x1",
+        "name": "Asheara's Ward",
         "cubeCategory": "Armor"
     },
     {
         "id": 4174,
         "blizId": "Unique_Gloves_014_x1",
+        "name": "Magefist",
         "cubeCategory": "Armor"
     },
     {
         "id": 4175,
         "blizId": "Unique_Gloves_015_1xx",
+        "name": "Cain's Scribe",
         "cubeCategory": "Armor"
     },
     {
         "id": 4176,
         "blizId": "Unique_Gloves_015_x1",
+        "name": "Cain's Scrivener",
         "cubeCategory": "Armor"
     },
     {
         "id": 4177,
         "blizId": "Unique_Gloves_017_1xx",
+        "name": "Sage's Gesture",
         "cubeCategory": "Armor"
     },
     {
         "id": 4178,
         "blizId": "Unique_Gloves_017_x1",
+        "name": "Sage's Purchase",
         "cubeCategory": "Armor"
     },
     {
         "id": 4179,
         "blizId": "Unique_Gloves_Set_01_p1",
+        "name": "Roland's Grasp",
         "cubeCategory": "Armor"
     },
     {
         "id": 4180,
         "blizId": "Unique_Gloves_Set_01_p2",
+        "name": "Gauntlet of the Wastes",
         "cubeCategory": "Armor"
     },
     {
         "id": 4181,
         "blizId": "Unique_Gloves_Set_01_p3",
+        "name": "Uliana's Fury",
         "cubeCategory": "Armor"
     },
     {
         "id": 4182,
         "blizId": "Unique_Gloves_Set_02_p2",
+        "name": "Fierce Gauntlets",
         "cubeCategory": "Armor"
     },
     {
         "id": 4183,
         "blizId": "Unique_Gloves_Set_02_p3",
+        "name": "Arachyr's Claws",
         "cubeCategory": "Armor"
     },
     {
         "id": 4184,
         "blizId": "Unique_Gloves_Set_03_p2",
+        "name": "Fiendish Grips",
         "cubeCategory": "Armor"
     },
     {
         "id": 4185,
         "blizId": "Unique_Gloves_Set_03_p3",
+        "name": "Will of the Light",
         "cubeCategory": "Armor"
     },
     {
         "id": 4186,
         "blizId": "Unique_Gloves_Set_05_x1",
+        "name": "Raekor's Wraps",
         "cubeCategory": "Armor"
     },
     {
         "id": 4187,
         "blizId": "Unique_Gloves_Set_06_x1",
+        "name": "Firebird's Talons",
         "cubeCategory": "Armor"
     },
     {
         "id": 4188,
         "blizId": "Unique_Gloves_Set_07_x1",
+        "name": "Marauder's Gloves",
         "cubeCategory": "Armor"
     },
     {
         "id": 4189,
         "blizId": "Unique_Gloves_Set_08_x1",
+        "name": "Fists of Thunder",
         "cubeCategory": "Armor"
     },
     {
         "id": 4190,
         "blizId": "Unique_Gloves_Set_09_x1",
+        "name": "Jade Harvester's Mercy",
         "cubeCategory": "Armor"
     },
     {
         "id": 4191,
         "blizId": "Unique_Gloves_Set_10_x1",
+        "name": "Gauntlets of Akkhan",
         "cubeCategory": "Armor"
     },
     {
         "id": 4192,
         "blizId": "Unique_Gloves_Set_11_x1",
+        "name": "Sunwuko's Paws",
         "cubeCategory": "Armor"
     },
     {
         "id": 4193,
         "blizId": "Unique_Gloves_Set_12_x1",
+        "name": "Pride of the Invoker",
         "cubeCategory": "Armor"
     },
     {
         "id": 4194,
         "blizId": "Unique_Gloves_Set_13_x1",
+        "name": "Vyr's Grasping Gauntlets",
         "cubeCategory": "Armor"
     },
     {
         "id": 4195,
         "blizId": "Unique_Gloves_Set_14_x1",
+        "name": "The Shadow's Grasp",
         "cubeCategory": "Armor"
     },
     {
         "id": 4196,
         "blizId": "Unique_Gloves_Set_15_x1",
+        "name": "Pull of the Earth",
         "cubeCategory": "Armor"
     },
     {
         "id": 4197,
         "blizId": "Unique_Gloves_Set_16_x1",
+        "name": "Helltooth Gauntlets",
         "cubeCategory": "Armor"
     },
     {
         "id": 4198,
         "blizId": "Unique_HandXBow_003_x1",
+        "name": "Natalya's Slayer",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4199,
         "blizId": "Unique_HandXBow_004_p1",
+        "name": "Balefire Caster",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4200,
         "blizId": "Unique_HandXBow_006_1xx",
+        "name": "Deadeye",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4201,
         "blizId": "Unique_HandXBow_006_x1",
+        "name": "Blitzbolter",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4202,
         "blizId": "Unique_HandXBow_007_x1",
+        "name": "Dawn",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4203,
         "blizId": "Unique_HandXBow_016_1xx",
+        "name": "Hallowed Judgment",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4204,
         "blizId": "Unique_HandXBow_016_x1",
+        "name": "Hallowed Condemnation",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4205,
         "blizId": "Unique_Helm_006_x1",
+        "name": "Mempo of Twilight",
         "cubeCategory": "Armor"
     },
     {
         "id": 4206,
         "blizId": "Unique_Helm_007_x1",
+        "name": "Blind Faith",
         "cubeCategory": "Armor"
     },
     {
         "id": 4207,
         "blizId": "Unique_Helm_008_x1",
+        "name": "Immortal King's Triumph",
         "cubeCategory": "Armor"
     },
     {
         "id": 4208,
         "blizId": "Unique_Helm_009_x1",
+        "name": "Natalya's Sight",
         "cubeCategory": "Armor"
     },
     {
         "id": 4209,
         "blizId": "Unique_Helm_010_x1",
+        "name": "Tal Rasha's Guise of Wisdom",
         "cubeCategory": "Armor"
     },
     {
         "id": 4210,
         "blizId": "Unique_Helm_011_1xx",
+        "name": "The Helm of Command",
         "cubeCategory": "Armor"
     },
     {
         "id": 4211,
         "blizId": "Unique_Helm_011_x1",
+        "name": "The Helm of Rule",
         "cubeCategory": "Armor"
     },
     {
         "id": 4212,
         "blizId": "Unique_Helm_012_1xx",
+        "name": "Cain's Memory",
         "cubeCategory": "Armor"
     },
     {
         "id": 4213,
         "blizId": "Unique_Helm_012_x1",
+        "name": "Cain's Insight",
         "cubeCategory": "Armor"
     },
     {
         "id": 4214,
         "blizId": "Unique_Helm_014_1xx",
+        "name": "Aughild's Peak",
         "cubeCategory": "Armor"
     },
     {
         "id": 4215,
         "blizId": "Unique_Helm_014_x1",
+        "name": "Aughild's Spike",
         "cubeCategory": "Armor"
     },
     {
         "id": 4216,
         "blizId": "Unique_Helm_015_1xx",
+        "name": "Guardian's Foresight",
         "cubeCategory": "Armor"
     },
     {
         "id": 4217,
         "blizId": "Unique_Helm_015_x1",
+        "name": "Guardian's Gaze",
         "cubeCategory": "Armor"
     },
     {
         "id": 4218,
         "blizId": "Unique_Helm_016_1xx",
+        "name": "Sage's Orbit",
         "cubeCategory": "Armor"
     },
     {
         "id": 4219,
         "blizId": "Unique_Helm_016_x1",
+        "name": "Sage's Apogee",
         "cubeCategory": "Armor"
     },
     {
         "id": 4220,
         "blizId": "Unique_Helm_Set_01_p1",
+        "name": "Roland's Visage",
         "cubeCategory": "Armor"
     },
     {
         "id": 4221,
         "blizId": "Unique_Helm_Set_01_p2",
+        "name": "Helm of the Wastes",
         "cubeCategory": "Armor"
     },
     {
         "id": 4222,
         "blizId": "Unique_Helm_Set_01_p3",
+        "name": "Uliana's Spirit",
         "cubeCategory": "Armor"
     },
     {
         "id": 4223,
         "blizId": "Unique_Helm_Set_02_p2",
+        "name": "Shrouded Mask",
         "cubeCategory": "Armor"
     },
     {
         "id": 4224,
         "blizId": "Unique_Helm_Set_02_p3",
+        "name": "Arachyr's Visage",
         "cubeCategory": "Armor"
     },
     {
         "id": 4225,
         "blizId": "Unique_Helm_Set_03_p2",
+        "name": "Accursed Visage",
         "cubeCategory": "Armor"
     },
     {
         "id": 4226,
         "blizId": "Unique_Helm_Set_03_p3",
+        "name": "Crown of the Light",
         "cubeCategory": "Armor"
     },
     {
         "id": 4227,
         "blizId": "Unique_Helm_Set_05_x1",
+        "name": "Raekor's Will",
         "cubeCategory": "Armor"
     },
     {
         "id": 4228,
         "blizId": "Unique_Helm_Set_06_x1",
+        "name": "Firebird's Plume",
         "cubeCategory": "Armor"
     },
     {
         "id": 4229,
         "blizId": "Unique_Helm_Set_07_x1",
+        "name": "Marauder's Visage",
         "cubeCategory": "Armor"
     },
     {
         "id": 4230,
         "blizId": "Unique_Helm_Set_08_x1",
+        "name": "Mask of the Searing Sky",
         "cubeCategory": "Armor"
     },
     {
         "id": 4231,
         "blizId": "Unique_Helm_Set_09_x1",
+        "name": "Jade Harvester's Wisdom",
         "cubeCategory": "Armor"
     },
     {
         "id": 4232,
         "blizId": "Unique_Helm_Set_10_x1",
+        "name": "Helm of Akkhan",
         "cubeCategory": "Armor"
     },
     {
         "id": 4233,
         "blizId": "Unique_Helm_Set_11_x1",
+        "name": "Sunwuko's Crown",
         "cubeCategory": "Armor"
     },
     {
         "id": 4234,
         "blizId": "Unique_Helm_Set_12_x1",
+        "name": "Crown of the Invoker",
         "cubeCategory": "Armor"
     },
     {
         "id": 4235,
         "blizId": "Unique_Helm_Set_13_x1",
+        "name": "Vyr's Sightless Skull",
         "cubeCategory": "Armor"
     },
     {
         "id": 4236,
         "blizId": "Unique_Helm_Set_15_x1",
+        "name": "Eyes of the Earth",
         "cubeCategory": "Armor"
     },
     {
         "id": 4237,
         "blizId": "Unique_Helm_Set_16_x1",
+        "name": "Helltooth Mask",
         "cubeCategory": "Armor"
     },
     {
         "id": 4238,
         "blizId": "Unique_Mace_1H_001_x1",
+        "name": "Echoing Fury",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4239,
         "blizId": "Unique_Mace_1H_003_x1",
+        "name": "Neanderthal",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4240,
         "blizId": "Unique_Mace_1H_005_x1",
+        "name": "Nutcracker",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4241,
         "blizId": "Unique_Mace_1H_007_x1",
+        "name": "Telranden's Hand",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4242,
         "blizId": "Unique_Mace_1H_008_x1",
+        "name": "Nailbiter",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4243,
         "blizId": "Unique_Mace_1H_009_1xx",
+        "name": "Earthshatter",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4244,
         "blizId": "Unique_Mace_1H_009_x1",
+        "name": "Devastator",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4245,
         "blizId": "Unique_Mace_1H_011_x1",
+        "name": "Sun Keeper",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4246,
         "blizId": "Unique_Mace_2H_001_x1",
+        "name": "Crushbane",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4247,
         "blizId": "Unique_Mace_2H_002_x1",
+        "name": "Sledge of Athskeleng",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4248,
         "blizId": "Unique_Mace_2H_006_1xx",
+        "name": "Cataclysm",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4249,
         "blizId": "Unique_Mace_2H_012_p1",
+        "name": "Wrath of the Bone King",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4250,
         "blizId": "Unique_Mighty_1H_001_1xx",
+        "name": "Harvest Moon",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4251,
         "blizId": "Unique_Mighty_1H_001_x1",
+        "name": "Night's Reaping",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4252,
         "blizId": "Unique_Mighty_1H_005_x1",
+        "name": "Blade of the Warlord",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4253,
         "blizId": "Unique_Mighty_1H_010_x1",
+        "name": "Bul-Kathos's Solemn Vow",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4254,
         "blizId": "Unique_Mighty_1H_011_x1",
+        "name": "Bul-Kathos's Warrior Blood",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4255,
         "blizId": "Unique_Mighty_1H_012_x1",
+        "name": "Ambo's Pride",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4256,
         "blizId": "Unique_Mighty_1H_015_1xx",
+        "name": "Hallowed Reckoning",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4257,
         "blizId": "Unique_Mighty_1H_015_x1",
+        "name": "Hallowed Nemesis",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4258,
         "blizId": "Unique_Mighty_2H_010_x1",
+        "name": "Immortal King's Boulder Breaker",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4259,
         "blizId": "Unique_Mighty_2H_012_1xx",
+        "name": "Unending War",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4260,
         "blizId": "Unique_Mighty_2H_012_x1",
+        "name": "War of the Dead",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4261,
         "blizId": "Unique_Mojo_002_1xx",
+        "name": "Bitterness",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4262,
         "blizId": "Unique_Mojo_002_x1",
+        "name": "Spite",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4263,
         "blizId": "Unique_Mojo_003_x1",
+        "name": "Gazing Demise",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4264,
         "blizId": "Unique_Mojo_009_x1",
+        "name": "Thing of the Deep",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4265,
         "blizId": "Unique_Mojo_010_x1",
+        "name": "Manajuma's Gory Fetch",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4266,
         "blizId": "Unique_Mojo_011_x1",
+        "name": "Zunimassa's String of Skulls",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4267,
         "blizId": "Unique_Orb_004_1xx",
+        "name": "Singularity",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4268,
         "blizId": "Unique_Orb_011_x1",
+        "name": "Chantodo's Force",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4269,
         "blizId": "Unique_Orb_012_x1",
+        "name": "Tal Rasha's Unwavering Glare",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4270,
         "blizId": "Unique_Orb_Set_06_x1",
+        "name": "Firebird's Eye",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4271,
         "blizId": "Unique_Pants_001_x1",
+        "name": "Swamp Land Waders",
         "cubeCategory": "Armor"
     },
     {
         "id": 4272,
         "blizId": "Unique_Pants_002_x1",
+        "name": "Hammer Jammers",
         "cubeCategory": "Armor"
     },
     {
         "id": 4273,
         "blizId": "Unique_Pants_005_1xx",
+        "name": "Gehennas",
         "cubeCategory": "Armor"
     },
     {
         "id": 4274,
         "blizId": "Unique_Pants_005_x1",
+        "name": "Skelon's Deceit",
         "cubeCategory": "Armor"
     },
     {
         "id": 4275,
         "blizId": "Unique_Pants_008_x1",
+        "name": "Inna's Temperance",
         "cubeCategory": "Armor"
     },
     {
         "id": 4276,
         "blizId": "Unique_Pants_009_1xx",
+        "name": "Asheara's Gait",
         "cubeCategory": "Armor"
     },
     {
         "id": 4277,
         "blizId": "Unique_Pants_009_x1",
+        "name": "Asheara's Pace",
         "cubeCategory": "Armor"
     },
     {
         "id": 4278,
         "blizId": "Unique_Pants_010_1xx",
+        "name": "Cain's Robes",
         "cubeCategory": "Armor"
     },
     {
         "id": 4279,
         "blizId": "Unique_Pants_010_x1",
+        "name": "Cain's Habit",
         "cubeCategory": "Armor"
     },
     {
         "id": 4280,
         "blizId": "Unique_Pants_012_1xx",
+        "name": "Captain Crimson's Bowsprit",
         "cubeCategory": "Armor"
     },
     {
         "id": 4281,
         "blizId": "Unique_Pants_012_x1",
+        "name": "Captain Crimson's Thrust",
         "cubeCategory": "Armor"
     },
     {
         "id": 4282,
         "blizId": "Unique_Pants_013_x1",
+        "name": "Blackthorne's Jousting Mail",
         "cubeCategory": "Armor"
     },
     {
         "id": 4283,
         "blizId": "Unique_Pants_014_1xx",
+        "name": "Demon's Scale",
         "cubeCategory": "Armor"
     },
     {
         "id": 4284,
         "blizId": "Unique_Pants_014_x1",
+        "name": "Demon's Plate",
         "cubeCategory": "Armor"
     },
     {
         "id": 4285,
         "blizId": "Unique_Pants_Set_01_p1",
+        "name": "Roland's Determination",
         "cubeCategory": "Armor"
     },
     {
         "id": 4286,
         "blizId": "Unique_Pants_Set_01_p2",
+        "name": "Tasset of the Wastes",
         "cubeCategory": "Armor"
     },
     {
         "id": 4287,
         "blizId": "Unique_Pants_Set_01_p3",
+        "name": "Uliana's Burden",
         "cubeCategory": "Armor"
     },
     {
         "id": 4288,
         "blizId": "Unique_Pants_Set_02_p2",
+        "name": "Leg Guards of Mystery",
         "cubeCategory": "Armor"
     },
     {
         "id": 4289,
         "blizId": "Unique_Pants_Set_02_p3",
+        "name": "Arachyr's Legs",
         "cubeCategory": "Armor"
     },
     {
         "id": 4290,
         "blizId": "Unique_Pants_Set_03_p2",
+        "name": "Unholy Plates",
         "cubeCategory": "Armor"
     },
     {
         "id": 4291,
         "blizId": "Unique_Pants_Set_03_p3",
+        "name": "Towers of the Light",
         "cubeCategory": "Armor"
     },
     {
         "id": 4292,
         "blizId": "Unique_Pants_Set_05_x1",
+        "name": "Raekor's Breeches",
         "cubeCategory": "Armor"
     },
     {
         "id": 4293,
         "blizId": "Unique_Pants_Set_06_x1",
+        "name": "Firebird's Down",
         "cubeCategory": "Armor"
     },
     {
         "id": 4294,
         "blizId": "Unique_Pants_Set_07_x1",
+        "name": "Marauder's Encasement",
         "cubeCategory": "Armor"
     },
     {
         "id": 4295,
         "blizId": "Unique_Pants_Set_08_x1",
+        "name": "Scales of the Dancing Serpent",
         "cubeCategory": "Armor"
     },
     {
         "id": 4296,
         "blizId": "Unique_Pants_Set_09_x1",
+        "name": "Jade Harvester's Courage",
         "cubeCategory": "Armor"
     },
     {
         "id": 4297,
         "blizId": "Unique_Pants_Set_10_x1",
+        "name": "Cuisses of Akkhan",
         "cubeCategory": "Armor"
     },
     {
         "id": 4298,
         "blizId": "Unique_Pants_Set_13_x1",
+        "name": "Vyr's Fantastic Finery",
         "cubeCategory": "Armor"
     },
     {
         "id": 4299,
         "blizId": "Unique_Pants_Set_14_x1",
+        "name": "The Shadow's Coil",
         "cubeCategory": "Armor"
     },
     {
         "id": 4300,
         "blizId": "Unique_Pants_Set_15_x1",
+        "name": "Weight of the Earth",
         "cubeCategory": "Armor"
     },
     {
         "id": 4301,
         "blizId": "Unique_Pants_Set_16_x1",
+        "name": "Helltooth Leg Guards",
         "cubeCategory": "Armor"
     },
     {
         "id": 4302,
         "blizId": "Unique_Polearm_002_x1",
+        "name": "Pledge of Caldeum",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4303,
         "blizId": "Unique_Polearm_003_p1",
+        "name": "Heart Slaughter",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4304,
         "blizId": "Unique_Polearm_004_x1",
+        "name": "Standoff",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4305,
         "blizId": "Unique_Quiver_002_x1",
+        "name": "Sin Seekers",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4306,
         "blizId": "Unique_Quiver_003_1xx",
+        "name": "Black Bone Arrows",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4307,
         "blizId": "Unique_Quiver_003_x1",
+        "name": "Archfiend Arrows",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4308,
         "blizId": "Unique_Quiver_004_x1",
+        "name": "Holy Point Shot",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4309,
         "blizId": "Unique_Quiver_006_x1",
+        "name": "Fletcher's Pride",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4310,
         "blizId": "Unique_Ring_002_x1",
+        "name": "Leoric's Signet",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4311,
         "blizId": "Unique_Ring_005_x1",
+        "name": "Stolen Ring",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4312,
         "blizId": "Unique_Ring_008_x1",
+        "name": "Justice Lantern",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4313,
         "blizId": "Unique_Ring_011_x1",
+        "name": "Natalya's Reflection",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4314,
         "blizId": "Unique_Ring_012_x1",
+        "name": "Zunimassa's Pox",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4315,
         "blizId": "Unique_Ring_013_x1",
+        "name": "The Compass Rose",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4316,
         "blizId": "Unique_Ring_014_x1",
+        "name": "The Wailing Host",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4317,
         "blizId": "Unique_Ring_015_x1",
+        "name": "Litany of the Undaunted",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4318,
         "blizId": "Unique_Ring_019_x1",
+        "name": "Stone of Jordan",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4319,
         "blizId": "Unique_Ring_021_x1",
+        "name": "Manald Heal",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4320,
         "blizId": "Unique_Ring_024_x1",
+        "name": "Hellfire Ring",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4321,
         "blizId": "Unique_Ring_Set_001_x1",
+        "name": "Focus",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4322,
         "blizId": "Unique_Ring_Set_002_x1",
+        "name": "Restraint",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4323,
         "blizId": "Unique_Shield_008_x1",
+        "name": "Lidless Wall",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4324,
         "blizId": "Unique_Shield_009_x1",
+        "name": "Stormshield",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4325,
         "blizId": "Unique_Shield_011_1xx",
+        "name": "Wall of Bone",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4326,
         "blizId": "Unique_Shield_012_1xx",
+        "name": "Hallowed Defender",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4327,
         "blizId": "Unique_Shield_012_x1",
+        "name": "Hallowed Barricade",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4328,
         "blizId": "Unique_Shoulder_006_1xx",
+        "name": "Born's Impunity",
         "cubeCategory": "Armor"
     },
     {
         "id": 4329,
         "blizId": "Unique_Shoulder_006_x1",
+        "name": "Born's Privilege",
         "cubeCategory": "Armor"
     },
     {
         "id": 4330,
         "blizId": "Unique_Shoulder_007_1xx",
+        "name": "Seven Sins",
         "cubeCategory": "Armor"
     },
     {
         "id": 4331,
         "blizId": "Unique_Shoulder_007_x1",
+        "name": "Corruption",
         "cubeCategory": "Armor"
     },
     {
         "id": 4332,
         "blizId": "Unique_Shoulder_008_1xx",
+        "name": "Aughild's Reign",
         "cubeCategory": "Armor"
     },
     {
         "id": 4333,
         "blizId": "Unique_Shoulder_008_x1",
+        "name": "Aughild's Power",
         "cubeCategory": "Armor"
     },
     {
         "id": 4334,
         "blizId": "Unique_Shoulder_009_1xx",
+        "name": "Demon's Flight",
         "cubeCategory": "Armor"
     },
     {
         "id": 4335,
         "blizId": "Unique_Shoulder_009_x1",
+        "name": "Demon's Aileron",
         "cubeCategory": "Armor"
     },
     {
         "id": 4336,
         "blizId": "Unique_Shoulder_017_1xx",
+        "name": "Asheara's Guard",
         "cubeCategory": "Armor"
     },
     {
         "id": 4337,
         "blizId": "Unique_Shoulder_017_x1",
+        "name": "Asheara's Custodian",
         "cubeCategory": "Armor"
     },
     {
         "id": 4338,
         "blizId": "Unique_Shoulder_101_x1",
+        "name": "Profane Pauldrons",
         "cubeCategory": "Armor"
     },
     {
         "id": 4339,
         "blizId": "Unique_Shoulder_Set_01_p1",
+        "name": "Roland's Mantle",
         "cubeCategory": "Armor"
     },
     {
         "id": 4340,
         "blizId": "Unique_Shoulder_Set_01_p2",
+        "name": "Pauldrons of the Wastes",
         "cubeCategory": "Armor"
     },
     {
         "id": 4341,
         "blizId": "Unique_Shoulder_Set_01_p3",
+        "name": "Uliana's Strength",
         "cubeCategory": "Armor"
     },
     {
         "id": 4342,
         "blizId": "Unique_Shoulder_Set_02_p2",
+        "name": "Dashing Pauldrons of Despair",
         "cubeCategory": "Armor"
     },
     {
         "id": 4343,
         "blizId": "Unique_Shoulder_Set_02_p3",
+        "name": "Arachyr's Mantle",
         "cubeCategory": "Armor"
     },
     {
         "id": 4344,
         "blizId": "Unique_Shoulder_Set_03_p2",
+        "name": "Unsanctified Shoulders",
         "cubeCategory": "Armor"
     },
     {
         "id": 4345,
         "blizId": "Unique_Shoulder_Set_03_p3",
+        "name": "Mountain of the Light",
         "cubeCategory": "Armor"
     },
     {
         "id": 4346,
         "blizId": "Unique_Shoulder_Set_05_x1",
+        "name": "Raekor's Burden",
         "cubeCategory": "Armor"
     },
     {
         "id": 4347,
         "blizId": "Unique_Shoulder_Set_06_x1",
+        "name": "Firebird's Pinions",
         "cubeCategory": "Armor"
     },
     {
         "id": 4348,
         "blizId": "Unique_Shoulder_Set_07_x1",
+        "name": "Marauder's Spines",
         "cubeCategory": "Armor"
     },
     {
         "id": 4349,
         "blizId": "Unique_Shoulder_Set_08_x1",
+        "name": "Mantle of the Upside-Down Sinners",
         "cubeCategory": "Armor"
     },
     {
         "id": 4350,
         "blizId": "Unique_Shoulder_Set_09_x1",
+        "name": "Jade Harvester's Joy",
         "cubeCategory": "Armor"
     },
     {
         "id": 4351,
         "blizId": "Unique_Shoulder_Set_10_x1",
+        "name": "Pauldrons of Akkhan",
         "cubeCategory": "Armor"
     },
     {
         "id": 4352,
         "blizId": "Unique_Shoulder_Set_11_x1",
+        "name": "Sunwuko's Balance",
         "cubeCategory": "Armor"
     },
     {
         "id": 4353,
         "blizId": "Unique_Shoulder_Set_12_x1",
+        "name": "Burden of the Invoker",
         "cubeCategory": "Armor"
     },
     {
         "id": 4354,
         "blizId": "Unique_Shoulder_Set_13_x1",
+        "name": "Vyr's Proud Pauldrons",
         "cubeCategory": "Armor"
     },
     {
         "id": 4355,
         "blizId": "Unique_Shoulder_Set_15_x1",
+        "name": "Spires of the Earth",
         "cubeCategory": "Armor"
     },
     {
         "id": 4356,
         "blizId": "Unique_Shoulder_Set_16_x1",
+        "name": "Helltooth Mantle",
         "cubeCategory": "Armor"
     },
     {
         "id": 4357,
         "blizId": "Unique_Spear_002_x1",
+        "name": "The Three Hundredth Spear",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4358,
         "blizId": "Unique_Spear_003_x1",
+        "name": "Empyrean Messenger",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4359,
         "blizId": "Unique_Spear_101_x1",
+        "name": "Akanesh, the Herald of Righteousness",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4360,
         "blizId": "Unique_SpiritStone_001_x1",
+        "name": "Bezoar Stone",
         "cubeCategory": "Armor"
     },
     {
         "id": 4361,
         "blizId": "Unique_SpiritStone_003_x1",
+        "name": "Erlang Shen",
         "cubeCategory": "Armor"
     },
     {
         "id": 4362,
         "blizId": "Unique_SpiritStone_005_x1",
+        "name": "See No Evil",
         "cubeCategory": "Armor"
     },
     {
         "id": 4363,
         "blizId": "Unique_SpiritStone_006_x1",
+        "name": "The Eye of the Storm",
         "cubeCategory": "Armor"
     },
     {
         "id": 4364,
         "blizId": "Unique_SpiritStone_009_x1",
+        "name": "Inna's Radiance",
         "cubeCategory": "Armor"
     },
     {
         "id": 4365,
         "blizId": "Unique_Staff_001_x1",
+        "name": "The Broken Staff",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4366,
         "blizId": "Unique_Staff_002_1xx",
+        "name": "The Magi",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4367,
         "blizId": "Unique_Staff_002_x1",
+        "name": "Mark of The Magi",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4368,
         "blizId": "Unique_Staff_008_x1",
+        "name": "Autumn's Call",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4369,
         "blizId": "Unique_Sword_1H_002_x1",
+        "name": "Wildwood",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4370,
         "blizId": "Unique_Sword_1H_003_x1",
+        "name": "The Ancient Bonesaber of Zumakalis",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4371,
         "blizId": "Unique_Sword_1H_011_x1",
+        "name": "Devil Tongue",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4372,
         "blizId": "Unique_Sword_1H_014_x1",
+        "name": "Doombringer",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4373,
         "blizId": "Unique_Sword_1H_017_x1",
+        "name": "Monster Hunter",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4374,
         "blizId": "Unique_Sword_1H_018_1xx",
+        "name": "Born's Searing Spite",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4375,
         "blizId": "Unique_Sword_1H_018_x1",
+        "name": "Born's Furious Wrath",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4376,
         "blizId": "Unique_Sword_1H_019_1xx",
+        "name": "Griswold's Masterpiece",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4377,
         "blizId": "Unique_Sword_1H_019_x1",
+        "name": "Griswold's Perfection",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4378,
         "blizId": "Unique_Sword_1H_102_x1",
+        "name": "Exarian",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4379,
         "blizId": "Unique_Sword_1H_103_x1",
+        "name": "Gift of Silaria",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4380,
         "blizId": "Unique_Sword_1H_Set_02_x1",
+        "name": "The Slanderer",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4381,
         "blizId": "Unique_Sword_1H_Set_03_x1",
+        "name": "Little Rogue",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4382,
         "blizId": "Unique_Sword_2H_001_x1",
+        "name": "The Grandfather",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4383,
         "blizId": "Unique_Sword_2H_002_x1",
+        "name": "The Zweihander",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4384,
         "blizId": "Unique_Sword_2H_003_x1",
+        "name": "Warmonger",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4385,
         "blizId": "Unique_Sword_2H_008_x1",
+        "name": "The Sultan of Blinding Sand",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4386,
         "blizId": "Unique_Sword_2H_011_x1",
+        "name": "Blackguard",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4387,
         "blizId": "Unique_Sword_2H_012_x1",
+        "name": "Faithful Memory",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4388,
         "blizId": "Unique_Sword_2H_104_x1",
+        "name": "Corrupted Ashbringer",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4389,
         "blizId": "Unique_VoodooMask_006_x1",
+        "name": "Split Tusk",
         "cubeCategory": "Armor"
     },
     {
         "id": 4390,
         "blizId": "Unique_VoodooMask_007_x1",
+        "name": "Zunimassa's Vision",
         "cubeCategory": "Armor"
     },
     {
         "id": 4391,
         "blizId": "Unique_Wand_003_x1",
+        "name": "Starfire",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4392,
         "blizId": "Unique_Wand_006_x1",
+        "name": "Blackhand Key",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4393,
         "blizId": "Unique_Wand_009_1xx",
+        "name": "Ruinstoke",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4394,
         "blizId": "Unique_Wand_009_x1",
+        "name": "Atrophy",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4395,
         "blizId": "Unique_Wand_010_x1",
+        "name": "Fragment of Destiny",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4396,
         "blizId": "Unique_Wand_012_x1",
+        "name": "Chantodo's Will",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4397,
         "blizId": "Unique_Wand_018_1xx",
+        "name": "Hallowed Scepter",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4398,
         "blizId": "Unique_Wand_018_x1",
+        "name": "Hallowed Baton",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4399,
         "blizId": "Unique_XBow_003_x1",
+        "name": "Manticore",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4400,
         "blizId": "Unique_XBow_004_1xx",
+        "name": "Starspine",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4401,
         "blizId": "Unique_XBow_004_x1",
+        "name": "Arcane Barb",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4402,
         "blizId": "Unique_XBow_006_x1",
+        "name": "Bakkan Caster",
         "cubeCategory": "Weapon"
     },
     {
         "id": 4403,
         "blizId": "x1_Amulet_norm_unique_25",
+        "name": "Hellfire Amulet",
         "cubeCategory": "Jewelry"
     },
     {
         "id": 4404,
-        "blizId": "x1_FollowerItem_Enchantress_Legendary_01"
+        "blizId": "x1_FollowerItem_Enchantress_Legendary_01",
+        "name": "Smoking Thurible"
     },
     {
         "id": 4405,
-        "blizId": "x1_FollowerItem_Enchantress_Legendary_02"
+        "blizId": "x1_FollowerItem_Enchantress_Legendary_02",
+        "name": "Hand of the Prophet"
     },
     {
         "id": 4406,
-        "blizId": "x1_FollowerItem_Enchantress_Legendary_03"
+        "blizId": "x1_FollowerItem_Enchantress_Legendary_03",
+        "name": "Vadim's Surge"
     },
     {
         "id": 4407,
-        "blizId": "x1_FollowerItem_Scoundrel_Legendary_01"
+        "blizId": "x1_FollowerItem_Scoundrel_Legendary_01",
+        "name": "Skeleton Key"
     },
     {
         "id": 4408,
-        "blizId": "x1_FollowerItem_Scoundrel_Legendary_02"
+        "blizId": "x1_FollowerItem_Scoundrel_Legendary_02",
+        "name": "Ribald Etchings"
     },
     {
         "id": 4409,
-        "blizId": "x1_FollowerItem_Scoundrel_Legendary_03"
+        "blizId": "x1_FollowerItem_Scoundrel_Legendary_03",
+        "name": "Slipka's Letter Opener"
     },
     {
         "id": 4410,
-        "blizId": "x1_FollowerItem_Templar_Legendary_01"
+        "blizId": "x1_FollowerItem_Templar_Legendary_01",
+        "name": "Enchanting Favor"
     },
     {
         "id": 4411,
-        "blizId": "x1_FollowerItem_Templar_Legendary_02"
+        "blizId": "x1_FollowerItem_Templar_Legendary_02",
+        "name": "Relic of Akarat"
     },
     {
         "id": 4412,
-        "blizId": "x1_FollowerItem_Templar_Legendary_03"
+        "blizId": "x1_FollowerItem_Templar_Legendary_03",
+        "name": "Hillenbrand's Training Sword"
     },
     {
         "id": 10161,
         "blizId": "Unique_SpiritStone_004_x1",
+        "name": "Gyana Na Kashu",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 10162,
         "blizId": "Unique_VoodooMask_101_x1",
+        "name": "Carnevil",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 10261,
         "blizId": "Unique_WizardHat_103_x1",
+        "name": "The Magistrate",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 10262,
         "blizId": "Unique_VoodooMask_001_x1",
+        "name": "Tiklandian Visage",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 10361,
         "blizId": "P3_Unique_Shoulder_102",
+        "name": "Fury of the Ancients",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -3908,18 +4591,21 @@
     {
         "id": 10362,
         "blizId": "Unique_Chest_010_x1",
+        "name": "Chaingmail",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 10461,
         "blizId": "Unique_Cloak_005_x1",
+        "name": "Beckon Sail",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 10462,
         "blizId": "P3_Unique_Bracer_105",
+        "name": "Bracers of the First Men",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -3929,12 +4615,14 @@
     {
         "id": 10561,
         "blizId": "Unique_Bracer_103_x1",
+        "name": "Reaper's Wraps",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 10562,
         "blizId": "P3_Unique_Bracer_101",
+        "name": "Gabriel's Vambraces",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -3944,18 +4632,21 @@
     {
         "id": 10661,
         "blizId": "Unique_Bracer_104_x1",
+        "name": "Trag'Oul Coils",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 10662,
         "blizId": "Unique_Gloves_101_p2",
+        "name": "St. Archew's Gage",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 10761,
         "blizId": "P2_Unique_Belt_02",
+        "name": "Belt of Transcendence",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -3965,18 +4656,21 @@
     {
         "id": 10762,
         "blizId": "Unique_Belt_010_x1",
+        "name": "Goldwrap",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 10861,
         "blizId": "Unique_Belt_101_x1",
+        "name": "Razor Strop",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 10862,
         "blizId": "Unique_Belt_107_x1",
+        "name": "Hwoj Wrap",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -3986,24 +4680,28 @@
     {
         "id": 10961,
         "blizId": "Unique_Pants_006_p1",
+        "name": "Depth Diggers",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 10962,
         "blizId": "Unique_BarbBelt_003_x1",
+        "name": "Thundergod's Vigor",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 11061,
         "blizId": "Unique_Boots_007_p2",
+        "name": "Fire Walkers",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
         "id": 11062,
         "blizId": "P1_Unique_Boots_010",
+        "name": "The Crudest Boots",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
