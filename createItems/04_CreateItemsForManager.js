@@ -1,7 +1,6 @@
 'use strict';
 
 let rx = require('rx');
-let _ = require('lodash');
 
 let allItemIds = require('./lib/allItemIds');
 let itemIsNotIgnored = require('./lib/itemIsNotIgnored');
@@ -15,6 +14,7 @@ let extractDataForManagerItem = require('./lib/extractDataForManagerItem');
 
 let source = allItemIds()
     .map((id) => {return {blizzId: id};})
+    //.filter((id)=>id==='P2_mojo_norm_unique_02')
     .filter(itemIsNotIgnored)
     .map(addBasicManagerItem)
     .map(multiplyItemForLocales)

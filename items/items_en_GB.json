@@ -3621,7 +3621,7 @@
         "crafted": false,
         "setItem": false,
         "tooltipParams": "item/fate-of-the-fell",
-        "passive": "Gain two additional rays of Heaven’s Fury.",
+        "passive": "Gain two additional rays of Heaven's Fury.",
         "displayColor": "orange",
         "requiredLevel": 31,
         "slots": [
@@ -7448,7 +7448,7 @@
     {
         "id": 4073,
         "blizId": "Unique_Boots_Set_02_p3",
-        "name": "Arachyr’s Stride",
+        "name": "Arachyr's Stride",
         "cubeCategory": "Armor",
         "type": {
             "twoHanded": false,
@@ -8525,7 +8525,7 @@
     {
         "id": 4129,
         "blizId": "Unique_Chest_Set_02_p3",
-        "name": "Arachyr’s Carapace",
+        "name": "Arachyr's Carapace",
         "cubeCategory": "Armor",
         "type": {
             "twoHanded": false,
@@ -9583,7 +9583,7 @@
     {
         "id": 4183,
         "blizId": "Unique_Gloves_Set_02_p3",
-        "name": "Arachyr’s Claws",
+        "name": "Arachyr's Claws",
         "cubeCategory": "Armor",
         "type": {
             "twoHanded": false,
@@ -10369,7 +10369,7 @@
     {
         "id": 4224,
         "blizId": "Unique_Helm_Set_02_p3",
-        "name": "Arachyr’s Visage",
+        "name": "Arachyr's Visage",
         "cubeCategory": "Armor",
         "type": {
             "twoHanded": false,
@@ -11642,7 +11642,7 @@
     {
         "id": 4289,
         "blizId": "Unique_Pants_Set_02_p3",
-        "name": "Arachyr’s Legs",
+        "name": "Arachyr's Legs",
         "cubeCategory": "Armor",
         "type": {
             "twoHanded": false,
@@ -12714,7 +12714,7 @@
     {
         "id": 4343,
         "blizId": "Unique_Shoulder_Set_02_p3",
-        "name": "Arachyr’s Mantle",
+        "name": "Arachyr's Mantle",
         "cubeCategory": "Armor",
         "type": {
             "twoHanded": false,
