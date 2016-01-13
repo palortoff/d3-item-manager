@@ -16,7 +16,8 @@ function idsForType(itemType){
         let match;
 
         chunker.on('data', function(data) {
-            match = data.toString().match(/url\(http:\/\/media\.blizzard\.com\/d3\/icons\/items\/large\/(.*)_demonhunter_male\.png\)/m);
+            var string = data.toString();
+            match = string.match(/url\(http:\/\/media\.blizzard\.com\/d3\/icons\/items\/large\/(.*)_demonhunter_male\.png\)/m);
             if (match != null) {
                 itemIds.push(match[1]);
             }

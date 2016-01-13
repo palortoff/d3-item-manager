@@ -7,5 +7,7 @@ let locales = require('../config/config.json').locales;
 module.exports = multiplyItemForLocales;
 
 function multiplyItemForLocales(item) {
-    return _.map(locales, (locale) => _.defaults({}, _.cloneDeep(item), {locale: locale}));
+    return _.chain(locales)
+        .filter((locale) => locale.use)
+        .map((locale) => _.defaults({}, _.cloneDeep(item), {locale: locale}));
 }
