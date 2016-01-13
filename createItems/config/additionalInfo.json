@@ -1,54 +1,72 @@
 [
     {
-        "id": 2025,
-        "blizId": "P1_CeremonialDagger_norm_unique_01",
-        "cubeCategory": "Weapon",
+        "id": 1001,
+        "blizId": "Unique_Bracer_102_x1",
+        "cubeCategory": "Armor",
         "cube": true
     },
     {
-        "id": 2027,
-        "blizId": "P1_CeremonialDagger_norm_unique_02",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2114,
-        "blizId": "P1_CruShield_norm_unique_01",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2123,
-        "blizId": "P1_CruShield_norm_unique_02",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2031,
-        "blizId": "P1_fistWeapon_norm_unique_01",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2033,
-        "blizId": "P1_fistWeapon_norm_unique_02",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2038,
-        "blizId": "P1_flail1H_norm_unique_01",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 11062,
-        "blizId": "P1_Unique_Boots_010",
+        "id": 1002,
+        "blizId": "P2_Unique_Bracer_006",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
             "monk"
         ]
+    },
+    {
+        "id": 1003,
+        "blizId": "Unique_Helm_003_p2",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1004,
+        "blizId": "P2_Unique_Helm_001",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1005,
+        "blizId": "Unique_Helm_102_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1006,
+        "blizId": "Unique_Helm_002_p1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1007,
+        "blizId": "Unique_Helm_103_x1",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "bounty": {
+            "act": "3"
+        }
+    },
+    {
+        "id": 1008,
+        "blizId": "Unique_Helm_004_x1",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "barbarian"
+        ]
+    },
+    {
+        "id": 1009,
+        "blizId": "Unique_SpiritStone_103_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1011,
+        "blizId": "Unique_SpiritStone_102_x1",
+        "cubeCategory": "Armor",
+        "cube": true
     },
     {
         "id": 1012,
@@ -57,34 +75,316 @@
         "cube": true
     },
     {
-        "id": 2100,
-        "blizId": "P1_Wand_norm_unique_01",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2098,
-        "blizId": "P2_handXbow_norm_unique_03",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2124,
-        "blizId": "P2_mojo_norm_unique_02",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 1107,
-        "blizId": "P2_Unique_BarbBelt_001",
+        "id": 1013,
+        "blizId": "Unique_SpiritStone_101_x1",
         "cubeCategory": "Armor",
         "cube": true
     },
     {
-        "id": 1094,
-        "blizId": "P2_Unique_BarbBelt_006",
+        "id": 1014,
+        "blizId": "Unique_SpiritStone_002_x1",
         "cubeCategory": "Armor",
         "cube": true
+    },
+    {
+        "id": 1015,
+        "blizId": "Unique_SpiritStone_007_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1017,
+        "blizId": "Unique_VoodooMask_102_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1018,
+        "blizId": "Unique_VoodooMask_005_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1019,
+        "blizId": "Unique_VoodooMask_002_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1021,
+        "blizId": "Unique_VoodooMask_008_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1022,
+        "blizId": "Unique_WizardHat_101_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1023,
+        "blizId": "Unique_WizardHat_104_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1024,
+        "blizId": "Unique_WizardHat_001_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1025,
+        "blizId": "Unique_WizardHat_004_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1027,
+        "blizId": "P3_Unique_WizardHat_003",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1028,
+        "blizId": "Unique_WizardHat_102_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1029,
+        "blizId": "Unique_Shoulder_002_p2",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1031,
+        "blizId": "Unique_Shoulder_001_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1032,
+        "blizId": "Unique_Shoulder_103_x1",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "bounty": {
+            "act": "1"
+        }
+    },
+    {
+        "id": 1033,
+        "blizId": "Unique_Shoulder_102_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1034,
+        "blizId": "Unique_Shoulder_003_p1",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "barbarian"
+        ]
+    },
+    {
+        "id": 1035,
+        "blizId": "Unique_Chest_102_x1",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "crusader"
+        ]
+    },
+    {
+        "id": 1037,
+        "blizId": "Unique_Chest_006_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1038,
+        "blizId": "Unique_Chest_001_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1039,
+        "blizId": "Unique_Chest_101_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1041,
+        "blizId": "Unique_Cloak_101_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1042,
+        "blizId": "Unique_Cloak_001_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1043,
+        "blizId": "Unique_Cloak_102_x1",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "bounty": {
+            "act": "2"
+        }
+    },
+    {
+        "id": 1044,
+        "blizId": "Unique_Cloak_002_p1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1045,
+        "blizId": "P3_Unique_Bracer_104",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "barbarian"
+        ]
+    },
+    {
+        "id": 1047,
+        "blizId": "P3_Unique_Bracer_107",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "witch-doctor"
+        ]
+    },
+    {
+        "id": 1048,
+        "blizId": "Unique_Bracer_107_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1049,
+        "blizId": "P2_Unique_Bracer_110",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "crusader"
+        ]
+    },
+    {
+        "id": 1051,
+        "blizId": "P3_Unique_Bracer_106",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "witch-doctor"
+        ]
+    },
+    {
+        "id": 1052,
+        "blizId": "Unique_Bracer_Set_02_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1053,
+        "blizId": "Unique_Bracer_106_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1054,
+        "blizId": "Unique_Bracer_002_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1055,
+        "blizId": "Unique_Bracer_108_x1",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "wizard"
+        ]
+    },
+    {
+        "id": 1057,
+        "blizId": "Unique_Bracer_105_x1",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "bounty": {
+            "act": "1"
+        }
+    },
+    {
+        "id": 1058,
+        "blizId": "P2_Unique_Bracer_109",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "monk"
+        ]
+    },
+    {
+        "id": 1059,
+        "blizId": "Unique_Bracer_007_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1061,
+        "blizId": "Unique_Bracer_101_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1062,
+        "blizId": "P3_Unique_Bracer_103",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "demon-hunter"
+        ]
+    },
+    {
+        "id": 1063,
+        "blizId": "Unique_Gloves_002_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1064,
+        "blizId": "Unique_Gloves_011_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1065,
+        "blizId": "Unique_Gloves_103_x1",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "bounty": {
+            "act": "2"
+        }
+    },
+    {
+        "id": 1067,
+        "blizId": "Unique_Gloves_003_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1068,
+        "blizId": "Unique_Belt_003_p1",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "crusader"
+        ]
     },
     {
         "id": 1069,
@@ -96,6 +396,30 @@
         ]
     },
     {
+        "id": 1071,
+        "blizId": "P3_Unique_Belt_03",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "monk"
+        ]
+    },
+    {
+        "id": 1072,
+        "blizId": "P2_Unique_Belt_05",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "crusader"
+        ]
+    },
+    {
+        "id": 1073,
+        "blizId": "Unique_Belt_104_p2",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
         "id": 1074,
         "blizId": "P2_Unique_Belt_01",
         "cubeCategory": "Armor",
@@ -105,13 +429,19 @@
         ]
     },
     {
-        "id": 10761,
-        "blizId": "P2_Unique_Belt_02",
+        "id": 1075,
+        "blizId": "P3_Unique_Belt_02",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
-            "witch-doctor"
+            "wizard"
         ]
+    },
+    {
+        "id": 1077,
+        "blizId": "Unique_Belt_105_x1",
+        "cubeCategory": "Armor",
+        "cube": true
     },
     {
         "id": 1078,
@@ -123,17 +453,41 @@
         ]
     },
     {
-        "id": 1084,
-        "blizId": "P2_Unique_Belt_04",
+        "id": 1079,
+        "blizId": "P3_Unique_Belt_005",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
-            "crusader"
+            "demon-hunter"
         ]
     },
     {
-        "id": 1072,
-        "blizId": "P2_Unique_Belt_05",
+        "id": 1081,
+        "blizId": "Unique_Belt_103_x1",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "bounty": {
+            "act": "3"
+        }
+    },
+    {
+        "id": 1082,
+        "blizId": "Unique_Belt_106_x1",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "wizard"
+        ]
+    },
+    {
+        "id": 1083,
+        "blizId": "Unique_Belt_Set_02_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1084,
+        "blizId": "P2_Unique_Belt_04",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -150,198 +504,6 @@
         ]
     },
     {
-        "id": 1105,
-        "blizId": "P2_Unique_Boots_01",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "wizard"
-        ]
-    },
-    {
-        "id": 4001,
-        "blizId": "P2_Unique_Boots_02",
-        "cubeCategory": "Armor"
-    },
-    {
-        "id": 1002,
-        "blizId": "P2_Unique_Bracer_006",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "monk"
-        ]
-    },
-    {
-        "id": 1058,
-        "blizId": "P2_Unique_Bracer_109",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "monk"
-        ]
-    },
-    {
-        "id": 1049,
-        "blizId": "P2_Unique_Bracer_110",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "crusader"
-        ]
-    },
-    {
-        "id": 2075,
-        "blizId": "P2_Unique_Flail_2H_104",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 4002,
-        "blizId": "P2_Unique_Gloves_01",
-        "cubeCategory": "Armor"
-    },
-    {
-        "id": 4003,
-        "blizId": "P2_Unique_Gloves_02",
-        "cubeCategory": "Armor"
-    },
-    {
-        "id": 4004,
-        "blizId": "P2_Unique_Gloves_03",
-        "cubeCategory": "Armor"
-    },
-    {
-        "id": 4005,
-        "blizId": "P2_Unique_Gloves_04",
-        "cubeCategory": "Armor"
-    },
-    {
-        "id": 1004,
-        "blizId": "P2_Unique_Helm_001",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 2080,
-        "blizId": "P2_Unique_Mighty_2H_001",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2133,
-        "blizId": "P2_Unique_Orb_003",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 4006,
-        "blizId": "P2_Unique_Pants_01",
-        "cubeCategory": "Armor"
-    },
-    {
-        "id": 4007,
-        "blizId": "P2_Unique_Pants_02",
-        "cubeCategory": "Armor"
-    },
-    {
-        "id": 4008,
-        "blizId": "P2_Unique_Pants_03",
-        "cubeCategory": "Armor"
-    },
-    {
-        "id": 4009,
-        "blizId": "P2_Unique_Pants_04",
-        "cubeCategory": "Armor"
-    },
-    {
-        "id": 2136,
-        "blizId": "P2_Unique_Quiver_007",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 3032,
-        "blizId": "P2_Unique_Ring_01",
-        "cubeCategory": "Jewelry",
-        "cube": true,
-        "classes": [
-            "barbarian"
-        ]
-    },
-    {
-        "id": 3033,
-        "blizId": "P2_Unique_Ring_02",
-        "cubeCategory": "Jewelry",
-        "cube": true,
-        "classes": [
-            "witch-doctor"
-        ]
-    },
-    {
-        "id": 3013,
-        "blizId": "P2_Unique_Ring_03",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
-        "id": 3019,
-        "blizId": "P2_Unique_Ring_04",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
-        "id": 3021,
-        "blizId": "p2_Unique_Ring_Wizard_001",
-        "cubeCategory": "Jewelry",
-        "cube": true,
-        "classes": [
-            "wizard"
-        ]
-    },
-    {
-        "id": 2110,
-        "blizId": "P2_Unique_Shield_002",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "crusader"
-        ]
-    },
-    {
-        "id": 2107,
-        "blizId": "P2_Unique_Shield_007",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "crusader"
-        ]
-    },
-    {
-        "id": 2062,
-        "blizId": "P2_Unique_Staff_003",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "witch-doctor"
-        ]
-    },
-    {
-        "id": 2101,
-        "blizId": "P2_Unique_Wand_002",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 1079,
-        "blizId": "P3_Unique_Belt_005",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "demon-hunter"
-        ]
-    },
-    {
         "id": 1087,
         "blizId": "P3_Unique_Belt_01",
         "cubeCategory": "Armor",
@@ -351,8 +513,104 @@
         ]
     },
     {
-        "id": 1075,
-        "blizId": "P3_Unique_Belt_02",
+        "id": 1088,
+        "blizId": "Unique_Belt_102_p2",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1089,
+        "blizId": "Unique_Belt_108_p2",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1091,
+        "blizId": "Unique_BarbBelt_101_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1092,
+        "blizId": "Unique_BarbBelt_005_p1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1093,
+        "blizId": "Unique_BarbBelt_002_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1094,
+        "blizId": "P2_Unique_BarbBelt_006",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1095,
+        "blizId": "Unique_Pants_102_x1",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "bounty": {
+            "act": "5"
+        }
+    },
+    {
+        "id": 1097,
+        "blizId": "Unique_Pants_101_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1098,
+        "blizId": "Unique_Pants_007_p2",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1099,
+        "blizId": "Unique_Boots_102_x1",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "bounty": {
+            "act": "3"
+        }
+    },
+    {
+        "id": 1101,
+        "blizId": "Unique_Boots_008_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1102,
+        "blizId": "Unique_Boots_103_x1",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "bounty": {
+            "act": "2"
+        }
+    },
+    {
+        "id": 1103,
+        "blizId": "Unique_Boots_104_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 1104,
+        "blizId": "Unique_Boots_009_x1",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "barbarian"
+        ]
+    },
+    {
+        "id": 1105,
+        "blizId": "P2_Unique_Boots_01",
         "cubeCategory": "Armor",
         "cube": true,
         "classes": [
@@ -360,88 +618,91 @@
         ]
     },
     {
-        "id": 1071,
-        "blizId": "P3_Unique_Belt_03",
+        "id": 1107,
+        "blizId": "P2_Unique_BarbBelt_001",
         "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "monk"
-        ]
+        "cube": true
     },
     {
-        "id": 10562,
-        "blizId": "P3_Unique_Bracer_101",
-        "cubeCategory": "Armor",
+        "id": 2001,
+        "blizId": "Unique_Axe_1H_003_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2002,
+        "blizId": "Unique_Axe_1H_103_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2003,
+        "blizId": "Unique_Axe_1H_005_p2",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2004,
+        "blizId": "Unique_Axe_1H_007_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2005,
+        "blizId": "Unique_Axe_1H_006_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2006,
+        "blizId": "Unique_Dagger_103_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "bounty": {
+            "act": "3"
+        }
+    },
+    {
+        "id": 2007,
+        "blizId": "Unique_Dagger_104_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2008,
+        "blizId": "Unique_Dagger_010_x1_210",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2009,
+        "blizId": "Unique_Mace_1H_103_x1",
+        "cubeCategory": "Weapon",
         "cube": true,
         "classes": [
             "crusader"
         ]
     },
     {
-        "id": 1062,
-        "blizId": "P3_Unique_Bracer_103",
-        "cubeCategory": "Armor",
+        "id": 2010,
+        "blizId": "Unique_Mace_1H_101_x1",
+        "cubeCategory": "Weapon",
         "cube": true,
-        "classes": [
-            "demon-hunter"
-        ]
+        "bounty": {
+            "act": "1"
+        }
     },
     {
-        "id": 1045,
-        "blizId": "P3_Unique_Bracer_104",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "barbarian"
-        ]
-    },
-    {
-        "id": 10462,
-        "blizId": "P3_Unique_Bracer_105",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "barbarian"
-        ]
-    },
-    {
-        "id": 1051,
-        "blizId": "P3_Unique_Bracer_106",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "witch-doctor"
-        ]
-    },
-    {
-        "id": 1047,
-        "blizId": "P3_Unique_Bracer_107",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "witch-doctor"
-        ]
-    },
-    {
-        "id": 2099,
-        "blizId": "P3_Unique_HandXBow_005",
+        "id": 2011,
+        "blizId": "Unique_Mace_1H_002_x1",
         "cubeCategory": "Weapon",
         "cube": true
     },
     {
-        "id": 2043,
-        "blizId": "P3_Unique_Mighty_1H_006",
+        "id": 2012,
+        "blizId": "Unique_Mace_1H_102_x1",
         "cubeCategory": "Weapon",
         "cube": true
-    },
-    {
-        "id": 10361,
-        "blizId": "P3_Unique_Shoulder_102",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "barbarian"
-        ]
     },
     {
         "id": 2013,
@@ -465,10 +726,1145 @@
         "cube": true
     },
     {
-        "id": 1027,
-        "blizId": "P3_Unique_WizardHat_003",
-        "cubeCategory": "Armor",
+        "id": 2016,
+        "blizId": "Unique_Sword_1H_113_x1",
+        "cubeCategory": "Weapon",
         "cube": true
+    },
+    {
+        "id": 2017,
+        "blizId": "Unique_Sword_1H_109_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2018,
+        "blizId": "Unique_Sword_1H_007_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2019,
+        "blizId": "Unique_Sword_1H_Promo_02_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2020,
+        "blizId": "Unique_Sword_1H_004_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2021,
+        "blizId": "Unique_Sword_1H_101_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2022,
+        "blizId": "Unique_CeremonialDagger_001_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2023,
+        "blizId": "Unique_CeremonialDagger_003_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2024,
+        "blizId": "Unique_CeremonialDagger_102_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2025,
+        "blizId": "P1_CeremonialDagger_norm_unique_01",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2026,
+        "blizId": "Unique_CeremonialDagger_101_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2027,
+        "blizId": "P1_CeremonialDagger_norm_unique_02",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2028,
+        "blizId": "Unique_CeremonialDagger_002_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2029,
+        "blizId": "Unique_CeremonialDagger_004_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2030,
+        "blizId": "Unique_Fist_101_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2031,
+        "blizId": "P1_fistWeapon_norm_unique_01",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2032,
+        "blizId": "Unique_Fist_009_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2033,
+        "blizId": "P1_fistWeapon_norm_unique_02",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2034,
+        "blizId": "Unique_Flail_1H_106_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2035,
+        "blizId": "Unique_Flail_1H_101_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2036,
+        "blizId": "Unique_Flail_1H_105_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2037,
+        "blizId": "Unique_Flail_1H_107_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2038,
+        "blizId": "P1_flail1H_norm_unique_01",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2039,
+        "blizId": "Unique_Flail_1H_102_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2040,
+        "blizId": "Unique_Flail_1H_104_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2041,
+        "blizId": "Unique_Flail_1H_103_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2042,
+        "blizId": "Unique_Mighty_1H_103_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2043,
+        "blizId": "P3_Unique_Mighty_1H_006",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2044,
+        "blizId": "Unique_Mighty_1H_102_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2045,
+        "blizId": "Unique_Axe_2H_103_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "bounty": {
+            "act": "3"
+        }
+    },
+    {
+        "id": 2046,
+        "blizId": "Unique_Axe_2H_001_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2047,
+        "blizId": "Unique_Axe_2H_010_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2048,
+        "blizId": "Unique_Mace_2H_003_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2049,
+        "blizId": "Unique_Mace_2H_009_p2",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2050,
+        "blizId": "Unique_Mace_2H_010_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "crusader"
+        ]
+    },
+    {
+        "id": 2051,
+        "blizId": "Unique_Mace_2H_104_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "bounty": {
+            "act": "5"
+        }
+    },
+    {
+        "id": 2052,
+        "blizId": "Unique_Mace_2H_006_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2053,
+        "blizId": "Unique_Mace_2H_103_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2054,
+        "blizId": "Unique_Polearm_101_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2055,
+        "blizId": "Unique_Polearm_001_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2056,
+        "blizId": "Unique_Staff_101_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2057,
+        "blizId": "Unique_Staff_006_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2058,
+        "blizId": "Unique_Staff_009_p1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "wizard"
+        ]
+    },
+    {
+        "id": 2059,
+        "blizId": "Unique_Staff_103_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "wizard"
+        ]
+    },
+    {
+        "id": 2060,
+        "blizId": "Unique_Staff_007_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2061,
+        "blizId": "Unique_Staff_102_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "wizard"
+        ]
+    },
+    {
+        "id": 2062,
+        "blizId": "P2_Unique_Staff_003",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "witch-doctor"
+        ]
+    },
+    {
+        "id": 2063,
+        "blizId": "Unique_Sword_2H_007_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "crusader"
+        ]
+    },
+    {
+        "id": 2064,
+        "blizId": "Unique_Sword_2H_103_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2065,
+        "blizId": "Unique_Sword_2H_102_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "crusader"
+        ]
+    },
+    {
+        "id": 2066,
+        "blizId": "Unique_Sword_2H_010_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2067,
+        "blizId": "Unique_Sword_2H_004_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2068,
+        "blizId": "Unique_Sword_2H_101_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2069,
+        "blizId": "Unique_CombatStaff_2H_009_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2070,
+        "blizId": "Unique_CombatStaff_2H_003_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2071,
+        "blizId": "Unique_CombatStaff_2H_005_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2072,
+        "blizId": "Unique_CombatStaff_2H_102_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2073,
+        "blizId": "Unique_Flail_2H_102_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2074,
+        "blizId": "Unique_Flail_2H_103_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2075,
+        "blizId": "P2_Unique_Flail_2H_104",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2076,
+        "blizId": "Unique_Flail_2H_101_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2077,
+        "blizId": "Unique_Mighty_2H_004_p1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2078,
+        "blizId": "Unique_Mighty_2H_006_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2079,
+        "blizId": "Unique_Mighty_2H_101_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2080,
+        "blizId": "P2_Unique_Mighty_2H_001",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2081,
+        "blizId": "Unique_Bow_015_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "demon-hunter",
+            "witch-doctor",
+            "wizard"
+        ]
+    },
+    {
+        "id": 2082,
+        "blizId": "Unique_Bow_101_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2083,
+        "blizId": "Unique_Bow_103_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2084,
+        "blizId": "Unique_Bow_102_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2085,
+        "blizId": "Unique_Bow_008_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "demon-hunter",
+            "witch-doctor",
+            "wizard"
+        ]
+    },
+    {
+        "id": 2086,
+        "blizId": "Unique_Bow_104_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2087,
+        "blizId": "Unique_XBow_011_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2088,
+        "blizId": "Unique_Xbow_101_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2089,
+        "blizId": "Unique_XBow_001_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "demon-hunter",
+            "witch-doctor",
+            "wizard"
+        ]
+    },
+    {
+        "id": 2090,
+        "blizId": "Unique_XBow_002_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "demon-hunter",
+            "witch-doctor",
+            "wizard"
+        ]
+    },
+    {
+        "id": 2091,
+        "blizId": "Unique_XBow_012_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "demon-hunter",
+            "witch-doctor",
+            "wizard"
+        ]
+    },
+    {
+        "id": 2092,
+        "blizId": "Unique_Xbow_102_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2093,
+        "blizId": "Unique_HandXBow_012_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2094,
+        "blizId": "Unique_HandXBow_002_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2095,
+        "blizId": "Unique_HandXBow_001_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2096,
+        "blizId": "Unique_HandXBow_102_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "bounty": {
+            "act": "5"
+        }
+    },
+    {
+        "id": 2097,
+        "blizId": "Unique_HandXBow_101_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2098,
+        "blizId": "P2_handXbow_norm_unique_03",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2099,
+        "blizId": "P3_Unique_HandXBow_005",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2100,
+        "blizId": "P1_Wand_norm_unique_01",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2101,
+        "blizId": "P2_Unique_Wand_002",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2102,
+        "blizId": "Unique_Wand_102_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2103,
+        "blizId": "Unique_Wand_013_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2104,
+        "blizId": "Unique_Wand_101_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2105,
+        "blizId": "Unique_Shield_107_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "bounty": {
+            "act": "2"
+        }
+    },
+    {
+        "id": 2106,
+        "blizId": "Unique_Shield_101_p2",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2107,
+        "blizId": "P2_Unique_Shield_007",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "crusader"
+        ]
+    },
+    {
+        "id": 2108,
+        "blizId": "Unique_Shield_102_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "crusader"
+        ]
+    },
+    {
+        "id": 2109,
+        "blizId": "Unique_Shield_004_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2110,
+        "blizId": "P2_Unique_Shield_002",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "crusader"
+        ]
+    },
+    {
+        "id": 2111,
+        "blizId": "Unique_Shield_104_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "crusader"
+        ]
+    },
+    {
+        "id": 2112,
+        "blizId": "Unique_Shield_011_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2113,
+        "blizId": "Unique_CruShield_104_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2114,
+        "blizId": "P1_CruShield_norm_unique_01",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2115,
+        "blizId": "Unique_Shield_103_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2116,
+        "blizId": "Unique_CruShield_103_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2117,
+        "blizId": "Unique_CruShield_105_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2118,
+        "blizId": "Unique_CruShield_102_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2119,
+        "blizId": "Unique_CruShield_101_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2120,
+        "blizId": "Unique_CruShield_108_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "bounty": {
+            "act": "5"
+        }
+    },
+    {
+        "id": 2121,
+        "blizId": "Unique_CruShield_106_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2122,
+        "blizId": "Unique_CruShield_107_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2123,
+        "blizId": "P1_CruShield_norm_unique_02",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2124,
+        "blizId": "P2_mojo_norm_unique_02",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2125,
+        "blizId": "Unique_Mojo_004_p2",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2126,
+        "blizId": "Unique_Mojo_102_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2127,
+        "blizId": "Unique_Mojo_008_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2128,
+        "blizId": "Unique_Orb_004_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2129,
+        "blizId": "Unique_Orb_103_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2130,
+        "blizId": "Unique_Orb_101_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2131,
+        "blizId": "Unique_Orb_102_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2132,
+        "blizId": "Unique_Orb_001_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2133,
+        "blizId": "P2_Unique_Orb_003",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2134,
+        "blizId": "Unique_Orb_005_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2135,
+        "blizId": "Unique_Quiver_102_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2136,
+        "blizId": "P2_Unique_Quiver_007",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2137,
+        "blizId": "Unique_Quiver_103_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2138,
+        "blizId": "Unique_Quiver_001_p1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2139,
+        "blizId": "Unique_Quiver_005_p1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2140,
+        "blizId": "Unique_Quiver_101_x1",
+        "cubeCategory": "Weapon",
+        "cube": true
+    },
+    {
+        "id": 2141,
+        "blizId": "Unique_Staff_104_x1",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "witch-doctor"
+        ]
+    },
+    {
+        "id": 2142,
+        "blizId": "Unique_Spear_004_p3",
+        "cubeCategory": "Weapon",
+        "cube": true,
+        "classes": [
+            "witch-doctor"
+        ]
+    },
+    {
+        "id": 3001,
+        "blizId": "Unique_Amulet_103_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3002,
+        "blizId": "Unique_Amulet_107_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3003,
+        "blizId": "Unique_Amulet_105_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true,
+        "bounty": {
+            "act": "1"
+        }
+    },
+    {
+        "id": 3004,
+        "blizId": "Unique_Amulet_002_p1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3005,
+        "blizId": "Unique_Amulet_015_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3006,
+        "blizId": "Unique_Amulet_003_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3007,
+        "blizId": "Unique_Amulet_106_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true,
+        "bounty": {
+            "act": "3"
+        }
+    },
+    {
+        "id": 3008,
+        "blizId": "Unique_Amulet_108_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3009,
+        "blizId": "Unique_Amulet_012_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3010,
+        "blizId": "Unique_Amulet_104_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3011,
+        "blizId": "Unique_Amulet_006_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3012,
+        "blizId": "Unique_Amulet_004_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3013,
+        "blizId": "P2_Unique_Ring_03",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3014,
+        "blizId": "Unique_Ring_108_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true,
+        "bounty": {
+            "act": "3"
+        }
+    },
+    {
+        "id": 3015,
+        "blizId": "Unique_Ring_001_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3016,
+        "blizId": "Unique_Ring_106_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true,
+        "classes": [
+            "monk"
+        ]
+    },
+    {
+        "id": 3017,
+        "blizId": "Unique_Ring_006_p2",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3018,
+        "blizId": "Unique_Ring_020_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3019,
+        "blizId": "P2_Unique_Ring_04",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3020,
+        "blizId": "Unique_Ring_007_p1",
+        "cubeCategory": "Jewelry",
+        "cube": true,
+        "classes": [
+            "crusader"
+        ]
+    },
+    {
+        "id": 3021,
+        "blizId": "p2_Unique_Ring_Wizard_001",
+        "cubeCategory": "Jewelry",
+        "cube": true,
+        "classes": [
+            "wizard"
+        ]
+    },
+    {
+        "id": 3022,
+        "blizId": "Unique_Ring_024_104",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3023,
+        "blizId": "Unique_Ring_003_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3024,
+        "blizId": "Unique_Ring_018_p2",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3025,
+        "blizId": "Unique_Ring_023_p2",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3026,
+        "blizId": "Unique_Ring_017_p2",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3027,
+        "blizId": "Unique_Ring_109_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true,
+        "bounty": {
+            "act": "5"
+        }
+    },
+    {
+        "id": 3028,
+        "blizId": "Unique_Ring_004_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3029,
+        "blizId": "Unique_Ring_104_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3030,
+        "blizId": "Unique_Ring_107_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true,
+        "bounty": {
+            "act": "1"
+        }
+    },
+    {
+        "id": 3031,
+        "blizId": "Unique_Ring_103_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3032,
+        "blizId": "P2_Unique_Ring_01",
+        "cubeCategory": "Jewelry",
+        "cube": true,
+        "classes": [
+            "barbarian"
+        ]
+    },
+    {
+        "id": 3033,
+        "blizId": "P2_Unique_Ring_02",
+        "cubeCategory": "Jewelry",
+        "cube": true,
+        "classes": [
+            "witch-doctor"
+        ]
+    },
+    {
+        "id": 3034,
+        "blizId": "Unique_Ring_101_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true,
+        "classes": [
+            "witch-doctor"
+        ]
+    },
+    {
+        "id": 3035,
+        "blizId": "Unique_Ring_010_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3036,
+        "blizId": "Unique_Ring_102_p2",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 3037,
+        "blizId": "Unique_Amulet_101_x1",
+        "cubeCategory": "Jewelry",
+        "cube": true
+    },
+    {
+        "id": 4001,
+        "blizId": "P2_Unique_Boots_02",
+        "cubeCategory": "Armor"
+    },
+    {
+        "id": 4002,
+        "blizId": "P2_Unique_Gloves_01",
+        "cubeCategory": "Armor"
+    },
+    {
+        "id": 4003,
+        "blizId": "P2_Unique_Gloves_02",
+        "cubeCategory": "Armor"
+    },
+    {
+        "id": 4004,
+        "blizId": "P2_Unique_Gloves_03",
+        "cubeCategory": "Armor"
+    },
+    {
+        "id": 4005,
+        "blizId": "P2_Unique_Gloves_04",
+        "cubeCategory": "Armor"
+    },
+    {
+        "id": 4006,
+        "blizId": "P2_Unique_Pants_01",
+        "cubeCategory": "Armor"
+    },
+    {
+        "id": 4007,
+        "blizId": "P2_Unique_Pants_02",
+        "cubeCategory": "Armor"
+    },
+    {
+        "id": 4008,
+        "blizId": "P2_Unique_Pants_03",
+        "cubeCategory": "Armor"
+    },
+    {
+        "id": 4009,
+        "blizId": "P2_Unique_Pants_04",
+        "cubeCategory": "Armor"
     },
     {
         "id": 4010,
@@ -496,33 +1892,9 @@
         "cubeCategory": "Jewelry"
     },
     {
-        "id": 3004,
-        "blizId": "Unique_Amulet_002_p1",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
-        "id": 3006,
-        "blizId": "Unique_Amulet_003_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
-        "id": 3012,
-        "blizId": "Unique_Amulet_004_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
         "id": 4015,
         "blizId": "Unique_Amulet_005_x1",
         "cubeCategory": "Jewelry"
-    },
-    {
-        "id": 3011,
-        "blizId": "Unique_Amulet_006_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true
     },
     {
         "id": 4016,
@@ -545,12 +1917,6 @@
         "cubeCategory": "Jewelry"
     },
     {
-        "id": 3009,
-        "blizId": "Unique_Amulet_012_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
         "id": 4020,
         "blizId": "Unique_Amulet_013_x1",
         "cubeCategory": "Jewelry"
@@ -561,68 +1927,14 @@
         "cubeCategory": "Jewelry"
     },
     {
-        "id": 3005,
-        "blizId": "Unique_Amulet_015_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
         "id": 4022,
         "blizId": "Unique_Amulet_016_x1",
         "cubeCategory": "Jewelry"
     },
     {
-        "id": 3037,
-        "blizId": "Unique_Amulet_101_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
         "id": 4023,
         "blizId": "Unique_Amulet_102_x1",
         "cubeCategory": "Jewelry"
-    },
-    {
-        "id": 3001,
-        "blizId": "Unique_Amulet_103_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
-        "id": 3010,
-        "blizId": "Unique_Amulet_104_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
-        "id": 3003,
-        "blizId": "Unique_Amulet_105_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true,
-        "bounty": {
-            "act": "1"
-        }
-    },
-    {
-        "id": 3007,
-        "blizId": "Unique_Amulet_106_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true,
-        "bounty": {
-            "act": "3"
-        }
-    },
-    {
-        "id": 3002,
-        "blizId": "Unique_Amulet_107_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
-        "id": 3008,
-        "blizId": "Unique_Amulet_108_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true
     },
     {
         "id": 4024,
@@ -640,12 +1952,6 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2001,
-        "blizId": "Unique_Axe_1H_003_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4027,
         "blizId": "Unique_Axe_1H_004_1xx",
         "cubeCategory": "Weapon"
@@ -656,24 +1962,6 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2003,
-        "blizId": "Unique_Axe_1H_005_p2",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2005,
-        "blizId": "Unique_Axe_1H_006_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2004,
-        "blizId": "Unique_Axe_1H_007_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4029,
         "blizId": "Unique_Axe_1H_013_1xx",
         "cubeCategory": "Weapon"
@@ -682,18 +1970,6 @@
         "id": 4030,
         "blizId": "Unique_Axe_1H_013_x1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2002,
-        "blizId": "Unique_Axe_1H_103_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2046,
-        "blizId": "Unique_Axe_2H_001_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
     },
     {
         "id": 4031,
@@ -711,47 +1987,14 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2047,
-        "blizId": "Unique_Axe_2H_010_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4034,
         "blizId": "Unique_Axe_2H_011_x1",
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2045,
-        "blizId": "Unique_Axe_2H_103_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "bounty": {
-            "act": "3"
-        }
-    },
-    {
-        "id": 1093,
-        "blizId": "Unique_BarbBelt_002_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 10962,
-        "blizId": "Unique_BarbBelt_003_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
         "id": 4035,
         "blizId": "Unique_BarbBelt_004_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 1092,
-        "blizId": "Unique_BarbBelt_005_p1",
-        "cubeCategory": "Armor",
-        "cube": true
     },
     {
         "id": 4036,
@@ -764,12 +2007,6 @@
         "cubeCategory": "Armor"
     },
     {
-        "id": 1091,
-        "blizId": "Unique_BarbBelt_101_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
         "id": 4038,
         "blizId": "Unique_Belt_001_x1",
         "cubeCategory": "Armor"
@@ -778,15 +2015,6 @@
         "id": 4039,
         "blizId": "Unique_Belt_002_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 1068,
-        "blizId": "Unique_Belt_003_p1",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "crusader"
-        ]
     },
     {
         "id": 4040,
@@ -824,12 +2052,6 @@
         "cubeCategory": "Armor"
     },
     {
-        "id": 10762,
-        "blizId": "Unique_Belt_010_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
         "id": 4047,
         "blizId": "Unique_Belt_012_1xx",
         "cubeCategory": "Armor"
@@ -865,69 +2087,6 @@
         "cubeCategory": "Armor"
     },
     {
-        "id": 10861,
-        "blizId": "Unique_Belt_101_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1088,
-        "blizId": "Unique_Belt_102_p2",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1081,
-        "blizId": "Unique_Belt_103_x1",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "bounty": {
-            "act": "3"
-        }
-    },
-    {
-        "id": 1073,
-        "blizId": "Unique_Belt_104_p2",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1077,
-        "blizId": "Unique_Belt_105_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1082,
-        "blizId": "Unique_Belt_106_x1",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "wizard"
-        ]
-    },
-    {
-        "id": 10862,
-        "blizId": "Unique_Belt_107_x1",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "witch-doctor"
-        ]
-    },
-    {
-        "id": 1089,
-        "blizId": "Unique_Belt_108_p2",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1083,
-        "blizId": "Unique_Belt_Set_02_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
         "id": 4054,
         "blizId": "Unique_Boots_001_x1",
         "cubeCategory": "Armor"
@@ -941,27 +2100,6 @@
         "id": 4056,
         "blizId": "Unique_Boots_005_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 11061,
-        "blizId": "Unique_Boots_007_p2",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1101,
-        "blizId": "Unique_Boots_008_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1104,
-        "blizId": "Unique_Boots_009_x1",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "barbarian"
-        ]
     },
     {
         "id": 4057,
@@ -1022,30 +2160,6 @@
         "id": 4068,
         "blizId": "Unique_Boots_019_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 1099,
-        "blizId": "Unique_Boots_102_x1",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "bounty": {
-            "act": "3"
-        }
-    },
-    {
-        "id": 1102,
-        "blizId": "Unique_Boots_103_x1",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "bounty": {
-            "act": "2"
-        }
-    },
-    {
-        "id": 1103,
-        "blizId": "Unique_Boots_104_x1",
-        "cubeCategory": "Armor",
-        "cube": true
     },
     {
         "id": 4069,
@@ -1148,17 +2262,6 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2085,
-        "blizId": "Unique_Bow_008_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "demon-hunter",
-            "witch-doctor",
-            "wizard"
-        ]
-    },
-    {
         "id": 4089,
         "blizId": "Unique_Bow_009_x1",
         "cubeCategory": "Weapon"
@@ -1174,41 +2277,6 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2081,
-        "blizId": "Unique_Bow_015_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "demon-hunter",
-            "witch-doctor",
-            "wizard"
-        ]
-    },
-    {
-        "id": 2082,
-        "blizId": "Unique_Bow_101_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2084,
-        "blizId": "Unique_Bow_102_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2083,
-        "blizId": "Unique_Bow_103_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2086,
-        "blizId": "Unique_Bow_104_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4092,
         "blizId": "Unique_Bracer_001_1xx",
         "cubeCategory": "Armor"
@@ -1219,12 +2287,6 @@
         "cubeCategory": "Armor"
     },
     {
-        "id": 1054,
-        "blizId": "Unique_Bracer_002_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
         "id": 4094,
         "blizId": "Unique_Bracer_004_x1",
         "cubeCategory": "Armor"
@@ -1233,12 +2295,6 @@
         "id": 4095,
         "blizId": "Unique_Bracer_005_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 1059,
-        "blizId": "Unique_Bracer_007_x1",
-        "cubeCategory": "Armor",
-        "cube": true
     },
     {
         "id": 4096,
@@ -1271,93 +2327,9 @@
         "cubeCategory": "Armor"
     },
     {
-        "id": 1061,
-        "blizId": "Unique_Bracer_101_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1001,
-        "blizId": "Unique_Bracer_102_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 10561,
-        "blizId": "Unique_Bracer_103_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 10661,
-        "blizId": "Unique_Bracer_104_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1057,
-        "blizId": "Unique_Bracer_105_x1",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "bounty": {
-            "act": "1"
-        }
-    },
-    {
-        "id": 1053,
-        "blizId": "Unique_Bracer_106_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1048,
-        "blizId": "Unique_Bracer_107_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1055,
-        "blizId": "Unique_Bracer_108_x1",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "wizard"
-        ]
-    },
-    {
-        "id": 1052,
-        "blizId": "Unique_Bracer_Set_02_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
         "id": 4102,
         "blizId": "Unique_Bracer_Set_12_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 2022,
-        "blizId": "Unique_CeremonialDagger_001_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2028,
-        "blizId": "Unique_CeremonialDagger_002_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2023,
-        "blizId": "Unique_CeremonialDagger_003_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2029,
-        "blizId": "Unique_CeremonialDagger_004_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
     },
     {
         "id": 4103,
@@ -1390,44 +2362,14 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2026,
-        "blizId": "Unique_CeremonialDagger_101_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2024,
-        "blizId": "Unique_CeremonialDagger_102_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4109,
         "blizId": "Unique_ChestArmor_028_x1",
         "cubeCategory": "Armor"
     },
     {
-        "id": 1038,
-        "blizId": "Unique_Chest_001_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
         "id": 4110,
         "blizId": "Unique_Chest_002_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 1037,
-        "blizId": "Unique_Chest_006_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 10362,
-        "blizId": "Unique_Chest_010_x1",
-        "cubeCategory": "Armor",
-        "cube": true
     },
     {
         "id": 4111,
@@ -1498,21 +2440,6 @@
         "id": 4124,
         "blizId": "Unique_Chest_027_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 1039,
-        "blizId": "Unique_Chest_101_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1035,
-        "blizId": "Unique_Chest_102_x1",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "crusader"
-        ]
     },
     {
         "id": 4125,
@@ -1595,42 +2522,9 @@
         "cubeCategory": "Armor"
     },
     {
-        "id": 1042,
-        "blizId": "Unique_Cloak_001_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1044,
-        "blizId": "Unique_Cloak_002_p1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 10461,
-        "blizId": "Unique_Cloak_005_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
         "id": 4141,
         "blizId": "Unique_Cloak_006_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 1041,
-        "blizId": "Unique_Cloak_101_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1043,
-        "blizId": "Unique_Cloak_102_x1",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "bounty": {
-            "act": "2"
-        }
     },
     {
         "id": 4142,
@@ -1643,12 +2537,6 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2070,
-        "blizId": "Unique_CombatStaff_2H_003_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4144,
         "blizId": "Unique_CombatStaff_2H_004_1xx",
         "cubeCategory": "Weapon"
@@ -1657,12 +2545,6 @@
         "id": 4145,
         "blizId": "Unique_CombatStaff_2H_004_x1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2071,
-        "blizId": "Unique_CombatStaff_2H_005_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
     },
     {
         "id": 4146,
@@ -1680,72 +2562,9 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2069,
-        "blizId": "Unique_CombatStaff_2H_009_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4149,
         "blizId": "Unique_CombatStaff_2H_101_x1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2072,
-        "blizId": "Unique_CombatStaff_2H_102_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2119,
-        "blizId": "Unique_CruShield_101_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2118,
-        "blizId": "Unique_CruShield_102_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2116,
-        "blizId": "Unique_CruShield_103_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2113,
-        "blizId": "Unique_CruShield_104_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2117,
-        "blizId": "Unique_CruShield_105_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2121,
-        "blizId": "Unique_CruShield_106_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2122,
-        "blizId": "Unique_CruShield_107_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2120,
-        "blizId": "Unique_CruShield_108_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "bounty": {
-            "act": "5"
-        }
     },
     {
         "id": 4150,
@@ -1771,27 +2590,6 @@
         "id": 4154,
         "blizId": "Unique_Dagger_007_x1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2008,
-        "blizId": "Unique_Dagger_010_x1_210",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2006,
-        "blizId": "Unique_Dagger_103_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "bounty": {
-            "act": "3"
-        }
-    },
-    {
-        "id": 2007,
-        "blizId": "Unique_Dagger_104_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
     },
     {
         "id": 4155,
@@ -1829,12 +2627,6 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2032,
-        "blizId": "Unique_Fist_009_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4162,
         "blizId": "Unique_Fist_010_x1",
         "cubeCategory": "Weapon"
@@ -1865,72 +2657,6 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2030,
-        "blizId": "Unique_Fist_101_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2035,
-        "blizId": "Unique_Flail_1H_101_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2039,
-        "blizId": "Unique_Flail_1H_102_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2041,
-        "blizId": "Unique_Flail_1H_103_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2040,
-        "blizId": "Unique_Flail_1H_104_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2036,
-        "blizId": "Unique_Flail_1H_105_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2034,
-        "blizId": "Unique_Flail_1H_106_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2037,
-        "blizId": "Unique_Flail_1H_107_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2076,
-        "blizId": "Unique_Flail_2H_101_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2073,
-        "blizId": "Unique_Flail_2H_102_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2074,
-        "blizId": "Unique_Flail_2H_103_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4168,
         "blizId": "Unique_Gloves_001_1xx",
         "cubeCategory": "Armor"
@@ -1939,18 +2665,6 @@
         "id": 4169,
         "blizId": "Unique_Gloves_001_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 1063,
-        "blizId": "Unique_Gloves_002_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1067,
-        "blizId": "Unique_Gloves_003_x1",
-        "cubeCategory": "Armor",
-        "cube": true
     },
     {
         "id": 4170,
@@ -1971,12 +2685,6 @@
         "id": 4173,
         "blizId": "Unique_Gloves_009_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 1064,
-        "blizId": "Unique_Gloves_011_x1",
-        "cubeCategory": "Armor",
-        "cube": true
     },
     {
         "id": 4174,
@@ -2002,21 +2710,6 @@
         "id": 4178,
         "blizId": "Unique_Gloves_017_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 10662,
-        "blizId": "Unique_Gloves_101_p2",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1065,
-        "blizId": "Unique_Gloves_103_x1",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "bounty": {
-            "act": "2"
-        }
     },
     {
         "id": 4179,
@@ -2114,18 +2807,6 @@
         "cubeCategory": "Armor"
     },
     {
-        "id": 2095,
-        "blizId": "Unique_HandXBow_001_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2094,
-        "blizId": "Unique_HandXBow_002_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4198,
         "blizId": "Unique_HandXBow_003_x1",
         "cubeCategory": "Weapon"
@@ -2151,12 +2832,6 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2093,
-        "blizId": "Unique_HandXBow_012_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4203,
         "blizId": "Unique_HandXBow_016_1xx",
         "cubeCategory": "Weapon"
@@ -2165,42 +2840,6 @@
         "id": 4204,
         "blizId": "Unique_HandXBow_016_x1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2097,
-        "blizId": "Unique_HandXBow_101_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2096,
-        "blizId": "Unique_HandXBow_102_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "bounty": {
-            "act": "5"
-        }
-    },
-    {
-        "id": 1006,
-        "blizId": "Unique_Helm_002_p1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1003,
-        "blizId": "Unique_Helm_003_p2",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1008,
-        "blizId": "Unique_Helm_004_x1",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "barbarian"
-        ]
     },
     {
         "id": 4205,
@@ -2276,21 +2915,6 @@
         "id": 4219,
         "blizId": "Unique_Helm_016_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 1005,
-        "blizId": "Unique_Helm_102_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1007,
-        "blizId": "Unique_Helm_103_x1",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "bounty": {
-            "act": "3"
-        }
     },
     {
         "id": 4220,
@@ -2388,12 +3012,6 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2011,
-        "blizId": "Unique_Mace_1H_002_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4239,
         "blizId": "Unique_Mace_1H_003_x1",
         "cubeCategory": "Weapon"
@@ -2429,30 +3047,6 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2010,
-        "blizId": "Unique_Mace_1H_101_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "bounty": {
-            "act": "1"
-        }
-    },
-    {
-        "id": 2012,
-        "blizId": "Unique_Mace_1H_102_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2009,
-        "blizId": "Unique_Mace_1H_103_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "crusader"
-        ]
-    },
-    {
         "id": 4246,
         "blizId": "Unique_Mace_2H_001_x1",
         "cubeCategory": "Weapon"
@@ -2463,56 +3057,14 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2048,
-        "blizId": "Unique_Mace_2H_003_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4248,
         "blizId": "Unique_Mace_2H_006_1xx",
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2052,
-        "blizId": "Unique_Mace_2H_006_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2049,
-        "blizId": "Unique_Mace_2H_009_p2",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2050,
-        "blizId": "Unique_Mace_2H_010_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "crusader"
-        ]
-    },
-    {
         "id": 4249,
         "blizId": "Unique_Mace_2H_012_p1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2053,
-        "blizId": "Unique_Mace_2H_103_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2051,
-        "blizId": "Unique_Mace_2H_104_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "bounty": {
-            "act": "5"
-        }
     },
     {
         "id": 4250,
@@ -2555,30 +3107,6 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2044,
-        "blizId": "Unique_Mighty_1H_102_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2042,
-        "blizId": "Unique_Mighty_1H_103_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2077,
-        "blizId": "Unique_Mighty_2H_004_p1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2078,
-        "blizId": "Unique_Mighty_2H_006_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4258,
         "blizId": "Unique_Mighty_2H_010_x1",
         "cubeCategory": "Weapon"
@@ -2592,12 +3120,6 @@
         "id": 4260,
         "blizId": "Unique_Mighty_2H_012_x1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2079,
-        "blizId": "Unique_Mighty_2H_101_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
     },
     {
         "id": 4261,
@@ -2615,18 +3137,6 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2125,
-        "blizId": "Unique_Mojo_004_p2",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2127,
-        "blizId": "Unique_Mojo_008_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4264,
         "blizId": "Unique_Mojo_009_x1",
         "cubeCategory": "Weapon"
@@ -2642,33 +3152,9 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2126,
-        "blizId": "Unique_Mojo_102_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2132,
-        "blizId": "Unique_Orb_001_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4267,
         "blizId": "Unique_Orb_004_1xx",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2128,
-        "blizId": "Unique_Orb_004_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2134,
-        "blizId": "Unique_Orb_005_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
     },
     {
         "id": 4268,
@@ -2679,24 +3165,6 @@
         "id": 4269,
         "blizId": "Unique_Orb_012_x1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2130,
-        "blizId": "Unique_Orb_101_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2131,
-        "blizId": "Unique_Orb_102_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2129,
-        "blizId": "Unique_Orb_103_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
     },
     {
         "id": 4270,
@@ -2722,18 +3190,6 @@
         "id": 4274,
         "blizId": "Unique_Pants_005_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 10961,
-        "blizId": "Unique_Pants_006_p1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1098,
-        "blizId": "Unique_Pants_007_p2",
-        "cubeCategory": "Armor",
-        "cube": true
     },
     {
         "id": 4275,
@@ -2784,21 +3240,6 @@
         "id": 4284,
         "blizId": "Unique_Pants_014_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 1097,
-        "blizId": "Unique_Pants_101_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1095,
-        "blizId": "Unique_Pants_102_x1",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "bounty": {
-            "act": "5"
-        }
     },
     {
         "id": 4285,
@@ -2886,12 +3327,6 @@
         "cubeCategory": "Armor"
     },
     {
-        "id": 2055,
-        "blizId": "Unique_Polearm_001_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4302,
         "blizId": "Unique_Polearm_002_x1",
         "cubeCategory": "Weapon"
@@ -2905,18 +3340,6 @@
         "id": 4304,
         "blizId": "Unique_Polearm_004_x1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2054,
-        "blizId": "Unique_Polearm_101_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2138,
-        "blizId": "Unique_Quiver_001_p1",
-        "cubeCategory": "Weapon",
-        "cube": true
     },
     {
         "id": 4305,
@@ -2939,39 +3362,9 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2139,
-        "blizId": "Unique_Quiver_005_p1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4309,
         "blizId": "Unique_Quiver_006_x1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2140,
-        "blizId": "Unique_Quiver_101_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2135,
-        "blizId": "Unique_Quiver_102_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2137,
-        "blizId": "Unique_Quiver_103_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 3015,
-        "blizId": "Unique_Ring_001_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true
     },
     {
         "id": 4310,
@@ -2979,47 +3372,14 @@
         "cubeCategory": "Jewelry"
     },
     {
-        "id": 3023,
-        "blizId": "Unique_Ring_003_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
-        "id": 3028,
-        "blizId": "Unique_Ring_004_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
         "id": 4311,
         "blizId": "Unique_Ring_005_x1",
         "cubeCategory": "Jewelry"
     },
     {
-        "id": 3017,
-        "blizId": "Unique_Ring_006_p2",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
-        "id": 3020,
-        "blizId": "Unique_Ring_007_p1",
-        "cubeCategory": "Jewelry",
-        "cube": true,
-        "classes": [
-            "crusader"
-        ]
-    },
-    {
         "id": 4312,
         "blizId": "Unique_Ring_008_x1",
         "cubeCategory": "Jewelry"
-    },
-    {
-        "id": 3035,
-        "blizId": "Unique_Ring_010_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true
     },
     {
         "id": 4313,
@@ -3047,27 +3407,9 @@
         "cubeCategory": "Jewelry"
     },
     {
-        "id": 3026,
-        "blizId": "Unique_Ring_017_p2",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
-        "id": 3024,
-        "blizId": "Unique_Ring_018_p2",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
         "id": 4318,
         "blizId": "Unique_Ring_019_x1",
         "cubeCategory": "Jewelry"
-    },
-    {
-        "id": 3018,
-        "blizId": "Unique_Ring_020_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true
     },
     {
         "id": 4319,
@@ -3075,84 +3417,9 @@
         "cubeCategory": "Jewelry"
     },
     {
-        "id": 3025,
-        "blizId": "Unique_Ring_023_p2",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
-        "id": 3022,
-        "blizId": "Unique_Ring_024_104",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
         "id": 4320,
         "blizId": "Unique_Ring_024_x1",
         "cubeCategory": "Jewelry"
-    },
-    {
-        "id": 3034,
-        "blizId": "Unique_Ring_101_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true,
-        "classes": [
-            "witch-doctor"
-        ]
-    },
-    {
-        "id": 3036,
-        "blizId": "Unique_Ring_102_p2",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
-        "id": 3031,
-        "blizId": "Unique_Ring_103_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
-        "id": 3029,
-        "blizId": "Unique_Ring_104_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true
-    },
-    {
-        "id": 3016,
-        "blizId": "Unique_Ring_106_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true,
-        "classes": [
-            "monk"
-        ]
-    },
-    {
-        "id": 3030,
-        "blizId": "Unique_Ring_107_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true,
-        "bounty": {
-            "act": "1"
-        }
-    },
-    {
-        "id": 3014,
-        "blizId": "Unique_Ring_108_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true,
-        "bounty": {
-            "act": "3"
-        }
-    },
-    {
-        "id": 3027,
-        "blizId": "Unique_Ring_109_x1",
-        "cubeCategory": "Jewelry",
-        "cube": true,
-        "bounty": {
-            "act": "5"
-        }
     },
     {
         "id": 4321,
@@ -3163,12 +3430,6 @@
         "id": 4322,
         "blizId": "Unique_Ring_Set_002_x1",
         "cubeCategory": "Jewelry"
-    },
-    {
-        "id": 2109,
-        "blizId": "Unique_Shield_004_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
     },
     {
         "id": 4323,
@@ -3186,12 +3447,6 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2112,
-        "blizId": "Unique_Shield_011_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4326,
         "blizId": "Unique_Shield_012_1xx",
         "cubeCategory": "Weapon"
@@ -3200,66 +3455,6 @@
         "id": 4327,
         "blizId": "Unique_Shield_012_x1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2106,
-        "blizId": "Unique_Shield_101_p2",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2108,
-        "blizId": "Unique_Shield_102_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "crusader"
-        ]
-    },
-    {
-        "id": 2115,
-        "blizId": "Unique_Shield_103_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2111,
-        "blizId": "Unique_Shield_104_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "crusader"
-        ]
-    },
-    {
-        "id": 2105,
-        "blizId": "Unique_Shield_107_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "bounty": {
-            "act": "2"
-        }
-    },
-    {
-        "id": 1031,
-        "blizId": "Unique_Shoulder_001_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1029,
-        "blizId": "Unique_Shoulder_002_p2",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1034,
-        "blizId": "Unique_Shoulder_003_p1",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "classes": [
-            "barbarian"
-        ]
     },
     {
         "id": 4328,
@@ -3315,21 +3510,6 @@
         "id": 4338,
         "blizId": "Unique_Shoulder_101_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 1033,
-        "blizId": "Unique_Shoulder_102_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1032,
-        "blizId": "Unique_Shoulder_103_x1",
-        "cubeCategory": "Armor",
-        "cube": true,
-        "bounty": {
-            "act": "1"
-        }
     },
     {
         "id": 4339,
@@ -3432,15 +3612,6 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2142,
-        "blizId": "Unique_Spear_004_p3",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "witch-doctor"
-        ]
-    },
-    {
         "id": 4359,
         "blizId": "Unique_Spear_101_x1",
         "cubeCategory": "Weapon"
@@ -3451,21 +3622,9 @@
         "cubeCategory": "Armor"
     },
     {
-        "id": 1014,
-        "blizId": "Unique_SpiritStone_002_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
         "id": 4361,
         "blizId": "Unique_SpiritStone_003_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 10161,
-        "blizId": "Unique_SpiritStone_004_x1",
-        "cubeCategory": "Armor",
-        "cube": true
     },
     {
         "id": 4362,
@@ -3478,33 +3637,9 @@
         "cubeCategory": "Armor"
     },
     {
-        "id": 1015,
-        "blizId": "Unique_SpiritStone_007_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
         "id": 4364,
         "blizId": "Unique_SpiritStone_009_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 1013,
-        "blizId": "Unique_SpiritStone_101_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1011,
-        "blizId": "Unique_SpiritStone_102_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1009,
-        "blizId": "Unique_SpiritStone_103_x1",
-        "cubeCategory": "Armor",
-        "cube": true
     },
     {
         "id": 4365,
@@ -3522,63 +3657,9 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2057,
-        "blizId": "Unique_Staff_006_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2060,
-        "blizId": "Unique_Staff_007_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4368,
         "blizId": "Unique_Staff_008_x1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2058,
-        "blizId": "Unique_Staff_009_p1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "wizard"
-        ]
-    },
-    {
-        "id": 2056,
-        "blizId": "Unique_Staff_101_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2061,
-        "blizId": "Unique_Staff_102_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "wizard"
-        ]
-    },
-    {
-        "id": 2059,
-        "blizId": "Unique_Staff_103_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "wizard"
-        ]
-    },
-    {
-        "id": 2141,
-        "blizId": "Unique_Staff_104_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "witch-doctor"
-        ]
     },
     {
         "id": 4369,
@@ -3589,18 +3670,6 @@
         "id": 4370,
         "blizId": "Unique_Sword_1H_003_x1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2020,
-        "blizId": "Unique_Sword_1H_004_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2018,
-        "blizId": "Unique_Sword_1H_007_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
     },
     {
         "id": 4371,
@@ -3638,12 +3707,6 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2021,
-        "blizId": "Unique_Sword_1H_101_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4378,
         "blizId": "Unique_Sword_1H_102_x1",
         "cubeCategory": "Weapon"
@@ -3652,24 +3715,6 @@
         "id": 4379,
         "blizId": "Unique_Sword_1H_103_x1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2017,
-        "blizId": "Unique_Sword_1H_109_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2016,
-        "blizId": "Unique_Sword_1H_113_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2019,
-        "blizId": "Unique_Sword_1H_Promo_02_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
     },
     {
         "id": 4380,
@@ -3697,30 +3742,9 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2067,
-        "blizId": "Unique_Sword_2H_004_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2063,
-        "blizId": "Unique_Sword_2H_007_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "crusader"
-        ]
-    },
-    {
         "id": 4385,
         "blizId": "Unique_Sword_2H_008_x1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2066,
-        "blizId": "Unique_Sword_2H_010_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
     },
     {
         "id": 4386,
@@ -3733,48 +3757,9 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2068,
-        "blizId": "Unique_Sword_2H_101_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2065,
-        "blizId": "Unique_Sword_2H_102_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "crusader"
-        ]
-    },
-    {
-        "id": 2064,
-        "blizId": "Unique_Sword_2H_103_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4388,
         "blizId": "Unique_Sword_2H_104_x1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 10262,
-        "blizId": "Unique_VoodooMask_001_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1019,
-        "blizId": "Unique_VoodooMask_002_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1018,
-        "blizId": "Unique_VoodooMask_005_x1",
-        "cubeCategory": "Armor",
-        "cube": true
     },
     {
         "id": 4389,
@@ -3785,24 +3770,6 @@
         "id": 4390,
         "blizId": "Unique_VoodooMask_007_x1",
         "cubeCategory": "Armor"
-    },
-    {
-        "id": 1021,
-        "blizId": "Unique_VoodooMask_008_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 10162,
-        "blizId": "Unique_VoodooMask_101_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1017,
-        "blizId": "Unique_VoodooMask_102_x1",
-        "cubeCategory": "Armor",
-        "cube": true
     },
     {
         "id": 4391,
@@ -3835,12 +3802,6 @@
         "cubeCategory": "Weapon"
     },
     {
-        "id": 2103,
-        "blizId": "Unique_Wand_013_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
         "id": 4397,
         "blizId": "Unique_Wand_018_1xx",
         "cubeCategory": "Weapon"
@@ -3849,76 +3810,6 @@
         "id": 4398,
         "blizId": "Unique_Wand_018_x1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2104,
-        "blizId": "Unique_Wand_101_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2102,
-        "blizId": "Unique_Wand_102_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 1024,
-        "blizId": "Unique_WizardHat_001_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1025,
-        "blizId": "Unique_WizardHat_004_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1022,
-        "blizId": "Unique_WizardHat_101_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1028,
-        "blizId": "Unique_WizardHat_102_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 10261,
-        "blizId": "Unique_WizardHat_103_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 1023,
-        "blizId": "Unique_WizardHat_104_x1",
-        "cubeCategory": "Armor",
-        "cube": true
-    },
-    {
-        "id": 2089,
-        "blizId": "Unique_XBow_001_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "demon-hunter",
-            "witch-doctor",
-            "wizard"
-        ]
-    },
-    {
-        "id": 2090,
-        "blizId": "Unique_XBow_002_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "demon-hunter",
-            "witch-doctor",
-            "wizard"
-        ]
     },
     {
         "id": 4399,
@@ -3939,35 +3830,6 @@
         "id": 4402,
         "blizId": "Unique_XBow_006_x1",
         "cubeCategory": "Weapon"
-    },
-    {
-        "id": 2087,
-        "blizId": "Unique_XBow_011_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2091,
-        "blizId": "Unique_XBow_012_x1",
-        "cubeCategory": "Weapon",
-        "cube": true,
-        "classes": [
-            "demon-hunter",
-            "witch-doctor",
-            "wizard"
-        ]
-    },
-    {
-        "id": 2088,
-        "blizId": "Unique_Xbow_101_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
-    },
-    {
-        "id": 2092,
-        "blizId": "Unique_Xbow_102_x1",
-        "cubeCategory": "Weapon",
-        "cube": true
     },
     {
         "id": 4403,
@@ -4009,5 +3871,143 @@
     {
         "id": 4412,
         "blizId": "x1_FollowerItem_Templar_Legendary_03"
+    },
+    {
+        "id": 10161,
+        "blizId": "Unique_SpiritStone_004_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 10162,
+        "blizId": "Unique_VoodooMask_101_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 10261,
+        "blizId": "Unique_WizardHat_103_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 10262,
+        "blizId": "Unique_VoodooMask_001_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 10361,
+        "blizId": "P3_Unique_Shoulder_102",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "barbarian"
+        ]
+    },
+    {
+        "id": 10362,
+        "blizId": "Unique_Chest_010_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 10461,
+        "blizId": "Unique_Cloak_005_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 10462,
+        "blizId": "P3_Unique_Bracer_105",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "barbarian"
+        ]
+    },
+    {
+        "id": 10561,
+        "blizId": "Unique_Bracer_103_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 10562,
+        "blizId": "P3_Unique_Bracer_101",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "crusader"
+        ]
+    },
+    {
+        "id": 10661,
+        "blizId": "Unique_Bracer_104_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 10662,
+        "blizId": "Unique_Gloves_101_p2",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 10761,
+        "blizId": "P2_Unique_Belt_02",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "witch-doctor"
+        ]
+    },
+    {
+        "id": 10762,
+        "blizId": "Unique_Belt_010_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 10861,
+        "blizId": "Unique_Belt_101_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 10862,
+        "blizId": "Unique_Belt_107_x1",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "witch-doctor"
+        ]
+    },
+    {
+        "id": 10961,
+        "blizId": "Unique_Pants_006_p1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 10962,
+        "blizId": "Unique_BarbBelt_003_x1",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 11061,
+        "blizId": "Unique_Boots_007_p2",
+        "cubeCategory": "Armor",
+        "cube": true
+    },
+    {
+        "id": 11062,
+        "blizId": "P1_Unique_Boots_010",
+        "cubeCategory": "Armor",
+        "cube": true,
+        "classes": [
+            "monk"
+        ]
     }
 ]
