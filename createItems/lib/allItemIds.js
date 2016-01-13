@@ -9,28 +9,32 @@ let q = require('q');
 
 module.exports = allItemIds;
 
-let loadFromTmpFile = true;
-
-function allItemIds() {
-    let source =loadFromTmpFile ?
-                allItemsFromTempFile() :
-                allItemsFromWeb();
+function allItemIds(options) {
+    let source = options.loadFromTmpFile ?
+        allItemsFromTempFile() :
+        allItemsFromWeb();
 
     return source
-        .map((itemIds)=> {itemIds.push('Unique_CeremonialDagger_003_x1'); return itemIds;})
+        .map((itemIds)=> {
+            itemIds.push('Unique_CeremonialDagger_003_x1');
+            return itemIds;
+        })
         .map((itemIds)=>_.unique(itemIds))
         .flatMap((itemIds) => rx.Observable.fromArray(itemIds))
         .map(idLowerCaseToRealId);
 }
 
-function allItemsFromTempFile(){
+function allItemsFromTempFile() {
     console.log('fetching all items from temp file...');
-    return rx.Observable.fromPromise(q.when(require('../temp/allIds.json')));
+    return rx.Observable.fromPromise(q.when(require('../../../d3-item-cache/allItems.json')));
 }
 
-function allItemsFromWeb(){
+function allItemsFromWeb() {
     console.log('fetching all items from web...');
     return rx.Observable.fromPromise(itemTypes())
         .flatMap((itemTypes) => rx.Observable.fromArray(itemTypes))
-        .flatMap((itemType) => rx.Observable.fromPromise(idsForType(itemType)));
+        .flatMap((itemType) => rx.Observable.fromPromise(idsForType(itemType)))
+        .reduce((acc, ids)=>{acc.push(ids);return acc;},[])
+        .map((ids)=>_.flatten(ids));
+
 }

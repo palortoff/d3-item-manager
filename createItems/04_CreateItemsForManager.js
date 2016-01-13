@@ -12,7 +12,7 @@ let writeItemsToJsonFilesForLocales = require('./lib/writeItemsToJsonFilesForLoc
 let reduceSortedByLocales = require('./lib/reduceSortedByLocales');
 let extractDataForManagerItem = require('./lib/extractDataForManagerItem');
 
-let source = allItemIds()
+let source = allItemIds({loadFromTmpFile: true})
     .map((id) => {return {blizzId: id};})
     //.filter((id)=>id==='P2_mojo_norm_unique_02')
     .filter(itemIsNotIgnored)

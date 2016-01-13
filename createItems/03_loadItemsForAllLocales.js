@@ -9,7 +9,7 @@ let saveItemsToFileThrottled = require('./lib/saveItemsToFileThrottled');
 let checkItemFileAvailability = require('./lib/checkItemFileAvailability');
 let multiplyItemForLocales = require('./lib/multiplyItemForLocales');
 
-let source = allItemIds()
+let source = allItemIds({loadFromTmpFile: true})
     .map((id) => {return {blizzId: id};})
     .filter(itemIsNotIgnored)
     .map(multiplyItemForLocales)

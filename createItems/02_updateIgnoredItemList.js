@@ -10,7 +10,7 @@ let addItemPaths = require('./lib/addItemPaths');
 let loadItemFromDisk = require('./lib/loadItemFromDisk');
 let ignoredItems = require('./config/ignoredItems.json');
 
-let source = allItemIds()
+let source = allItemIds({loadFromTmpFile: true})
     .map((id) => {return {blizzId: id};})
     .map(addFirstLocale)
     .map(addItemPaths)
