@@ -3,7 +3,7 @@
 module.exports = writeItemsToJsonFilesForLocales;
 
 let qfs = require('q-io/fs');
-let itemPath = './temp/';
+let itemPath = '../items/';
 let path = require('path');
 let _ = require('lodash');
 
