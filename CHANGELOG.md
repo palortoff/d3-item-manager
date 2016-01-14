@@ -1,3 +1,15 @@
+# 1.6.1
+
+### Changes
+
+* Add season 5 to season selection
+
+# 1.6.0
+
+### Features
+
+* Update items changed/added with game patch 2.4
+
 # v1.5.2
 
 ### Bug fixes
