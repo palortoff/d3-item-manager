@@ -9,7 +9,7 @@
     // TODO: add non-season to array
 
     function seasons(config) {
-        var _all = config.getItem(keyAll, ['Season 4']);
+        var _all = config.getItem(keyAll, ['Season 4', 'Season 5']);
         var _current = config.getItem(keyCurrent, "Non Season");
 
         return {
