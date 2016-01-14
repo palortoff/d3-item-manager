@@ -86,6 +86,12 @@
             name:   "Traditional Chinese",
             short:  'tw',
             region: 'tw'
+        },
+        {
+            id:     "zh_CN",
+            name:   "Simplified Chinese",
+            short:  'cn',
+            region: 'cn'
         }
     ];
 })();

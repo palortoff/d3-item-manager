@@ -1,6 +1,6 @@
-'use strict';
-
 describe('Item consistency', function() {
+    'use strict';
+    
     beforeAll(function() {
         itemsEnGb = fixture.load(`items/items_en_GB.json`);
     });

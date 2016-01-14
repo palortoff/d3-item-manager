@@ -69,7 +69,7 @@
         },
         {
             "id": "zh_CN",
-            "use": false,
+            "use": true,
             "url": "https://api.battlenet.com.cn/d3/data/item/"
         }
     ]
