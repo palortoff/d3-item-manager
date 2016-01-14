@@ -48,7 +48,7 @@
         {id: 5, name: 'Season 1', filter: function(item) { return item.season === 1; }, "class": 'hide'},
         {id: 6, name: 'Season 2', filter: function(item) { return item.season === 2; }, "class": 'hide'},
         {id: 7, name: 'Season 3', filter: function(item) { return item.season === 3; }, "class": 'hide'},
-        {id: 8, name: 'Season 4', filter: function(item) { return item.season === 4; }},
+        {id: 8, name: 'Season 4', filter: function(item) { return item.season === 4; }, "class": 'hide'},
 
         {"class": "divider"},
 
