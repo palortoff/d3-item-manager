@@ -245,6 +245,70 @@
 (function () {
     'use strict';
 
+    angular.module('download-data', []).directive('downloadData', downloadData);
+
+    var idAppendix = 0;
+
+    function downloadData($q) {
+        return {
+            restrict: 'EA',
+            scope: {
+                getData: '&ddGetter',
+                json: '@ddJson',
+                encoding: '@ddEncoding',
+                type: '@ddType',
+                filename: '=ddFilename'
+            },
+            link: link
+        };
+
+        function link(scope, element) {
+            element.on('click', createAndDownload);
+
+            function createAndDownload() {
+                $q.when(scope.getData(), function (data) {
+
+                    var type = scope.type;
+                    if (scope.json === "true") {
+                        data = JSON.stringify(data, null, 2);
+                        type = type || 'application/json';
+                    }
+                    type = type || 'text/plain';
+                    if (scope.encoding === 'utf8') {
+                        data = '﻿' + data;
+                    }
+
+                    var blob = new Blob([data], { type: type });
+                    var url = URL.createObjectURL(blob);
+                    var elementId = 'ngDataDownload' + idAppendix++;
+
+                    var newElem = angular.element('<a ' + 'style="display:none" ' + 'id="' + elementId + '" ' + 'href="' + url + '" download="' + scope.filename + '">' + 'test' + '</a>');
+
+                    angular.element('body').append(newElem);
+                    document.getElementById(elementId).click();
+                    newElem.remove();
+                });
+            }
+        }
+    }
+    downloadData.$inject = ["$q"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').constant('constants', {
+        githubUrl: 'https://github.com/palortoff/d3-item-manager',
+        gameSeason: 5,
+        aboutVersion: "1"
+    });
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
     angular.module('d3-item-manager').directive('filestyle', filestyle);
 
     // from https://github.com/markusslima/bootstrap-filestyle/issues/36
@@ -307,115 +371,18 @@
 (function () {
     'use strict';
 
-    angular.module('download-data', []).directive('downloadData', downloadData);
+    angular.module('d3-item-manager').factory('about', about);
 
-    var idAppendix = 0;
-
-    function downloadData($q) {
+    function about(config, constants) {
         return {
-            restrict: 'EA',
-            scope: {
-                getData: '&ddGetter',
-                json: '@ddJson',
-                encoding: '@ddEncoding',
-                type: '@ddType',
-                filename: '=ddFilename'
-            },
-            link: link
+            hasBeenSeen: hasBeenSeen
         };
 
-        function link(scope, element) {
-            element.on('click', createAndDownload);
-
-            function createAndDownload() {
-                $q.when(scope.getData(), function (data) {
-
-                    var type = scope.type;
-                    if (scope.json === "true") {
-                        data = JSON.stringify(data, null, 2);
-                        type = type || 'application/json';
-                    }
-                    type = type || 'text/plain';
-                    if (scope.encoding === 'utf8') {
-                        data = '﻿' + data;
-                    }
-
-                    var blob = new Blob([data], { type: type });
-                    var url = URL.createObjectURL(blob);
-                    var elementId = 'ngDataDownload' + idAppendix++;
-
-                    var newElem = angular.element('<a ' + 'style="display:none" ' + 'id="' + elementId + '" ' + 'href="' + url + '" download="' + scope.filename + '">' + 'test' + '</a>');
-
-                    angular.element('body').append(newElem);
-                    document.getElementById(elementId).click();
-                    newElem.remove();
-                });
-            }
+        function hasBeenSeen() {
+            return config.getItem('aboutSeen') === constants.aboutVersion;
         }
     }
-    downloadData.$inject = ["$q"];
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').constant('constants', {
-        githubUrl: 'https://github.com/palortoff/d3-item-manager',
-        gameSeason: 4,
-        aboutVersion: "1"
-    });
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').config(["$routeProvider", function ($routeProvider) {
-
-        $routeProvider.when('/', {
-            redirectTo: '/items'
-        }).when('/items', {
-            templateUrl: 'routes/items/items.template.html',
-            controller: 'ItemsController',
-            controllerAs: 'vm',
-            resolve: { factory: checkRouting }
-        }).when('/about', {
-            templateUrl: 'routes/about/about.template.html',
-            controller: 'AboutController',
-            controllerAs: 'vm'
-        }).when('/config', {
-            templateUrl: 'routes/config/config.template.html',
-            controller: 'ConfigController',
-            controllerAs: 'vm',
-            resolve: { factory: checkRouting }
-        });
-    }]);
-
-    function checkRouting($location, about) {
-        if (!about.hasBeenSeen()) {
-            $location.path('/about');
-        }
-    }
-    checkRouting.$inject = ["$location", "about"];
-})();
-'use strict';
-
-(function () {
-  'use strict';
-
-  angular.module('d3-item-manager').factory('about', about);
-
-  function about(config, constants) {
-    return {
-      hasBeenSeen: hasBeenSeen
-    };
-
-    function hasBeenSeen() {
-      return config.getItem('aboutSeen') === constants.aboutVersion;
-    }
-  }
-  about.$inject = ["config", "constants"];
+    about.$inject = ["config", "constants"];
 })();
 'use strict';
 
@@ -717,7 +684,7 @@
 
         function categoryById(id) {
             return _.find(all, function (cat) {
-                return cat.id == id; // jshint ignore:line
+                return cat.id == id; //eslint-disable-line eqeqeq
             });
         }
     }
@@ -739,7 +706,7 @@
             return item.season === 3;
         }, "class": 'hide' }, { id: 8, name: 'Season 4', filter: function filter(item) {
             return item.season === 4;
-        } }, { "class": "divider" }, { id: 9, name: 'Crafted (Legendary)', filter: function filter(item) {
+        }, "class": 'hide' }, { "class": "divider" }, { id: 9, name: 'Crafted (Legendary)', filter: function filter(item) {
             return item.crafted && item.displayColor === "orange" && item.requiredLevel === 70;
         }, "class": 'hide' }, { id: 10, name: 'Crafted (Set)', filter: function filter(item) {
             return item.crafted && item.displayColor === "green" && item.requiredLevel === 70;
@@ -870,6 +837,39 @@
 (function () {
     'use strict';
 
+    angular.module('d3-item-manager').config(["$routeProvider", function ($routeProvider) {
+
+        $routeProvider.when('/', {
+            redirectTo: '/items'
+        }).when('/items', {
+            templateUrl: 'routes/items/items.template.html',
+            controller: 'ItemsController',
+            controllerAs: 'vm',
+            resolve: { factory: checkRouting }
+        }).when('/about', {
+            templateUrl: 'routes/about/about.template.html',
+            controller: 'AboutController',
+            controllerAs: 'vm'
+        }).when('/config', {
+            templateUrl: 'routes/config/config.template.html',
+            controller: 'ConfigController',
+            controllerAs: 'vm',
+            resolve: { factory: checkRouting }
+        });
+    }]);
+
+    function checkRouting($location, about) {
+        if (!about.hasBeenSeen()) {
+            $location.path('/about');
+        }
+    }
+    checkRouting.$inject = ["$location", "about"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
     angular.module('d3-item-manager').directive('bannerAlert', bannerAlert);
 
     function bannerAlert() {
@@ -953,40 +953,449 @@
 'use strict';
 
 (function () {
-  'use strict';
+    'use strict';
 
-  angular.module('d3-item-manager').directive('newFeatures', newFeatures);
+    angular.module('d3-item-manager').directive('newFeatures', newFeatures);
 
-  function newFeatures() {
-    controller.$inject = ["$location", "config"];
-    return {
-      restrict: 'E',
-      templateUrl: 'directives/newFeatures/newFeatures.template.html',
-      scope: {},
-      controller: controller,
-      controllerAs: 'vm'
-    };
+    function newFeatures() {
+        controller.$inject = ["$location", "config"];
+        return {
+            restrict: 'E',
+            templateUrl: 'directives/newFeatures/newFeatures.template.html',
+            scope: {},
+            controllerAs: 'vm',
 
-    function controller($location, config) {
-      var vm = this; // jshint ignore:line
+            controller: controller
+        };
 
-      vm.itemLanguageNotConfigured = itemLanguageNotConfigured;
-      vm.showConfig = showConfig;
-      vm.setDefaultItemLanguage = setDefaultItemLanguage;
+        function controller($location, config) {
+            var vm = this; // jshint ignore:line
 
-      function itemLanguageNotConfigured() {
-        return !config.isSet('itemLanguage');
-      }
+            vm.itemLanguageNotConfigured = itemLanguageNotConfigured;
+            vm.showConfig = showConfig;
+            vm.setDefaultItemLanguage = setDefaultItemLanguage;
 
-      function showConfig() {
-        $location.path('/config');
-      }
+            function itemLanguageNotConfigured() {
+                return !config.isSet('itemLanguage');
+            }
 
-      function setDefaultItemLanguage() {
-        config.setItem('itemLanguage', 'en_GB');
-      }
+            function showConfig() {
+                $location.path('/config');
+            }
+
+            function setDefaultItemLanguage() {
+                config.setItem('itemLanguage', 'en_GB');
+            }
+        }
     }
-  }
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').factory('config', config);
+
+    var localStorageKey = 'config';
+    var _config = JSON.parse(localStorage.getItem(localStorageKey)) || {};
+
+    function config(configUpdate) {
+        var service = {
+            getItem: getItem,
+            setItem: setItem,
+            isSet: isSet,
+            getCompleteConfig: getCompleteConfig,
+            setCompleteConfigReloadRequired: setCompleteConfigReloadRequired
+        };
+        configUpdate(service);
+        return service;
+
+        function getItem(itemKey, defaultValue) {
+            return _config[itemKey] || defaultValue;
+        }
+
+        function setItem(itemKey, value) {
+            _config[itemKey] = value;
+            save();
+        }
+
+        function isSet(itemKey) {
+            return !_.isUndefined(_config[itemKey]);
+        }
+
+        function save() {
+            localStorage.setItem(localStorageKey, JSON.stringify(_config));
+        }
+
+        function getCompleteConfig() {
+            return _config;
+        }
+
+        function setCompleteConfigReloadRequired(c) {
+            _config = c;
+            save();
+        }
+    }
+    config.$inject = ["configUpdate"];
+})();
+
+// TODO: page to manually edit/delete all config values
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').factory('configUpdate', configUpdate);
+
+    var config;
+
+    function configUpdate() {
+        return update;
+
+        function update(c) {
+            config = c;
+            moveToConfig('aboutSeen');
+            moveToConfig('filterOverAll');
+            moveToConfig('onlyCubable');
+            moveToConfig('hideCubed');
+            moveToConfig('currentClass');
+            moveToConfig('allColumns', JSON.parse);
+            moveToConfig('allGameModes', JSON.parse);
+            moveToConfig('currentGameMode');
+            moveToConfig('itemCategory');
+            moveToConfig('allSeasons', JSON.parse);
+            moveToConfig('currentSeason');
+
+            removeFromLocalStorage('armor_backup');
+            removeFromLocalStorage('jewls_backup');
+            removeFromLocalStorage('weapons_backup');
+            removeFromLocalStorage('disclaimerRead');
+            removeFromLocalStorage('section');
+            removeFromLocalStorage('showOptions');
+        }
+
+        function moveToConfig(key) {
+            var convert = arguments.length <= 1 || arguments[1] === undefined ? identity : arguments[1];
+
+            if (localStorage.getItem(key)) {
+                var value = localStorage.getItem(key);
+                config.setItem(key, convert(value));
+                localStorage.removeItem(key);
+            }
+        }
+
+        function identity(v) {
+            return v;
+        }
+
+        function removeFromLocalStorage(key) {
+            localStorage.removeItem(key);
+        }
+    }
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').factory('locales', locales);
+
+    var itemLanguageKey = 'itemLanguage';
+
+    function locales(config) {
+        return {
+            all: all,
+            currentItemLanguage: currentItemLanguage, // TODO: rename to locale
+            setItemLanguageById: setItemLanguageById
+        };
+
+        function currentItemLanguage() {
+            var id = config.getItem(itemLanguageKey, 'en_GB');
+            return _.find(allLocales, function (l) {
+                return l.id === id;
+            });
+        }
+
+        function all() {
+            return allLocales;
+        }
+
+        function setItemLanguageById(id) {
+            config.setItem(itemLanguageKey, id);
+        }
+    }
+    locales.$inject = ["config"];
+
+    var allLocales = [{
+        id: "en_GB",
+        name: "English",
+        short: 'en',
+        region: 'eu'
+    }, {
+        id: "de_DE",
+        name: "German",
+        short: 'de',
+        region: 'eu'
+    }, {
+        id: "es_ES",
+        name: "Spanish",
+        short: 'es',
+        region: 'eu'
+    }, {
+        id: "fr_FR",
+        name: "French",
+        short: 'fr',
+        region: 'eu'
+    }, {
+        id: "it_IT",
+        name: "Italian",
+        short: 'it',
+        region: 'eu'
+    }, {
+        id: "pl_PL",
+        name: "Polish",
+        short: 'pl',
+        region: 'eu'
+    }, {
+        id: "pt_PT",
+        name: "Portuguese",
+        short: 'pt',
+        region: 'eu'
+    }, {
+        id: "ru_RU",
+        name: "Russian",
+        short: 'ru',
+        region: 'eu'
+    }, {
+        id: "kr_KR",
+        name: "Korean (South Korea)",
+        short: 'kr',
+        region: 'kr'
+    }, {
+        id: "sh_TW",
+        name: "Traditional Chinese",
+        short: 'tw',
+        region: 'tw'
+    }];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').factory('itemTracking', itemTracking);
+
+    var key = 'itemTracking';
+
+    function itemTracking($timeout, upgradeDataStructureBeforeItemLoad, itemTrackingUpgrade) {
+        var tracking;
+        var notifyTimer;
+        return {
+            get: get,
+            save: save,
+            setCompleteTrackingReloadRequired: setCompleteTrackingReloadRequired
+        };
+
+        function get() {
+            if (!tracking) {
+                load();
+            }
+            return tracking;
+        }
+        function load() {
+            upgradeDataStructureBeforeItemLoad();
+            tracking = JSON.parse(localStorage.getItem(key)) || {};
+            itemTrackingUpgrade(tracking, saveWithoutToastr);
+        }
+
+        function saveWithoutToastr() {
+            localStorage.setItem(key, JSON.stringify(tracking));
+        }
+
+        function save() {
+            notifySave();
+            saveWithoutToastr();
+        }
+
+        function notifySave() {
+            $timeout.cancel(notifyTimer);
+            notifyTimer = $timeout(function () {
+                toastr.success('Items saved', { timeOut: 1000 });
+            }, 1000);
+        }
+        function setCompleteTrackingReloadRequired(t) {
+            tracking = t;
+            saveWithoutToastr();
+        }
+    }
+    itemTracking.$inject = ["$timeout", "upgradeDataStructureBeforeItemLoad", "itemTrackingUpgrade"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').factory('itemTrackingUpgrade', itemTrackingUpgrade);
+
+    var tracking;
+    var saveFn;
+    var configKey = 'itemTrackingVersion';
+
+    function itemTrackingUpgrade(config, itemTrackingUpgrade_001, //eslint-disable-line camelcase
+    itemTrackingUpgrade_002) {
+        //eslint-disable-line camelcase
+        return function (t, s) {
+            tracking = t;
+            saveFn = s;
+            runUpdates();
+        };
+
+        function runUpdates() {
+            runUpdate(1, itemTrackingUpgrade_001);
+            runUpdate(2, itemTrackingUpgrade_002);
+        }
+
+        function runUpdate(version, fn) {
+            if (currentVersion() < version) {
+                console.log('running itemTracking upgrade ' + version);
+                fn(tracking, saveFn);
+                updateCurrentVersion(version);
+            } else {
+                console.log('skipping itemTracking upgrade ' + version);
+            }
+        }
+
+        function currentVersion() {
+            return Number(config.getItem(configKey, 0));
+        }
+
+        function updateCurrentVersion(version) {
+            config.setItem(configKey, version);
+        }
+    }
+    itemTrackingUpgrade.$inject = ["config", "itemTrackingUpgrade_001", "itemTrackingUpgrade_002"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').factory('itemTrackingUpgrade_001', removeDataForDuplicateIdsWithContent);
+
+    function removeDataForDuplicateIdsWithContent(itemCategory) {
+        var tracking;
+        var save;
+        return function (trackingData, saveFn) {
+            tracking = trackingData;
+            save = saveFn;
+            removeDuplicateItemsIds();
+        };
+
+        function removeDuplicateItemsIds() {
+            var hasBadData = _.chain(tracking).filter(itemHasBadId).filter(itemHasDataStored).value().length > 0;
+
+            if (hasBadData) {
+                notifyForBadData();
+                removeBadData();
+                save();
+            }
+        }
+
+        function notifyForBadData() {
+            itemCategory.set(25);
+            toastr.error('You had items stored that conflicted with other items. Please check the displayed list of items.', 'Data loss detected', { timeOut: 0 });
+        }
+
+        function removeBadData() {
+            _.forEach([1016, 1026, 1036, 1046, 1056, 1066, 1076, 1086, 1096, 1106], function (id) {
+                delete tracking[id];
+            });
+        }
+
+        //noinspection JSUnusedLocalSymbols
+        function itemHasBadId(item, key) {
+            switch (key) {
+                case "1016":
+                case "1026":
+                case "1036":
+                case "1046":
+                case "1056":
+                case "1066":
+                case "1076":
+                case "1086":
+                case "1096":
+                case "1106":
+                    return true;
+                default:
+                    return false;
+            }
+        }
+
+        function itemHasDataStored(item) {
+            var s = item.hasOwnProperty('Softcore');
+            var h = item.hasOwnProperty('Hardcore');
+            return s || h;
+        }
+    }
+    removeDataForDuplicateIdsWithContent.$inject = ["itemCategory"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').factory('itemTrackingUpgrade_002', removeEntriesForDuplicateIds);
+
+    function removeEntriesForDuplicateIds() {
+        return function (tracking, save) {
+            removeBadData(tracking);
+            save();
+        };
+
+        function removeBadData(tracking) {
+            _.forEach([1016, 1026, 1036, 1046, 1056, 1066, 1076, 1086, 1096, 1106], function (id) {
+                delete tracking[id];
+            });
+        }
+    }
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').factory('upgradeDataStructureBeforeItemLoad', upgradeDataStructureBeforeItemLoad);
+
+    var key = 'itemTracking';
+
+    function upgradeDataStructureBeforeItemLoad() {
+        var tracking;
+        return function () {
+            var hasOldSectionData = !!localStorage.getItem('armor') || !!localStorage.getItem('weapons') || !!localStorage.getItem('jewelry');
+            var hasTrackingContainer = !!localStorage.getItem(key);
+
+            if (hasOldSectionData && !hasTrackingContainer) {
+                var armor = JSON.parse(localStorage.getItem('armor'));
+                var weapons = JSON.parse(localStorage.getItem('weapons'));
+                var jewls = JSON.parse(localStorage.getItem('jewelry'));
+                tracking = _.defaults({}, armor, weapons, jewls);
+                save();
+                console.log("upgradedFromCubeSectionsToOneTrackingContainer");
+
+                localStorage.setItem('armor_backup', JSON.stringify(armor));
+                localStorage.setItem('weapons_backup', JSON.stringify(weapons));
+                localStorage.setItem('jewls_backup', JSON.stringify(jewls));
+
+                localStorage.removeItem('armor');
+                localStorage.removeItem('weapons');
+                localStorage.removeItem('jewelry');
+            }
+        };
+
+        function save() {
+            localStorage.setItem(key, JSON.stringify(tracking));
+        }
+    }
 })();
 'use strict';
 
@@ -1207,413 +1616,5 @@
         }
     }
     ItemsController.$inject = ["$scope", "items", "itemTracking", "isItemVisibleForCategory", "isItemVisibleForClass", "gameModes", "seasons", "columns", "itemCategory", "constants", "isEndGame", "locales", "config"];
-})();
-'use strict';
-
-(function () {
-  'use strict';
-
-  angular.module('d3-item-manager').factory('config', config);
-
-  var localStorageKey = 'config';
-  var _config = JSON.parse(localStorage.getItem(localStorageKey)) || {};
-
-  function config(configUpdate) {
-    var service = {
-      getItem: getItem,
-      setItem: setItem,
-      isSet: isSet,
-      getCompleteConfig: getCompleteConfig,
-      setCompleteConfigReloadRequired: setCompleteConfigReloadRequired
-    };
-    configUpdate(service);
-    return service;
-
-    function getItem(itemKey, defaultValue) {
-      return _config[itemKey] || defaultValue;
-    }
-
-    function setItem(itemKey, value) {
-      _config[itemKey] = value;
-      save();
-    }
-
-    function isSet(itemKey) {
-      return !_.isUndefined(_config[itemKey]);
-    }
-
-    function get() {
-      return _config;
-    }
-
-    function save() {
-      localStorage.setItem(localStorageKey, JSON.stringify(_config));
-    }
-    function getCompleteConfig() {
-      return _config;
-    }
-    function setCompleteConfigReloadRequired(c) {
-      _config = c;
-      save();
-    }
-  }
-  config.$inject = ["configUpdate"];
-})();
-
-// TODO: page to manually edit/delete all config values
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').factory('configUpdate', configUpdate);
-
-    var config;
-
-    function configUpdate() {
-        return update;
-
-        function update(c) {
-            config = c;
-            moveToConfig('aboutSeen');
-            moveToConfig('filterOverAll');
-            moveToConfig('onlyCubable');
-            moveToConfig('hideCubed');
-            moveToConfig('currentClass');
-            moveToConfig('allColumns', JSON.parse);
-            moveToConfig('allGameModes', JSON.parse);
-            moveToConfig('currentGameMode');
-            moveToConfig('itemCategory');
-            moveToConfig('allSeasons', JSON.parse);
-            moveToConfig('currentSeason');
-
-            removeFromLocalStorage('armor_backup');
-            removeFromLocalStorage('jewls_backup');
-            removeFromLocalStorage('weapons_backup');
-            removeFromLocalStorage('disclaimerRead');
-            removeFromLocalStorage('section');
-            removeFromLocalStorage('showOptions');
-        }
-
-        function moveToConfig(key) {
-            var convert = arguments.length <= 1 || arguments[1] === undefined ? identity : arguments[1];
-
-            if (localStorage.getItem(key)) {
-                var value = localStorage.getItem(key);
-                config.setItem(key, convert(value));
-                localStorage.removeItem(key);
-            }
-        }
-
-        function identity(v) {
-            return v;
-        }
-
-        function removeFromLocalStorage(key) {
-            localStorage.removeItem(key);
-        }
-    }
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').factory('locales', locales);
-
-    var itemLanguageKey = 'itemLanguage';
-
-    function locales(config) {
-        return {
-            all: all,
-            currentItemLanguage: currentItemLanguage, // TODO: rename to locale
-            setItemLanguageById: setItemLanguageById
-        };
-
-        function currentItemLanguage() {
-            var id = config.getItem(itemLanguageKey, 'en_GB');
-            return _.find(allLocales, function (l) {
-                return l.id === id;
-            });
-        }
-
-        function all() {
-            return allLocales;
-        }
-
-        function setItemLanguageById(id) {
-            config.setItem(itemLanguageKey, id);
-        }
-    }
-    locales.$inject = ["config"];
-
-    var allLocales = [{
-        id: "en_GB",
-        name: "English",
-        short: 'en',
-        region: 'eu'
-    }, {
-        id: "de_DE",
-        name: "German",
-        short: 'de',
-        region: 'eu'
-    }, {
-        id: "es_ES",
-        name: "Spanish",
-        short: 'es',
-        region: 'eu'
-    }, {
-        id: "fr_FR",
-        name: "French",
-        short: 'fr',
-        region: 'eu'
-    }, {
-        id: "it_IT",
-        name: "Italian",
-        short: 'it',
-        region: 'eu'
-    }, {
-        id: "pl_PL",
-        name: "Polish",
-        short: 'pl',
-        region: 'eu'
-    }, {
-        id: "pt_PT",
-        name: "Portuguese",
-        short: 'pt',
-        region: 'eu'
-    }, {
-        id: "ru_RU",
-        name: "Russian",
-        short: 'ru',
-        region: 'eu'
-    }, {
-        id: "kr_KR",
-        name: "Korean (South Korea)",
-        short: 'kr',
-        region: 'kr'
-    }, {
-        id: "sh_TW",
-        name: "Traditional Chinese",
-        short: 'tw',
-        region: 'tw'
-    }];
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').factory('itemTracking', itemTracking);
-
-    var key = 'itemTracking';
-
-    function itemTracking($timeout, upgradeDataStructureBeforeItemLoad, itemTrackingUpgrade) {
-        var tracking;
-        var notifyTimer;
-        return {
-            get: get,
-            save: save,
-            setCompleteTrackingReloadRequired: setCompleteTrackingReloadRequired
-        };
-
-        function get() {
-            if (!tracking) {
-                load();
-            }
-            return tracking;
-        }
-        function load() {
-            upgradeDataStructureBeforeItemLoad();
-            tracking = JSON.parse(localStorage.getItem(key)) || {};
-            itemTrackingUpgrade(tracking, saveWithoutToastr);
-        }
-
-        function saveWithoutToastr() {
-            localStorage.setItem(key, JSON.stringify(tracking));
-        }
-
-        function save() {
-            notifySave();
-            saveWithoutToastr();
-        }
-
-        function notifySave() {
-            $timeout.cancel(notifyTimer);
-            notifyTimer = $timeout(function () {
-                toastr.success('Items saved', { timeOut: 1000 });
-            }, 1000);
-        }
-        function setCompleteTrackingReloadRequired(t) {
-            tracking = t;
-            saveWithoutToastr();
-        }
-    }
-    itemTracking.$inject = ["$timeout", "upgradeDataStructureBeforeItemLoad", "itemTrackingUpgrade"];
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').factory('itemTrackingUpgrade', itemTrackingUpgrade);
-
-    var tracking;
-    var saveFn;
-    var configKey = 'itemTrackingVersion';
-
-    function itemTrackingUpgrade(config, itemTrackingUpgrade_001, itemTrackingUpgrade_002) {
-        return function (t, s) {
-            tracking = t;
-            saveFn = s;
-            runUpdates();
-        };
-
-        function runUpdates() {
-            runUpdate(1, itemTrackingUpgrade_001);
-            runUpdate(2, itemTrackingUpgrade_002);
-        }
-
-        function runUpdate(version, fn) {
-            if (currentVersion() < version) {
-                console.log('running itemTracking upgrade ' + version);
-                fn(tracking, saveFn);
-                updateCurrentVersion(version);
-            } else {
-                console.log('skipping itemTracking upgrade ' + version);
-            }
-        }
-
-        function currentVersion() {
-            return Number(config.getItem(configKey, 0));
-        }
-
-        function updateCurrentVersion(version) {
-            config.setItem(configKey, version);
-        }
-    }
-    itemTrackingUpgrade.$inject = ["config", "itemTrackingUpgrade_001", "itemTrackingUpgrade_002"];
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').factory('itemTrackingUpgrade_001', removeDataForDuplicateIdsWithContent);
-
-    function removeDataForDuplicateIdsWithContent(itemCategory) {
-        var tracking;
-        var save;
-        return function (trackingData, saveFn) {
-            tracking = trackingData;
-            save = saveFn;
-            removeDuplicateItemsIds();
-        };
-
-        function removeDuplicateItemsIds() {
-            var hasBadData = _.chain(tracking).filter(itemHasBadId).filter(itemHasDataStored).value().length > 0;
-
-            if (hasBadData) {
-                notifyForBadData();
-                removeBadData();
-                save();
-            }
-        }
-
-        function notifyForBadData() {
-            itemCategory.set(25);
-            toastr.error('You had items stored that conflicted with other items. Please check the displayed list of items.', 'Data loss detected', { timeOut: 0 });
-        }
-
-        function removeBadData() {
-            _.forEach([1016, 1026, 1036, 1046, 1056, 1066, 1076, 1086, 1096, 1106], function (id) {
-                delete tracking[id];
-            });
-        }
-
-        //noinspection JSUnusedLocalSymbols
-        function itemHasBadId(item, key) {
-            switch (key) {
-                case "1016":
-                case "1026":
-                case "1036":
-                case "1046":
-                case "1056":
-                case "1066":
-                case "1076":
-                case "1086":
-                case "1096":
-                case "1106":
-                    return true;
-                default:
-                    return false;
-            }
-        }
-
-        function itemHasDataStored(item) {
-            var s = item.hasOwnProperty('Softcore');
-            var h = item.hasOwnProperty('Hardcore');
-            return s || h;
-        }
-    }
-    removeDataForDuplicateIdsWithContent.$inject = ["itemCategory"];
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').factory('itemTrackingUpgrade_002', removeEntriesForDuplicateIds);
-
-    function removeEntriesForDuplicateIds() {
-        return function (tracking, save) {
-            removeBadData(tracking);
-            save();
-        };
-
-        function removeBadData(tracking) {
-            _.forEach([1016, 1026, 1036, 1046, 1056, 1066, 1076, 1086, 1096, 1106], function (id) {
-                delete tracking[id];
-            });
-        }
-    }
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').factory('upgradeDataStructureBeforeItemLoad', upgradeDataStructureBeforeItemLoad);
-
-    var key = 'itemTracking';
-
-    function upgradeDataStructureBeforeItemLoad() {
-        var tracking;
-        return function () {
-            var hasOldSectionData = !!localStorage.getItem('armor') || !!localStorage.getItem('weapons') || !!localStorage.getItem('jewelry');
-            var hasTrackingContainer = !!localStorage.getItem(key);
-
-            if (hasOldSectionData && !hasTrackingContainer) {
-                var armor = JSON.parse(localStorage.getItem('armor'));
-                var weapons = JSON.parse(localStorage.getItem('weapons'));
-                var jewls = JSON.parse(localStorage.getItem('jewelry'));
-                tracking = _.defaults({}, armor, weapons, jewls);
-                save();
-                console.log("upgradedFromCubeSectionsToOneTrackingContainer");
-
-                localStorage.setItem('armor_backup', JSON.stringify(armor));
-                localStorage.setItem('weapons_backup', JSON.stringify(weapons));
-                localStorage.setItem('jewls_backup', JSON.stringify(jewls));
-
-                localStorage.removeItem('armor');
-                localStorage.removeItem('weapons');
-                localStorage.removeItem('jewelry');
-            }
-        };
-
-        function save() {
-            localStorage.setItem(key, JSON.stringify(tracking));
-        }
-    }
 })();
 //# sourceMappingURL=app.js.map
