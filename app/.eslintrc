@@ -1,0 +1,7 @@
+{
+    "rules": {
+        "strict": [2, "function"]
+   },
+    "globals": {
+        "_": false
+    }}

@@ -1,17 +1,20 @@
 {
   "name": "d3-item-manager",
-  "version": "1.5.2",
+  "version": "1.6.0",
   "description": "Item manager for diablo 3",
   "author": "palortoff",
   "license": "MIT",
   "private": true,
   "devDependencies": {
     "bower": "^1.5.3",
-    "gulp": "^3.9.0",
+    "eslint": "^1.7.3",
+    "eslint-format-with-full-path": "0.0.1",
+    "gulp": "gulpjs/gulp#4.0",
     "gulp-babel": "^5.2.1",
     "gulp-batch": "^1.0.5",
     "gulp-concat": "^2.6.0",
     "gulp-connect": "^2.2.0",
+    "gulp-eslint": "^1.0.0",
     "gulp-less": "^3.0.3",
     "gulp-ng-annotate": "^1.1.0",
     "gulp-sourcemaps": "^1.5.2",
@@ -19,7 +22,6 @@
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.5",
     "jasmine-core": "^2.3.4",
-    "jshint": "^2.8.0",
     "karma": "^0.13.10",
     "karma-babel-preprocessor": "^5.2.2",
     "karma-chrome-launcher": "^0.2.1",
@@ -51,6 +53,15 @@
     "deploy_7": "git push",
     "deploy_8": "git subtree push --prefix dist origin gh-pages",
     "deploy_9": "git checkout master",
-    "test": "jshint app && karma start"
+    "test": "gulp eslint && karma start"
+  },
+  "dependencies": {
+    "chunking-streams": "0.0.8",
+    "json-diff": "^0.3.1",
+    "lodash": "^3.10.1",
+    "q": "^1.4.1",
+    "q-io": "^1.13.2",
+    "request": "^2.67.0",
+    "rx": "^4.0.7"
   }
 }

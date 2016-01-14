@@ -6,6 +6,12 @@
       "app/**/*.js",
       "!app/**/*test.js"
     ],
+    "eslint":[
+      "**/*.js",
+      "!bower_components/**/*.js",
+      "!node_modules/**/*.js",
+      "!dist/**/*.js"
+    ],
     "html": [
       "app/**/*.html"
     ],

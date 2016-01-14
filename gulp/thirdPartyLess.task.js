@@ -6,7 +6,6 @@ var concat = require('gulp-concat');
 var less = require('gulp-less');
 var sourceMaps = require('gulp-sourcemaps');
 
-
 function task(){
     return gulp.src(config.thirdParty.less)
         .pipe(sourceMaps.init())

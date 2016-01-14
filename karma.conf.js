@@ -22,11 +22,11 @@ module.exports = function(config) {
         },
         browsers:                 ['Chrome_Mini'],
         customLaunchers:          {
-            Chrome_Mini:      {
+            Chrome_Mini:      { //eslint-disable-line camelcase
                 base:  'Chrome',
                 flags: ['--window-size=400,200', '--window-position=-9999,0']
             },
-            Chrome_travis_ci: {
+            Chrome_travis_ci: { //eslint-disable-line camelcase
                 base:  'Chrome',
                 flags: ['--no-sandbox']
             }

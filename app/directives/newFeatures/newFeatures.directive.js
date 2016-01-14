@@ -1,35 +1,36 @@
 (function() {
-  'use strict';
+    'use strict';
 
-  angular.module('d3-item-manager').directive('newFeatures', newFeatures);
+    angular.module('d3-item-manager').directive('newFeatures', newFeatures);
 
-  function newFeatures() {
-    return {
-      restrict:     'E',
-      templateUrl:  'directives/newFeatures/newFeatures.template.html',
-      scope:        {},
-                    controller,
-      controllerAs: 'vm'
-    };
+    function newFeatures() {
+        return {
+            restrict:     'E',
+            templateUrl:  'directives/newFeatures/newFeatures.template.html',
+            scope:        {},
+            controllerAs: 'vm',
 
-    function controller($location, config) {
-      var vm = this; // jshint ignore:line
+            controller
+        };
 
-      vm.itemLanguageNotConfigured = itemLanguageNotConfigured;
-      vm.showConfig = showConfig;
-      vm.setDefaultItemLanguage = setDefaultItemLanguage;
+        function controller($location, config) {
+            var vm = this; // jshint ignore:line
 
-      function itemLanguageNotConfigured() {
-        return !config.isSet('itemLanguage');
-      }
+            vm.itemLanguageNotConfigured = itemLanguageNotConfigured;
+            vm.showConfig = showConfig;
+            vm.setDefaultItemLanguage = setDefaultItemLanguage;
 
-      function showConfig() {
-        $location.path('/config');
-      }
+            function itemLanguageNotConfigured() {
+                return !config.isSet('itemLanguage');
+            }
 
-      function setDefaultItemLanguage() {
-        config.setItem('itemLanguage', 'en_GB');
-      }
+            function showConfig() {
+                $location.path('/config');
+            }
+
+            function setDefaultItemLanguage() {
+                config.setItem('itemLanguage', 'en_GB');
+            }
+        }
     }
-  }
 })();

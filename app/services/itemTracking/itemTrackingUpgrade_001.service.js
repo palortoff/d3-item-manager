@@ -6,7 +6,7 @@
     function removeDataForDuplicateIdsWithContent(itemCategory) {
         var tracking;
         var save;
-        return function(trackingData, saveFn){
+        return function(trackingData, saveFn) {
             tracking = trackingData;
             save = saveFn;
             removeDuplicateItemsIds();
@@ -32,7 +32,7 @@
         }
 
         function removeBadData() {
-            _.forEach([1016,1026,1036,1046,1056,1066,1076,1086,1096,1106], function(id){delete tracking[id];});
+            _.forEach([1016, 1026, 1036, 1046, 1056, 1066, 1076, 1086, 1096, 1106], function(id) {delete tracking[id];});
         }
 
         //noinspection JSUnusedLocalSymbols

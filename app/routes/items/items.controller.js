@@ -35,12 +35,9 @@
         }
 
         function loadItems() {
-            items.load().
-                then(function(data) {
-                    vm.items = data;
-                }).
-                then(itemTracking.get).
-                then(addTracking);
+            items.load().then(function(data) {
+                vm.items = data;
+            }).then(itemTracking.get).then(addTracking);
         }
 
         function addTracking(tracking) {
@@ -132,11 +129,11 @@
         function persist(key) {
             vm[key] = (config.getItem(key) === true) || false;
 
-            $scope.$watch(getKey, function(){
+            $scope.$watch(getKey, function() {
                 config.setItem(key, vm[key]);
             });
 
-            function getKey(){
+            function getKey() {
                 return vm[key];
             }
         }

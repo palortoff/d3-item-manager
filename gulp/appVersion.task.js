@@ -8,15 +8,15 @@ var gutil = require('gulp-util');
 module.exports = task;
 
 function task(){
-    return string_src("version.json", JSON.stringify({version: packageJson.version},null, 2))
-        .pipe(gulp.dest(config.buildTarget))
+    return stringSrc("version.json", JSON.stringify({version: packageJson.version},null, 2))
+        .pipe(gulp.dest(config.buildTarget));
 }
 
-function string_src(filename, string) {
-    var src = require('stream').Readable({ objectMode: true });
+function stringSrc(filename, string) {
+    var src = require('stream').Readable({ objectMode: true }); //eslint-disable-line new-cap
     src._read = function () {
         this.push(new gutil.File({ cwd: "", base: "", path: filename, contents: new Buffer(string) }));
-        this.push(null)
+        this.push(null);
     };
     return src;
 }

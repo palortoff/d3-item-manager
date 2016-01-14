@@ -4,3 +4,6 @@ bower_components
 *.orig
 playground*
 *.log
+temp
+apiKey.json
+itemCache
