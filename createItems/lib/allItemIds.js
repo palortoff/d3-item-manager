@@ -26,7 +26,7 @@ function allItemIds(options) {
 
 function allItemsFromTempFile() {
     console.log('fetching all items from temp file...');
-    return rx.Observable.fromPromise(q.when(require('../../../d3-item-cache/allItems.json')));
+    return rx.Observable.fromPromise(q.when(_.unique(require('../../../d3-item-cache/allItems.json'))));
 }
 
 function allItemsFromWeb() {

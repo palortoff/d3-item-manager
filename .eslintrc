@@ -130,7 +130,6 @@
     },
     "globals": {
         "angular": false,
-        "_": false,
         "inject": false,
         "bard": false,
         "toastr": false,

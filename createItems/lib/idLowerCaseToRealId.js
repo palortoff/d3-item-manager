@@ -11,8 +11,10 @@ function idLowerCaseToRealId(string) {
     if (string.match(/P2_handXbow_norm_unique_03/i)) {return ('P2_handXbow_norm_unique_03');}
     if (string.match(/P1_fistWeapon_norm_unique_01/i)) {return ('P1_fistWeapon_norm_unique_01');}
     if (string.match(/P1_fistWeapon_norm_unique_02/i)) {return ('P1_fistWeapon_norm_unique_02');}
+    if (string.match(/P4_fistWeapon_norm_unique_02/i)) {return ('P4_fistWeapon_norm_unique_02');}
     if (string.match(/P2_mojo_norm_unique_02/i)) {return ('P2_mojo_norm_unique_02');}
     if (string.match(/P1_flail1H_norm_unique_01/i)) {return ('P1_flail1H_norm_unique_01');}
+    if (string.match(/P4_flail2h_norm_unique_01/i)) {return ('P4_flail2H_norm_unique_01');}
 
     let matches = string.match(/^HandXBow_(\d+)$/im);
     if (matches) {
