@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/palortoff/d3-item-manager.svg?branch=master)](https://travis-ci.org/palortoff/d3-item-manager)
 [![devDependency Status](https://david-dm.org/palortoff/d3-item-manager/dev-status.svg)](https://david-dm.org/palortoff/d3-item-manager#info=devDependencies)
+[![dependency Status](https://david-dm.org/palortoff/d3-item-manager.svg)](https://david-dm.org/palortoff/d3-item-manager)
 [![ZenHub] (https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)] (https://zenhub.io)
 
 Simple web app to manage your Diablo 3 items.
