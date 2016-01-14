@@ -12,13 +12,8 @@ let lastId = _.chain(managerItems)
     .value();
 
 function addBasicManagerItem(apiItem) {
-    // TODO: not filter!
-    // use find, first by id, then by name
-    // otherwise hellfire rings (same name) get messed up!
-    apiItem.managerItem = _.chain(managerItems)
-        .filter((managerItem) => managerItem.blizId === apiItem.blizzId || managerItem.name === apiItem.data.name)
-        .first()
-        .value();
+    apiItem.managerItem = _.find(managerItems, (managerItem) => managerItem.blizId === apiItem.blizzId) ||
+    _.find(managerItems, (managerItem) => managerItem.name === apiItem.data.name);
 
     if (_.isUndefined(apiItem.managerItem) || _.isUndefined(apiItem.managerItem.id)) {
         let nextId = lastId + 1;
