@@ -245,59 +245,6 @@
 (function () {
     'use strict';
 
-    angular.module('download-data', []).directive('downloadData', downloadData);
-
-    var idAppendix = 0;
-
-    function downloadData($q) {
-        return {
-            restrict: 'EA',
-            scope: {
-                getData: '&ddGetter',
-                json: '@ddJson',
-                encoding: '@ddEncoding',
-                type: '@ddType',
-                filename: '=ddFilename'
-            },
-            link: link
-        };
-
-        function link(scope, element) {
-            element.on('click', createAndDownload);
-
-            function createAndDownload() {
-                $q.when(scope.getData(), function (data) {
-
-                    var type = scope.type;
-                    if (scope.json === "true") {
-                        data = JSON.stringify(data, null, 2);
-                        type = type || 'application/json';
-                    }
-                    type = type || 'text/plain';
-                    if (scope.encoding === 'utf8') {
-                        data = '﻿' + data;
-                    }
-
-                    var blob = new Blob([data], { type: type });
-                    var url = URL.createObjectURL(blob);
-                    var elementId = 'ngDataDownload' + idAppendix++;
-
-                    var newElem = angular.element('<a ' + 'style="display:none" ' + 'id="' + elementId + '" ' + 'href="' + url + '" download="' + scope.filename + '">' + 'test' + '</a>');
-
-                    angular.element('body').append(newElem);
-                    document.getElementById(elementId).click();
-                    newElem.remove();
-                });
-            }
-        }
-    }
-    downloadData.$inject = ["$q"];
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
     angular.module('d3-item-manager').directive('filestyle', filestyle);
 
     // from https://github.com/markusslima/bootstrap-filestyle/issues/36
@@ -354,6 +301,59 @@
         };
     }
     onLoadedFile.$inject = ["$parse"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('download-data', []).directive('downloadData', downloadData);
+
+    var idAppendix = 0;
+
+    function downloadData($q) {
+        return {
+            restrict: 'EA',
+            scope: {
+                getData: '&ddGetter',
+                json: '@ddJson',
+                encoding: '@ddEncoding',
+                type: '@ddType',
+                filename: '=ddFilename'
+            },
+            link: link
+        };
+
+        function link(scope, element) {
+            element.on('click', createAndDownload);
+
+            function createAndDownload() {
+                $q.when(scope.getData(), function (data) {
+
+                    var type = scope.type;
+                    if (scope.json === "true") {
+                        data = JSON.stringify(data, null, 2);
+                        type = type || 'application/json';
+                    }
+                    type = type || 'text/plain';
+                    if (scope.encoding === 'utf8') {
+                        data = '﻿' + data;
+                    }
+
+                    var blob = new Blob([data], { type: type });
+                    var url = URL.createObjectURL(blob);
+                    var elementId = 'ngDataDownload' + idAppendix++;
+
+                    var newElem = angular.element('<a ' + 'style="display:none" ' + 'id="' + elementId + '" ' + 'href="' + url + '" download="' + scope.filename + '">' + 'test' + '</a>');
+
+                    angular.element('body').append(newElem);
+                    document.getElementById(elementId).click();
+                    newElem.remove();
+                });
+            }
+        }
+    }
+    downloadData.$inject = ["$q"];
 })();
 'use strict';
 
@@ -1019,47 +1019,6 @@
 (function () {
     'use strict';
 
-    angular.module('d3-item-manager').controller('ConfigController', ConfigController);
-
-    function ConfigController($location, gameModes, columns, itemCategory, locales, backup, restore, exportService) {
-        var vm = this;
-        vm.gameModes = gameModes;
-        vm.addNewGameMode = addNewGameMode;
-        vm.columns = columns;
-        vm.addNewColumn = addNewColumn;
-        vm.locales = locales;
-        vm.dismiss = dismiss;
-        vm.showCategory = showCategory;
-        vm.backupData = backup.data;
-        vm.triggerRestore = restore.trigger;
-        vm.exportData = exportService.data;
-
-        function addNewGameMode() {
-            gameModes.add(vm.newGameMode);
-            vm.newGameMode = '';
-        }
-
-        function addNewColumn() {
-            columns.add(vm.newColumn);
-            vm.newColumn = '';
-        }
-
-        function dismiss() {
-            $location.path('/');
-        }
-
-        function showCategory(id) {
-            itemCategory.set(id);
-            $location.path('/items');
-        }
-    }
-    ConfigController.$inject = ["$location", "gameModes", "columns", "itemCategory", "locales", "backup", "restore", "exportService"];
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
     angular.module('d3-item-manager').controller('ItemsController', ItemsController);
 
     function ItemsController($scope, items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, constants, isEndGame, locales, config) {
@@ -1208,6 +1167,47 @@
         }
     }
     ItemsController.$inject = ["$scope", "items", "itemTracking", "isItemVisibleForCategory", "isItemVisibleForClass", "gameModes", "seasons", "columns", "itemCategory", "constants", "isEndGame", "locales", "config"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').controller('ConfigController', ConfigController);
+
+    function ConfigController($location, gameModes, columns, itemCategory, locales, backup, restore, exportService) {
+        var vm = this;
+        vm.gameModes = gameModes;
+        vm.addNewGameMode = addNewGameMode;
+        vm.columns = columns;
+        vm.addNewColumn = addNewColumn;
+        vm.locales = locales;
+        vm.dismiss = dismiss;
+        vm.showCategory = showCategory;
+        vm.backupData = backup.data;
+        vm.triggerRestore = restore.trigger;
+        vm.exportData = exportService.data;
+
+        function addNewGameMode() {
+            gameModes.add(vm.newGameMode);
+            vm.newGameMode = '';
+        }
+
+        function addNewColumn() {
+            columns.add(vm.newColumn);
+            vm.newColumn = '';
+        }
+
+        function dismiss() {
+            $location.path('/');
+        }
+
+        function showCategory(id) {
+            itemCategory.set(id);
+            $location.path('/items');
+        }
+    }
+    ConfigController.$inject = ["$location", "gameModes", "columns", "itemCategory", "locales", "backup", "restore", "exportService"];
 })();
 'use strict';
 
@@ -1396,6 +1396,11 @@
         name: "Traditional Chinese",
         short: 'tw',
         region: 'tw'
+    }, {
+        id: "zh_CN",
+        name: "Simplified Chinese",
+        short: 'cn',
+        region: 'cn'
     }];
 })();
 'use strict';
