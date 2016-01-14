@@ -298,17 +298,6 @@
 (function () {
     'use strict';
 
-    angular.module('d3-item-manager').constant('constants', {
-        githubUrl: 'https://github.com/palortoff/d3-item-manager',
-        gameSeason: 5,
-        aboutVersion: "1"
-    });
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
     angular.module('d3-item-manager').directive('filestyle', filestyle);
 
     // from https://github.com/markusslima/bootstrap-filestyle/issues/36
@@ -365,6 +354,50 @@
         };
     }
     onLoadedFile.$inject = ["$parse"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').constant('constants', {
+        githubUrl: 'https://github.com/palortoff/d3-item-manager',
+        gameSeason: 5,
+        aboutVersion: "1"
+    });
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').config(["$routeProvider", function ($routeProvider) {
+
+        $routeProvider.when('/', {
+            redirectTo: '/items'
+        }).when('/items', {
+            templateUrl: 'routes/items/items.template.html',
+            controller: 'ItemsController',
+            controllerAs: 'vm',
+            resolve: { factory: checkRouting }
+        }).when('/about', {
+            templateUrl: 'routes/about/about.template.html',
+            controller: 'AboutController',
+            controllerAs: 'vm'
+        }).when('/config', {
+            templateUrl: 'routes/config/config.template.html',
+            controller: 'ConfigController',
+            controllerAs: 'vm',
+            resolve: { factory: checkRouting }
+        });
+    }]);
+
+    function checkRouting($location, about) {
+        if (!about.hasBeenSeen()) {
+            $location.path('/about');
+        }
+    }
+    checkRouting.$inject = ["$location", "about"];
 })();
 'use strict';
 
@@ -755,7 +788,7 @@
     // TODO: add non-season to array
 
     function seasons(config) {
-        var _all = config.getItem(keyAll, ['Season 4']);
+        var _all = config.getItem(keyAll, ['Season 4', 'Season 5']);
         var _current = config.getItem(keyCurrent, "Non Season");
 
         return {
@@ -831,39 +864,6 @@
         }
     }
     version.$inject = ["$http"];
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').config(["$routeProvider", function ($routeProvider) {
-
-        $routeProvider.when('/', {
-            redirectTo: '/items'
-        }).when('/items', {
-            templateUrl: 'routes/items/items.template.html',
-            controller: 'ItemsController',
-            controllerAs: 'vm',
-            resolve: { factory: checkRouting }
-        }).when('/about', {
-            templateUrl: 'routes/about/about.template.html',
-            controller: 'AboutController',
-            controllerAs: 'vm'
-        }).when('/config', {
-            templateUrl: 'routes/config/config.template.html',
-            controller: 'ConfigController',
-            controllerAs: 'vm',
-            resolve: { factory: checkRouting }
-        });
-    }]);
-
-    function checkRouting($location, about) {
-        if (!about.hasBeenSeen()) {
-            $location.path('/about');
-        }
-    }
-    checkRouting.$inject = ["$location", "about"];
 })();
 'use strict';
 
@@ -988,6 +988,226 @@
             }
         }
     }
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').controller('AboutController', AboutController);
+
+    var key = 'aboutSeen';
+    function AboutController($location, constants, version, config) {
+        var vm = this;
+        vm.constants = constants;
+        vm.dismiss = dismiss;
+        vm.version = '';
+
+        version.get().then(function (version) {
+            vm.version = version.version;
+        });
+
+        function dismiss() {
+            config.setItem(key, constants.aboutVersion);
+            $location.path('/');
+        }
+    }
+    AboutController.$inject = ["$location", "constants", "version", "config"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').controller('ConfigController', ConfigController);
+
+    function ConfigController($location, gameModes, columns, itemCategory, locales, backup, restore, exportService) {
+        var vm = this;
+        vm.gameModes = gameModes;
+        vm.addNewGameMode = addNewGameMode;
+        vm.columns = columns;
+        vm.addNewColumn = addNewColumn;
+        vm.locales = locales;
+        vm.dismiss = dismiss;
+        vm.showCategory = showCategory;
+        vm.backupData = backup.data;
+        vm.triggerRestore = restore.trigger;
+        vm.exportData = exportService.data;
+
+        function addNewGameMode() {
+            gameModes.add(vm.newGameMode);
+            vm.newGameMode = '';
+        }
+
+        function addNewColumn() {
+            columns.add(vm.newColumn);
+            vm.newColumn = '';
+        }
+
+        function dismiss() {
+            $location.path('/');
+        }
+
+        function showCategory(id) {
+            itemCategory.set(id);
+            $location.path('/items');
+        }
+    }
+    ConfigController.$inject = ["$location", "gameModes", "columns", "itemCategory", "locales", "backup", "restore", "exportService"];
+})();
+'use strict';
+
+(function () {
+    'use strict';
+
+    angular.module('d3-item-manager').controller('ItemsController', ItemsController);
+
+    function ItemsController($scope, items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, constants, isEndGame, locales, config) {
+        var vm = this;
+
+        vm.itemFilter = '';
+        persist('filterOverAll');
+        persist('onlyCubable');
+        persist('hideCubed');
+
+        vm.isVisible = isVisible;
+
+        vm.gameMode = gameModes.current;
+        vm.season = seasons.current;
+        vm.columns = columns;
+        vm.itemCategory = itemCategory;
+        vm.isSeasonal = isSeasonal;
+        vm.bountyTitle = bountyTitle;
+        vm.isBounty = isBounty;
+        vm.isCrafted = isCrafted;
+
+        vm.toggle = toggle;
+        vm.cellClass = cellClass;
+        vm.allColumns = allColumns;
+        vm.items = undefined;
+        vm.link = link;
+
+        init();
+
+        function init() {
+            loadItems();
+        }
+
+        function loadItems() {
+            items.load().then(function (data) {
+                vm.items = data;
+            }).then(itemTracking.get).then(addTracking);
+        }
+
+        function addTracking(tracking) {
+            vm.items.forEach(function (item) {
+                if (!tracking[item.id]) {
+                    tracking[item.id] = {};
+                }
+                item.track = tracking[item.id];
+            });
+        }
+
+        function toggle(item, column) {
+            if (!item.track[vm.gameMode()]) {
+                item.track[vm.gameMode()] = {};
+            }
+            if (!item.track[vm.gameMode()][vm.season()]) {
+                item.track[vm.gameMode()][vm.season()] = {};
+            }
+            item.track[vm.gameMode()][vm.season()][column] = !item.track[vm.gameMode()][vm.season()][column];
+            itemTracking.save();
+        }
+
+        function cellClass(item, column) {
+            return isChecked(item, column) ? 'checked' : '';
+        }
+
+        function isChecked(item, column) {
+            try {
+                return item.track[vm.gameMode()][vm.season()][column];
+            } catch (e) {
+                return false;
+            }
+        }
+
+        function isCubed(item) {
+            return isChecked(item, 'Cubed');
+        }
+
+        function allColumns() {
+            return _.flatten(['Cubed', vm.columns.all()]);
+        }
+
+        function isVisible(item) {
+            if (!isEndGame(item)) {
+                return false;
+            }
+
+            if (vm.filterOverAll && vm.itemFilter.length > 0) {
+                return true;
+            }
+
+            if (vm.onlyCubable && !item.cube) {
+                return false;
+            }
+            if (vm.hideCubed && isCubed(item)) {
+                return false;
+            }
+
+            if (!isItemVisibleForCategory(item)) {
+                return false;
+            }
+
+            return isItemVisibleForClass(item);
+        }
+
+        function isSeasonal(item) {
+            return item.season === constants.gameSeason;
+        }
+
+        function isBounty(item) {
+            return !!item.bounty;
+        }
+
+        function bountyTitle(item) {
+            return isBounty(item) ? 'Act ' + item.bounty.act : '';
+        }
+
+        function isCrafted(item) {
+            return item.crafted;
+        }
+
+        function link(item) {
+            var artisan = '';
+            if (item.crafted) {
+                switch (item.slots[0]) {
+                    case 'neck':
+                    case 'left-finger':
+                    case 'right-finger':
+                        artisan = 'artisan/jeweler/';
+                        break;
+                    default:
+                        artisan = 'artisan/blacksmith/';
+                }
+            }
+            var locale = locales.currentItemLanguage();
+            return 'http://' + locale.region + '.battle.net/d3/' + locale.short + '/' + artisan + item.tooltipParams;
+        }
+
+        function persist(key) {
+            vm[key] = config.getItem(key) === true || false;
+
+            $scope.$watch(getKey, function () {
+                config.setItem(key, vm[key]);
+            });
+
+            function getKey() {
+                return vm[key];
+            }
+        }
+    }
+    ItemsController.$inject = ["$scope", "items", "itemTracking", "isItemVisibleForCategory", "isItemVisibleForClass", "gameModes", "seasons", "columns", "itemCategory", "constants", "isEndGame", "locales", "config"];
 })();
 'use strict';
 
@@ -1396,225 +1616,5 @@
             localStorage.setItem(key, JSON.stringify(tracking));
         }
     }
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').controller('AboutController', AboutController);
-
-    var key = 'aboutSeen';
-    function AboutController($location, constants, version, config) {
-        var vm = this;
-        vm.constants = constants;
-        vm.dismiss = dismiss;
-        vm.version = '';
-
-        version.get().then(function (version) {
-            vm.version = version.version;
-        });
-
-        function dismiss() {
-            config.setItem(key, constants.aboutVersion);
-            $location.path('/');
-        }
-    }
-    AboutController.$inject = ["$location", "constants", "version", "config"];
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').controller('ConfigController', ConfigController);
-
-    function ConfigController($location, gameModes, columns, itemCategory, locales, backup, restore, exportService) {
-        var vm = this;
-        vm.gameModes = gameModes;
-        vm.addNewGameMode = addNewGameMode;
-        vm.columns = columns;
-        vm.addNewColumn = addNewColumn;
-        vm.locales = locales;
-        vm.dismiss = dismiss;
-        vm.showCategory = showCategory;
-        vm.backupData = backup.data;
-        vm.triggerRestore = restore.trigger;
-        vm.exportData = exportService.data;
-
-        function addNewGameMode() {
-            gameModes.add(vm.newGameMode);
-            vm.newGameMode = '';
-        }
-
-        function addNewColumn() {
-            columns.add(vm.newColumn);
-            vm.newColumn = '';
-        }
-
-        function dismiss() {
-            $location.path('/');
-        }
-
-        function showCategory(id) {
-            itemCategory.set(id);
-            $location.path('/items');
-        }
-    }
-    ConfigController.$inject = ["$location", "gameModes", "columns", "itemCategory", "locales", "backup", "restore", "exportService"];
-})();
-'use strict';
-
-(function () {
-    'use strict';
-
-    angular.module('d3-item-manager').controller('ItemsController', ItemsController);
-
-    function ItemsController($scope, items, itemTracking, isItemVisibleForCategory, isItemVisibleForClass, gameModes, seasons, columns, itemCategory, constants, isEndGame, locales, config) {
-        var vm = this;
-
-        vm.itemFilter = '';
-        persist('filterOverAll');
-        persist('onlyCubable');
-        persist('hideCubed');
-
-        vm.isVisible = isVisible;
-
-        vm.gameMode = gameModes.current;
-        vm.season = seasons.current;
-        vm.columns = columns;
-        vm.itemCategory = itemCategory;
-        vm.isSeasonal = isSeasonal;
-        vm.bountyTitle = bountyTitle;
-        vm.isBounty = isBounty;
-        vm.isCrafted = isCrafted;
-
-        vm.toggle = toggle;
-        vm.cellClass = cellClass;
-        vm.allColumns = allColumns;
-        vm.items = undefined;
-        vm.link = link;
-
-        init();
-
-        function init() {
-            loadItems();
-        }
-
-        function loadItems() {
-            items.load().then(function (data) {
-                vm.items = data;
-            }).then(itemTracking.get).then(addTracking);
-        }
-
-        function addTracking(tracking) {
-            vm.items.forEach(function (item) {
-                if (!tracking[item.id]) {
-                    tracking[item.id] = {};
-                }
-                item.track = tracking[item.id];
-            });
-        }
-
-        function toggle(item, column) {
-            if (!item.track[vm.gameMode()]) {
-                item.track[vm.gameMode()] = {};
-            }
-            if (!item.track[vm.gameMode()][vm.season()]) {
-                item.track[vm.gameMode()][vm.season()] = {};
-            }
-            item.track[vm.gameMode()][vm.season()][column] = !item.track[vm.gameMode()][vm.season()][column];
-            itemTracking.save();
-        }
-
-        function cellClass(item, column) {
-            return isChecked(item, column) ? 'checked' : '';
-        }
-
-        function isChecked(item, column) {
-            try {
-                return item.track[vm.gameMode()][vm.season()][column];
-            } catch (e) {
-                return false;
-            }
-        }
-
-        function isCubed(item) {
-            return isChecked(item, 'Cubed');
-        }
-
-        function allColumns() {
-            return _.flatten(['Cubed', vm.columns.all()]);
-        }
-
-        function isVisible(item) {
-            if (!isEndGame(item)) {
-                return false;
-            }
-
-            if (vm.filterOverAll && vm.itemFilter.length > 0) {
-                return true;
-            }
-
-            if (vm.onlyCubable && !item.cube) {
-                return false;
-            }
-            if (vm.hideCubed && isCubed(item)) {
-                return false;
-            }
-
-            if (!isItemVisibleForCategory(item)) {
-                return false;
-            }
-
-            return isItemVisibleForClass(item);
-        }
-
-        function isSeasonal(item) {
-            return item.season === constants.gameSeason;
-        }
-
-        function isBounty(item) {
-            return !!item.bounty;
-        }
-
-        function bountyTitle(item) {
-            return isBounty(item) ? 'Act ' + item.bounty.act : '';
-        }
-
-        function isCrafted(item) {
-            return item.crafted;
-        }
-
-        function link(item) {
-            var artisan = '';
-            if (item.crafted) {
-                switch (item.slots[0]) {
-                    case 'neck':
-                    case 'left-finger':
-                    case 'right-finger':
-                        artisan = 'artisan/jeweler/';
-                        break;
-                    default:
-                        artisan = 'artisan/blacksmith/';
-                }
-            }
-            var locale = locales.currentItemLanguage();
-            return 'http://' + locale.region + '.battle.net/d3/' + locale.short + '/' + artisan + item.tooltipParams;
-        }
-
-        function persist(key) {
-            vm[key] = config.getItem(key) === true || false;
-
-            $scope.$watch(getKey, function () {
-                config.setItem(key, vm[key]);
-            });
-
-            function getKey() {
-                return vm[key];
-            }
-        }
-    }
-    ItemsController.$inject = ["$scope", "items", "itemTracking", "isItemVisibleForCategory", "isItemVisibleForClass", "gameModes", "seasons", "columns", "itemCategory", "constants", "isEndGame", "locales", "config"];
 })();
 //# sourceMappingURL=app.js.map
